@@ -1,0 +1,67 @@
+﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.NewsCategory.NewsCategoryListItemVM>
+
+@{
+	ViewData["Title"] = "Danh sách thể loại tin tức";
+}
+
+@if (User.IsInPermission(AuthConst.AppNewsCategory.CREATE))
+{
+	<div class="my-2">
+		<a asp-action="Create" class="btn btn-primary">
+			<i class="fas fa-plus-circle"></i> &nbsp; Tạo mới thể loại
+		</a>
+	</div>
+}
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th class="text-center">Hình ảnh</th>
+				<th>Tiêu đề</th>
+				<th>Mô tả</th>
+				<th>Slug</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="fit">@item.RowIndex</td>
+					<td class="text-center">
+						@{
+							if (item.CoverImgPath != null)
+							{
+								<img src="@item.CoverImgPath" class="item-news-image" />
+							}
+							else
+							{
+								<img src="~/files/logo.png" style=" width: 50px;height: 50px;object-fit: cover;" />
+							}
+						}
+					</td>
+					<td>@item.Title <small>(@item.TotalNews bài viết)</small></td>
+					<td>@item.Content</td>
+					<td>@item.Slug</td>
+					<td class="fit">
+						@if (User.IsInPermission(AuthConst.AppNewsCategory.UPDATE))
+						{
+							<a asp-action="Update" asp-route-id="@item.Id"
+							   class="btn btn-outline-secondary btn-sm"><i class="fas fa-pen"></i></a>
+						}
+						@if (User.IsInPermission(AuthConst.AppNewsCategory.DELETE))
+						{
+							<a asp-action="Delete" asp-route-id="@item.Id"
+							   class="btn btn-outline-danger btn-sm js-delete-confirm"
+							   data-msg="Xác nhận xóa thể loại [@item.Title]?"><i class="fa fas fa-trash"></i></a>
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+<partial name="_Pager" />

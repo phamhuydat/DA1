@@ -1,0 +1,106 @@
+﻿@{
+	ViewData["Title"] = "Dashboard";
+}
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			@*Số lượng đơn hàng đang chờ xử lý*@
+			<div class="col-lg-3 col-6">
+				<div class="small-box bg-gradient-success text-white">
+					<div class="inner">
+						<h3>@ViewBag.CountPendingOrder</h3>
+						<p>Đơn hàng chờ xử lý</p>
+					</div>
+					<div class="icon">
+						<i class="fas fa-dolly-flatbed"></i>
+					</div>
+					@if (User.IsInPermission(AuthConst.AppOrder.VIEW_LIST))
+					{
+						<a asp-action="Index" asp-controller="AppOrder" asp-area="Admin" class="small-box-footer">
+							Xem thêm
+							<i class="fas fa-arrow-circle-right"></i>
+						</a>
+					}
+				</div>
+			</div>
+			@*Số lượng sản phẩm*@
+			<div class="col-lg-3 col-6">
+				<div class="small-box bg-gradient-info text-white">
+					<div class="inner">
+						<h3>@ViewBag.CountProductActive</h3>
+						<p>Sản phẩm đang bán</p>
+					</div>
+					<div class="icon">
+						<i class="fas fa-shopping-bag"></i>
+					</div>
+					@if (User.IsInPermission(AuthConst.AppOrder.VIEW_LIST))
+					{
+						<a asp-action="Index" asp-controller="Products" asp-area="Admin" class="small-box-footer">
+							Xem thêm
+							<i class="fas fa-arrow-circle-right"></i>
+						</a>
+					}
+				</div>
+			</div>
+			@*Số lượng tin tức*@
+			<div class="col-lg-3 col-6">
+				<div class="small-box bg-gradient-secondary text-white">
+					<div class="inner">
+						<h3>@ViewBag.CountNewsActive</h3>
+						<p>Tin tức đang hiển thị</p>
+					</div>
+					<div class="icon">
+						<i class="fas fa-newspaper"></i>
+					</div>
+					@if (User.IsInPermission(AuthConst.AppNews.VIEW_LIST))
+					{
+						<a asp-action="Index" asp-controller="News" asp-area="Admin" class="small-box-footer">
+							Xem thêm
+							<i class="fas fa-arrow-circle-right"></i>
+						</a>
+					}
+				</div>
+			</div>
+			@*Số lượng user không bị khóa*@
+			<div class="col-lg-3 col-6">
+				<div class="small-box bg-gradient-warning text-white">
+					<div class="inner">
+						<h3>@ViewBag.CountUserUnBlock</h3>
+						<p>User đang hoạt động</p>
+					</div>
+					<div class="icon">
+						<i class="fas fa-users"></i>
+					</div>
+					@if (User.IsInPermission(AuthConst.AppUser.VIEW_LIST))
+					{
+						<a asp-action="Index" asp-controller="User" asp-area="Admin" class="small-box-footer">
+							Xem thêm
+							<i class="fas fa-arrow-circle-right"></i>
+						</a>
+					}
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="d-flex align-items-center">
+				<h1 class="text-center">Thống kê bán hàng trong năm</h1>
+			</div>
+			<div class="container-canvas">
+				<canvas id="myChart"></canvas>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr />
+<div class="text-center my-2">
+	<h1 class="display-4 my-2">@sysEnv[SystemEnvConst.BRAND_NAME]</h1>
+	<p>@sysEnv[SystemEnvConst.BRAND_ADDRESS]</p>
+	<p>Hệ thống quản lý thông tin trang web</p>
+</div>
+
+@section scripts {
+	<script src="~/lib/Chart.js/chart.umd.js"></script>
+	<script src="~/js/Admin/report/report.js" asp-append-version="true"></script>
+}

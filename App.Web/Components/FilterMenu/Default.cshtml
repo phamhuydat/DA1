@@ -1,0 +1,699 @@
+﻿
+<aside class="dqdt-sidebar sidebar left-content col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 sidebar-category">
+	<div class="aside-filter collection-category">
+		<div class="aside-hidden-mobile">
+			<div class="filter-container">
+				<div class="filter-containers">
+					<div class="filter-container__selected-filter" style="display: none;">
+						<div class="filter-container__selected-filter-header clearfix">
+							<span class="filter-container__selected-filter-header-title">Bạn chọn</span>
+							<a href="javascript:void(0)" onclick="clearAllFiltered()"
+							   class="filter-container__clear-all">
+								Bỏ hết <i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+						<div class="filter-container__selected-filter-list">
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<aside class="aside-item filter-price">
+					<div class="aside-title">
+						<h2 class="title-head margin-top-0"><span>Lọc giá</span></h2>
+					</div>
+					<div class="aside-content filter-group">
+						<ul>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-duoi-100-000d">
+										<input type="checkbox" id="filter-duoi-100-000d"
+											   onchange="toggleFilter(this);" data-group="Khoảng giá"
+											   data-field="price_min" data-text="Dưới 100.000đ" value="(<100000)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Giá dưới 100.000đ
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-100-000d-200-000d">
+										<input type="checkbox" id="filter-100-000d-200-000d"
+											   onchange="toggleFilter(this)" data-group="Khoảng giá"
+											   data-field="price_min" data-text="100.000đ - 200.000đ"
+											   value="(>100000 AND <200000)" data-operator="OR">
+										<i class="fa"></i>
+										100.000đ - 200.000đ
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-200-000d-300-000d">
+										<input type="checkbox" id="filter-200-000d-300-000d"
+											   onchange="toggleFilter(this)" data-group="Khoảng giá"
+											   data-field="price_min" data-text="200.000đ - 300.000đ"
+											   value="(>200000 AND <300000)" data-operator="OR">
+										<i class="fa"></i>
+										200.000đ - 300.000đ
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-300-000d-500-000d">
+										<input type="checkbox" id="filter-300-000d-500-000d"
+											   onchange="toggleFilter(this)" data-group="Khoảng giá"
+											   data-field="price_min" data-text="300.000đ - 500.000đ"
+											   value="(>300000 AND <500000)" data-operator="OR">
+										<i class="fa"></i>
+										300.000đ - 500.000đ
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-tren500-000d">
+										<input type="checkbox" id="filter-tren500-000d"
+											   onchange="toggleFilter(this)" data-group="Khoảng giá"
+											   data-field="price_min" data-text="Trên 500.000đ" value="(>500000)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Giá trên 500.000đ
+									</label>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Lọc Loại -->
+				<aside class="aside-item filter-type">
+					<div class="aside-title">
+						<h2 class="title-head margin-top-0"><span>Loại</span></h2>
+					</div>
+					<div class="aside-content filter-group">
+						<ul class="filter-type">
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="accessories" for="filter-accessories">
+									<input type="checkbox" id="filter-accessories"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="ACCESSORIES" value="(ACCESSORIES)"
+										   data-operator="OR">
+									<i class="fa"></i>
+									ACCESSORIES
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="backpacks" for="filter-backpacks">
+									<input type="checkbox" id="filter-backpacks" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="BACKPACKS"
+										   value="(BACKPACKS)" data-operator="OR">
+									<i class="fa"></i>
+									BACKPACKS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="baseball jersey" for="filter-baseball-jersey">
+									<input type="checkbox" id="filter-baseball-jersey"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="BASEBALL JERSEY"
+										   value="(BASEBALL JERSEY)" data-operator="OR">
+									<i class="fa"></i>
+									BASEBALL JERSEY
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="beanies" for="filter-beanies">
+									<input type="checkbox" id="filter-beanies" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="BEANIES"
+										   value="(BEANIES)" data-operator="OR">
+									<i class="fa"></i>
+									BEANIES
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="bowler bags" for="filter-bowler-bags">
+									<input type="checkbox" id="filter-bowler-bags"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="BOWLER BAGS" value="(BOWLER BAGS)"
+										   data-operator="OR">
+									<i class="fa"></i>
+									BOWLER BAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="bxd" for="filter-bxd">
+									<input type="checkbox" id="filter-bxd" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="BXD"
+										   value="(BXD)" data-operator="OR">
+									<i class="fa"></i>
+									BXD
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="caps" for="filter-caps">
+									<input type="checkbox" id="filter-caps" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="CAPS"
+										   value="(CAPS)" data-operator="OR">
+									<i class="fa"></i>
+									CAPS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="caps/hats" for="filter-caps-hats">
+									<input type="checkbox" id="filter-caps-hats" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="CAPS/HATS"
+										   value="(CAPS/HATS)" data-operator="OR">
+									<i class="fa"></i>
+									CAPS/HATS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="cardigans" for="filter-cardigans">
+									<input type="checkbox" id="filter-cardigans" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="CARDIGANS"
+										   value="(CARDIGANS)" data-operator="OR">
+									<i class="fa"></i>
+									CARDIGANS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="crossbody bags" for="filter-crossbody-bags">
+									<input type="checkbox" id="filter-crossbody-bags"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="CROSSBODY BAGS"
+										   value="(CROSSBODY BAGS)" data-operator="OR">
+									<i class="fa"></i>
+									CROSSBODY BAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="dress" for="filter-dress">
+									<input type="checkbox" id="filter-dress" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="DRESS"
+										   value="(DRESS)" data-operator="OR">
+									<i class="fa"></i>
+									DRESS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="flannel" for="filter-flannel">
+									<input type="checkbox" id="filter-flannel" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="FLANNEL"
+										   value="(FLANNEL)" data-operator="OR">
+									<i class="fa"></i>
+									FLANNEL
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="headband" for="filter-headband">
+									<input type="checkbox" id="filter-headband" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="HEADBAND"
+										   value="(HEADBAND)" data-operator="OR">
+									<i class="fa"></i>
+									HEADBAND
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="helmets" for="filter-helmets">
+									<input type="checkbox" id="filter-helmets" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="HELMETS"
+										   value="(HELMETS)" data-operator="OR">
+									<i class="fa"></i>
+									HELMETS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="hoodies" for="filter-hoodies">
+									<input type="checkbox" id="filter-hoodies" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="HOODIES"
+										   value="(HOODIES)" data-operator="OR">
+									<i class="fa"></i>
+									HOODIES
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="innerwear" for="filter-innerwear">
+									<input type="checkbox" id="filter-innerwear" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="INNERWEAR"
+										   value="(INNERWEAR)" data-operator="OR">
+									<i class="fa"></i>
+									INNERWEAR
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="jackets" for="filter-jackets">
+									<input type="checkbox" id="filter-jackets" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="JACKETS"
+										   value="(JACKETS)" data-operator="OR">
+									<i class="fa"></i>
+									JACKETS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="jeans" for="filter-jeans">
+									<input type="checkbox" id="filter-jeans" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="JEANS"
+										   value="(JEANS)" data-operator="OR">
+									<i class="fa"></i>
+									JEANS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="long wallets" for="filter-long-wallets">
+									<input type="checkbox" id="filter-long-wallets"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="LONG WALLETS"
+										   value="(LONG WALLETS)" data-operator="OR">
+									<i class="fa"></i>
+									LONG WALLETS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="longsleeves" for="filter-longsleeves">
+									<input type="checkbox" id="filter-longsleeves"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="LONGSLEEVES" value="(LONGSLEEVES)"
+										   data-operator="OR">
+									<i class="fa"></i>
+									LONGSLEEVES
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="masks" for="filter-masks">
+									<input type="checkbox" id="filter-masks" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="MASKS"
+										   value="(MASKS)" data-operator="OR">
+									<i class="fa"></i>
+									MASKS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="messenger bags" for="filter-messenger-bags">
+									<input type="checkbox" id="filter-messenger-bags"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="MESSENGER BAGS"
+										   value="(MESSENGER BAGS)" data-operator="OR">
+									<i class="fa"></i>
+									MESSENGER BAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="pants" for="filter-pants">
+									<input type="checkbox" id="filter-pants" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="PANTS"
+										   value="(PANTS)" data-operator="OR">
+									<i class="fa"></i>
+									PANTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="polos" for="filter-polos">
+									<input type="checkbox" id="filter-polos" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="POLOS"
+										   value="(POLOS)" data-operator="OR">
+									<i class="fa"></i>
+									POLOS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="printed shirts" for="filter-printed-shirts">
+									<input type="checkbox" id="filter-printed-shirts"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="PRINTED SHIRTS"
+										   value="(PRINTED SHIRTS)" data-operator="OR">
+									<i class="fa"></i>
+									PRINTED SHIRTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="shirts" for="filter-shirts">
+									<input type="checkbox" id="filter-shirts" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SHIRTS"
+										   value="(SHIRTS)" data-operator="OR">
+									<i class="fa"></i>
+									SHIRTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="shorts" for="filter-shorts">
+									<input type="checkbox" id="filter-shorts" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SHORTS"
+										   value="(SHORTS)" data-operator="OR">
+									<i class="fa"></i>
+									SHORTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="shoulder bags" for="filter-shoulder-bags">
+									<input type="checkbox" id="filter-shoulder-bags"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="SHOULDER BAGS"
+										   value="(SHOULDER BAGS)" data-operator="OR">
+									<i class="fa"></i>
+									SHOULDER BAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="skirt" for="filter-skirt">
+									<input type="checkbox" id="filter-skirt" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SKIRT"
+										   value="(SKIRT)" data-operator="OR">
+									<i class="fa"></i>
+									SKIRT
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="slides" for="filter-slides">
+									<input type="checkbox" id="filter-slides" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SLIDES"
+										   value="(SLIDES)" data-operator="OR">
+									<i class="fa"></i>
+									SLIDES
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="socks" for="filter-socks">
+									<input type="checkbox" id="filter-socks" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SOCKS"
+										   value="(SOCKS)" data-operator="OR">
+									<i class="fa"></i>
+									SOCKS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="sweaters" for="filter-sweaters">
+									<input type="checkbox" id="filter-sweaters" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SWEATERS"
+										   value="(SWEATERS)" data-operator="OR">
+									<i class="fa"></i>
+									SWEATERS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="sweatpants" for="filter-sweatpants">
+									<input type="checkbox" id="filter-sweatpants" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SWEATPANTS"
+										   value="(SWEATPANTS)" data-operator="OR">
+									<i class="fa"></i>
+									SWEATPANTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="sweatshirts" for="filter-sweatshirts">
+									<input type="checkbox" id="filter-sweatshirts"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="SWEATSHIRTS" value="(SWEATSHIRTS)"
+										   data-operator="OR">
+									<i class="fa"></i>
+									SWEATSHIRTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="sweatsuits" for="filter-sweatsuits">
+									<input type="checkbox" id="filter-sweatsuits" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="SWEATSUITS"
+										   value="(SWEATSUITS)" data-operator="OR">
+									<i class="fa"></i>
+									SWEATSUITS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="tote bags" for="filter-tote-bags">
+									<input type="checkbox" id="filter-tote-bags" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="TOTE BAGS"
+										   value="(TOTE BAGS)" data-operator="OR">
+									<i class="fa"></i>
+									TOTE BAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="t-shirts" for="filter-t-shirts">
+									<input type="checkbox" id="filter-t-shirts" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="T-SHIRTS"
+										   value="(T-SHIRTS)" data-operator="OR">
+									<i class="fa"></i>
+									T-SHIRTS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="vest" for="filter-vest">
+									<input type="checkbox" id="filter-vest" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="VEST"
+										   value="(VEST)" data-operator="OR">
+									<i class="fa"></i>
+									VEST
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="waistbags" for="filter-waistbags">
+									<input type="checkbox" id="filter-waistbags" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="WAISTBAGS"
+										   value="(WAISTBAGS)" data-operator="OR">
+									<i class="fa"></i>
+									WAISTBAGS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="wallets" for="filter-wallets">
+									<input type="checkbox" id="filter-wallets" onchange="toggleFilter(this)"
+										   data-group="Loại" data-field="product_type" data-text="WALLETS"
+										   value="(WALLETS)" data-operator="OR">
+									<i class="fa"></i>
+									WALLETS
+								</label>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<label data-filter="zipped long wallets" for="filter-zipped-long-wallets">
+									<input type="checkbox" id="filter-zipped-long-wallets"
+										   onchange="toggleFilter(this)" data-group="Loại"
+										   data-field="product_type" data-text="ZIPPED LONG WALLETS"
+										   value="(ZIPPED LONG WALLETS)" data-operator="OR">
+									<i class="fa"></i>
+									ZIPPED LONG WALLETS
+								</label>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<!-- End Lọc Loại -->
+				<aside class="aside-item filter-tag-style-1 tag-filtster">
+					<div class="aside-title">
+						<h2 class="title-head margin-top-0"><span>Kích thước</span></h2>
+					</div>
+					<div class="aside-content filter-group">
+						<ul>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-size-s">
+										<input type="checkbox" id="filter-size-s" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Size S"
+											   value="(Size S)" data-operator="OR">
+										<i class="fa"></i>
+										Size S
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-size-m">
+										<input type="checkbox" id="filter-size-m" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Size M"
+											   value="(Size M)" data-operator="OR">
+										<i class="fa"></i>
+										Size M
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-size-l">
+										<input type="checkbox" id="filter-size-l" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Size L"
+											   value="(Size L)" data-operator="OR">
+										<i class="fa"></i>
+										Size L
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-size-xl">
+										<input type="checkbox" id="filter-size-xl" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Size XL"
+											   value="(Size XL)" data-operator="OR">
+										<i class="fa"></i>
+										Size XL
+									</label>
+								</span>
+							</li>
+
+						</ul>
+					</div>
+				</aside>
+				<aside class="aside-item filter-tag-style-1 tag-filtster">
+					<div class="aside-title">
+						<h2 class="title-head margin-top-0"><span>Màu sắc</span></h2>
+					</div>
+					<div class="aside-content filter-group">
+						<ul>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-red">
+										<input type="checkbox" id="filter-red" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Red" value="(Red)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Red
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-orange">
+										<input type="checkbox" id="filter-orange" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Orange"
+											   value="(Orange)" data-operator="OR">
+										<i class="fa"></i>
+										Orange
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-yellow">
+										<input type="checkbox" id="filter-yellow" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Yellow"
+											   value="(Yellow)" data-operator="OR">
+										<i class="fa"></i>
+										Yellow
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-green">
+										<input type="checkbox" id="filter-green" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Green" value="(Green)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Green
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-blue">
+										<input type="checkbox" id="filter-blue" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Blue" value="(Blue)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Blue
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-purple">
+										<input type="checkbox" id="filter-purple" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Purple"
+											   value="(Purple)" data-operator="OR">
+										<i class="fa"></i>
+										Purple
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-pink">
+										<input type="checkbox" id="filter-pink" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Pink" value="(Pink)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Pink
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-brown">
+										<input type="checkbox" id="filter-brown" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Brown" value="(Brown)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Brown
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-white">
+										<input type="checkbox" id="filter-white" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="White" value="(White)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										White
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-grey">
+										<input type="checkbox" id="filter-grey" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Grey" value="(Grey)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Grey
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-black">
+										<input type="checkbox" id="filter-black" onchange="toggleFilter(this)"
+											   data-group="tag2" data-field="tags" data-text="Black" value="(Black)"
+											   data-operator="OR">
+										<i class="fa"></i>
+										Black
+									</label>
+								</span>
+							</li>
+							<li class="filter-item filter-item--check-box filter-item--green">
+								<span>
+									<label for="filter-multi-colour">
+										<input type="checkbox" id="filter-multi-colour"
+											   onchange="toggleFilter(this)" data-group="tag2" data-field="tags"
+											   data-text="Multi-Colour" value="(Multi-Colour)" data-operator="OR">
+										<i class="fa"></i>
+										Multi-Colour
+									</label>
+								</span>
+							</li>
+
+						</ul>
+					</div>
+				</aside>
+				<div class="sortPagiBar">
+					<div id="sort-by">
+						<ul>
+							<li>
+								<span>Thứ tự</span>
+								<ul>
+									<li>
+										<a href="javascript:;" onclick="sortby('created-desc')">Mới nhất</a>
+									</li>
+									<li>
+										<a href="javascript:;" onclick="sortby('price-asc')">Giá tăng dần</a>
+									</li>
+									<li>
+										<a href="javascript:;" onclick="sortby('price-desc')">Giá giảm dần</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>

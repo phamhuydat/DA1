@@ -1,0 +1,64 @@
+﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.MstProductBrand.BrandListItemVM>
+
+@{
+	ViewData["Title"] = "Danh sách thương hiệu";
+}
+
+@if (User.IsInPermission(AuthConst.MstProductBrand.CREATE))
+{
+	<div class="my-2">
+		<a asp-action="Create" class="btn btn-primary">
+			<i class="fas fa-plus-circle"></i> &nbsp; Thêm mới thương hiệu
+		</a>
+	</div>
+}
+
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th class="text-center fit">Hình ảnh</th>
+				<th>Tên thương hiệu</th>
+				<th>Slug</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="fit">@item.RowIndex</td>
+					<td class="text-center fit">
+						@if (item.ImagePath != null)
+						{
+							<img width="50" height="50" src="@item.ImagePath" />
+						}
+						else
+						{
+							<img width="50" height="50" src="~/Images/logo.png" />
+						}
+					</td>
+					<td>@item.Name <small>(@item.CountProduct sản phẩm)</small></td>
+					<td>@item.Slug</td>
+					<td class="fit">
+						@if (User.IsInPermission(AuthConst.MstProductBrand.UPDATE))
+						{
+							<a asp-action="Update" asp-route-id="@item.Id"
+							   class="btn btn-outline-secondary btn-sm"><i class="fa fas fa-pen"></i></a>
+						}
+						@if (User.IsInPermission(AuthConst.MstProductBrand.DELETE))
+						{
+							<a asp-action="Delete" asp-route-id="@item.Id"
+							   class="btn btn-outline-danger btn-sm js-delete-confirm"
+							   data-msg="Xác nhận xóa thương hiệu [@item.Name]?"><i class="fa fas fa-trash"></i></a>
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+<partial name="_Pager" />

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<App.Web.ViewModels.ProductCategory.CateMenuVM>
+
+@if (Model.Count() > 0)
+{
+	<ul class="sub-menu">
+		@foreach (var item in Model)
+		{
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+				@if (!item.Name.IsNullOrEmpty())
+				{
+					<a asp-controller="Product" asp-action="ProductByCate" asp-route-slug="@item.Slug" title="@item.Name">@item.Name</a>
+				}
+				<ul class="sub-menu">
+					@if (item.HasChild)
+					{
+						foreach (var item2 in item.ChildCategories)
+						{
+							<li class="menu-item menu-item-type-custom menu-item-object-custom">
+								@if (!item2.Name.IsNullOrEmpty())
+								{
+									<a title="@item2.Name" asp-controller="Product" asp-action="ProductByCate" asp-route-slug="@item2.Slug">
+										@item2.Name
+									</a>
+								}
+							</li>
+						}
+					}
+				</ul>
+			</li>
+		}
+	</ul>
+
+}

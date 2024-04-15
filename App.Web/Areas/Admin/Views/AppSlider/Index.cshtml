@@ -1,0 +1,66 @@
+﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.AppSlider.SliderListItemVM>
+
+@{
+	ViewData["Title"] = "Danh sách slider";
+}
+
+@if (User.IsInPermission(AuthConst.AppSlider.CREATE))
+{
+	<div class="my-2">
+		<a asp-action="Create" class="btn btn-primary">
+			<i class="fas fa-plus-circle"></i> &nbsp; Thêm mới slider
+		</a>
+	</div>
+}
+
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th class="text-center fit">Hình ảnh</th>
+				<th>Từ ngày</th>
+				<th>Đến ngày</th>
+				<th>Liên kết</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="fit">@item.RowIndex</td>
+					<td class="text-center fit">
+						@if (item.ImagePath != null)
+						{
+							<img width="50" height="50" src="@item.ImagePath" />
+						}
+						else
+						{
+							<img width="50" height="50" src="~/Images/logo.png" />
+						}
+					</td>
+					<td>@item.FromDate?.ToString("dd/MM/yyyy")</td>
+					<td>@item.ToDate?.ToString("dd/MM/yyyy")</td>
+					<td>@item.Link</td>
+					<td class="fit">
+						@if (User.IsInPermission(AuthConst.AppSlider.UPDATE))
+						{
+							<a asp-action="Update" asp-route-id="@item.Id"
+							   class="btn btn-outline-secondary btn-sm"><i class="fa fas fa-pen"></i></a>
+						}
+						@if (User.IsInPermission(AuthConst.AppSlider.DELETE))
+						{
+							<a asp-action="Delete" asp-route-id="@item.Id"
+							   class="btn btn-outline-danger btn-sm js-delete-confirm"
+							   data-msg="Xác nhận xóa slider?"><i class="fa fas fa-trash"></i></a>
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+<partial name="_Pager" />
