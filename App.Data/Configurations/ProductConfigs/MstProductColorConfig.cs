@@ -10,16 +10,20 @@ using System.Threading.Tasks;
 
 namespace App.Data.Configurations.ProductConfigs
 {
-    public class MstProductColorConfig : IEntityTypeConfiguration<MstProductColor>
-    {
-        public void Configure(EntityTypeBuilder<MstProductColor> builder)
-        {
-            builder.ToTable(DB.MstProductColor.TABLE_NAME);
+	public class MstProductColorConfig : IEntityTypeConfiguration<MstProductColor>
+	{
+		public void Configure(EntityTypeBuilder<MstProductColor> builder)
+		{
+			builder.ToTable(DB.MstProductColor.TABLE_NAME);
 
-            builder.HasKey(x => x.Id);
+			builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.ColorName)
-                .HasMaxLength(DB.MstProductColor.COLOR_NAME_LENGTH);
-        }
-    }
+			builder.Property(x => x.ColorName)
+				.HasMaxLength(DB.MstProductColor.COLOR_NAME_LENGTH);
+
+			builder.Property(x => x.CssColor)
+				.HasMaxLength(DB.MstProductColor.COLOR_NAME_LENGTH);
+
+		}
+	}
 }

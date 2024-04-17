@@ -121,8 +121,7 @@ namespace App.Web.Areas.Admin.Controllers
 				user.AppRoleId = model.AppRoleId;
 				user.Email = model.Email;
 				user.FullName = model.FullName;
-				user.PhoneNumber1 = model.PhoneNumber1;
-				user.PhoneNumber2 = model.PhoneNumber2;
+				user.PhoneNumber = model.PhoneNumber1;
 				await _repository.UpdateAsync(user);
 				SetSuccessMesg($"Cập nhật tài khoản [{user.Username}] thành công");
 				return RedirectToAction(nameof(Index));

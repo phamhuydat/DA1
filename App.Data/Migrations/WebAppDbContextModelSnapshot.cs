@@ -66,6 +66,16 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppBranch", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "91 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ",
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5734),
+                            GroupName = "Thành Phố Cần Thơ",
+                            IdMap = "113.188.249.73"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppDiscountCode", b =>
@@ -280,6 +290,36 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppNewsCategory", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            Slug = "san-pham",
+                            Title = "Sản phẩm"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            Slug = "bo-suu-tap",
+                            Title = "Bộ sưu tập"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            Slug = "ket-hop",
+                            Title = "	Kết hợp"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            Slug = "san-pham-moi",
+                            Title = "Sản phẩm mới"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppOrder", b =>
@@ -605,6 +645,26 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRole", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CanDelete = false,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Khách hàng",
+                            Name = "Khách hàng",
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CanDelete = true,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Quản trị toàn bộ hệ thống",
+                            Name = "Quản trị hệ thống",
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppRolePermission", b =>
@@ -646,6 +706,600 @@ namespace App.Data.Migrations
                     b.HasIndex("MstPermissionId");
 
                     b.ToTable("AppRolePermission", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1101,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1102,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1103,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1104,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1105,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1001,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1002,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1003,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1004,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1005,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1006,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1007,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1008,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1205,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1301,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1302,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1303,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1304,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1401,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1402,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 21,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1403,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 22,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1404,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 23,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1501,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 24,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1502,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 25,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1503,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 26,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1504,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 27,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1601,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 28,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1602,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 29,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1701,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 30,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1702,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 31,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1703,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 32,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1704,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 33,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1801,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 34,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1802,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 35,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1803,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 36,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1804,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 37,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1901,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 38,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1902,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 39,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1903,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 40,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 1904,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 41,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2001,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 42,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2002,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 43,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2003,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 44,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2004,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 45,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2005,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 46,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2101,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 47,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2102,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 48,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2103,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 49,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2104,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 50,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2201,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 51,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2202,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 52,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2203,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 53,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2204,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 54,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2205,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 55,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2206,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 56,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2207,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 57,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2208,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 58,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2301,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 59,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2302,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 60,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2401,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 61,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2402,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 62,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2403,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 63,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2404,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 64,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2501,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 65,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2502,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 66,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2503,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 67,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2504,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 68,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2506,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 69,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2507,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 70,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2508,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 71,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2601,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 72,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2602,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 73,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2603,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 74,
+                            AppRoleId = 2,
+                            CreatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MstPermissionId = 2604,
+                            UpdatedDate = new DateTime(2021, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppSlider", b =>
@@ -704,7 +1358,6 @@ namespace App.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -712,9 +1365,8 @@ namespace App.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Avatar")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<int?>("BlockedBy")
                         .HasColumnType("int");
@@ -755,13 +1407,7 @@ namespace App.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("varbinary(200)");
 
-                    b.Property<string>("PhoneNumber1")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<string>("PhoneNumber2")
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(false)
@@ -787,6 +1433,25 @@ namespace App.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("AppUser", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "Thành phố Cần Thơ",
+                            AppRoleId = 2,
+                            Avatar = "~/Images/Avatar/default.png",
+                            CreatedBy = -1,
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "hello@gmail.com",
+                            FullName = "Lilocon",
+                            PasswordHash = new byte[] { 247, 56, 71, 154, 194, 7, 194, 156, 247, 48, 131, 200, 7, 51, 105, 101, 76, 26, 117, 98, 32, 173, 145, 232, 23, 130, 40, 22, 201, 108, 1, 213, 160, 65, 248, 52, 16, 195, 139, 254, 175, 96, 215, 26, 149, 164, 212, 114, 238, 24, 139, 172, 93, 230, 216, 229, 123, 72, 205, 125, 170, 54, 131, 61 },
+                            PasswordSalt = new byte[] { 207, 114, 228, 216, 133, 3, 12, 168, 150, 85, 180, 95, 188, 66, 222, 193, 94, 143, 173, 35, 52, 11, 51, 154, 32, 222, 148, 114, 184, 166, 122, 255, 222, 93, 20, 233, 94, 51, 63, 42, 193, 166, 125, 231, 112, 117, 202, 82, 215, 27, 244, 76, 54, 224, 246, 127, 89, 193, 20, 118, 30, 185, 241, 166, 154, 37, 53, 137, 197, 3, 255, 1, 182, 145, 93, 33, 27, 113, 232, 129, 53, 244, 1, 136, 140, 148, 14, 248, 114, 89, 248, 110, 103, 191, 202, 89, 18, 40, 217, 179, 238, 112, 238, 231, 213, 139, 108, 17, 119, 0, 185, 212, 64, 156, 1, 47, 207, 222, 70, 0, 80, 60, 121, 216, 9, 3, 137, 141 },
+                            PhoneNumber = "0928666158",
+                            UpdatedBy = -1,
+                            UpdatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppVerifyCode", b =>
@@ -866,6 +1531,32 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MstOrderStatus", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            Name = "Đang xử lý"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            Name = "Đang giao hàng"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            Name = "Đã giao hàng"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            Name = "Đã từ chối"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.MstPermission", b =>
@@ -909,6 +1600,674 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MstPermission", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1103,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm quyền",
+                            GroupName = "Quản lý phân quyền",
+                            Table = "AppRole"
+                        },
+                        new
+                        {
+                            Id = 1105,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa quyền",
+                            GroupName = "Quản lý phân quyền",
+                            Table = "AppRole"
+                        },
+                        new
+                        {
+                            Id = 1104,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa quyền",
+                            GroupName = "Quản lý phân quyền",
+                            Table = "AppRole"
+                        },
+                        new
+                        {
+                            Id = 1102,
+                            Code = "VIEW_DETAIL",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết quyền",
+                            GroupName = "Quản lý phân quyền",
+                            Table = "AppRole"
+                        },
+                        new
+                        {
+                            Id = 1101,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách quyền",
+                            GroupName = "Quản lý phân quyền",
+                            Table = "AppRole"
+                        },
+                        new
+                        {
+                            Id = 1006,
+                            Code = "BLOCK",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Khóa người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1003,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1008,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1007,
+                            Code = "UNBLOCK",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Mở khóa người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1004,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Cập nhật người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1005,
+                            Code = "UPDATE_PWD",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Đổi mật khẩu",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1002,
+                            Code = "VIEW_DETAIL",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1001,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách người dùng",
+                            GroupName = "Quản lý người dùng",
+                            Table = "AppUser"
+                        },
+                        new
+                        {
+                            Id = 1205,
+                            Code = "MANAGER",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Quản lý file hệ thống",
+                            GroupName = "Quản lý file",
+                            Table = "FileManager"
+                        },
+                        new
+                        {
+                            Id = 1301,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách thương hiệu",
+                            GroupName = "Quản lý thương hiệu",
+                            Table = "MstProductBrand"
+                        },
+                        new
+                        {
+                            Id = 1302,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm thương hiệu",
+                            GroupName = "Quản lý thương hiệu",
+                            Table = "MstProductBrand"
+                        },
+                        new
+                        {
+                            Id = 1303,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa thương hiệu",
+                            GroupName = "Quản lý thương hiệu",
+                            Table = "MstProductBrand"
+                        },
+                        new
+                        {
+                            Id = 1304,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa thương hiệu",
+                            GroupName = "Quản lý thương hiệu",
+                            Table = "MstProductBrand"
+                        },
+                        new
+                        {
+                            Id = 1401,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách chi nhánh",
+                            GroupName = "Quản lý chi nhánh",
+                            Table = "AppBranch"
+                        },
+                        new
+                        {
+                            Id = 1402,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm chi nhánh",
+                            GroupName = "Quản lý chi nhánh",
+                            Table = "AppBranch"
+                        },
+                        new
+                        {
+                            Id = 1403,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa chi nhánh",
+                            GroupName = "Quản lý chi nhánh",
+                            Table = "AppBranch"
+                        },
+                        new
+                        {
+                            Id = 1404,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa chi nhánh",
+                            GroupName = "Quản lý chi nhánh",
+                            Table = "AppBranch"
+                        },
+                        new
+                        {
+                            Id = 1501,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách mã khuyến mãi",
+                            GroupName = "Quản lý mã khuyến mãi",
+                            Table = "AppDiscountCode"
+                        },
+                        new
+                        {
+                            Id = 1502,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm mã khuyến mãi",
+                            GroupName = "Quản lý mã khuyến mãi",
+                            Table = "AppDiscountCode"
+                        },
+                        new
+                        {
+                            Id = 1503,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa mã khuyến mãi",
+                            GroupName = "Quản lý mã khuyến mãi",
+                            Table = "AppDiscountCode"
+                        },
+                        new
+                        {
+                            Id = 1504,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa mã khuyến mãi",
+                            GroupName = "Quản lý mã khuyến mãi",
+                            Table = "AppDiscountCode"
+                        },
+                        new
+                        {
+                            Id = 1601,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem thông tin cửa hàng",
+                            GroupName = "Quản lý thông tin cửa hàng",
+                            Table = "SystemEnv"
+                        },
+                        new
+                        {
+                            Id = 1602,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa thông tin cửa hàng",
+                            GroupName = "Quản lý thông tin cửa hàng",
+                            Table = "SystemEnv"
+                        },
+                        new
+                        {
+                            Id = 1701,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách màu sản phẩm",
+                            GroupName = "Quản lý màu sắc sản phẩm",
+                            Table = "MstProductColor"
+                        },
+                        new
+                        {
+                            Id = 1702,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm màu sản phẩm",
+                            GroupName = "Quản lý màu sắc sản phẩm",
+                            Table = "MstProductColor"
+                        },
+                        new
+                        {
+                            Id = 1703,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa màu sản phẩm",
+                            GroupName = "Quản lý màu sắc sản phẩm",
+                            Table = "MstProductColor"
+                        },
+                        new
+                        {
+                            Id = 1704,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa màu sản phẩm",
+                            GroupName = "Quản lý màu sắc sản phẩm",
+                            Table = "MstProductColor"
+                        },
+                        new
+                        {
+                            Id = 1801,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách size",
+                            GroupName = "Quản lý size sản phẩm",
+                            Table = "MstProductSize"
+                        },
+                        new
+                        {
+                            Id = 1802,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm size",
+                            GroupName = "Quản lý size sản phẩm",
+                            Table = "MstProductSize"
+                        },
+                        new
+                        {
+                            Id = 1803,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa size",
+                            GroupName = "Quản lý size sản phẩm",
+                            Table = "MstProductSize"
+                        },
+                        new
+                        {
+                            Id = 1804,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa size",
+                            GroupName = "Quản lý size sản phẩm",
+                            Table = "MstProductSize"
+                        },
+                        new
+                        {
+                            Id = 1901,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách slider",
+                            GroupName = "Quản lý slider",
+                            Table = "AppSlider"
+                        },
+                        new
+                        {
+                            Id = 1902,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm slider",
+                            GroupName = "Quản lý slider",
+                            Table = "AppSlider"
+                        },
+                        new
+                        {
+                            Id = 1903,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa slider",
+                            GroupName = "Quản lý slider",
+                            Table = "AppSlider"
+                        },
+                        new
+                        {
+                            Id = 1904,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa slider",
+                            GroupName = "Quản lý slider",
+                            Table = "AppSlider"
+                        },
+                        new
+                        {
+                            Id = 2001,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách chính sách",
+                            GroupName = "Quản lý chính sách",
+                            Table = "AppPolicy"
+                        },
+                        new
+                        {
+                            Id = 2002,
+                            Code = "VIEW_DETAIL",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết chính sách",
+                            GroupName = "Quản lý chính sách",
+                            Table = "AppPolicy"
+                        },
+                        new
+                        {
+                            Id = 2003,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm chính sách",
+                            GroupName = "Quản lý chính sách",
+                            Table = "AppPolicy"
+                        },
+                        new
+                        {
+                            Id = 2004,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa chính sách",
+                            GroupName = "Quản lý chính sách",
+                            Table = "AppPolicy"
+                        },
+                        new
+                        {
+                            Id = 2005,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa chính sách",
+                            GroupName = "Quản lý chính sách",
+                            Table = "AppPolicy"
+                        },
+                        new
+                        {
+                            Id = 2101,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách thể loại tin tức",
+                            GroupName = "Quản lý thể loại tin tức",
+                            Table = "AppNewsCategory"
+                        },
+                        new
+                        {
+                            Id = 2102,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm thể loại tin tức",
+                            GroupName = "Quản lý thể loại tin tức",
+                            Table = "AppNewsCategory"
+                        },
+                        new
+                        {
+                            Id = 2103,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa thể loại tin tức",
+                            GroupName = "Quản lý thể loại tin tức",
+                            Table = "AppNewsCategory"
+                        },
+                        new
+                        {
+                            Id = 2104,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa thể loại tin tức",
+                            GroupName = "Quản lý thể loại tin tức",
+                            Table = "AppNewsCategory"
+                        },
+                        new
+                        {
+                            Id = 2201,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2202,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2203,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2204,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2205,
+                            Code = "PUBLIC",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Hiển thị tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2206,
+                            Code = "UNPUBLIC",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Ẩn tin tức",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2207,
+                            Code = "SENDMAILREGISTER",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Gửi mail cho ngươi đăng ký",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2208,
+                            Code = "VIEW_DETAIL",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết bài viết",
+                            GroupName = "Quản lý tin tức",
+                            Table = "AppNews"
+                        },
+                        new
+                        {
+                            Id = 2301,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem trang giới thiệu",
+                            GroupName = "Quản lý giới thiệu công ty",
+                            Table = "SystemEnv"
+                        },
+                        new
+                        {
+                            Id = 2302,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Cập nhật trang giới thiệu",
+                            GroupName = "Quản lý giới thiệu công ty",
+                            Table = "SystemEnv"
+                        },
+                        new
+                        {
+                            Id = 2401,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách thể loại sản phẩm",
+                            GroupName = "Quản lý thể loại sản phẩm",
+                            Table = "AppProductCategory"
+                        },
+                        new
+                        {
+                            Id = 2402,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm thể loại sản phẩm",
+                            GroupName = "Quản lý thể loại sản phẩm",
+                            Table = "AppProductCategory"
+                        },
+                        new
+                        {
+                            Id = 2403,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa thể loại sản phẩm",
+                            GroupName = "Quản lý thể loại sản phẩm",
+                            Table = "AppProductCategory"
+                        },
+                        new
+                        {
+                            Id = 2404,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa thể loại sản phẩm",
+                            GroupName = "Quản lý thể loại sản phẩm",
+                            Table = "AppProductCategory"
+                        },
+                        new
+                        {
+                            Id = 2501,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2502,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Thêm sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2503,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2504,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2506,
+                            Code = "PUBLIC",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Hiển thị sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2507,
+                            Code = "UNPUBLIC",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Ẩn sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2508,
+                            Code = "VIEW_DETAIL",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết sản phẩm",
+                            GroupName = "Quản lý sản phẩm",
+                            Table = "AppProduct"
+                        },
+                        new
+                        {
+                            Id = 2601,
+                            Code = "VIEW_LIST",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem danh sách đơn hàng",
+                            GroupName = "Quản lý đơn hàng",
+                            Table = "AppOrder"
+                        },
+                        new
+                        {
+                            Id = 2602,
+                            Code = "CREATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xem chi tiết đơn hàng",
+                            GroupName = "Quản lý đơn hàng",
+                            Table = "AppOrder"
+                        },
+                        new
+                        {
+                            Id = 2603,
+                            Code = "UPDATE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Sửa đơn hàng",
+                            GroupName = "Quản lý đơn hàng",
+                            Table = "AppOrder"
+                        },
+                        new
+                        {
+                            Id = 2604,
+                            Code = "DELETE",
+                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Desc = "Xóa đơn hàng",
+                            GroupName = "Quản lý đơn hàng",
+                            Table = "AppOrder"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.Products.AppProduct", b =>
@@ -1077,7 +2436,8 @@ namespace App.Data.Migrations
 
                     b.Property<string>("CssColor")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
@@ -1088,6 +2448,29 @@ namespace App.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MstProductColor", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ColorName = "Red",
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CssColor = "#FF0000"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ColorName = "Black",
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CssColor = "#000000"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ColorName = "Blue",
+                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CssColor = "#0000FF"
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.SystemEnv", b =>
@@ -1102,6 +2485,143 @@ namespace App.Data.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("SystemEnv", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Key = "Logo",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "BrandName",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "BrandAddress",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "PrimaryPhone",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SecondaryPhone",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "Facebook",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "Zalo",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "Youtube",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "MessengerEmbeddedCode",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "PrimaryMail",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SecondaryMail",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "AdminReciverMail",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "TaxCode",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SEOTitle",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SEODescription",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SEOKeyword",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "SEOImagePath",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "DefaultImage",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "IconImagePath",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduce",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceTitle",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceContent",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceImage1",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceImage2",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceImage3",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "CompanyIntroduceImage4",
+                            Value = ""
+                        },
+                        new
+                        {
+                            Key = "EmailForOrderInformation",
+                            Value = ""
+                        });
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppNews", b =>

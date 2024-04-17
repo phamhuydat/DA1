@@ -9,12 +9,100 @@
       "PackagePath": "staticwebassets\\ClientTLE\\css\\style.css"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\us.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\flags\\us.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\vn.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\flags\\vn.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\thumbs\\0012445_Logo_ShopDunk.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\thumbs\\0012445_Logo_ShopDunk.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\Trang chủ\\Bocongthuong.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\Trang chủ\\Bocongthuong.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\IC_home.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\IC_home.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\News.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\News.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Shop.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\Shop.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Top.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\Top.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\arrow-down.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\arrow-down.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\bottom-flash-sale.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\bottom-flash-sale.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\cart-icon.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\cart-icon.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\fixed.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\fixed.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\hotline.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\hotline.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\ic_messenger.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\ic_messenger.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\icon-footer123.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\icon-footer123.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\login.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\login.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\nav-menu-mobile.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\nav-menu-mobile.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Custom.js",
+      "PackagePath": "staticwebassets\\ClientTLE\\js\\Custom.js"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Footer.js",
       "PackagePath": "staticwebassets\\ClientTLE\\js\\Footer.js"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Head.js",
       "PackagePath": "staticwebassets\\ClientTLE\\js\\Head.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\default.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.css",
@@ -793,6 +881,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.var.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.min.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.var.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.min.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.var.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.min.js",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.var.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.css",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\style.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.min.css",
+      "PackagePath": "staticwebassets\\lib\\awesome-notifications\\style.min.css"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
@@ -1019,6 +1147,98 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\AjaxLoader.gif",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\AjaxLoader.gif"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\grabbing.png",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\grabbing.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.theme.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.theme.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.transitions.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.min.css",
+      "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.transitions.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.eot"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.svg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.woff"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.css",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.min.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.css",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.js",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.js",
+      "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.App.Web.Microsoft.AspNetCore.StaticWebAssets.props",

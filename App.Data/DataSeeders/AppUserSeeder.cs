@@ -25,21 +25,22 @@ namespace App.Data.DataSeeders
 
 			// Tạo thông tin tài khoản admin
 			builder.HasData(
-				new AppUser {
+				new AppUser
+				{
 					Id = 1,
 					Username = "admin",
 					PasswordHash = pwdHash,
 					PasswordSalt = pwdSalt,
 					Address = "Thành phố Cần Thơ",
-					Email = "ntt18082001@gmail.com",
+					Email = "hello@gmail.com",
 					FullName = "Lilocon",
-					PhoneNumber1 = "0928666158",
-					PhoneNumber2 = "0928666156",
+					PhoneNumber = "0928666158",
+					Avatar = "~/Images/Avatar/default.png",
 					CreatedBy = -1,
 					UpdatedBy = -1,
 					UpdatedDate = now,
 					CreatedDate = now,
-					AppRoleId = 2,				// Vai trò được tạo ở AppRoleSeeder
+					AppRoleId = 2,              // Vai trò được tạo ở AppRoleSeeder
 				}
 			);
 		}

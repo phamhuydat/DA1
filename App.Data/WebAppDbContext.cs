@@ -9,10 +9,10 @@ namespace App.Data
 {
 	public class WebAppDbContext : DbContext
 	{
-        public WebAppDbContext(DbContextOptions<WebAppDbContext> options) : base(options)
-        {
-        }
-        public DbSet<AppRole> AppRoles { get; set; }
+		public WebAppDbContext(DbContextOptions<WebAppDbContext> options) : base(options)
+		{
+		}
+		public DbSet<AppRole> AppRoles { get; set; }
 		public DbSet<AppRolePermission> AppRolePermissions { get; set; }
 		public DbSet<AppUser> AppUsers { get; set; }
 		public DbSet<MstPermission> MstPermissions { get; set; }
@@ -32,8 +32,8 @@ namespace App.Data
 		public DbSet<AppProduct> AppProducts { get; set; }
 		public DbSet<AppProductImage> AppProductImages { get; set; }
 
-        
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.ApplyConfiguration(new AppUserConfig());
 			modelBuilder.ApplyConfiguration(new AppRoleConfig());
@@ -57,17 +57,17 @@ namespace App.Data
 			modelBuilder.ApplyConfiguration(new AppProductImageConfig());
 
 			// Tạo dữ liệu
-			//modelBuilder.Entity<MstPermission>().SeedData();
-			//modelBuilder.Entity<AppRole>().SeedData();
-			//modelBuilder.Entity<AppUser>().SeedData();
-			//modelBuilder.Entity<AppRolePermission>().SeedData();
-			//modelBuilder.Entity<AppBranch>().SeedData();
+			modelBuilder.Entity<MstPermission>().SeedData();
+			modelBuilder.Entity<AppRole>().SeedData();
+			modelBuilder.Entity<AppUser>().SeedData();
+			modelBuilder.Entity<AppRolePermission>().SeedData();
+			modelBuilder.Entity<AppBranch>().SeedData();
 			//modelBuilder.Entity<AppProductCategory>().SeedData();
-			//modelBuilder.Entity<MstOrderStatus>().SeedData();
-			//modelBuilder.Entity<SystemEnv>().SeedData();
+			modelBuilder.Entity<MstOrderStatus>().SeedData();
+			modelBuilder.Entity<SystemEnv>().SeedData();
 
-			//modelBuilder.Entity<MstProductColor>().SeedData();
-			//modelBuilder.Entity<AppNewsCategory>().SeedData();
+			modelBuilder.Entity<MstProductColor>().SeedData();
+			modelBuilder.Entity<AppNewsCategory>().SeedData();
 		}
 	}
 }

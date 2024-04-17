@@ -18,72 +18,21 @@ namespace App.Data.DataSeeders
 				{
 					Id = 1,
 					ColorName = "Red",
+					CssColor = "#FF0000",
 					CreatedDate = now
 				},
 				new MstProductColor
 				{
 					Id = 2,
-					ColorName = "Orange",
+					ColorName = "Black",
+					CssColor = "#000000",
 					CreatedDate = now
 				},
 				new MstProductColor
 				{
 					Id = 3,
-					ColorName = "Yellow",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 4,
-					ColorName = "Greem",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 5,
 					ColorName = "Blue",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 6,
-					ColorName = "Purple",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 7,
-					ColorName = "Pink",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 8,
-					ColorName = "Brown",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 9,
-					ColorName = "White",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 10,
-					ColorName = "Grey",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 11,
-					ColorName = "Black",
-					CreatedDate = now
-				},
-				new MstProductColor
-				{
-					Id = 12,
-					ColorName = "Multi-Color",
+					CssColor = "#0000FF",
 					CreatedDate = now
 				});
 		}

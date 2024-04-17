@@ -27,13 +27,13 @@ namespace App.Web.ViewModels.Account
 
 		[AppRequired]
 		[AppPhone]
-		public string PhoneNumber1 { get; set; }
+		public string PhoneNumber { get; set; }
 
 		[AppRequired]
 		[AppEmail]
 		public string Email { get; set; }
 
-		public byte[] PasswordHash { get; internal set; }
-		public byte[] PasswordSalt { get; internal set; }
+		public byte[]? PasswordHash { get; internal set; }
+		public byte[]? PasswordSalt { get; internal set; }
 	}
 }

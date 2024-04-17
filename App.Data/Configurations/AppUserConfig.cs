@@ -24,7 +24,7 @@ namespace App.Data.Configurations
 			// Tên đăng nhập là varchar, bắt buộc & không trùng lặp
 			builder.Property(m => m.Username)
 				.HasMaxLength(DB.AppUser.USERNAME_LENGTH)
-				.IsUnicode(false)	// varchar (không chứa unicode)
+				.IsUnicode(false)   // varchar (không chứa unicode)
 				.IsRequired();
 			builder.HasIndex(m => m.Username).IsUnique();
 
@@ -47,11 +47,7 @@ namespace App.Data.Configurations
 			builder.Property(m => m.PasswordSalt)
 				.HasMaxLength(DB.AppUser.PWD_LENGTH);
 
-			builder.Property(m => m.PhoneNumber1)
-				.HasMaxLength(DB.AppUser.PHONE_LENGTH)
-				.IsUnicode(false);
-
-			builder.Property(m => m.PhoneNumber2)
+			builder.Property(m => m.PhoneNumber)
 				.HasMaxLength(DB.AppUser.PHONE_LENGTH)
 				.IsUnicode(false);
 

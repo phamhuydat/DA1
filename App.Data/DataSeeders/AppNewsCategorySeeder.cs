@@ -28,11 +28,16 @@ namespace App.Data.DataSeeders
 				},
 				new AppNewsCategory
 				{
-					Title = "Kết hợp",
+					Title = "	Kết hợp",
+					CreatedDate = now
+				},
+				new AppNewsCategory
+				{
+					Title = "Sản phẩm mới",
 					CreatedDate = now
 				}
 			};
-			for(int i = 0; i < dataCategories.Length; i++)
+			for (int i = 0; i < dataCategories.Length; i++)
 			{
 				dataCategories[i].Id = i + 1;
 				dataCategories[i].Slug = dataCategories[i].Title.Slugify();

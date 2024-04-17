@@ -1,0 +1,101 @@
+﻿@model App.Web.ViewModels.Account.RegisterClientVM
+@{
+    ViewData["Title"] = "Register";
+} 
+
+<div class=bg-sg></div>
+<div class=master-wrapper-content>
+    <div class=master-column-wrapper>
+        <div class=center-1>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a asp-action="Index" asp-controller="Home">Trang chủ</a>
+                    <li><span>›</span> <a>Đăng ký</a>
+                </ul>
+            </div>
+            <div class="page registration-page">
+                <div class="page-body">
+                    <div class="customer-blocks" style="display: flex; justify-content: space-between;">
+                        <div class="new-wrapper register-block">
+                            <div class="topic-block">
+                                <div class="topic-block-body">
+                                    <img src="~/ClientTLE/images/uploaded/banner/TND_M402_010 1.jpeg" alt="" width=793 height=467>
+                                </div>
+                            </div>
+                        </div>
+                        <form method=post  asp-controller="Account" asp-action="Register" autocomplete="on">
+                            <div class="fieldset">
+                                <div class="page-title">
+                                    <h1>Đăng ký</h1>
+                                </div>
+                                <div class="form-fields">
+                                    <div class="inputs first_name">
+                                        <label asp-for="FullName" >
+                                            Họ và Tên   
+                                        </label> 
+                                        <input type=text data-val=true
+                                            data-val-required="Trường bắt buộc."  asp-for="FullName"/>  
+                                            <span class="field-validation-valid" asp-validation-for="FullName"></span>
+                                    </div>
+                                    <div class="inputs">
+                                        <label asp-for="Email">E-mail:</label> 
+                                        <input type="email"
+                                            data-val=true data-val-email="Email sai"
+                                             asp-for="Email"> 
+                                        <span class="ield-validation-valid" asp-validation-for="Email"></span>
+                                    </div>
+                                    <div class="inputs">
+                                        <label asp-for="PhoneNumber"> Số điện thoại </label> 
+                                        <input type="tel" data-val="true"
+                                            data-val-required="Trường bắt buộc." asp-for="PhoneNumber"> 
+                                        <span class="field-validation-valid"
+                                              asp-validation-for="PhoneNumber" data-valmsg-replace="true">
+                                        </span>
+                                    </div>
+                                    <div class="inputs">
+                                        <label asp-for="Username">Username:</label>
+                                        <input type="text"
+                                               data-val-required="Tên người dùng là bắt buộc."
+                                               asp-for="Username">
+                                        <span class="field-validation-valid" asp-validation-for="Username"></span>
+                                    </div>
+                                    <div class="fieldset">
+                                        <div class="form-fields">
+                                            <div class="inputs">
+                                                <label asp-for="Password">Mật khẩu:</label>
+                                                <input type="password" data-val-required="Yêu cầu mật khẩu." 
+                                                    asp-for="Password">
+                                                <span class="field-validation-valid"
+                                                    asp-validation-for="Password" 
+                                                    data-valmsg-replace=true>
+                                                </span>
+                                            </div>
+                                            <div class="inputs">
+                                                <label asp-for="ConfirmPwd"> Xác nhận mật khẩu </label> 
+                                                <input type="password"
+                                                    data-val-required="Yêu cầu mật khẩu."
+                                                    asp-for="ConfirmPwd" /> 
+                                                <span class="field-validation-valid" asp-validation-for="ConfirmPwd"
+                                                    data-valmsg-replace=true>
+                                                </span>
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="button-1 register-next-step-button">
+                                                    Đăng ký
+                                                </button>
+                                            </div>
+                                            <div class=buttons-forgot>
+                                                <label> Bạn đã có tài khoản? </label> 
+                                                <a asp-action="Login" asp-controller="Account" class="link_access">đăng nhập ngay</a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

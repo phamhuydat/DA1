@@ -10,3 +10,4 @@ D:\DA1\App.Share\obj\Debug\net8.0\App.Share.dll
 D:\DA1\App.Share\obj\Debug\net8.0\refint\App.Share.dll
 D:\DA1\App.Share\obj\Debug\net8.0\App.Share.pdb
 D:\DA1\App.Share\obj\Debug\net8.0\ref\App.Share.dll
+D:\DA1\App.Share\obj\Debug\net8.0\App.Share.sourcelink.json

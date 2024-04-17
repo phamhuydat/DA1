@@ -15,3 +15,4 @@ D:\DA1\App.Data\obj\Debug\net8.0\refint\App.Data.dll
 D:\DA1\App.Data\obj\Debug\net8.0\App.Data.pdb
 D:\DA1\App.Data\obj\Debug\net8.0\App.Data.genruntimeconfig.cache
 D:\DA1\App.Data\obj\Debug\net8.0\ref\App.Data.dll
+D:\DA1\App.Data\obj\Debug\net8.0\App.Data.sourcelink.json
