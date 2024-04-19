@@ -72,7 +72,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             Address = "91 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ",
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5734),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(1955),
                             GroupName = "Thành Phố Cần Thơ",
                             IdMap = "113.188.249.73"
                         });
@@ -295,28 +295,28 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
                             Slug = "san-pham",
                             Title = "Sản phẩm"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
                             Slug = "bo-suu-tap",
                             Title = "Bộ sưu tập"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
                             Slug = "ket-hop",
                             Title = "	Kết hợp"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5911),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
                             Slug = "san-pham-moi",
                             Title = "Sản phẩm mới"
                         });
@@ -534,21 +534,8 @@ namespace App.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CateLevel")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(5)
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
                     b.Property<string>("CoverImgPath")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("CreatedBy")
                         .HasColumnType("int");
@@ -562,33 +549,10 @@ namespace App.Data.Migrations
                     b.Property<int?>("DisplayOrder")
                         .HasColumnType("int");
 
-                    b.Property<string>("GroupName")
-                        .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
-
-                    b.Property<bool>("HasChild")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
-
-                    b.Property<int?>("ParentCateId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("StampPath")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
 
                     b.Property<int?>("UpdatedBy")
                         .HasColumnType("int");
@@ -597,8 +561,6 @@ namespace App.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ParentCateId");
 
                     b.ToTable("AppProductCategory", (string)null);
                 });
@@ -1445,8 +1407,8 @@ namespace App.Data.Migrations
                             CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "hello@gmail.com",
                             FullName = "Lilocon",
-                            PasswordHash = new byte[] { 247, 56, 71, 154, 194, 7, 194, 156, 247, 48, 131, 200, 7, 51, 105, 101, 76, 26, 117, 98, 32, 173, 145, 232, 23, 130, 40, 22, 201, 108, 1, 213, 160, 65, 248, 52, 16, 195, 139, 254, 175, 96, 215, 26, 149, 164, 212, 114, 238, 24, 139, 172, 93, 230, 216, 229, 123, 72, 205, 125, 170, 54, 131, 61 },
-                            PasswordSalt = new byte[] { 207, 114, 228, 216, 133, 3, 12, 168, 150, 85, 180, 95, 188, 66, 222, 193, 94, 143, 173, 35, 52, 11, 51, 154, 32, 222, 148, 114, 184, 166, 122, 255, 222, 93, 20, 233, 94, 51, 63, 42, 193, 166, 125, 231, 112, 117, 202, 82, 215, 27, 244, 76, 54, 224, 246, 127, 89, 193, 20, 118, 30, 185, 241, 166, 154, 37, 53, 137, 197, 3, 255, 1, 182, 145, 93, 33, 27, 113, 232, 129, 53, 244, 1, 136, 140, 148, 14, 248, 114, 89, 248, 110, 103, 191, 202, 89, 18, 40, 217, 179, 238, 112, 238, 231, 213, 139, 108, 17, 119, 0, 185, 212, 64, 156, 1, 47, 207, 222, 70, 0, 80, 60, 121, 216, 9, 3, 137, 141 },
+                            PasswordHash = new byte[] { 140, 40, 135, 220, 188, 254, 120, 23, 49, 131, 104, 92, 53, 230, 218, 0, 151, 82, 22, 202, 75, 81, 88, 172, 154, 231, 117, 10, 223, 126, 17, 131, 226, 104, 237, 26, 84, 165, 109, 250, 125, 75, 155, 162, 42, 233, 82, 101, 90, 86, 157, 175, 2, 198, 249, 23, 107, 67, 254, 242, 33, 140, 137, 219 },
+                            PasswordSalt = new byte[] { 147, 195, 7, 246, 196, 53, 26, 106, 87, 230, 160, 13, 129, 80, 45, 178, 14, 28, 242, 255, 179, 140, 215, 71, 49, 20, 164, 2, 132, 44, 250, 92, 155, 60, 168, 200, 151, 190, 226, 86, 204, 44, 7, 23, 30, 16, 103, 121, 8, 248, 116, 61, 143, 140, 119, 113, 181, 76, 1, 131, 168, 123, 25, 216, 27, 3, 137, 234, 218, 104, 235, 6, 196, 191, 254, 79, 17, 228, 82, 134, 100, 205, 58, 215, 206, 14, 116, 107, 215, 2, 158, 76, 202, 179, 88, 253, 68, 18, 229, 116, 108, 165, 75, 15, 191, 193, 235, 37, 250, 147, 255, 88, 75, 82, 76, 2, 20, 78, 197, 98, 181, 70, 64, 164, 23, 64, 233, 250 },
                             PhoneNumber = "0928666158",
                             UpdatedBy = -1,
                             UpdatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1536,25 +1498,25 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
                             Name = "Đang xử lý"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
                             Name = "Đang giao hàng"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
                             Name = "Đã giao hàng"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5798),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
                             Name = "Đã từ chối"
                         });
                 });
@@ -2306,11 +2268,14 @@ namespace App.Data.Migrations
                     b.Property<int?>("DisplayOrder")
                         .HasColumnType("int");
 
+                    b.Property<double?>("Inch")
+                        .HasColumnType("float");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("IsMain")
-                        .HasColumnType("int");
+                    b.Property<bool?>("IsMain")
+                        .HasColumnType("bit");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -2334,39 +2299,11 @@ namespace App.Data.Migrations
                     b.Property<int?>("Rom")
                         .HasColumnType("int");
 
-                    b.Property<string>("SEODescription")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("SEOImagePath")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("SEOKeyword")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("SEOTitle")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
                     b.Property<int?>("UpdatedBy")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("inch")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -2454,173 +2391,22 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             ColorName = "Red",
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
                             CssColor = "#FF0000"
                         },
                         new
                         {
                             Id = 2,
                             ColorName = "Black",
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
                             CssColor = "#000000"
                         },
                         new
                         {
                             Id = 3,
                             ColorName = "Blue",
-                            CreatedDate = new DateTime(2024, 4, 17, 13, 49, 7, 772, DateTimeKind.Local).AddTicks(5884),
+                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
                             CssColor = "#0000FF"
-                        });
-                });
-
-            modelBuilder.Entity("App.Data.Entities.SystemEnv", b =>
-                {
-                    b.Property<string>("Key")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Key");
-
-                    b.ToTable("SystemEnv", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Key = "Logo",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "BrandName",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "BrandAddress",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "PrimaryPhone",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SecondaryPhone",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "Facebook",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "Zalo",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "Youtube",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "MessengerEmbeddedCode",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "PrimaryMail",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SecondaryMail",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "AdminReciverMail",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "TaxCode",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SEOTitle",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SEODescription",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SEOKeyword",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "SEOImagePath",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "DefaultImage",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "IconImagePath",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduce",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceTitle",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceContent",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceImage1",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceImage2",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceImage3",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "CompanyIntroduceImage4",
-                            Value = ""
-                        },
-                        new
-                        {
-                            Key = "EmailForOrderInformation",
-                            Value = ""
                         });
                 });
 
@@ -2697,16 +2483,6 @@ namespace App.Data.Migrations
                         .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("App.Data.Entities.AppProductCategory", b =>
-                {
-                    b.HasOne("App.Data.Entities.AppProductCategory", "ParentCategory")
-                        .WithMany("ChildCategories")
-                        .HasForeignKey("ParentCateId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("ParentCategory");
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppRolePermission", b =>
@@ -2793,8 +2569,6 @@ namespace App.Data.Migrations
             modelBuilder.Entity("App.Data.Entities.AppProductCategory", b =>
                 {
                     b.Navigation("AppProducts");
-
-                    b.Navigation("ChildCategories");
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppRole", b =>

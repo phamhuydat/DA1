@@ -1,8 +1,8 @@
-﻿using App.Web.Areas.Admin.ViewModels;
+﻿//using App.Web.Areas.Admin.ViewModels;
 
 namespace App.Web.ViewModels
 {
-	public class SEOBaseVM : ListItemBaseVM
+	public class SEOBaseVM //: ListItemBaseVM
 	{
 		public string SEOTitle { get; set; }
 		public string SEODescription { get; set; }

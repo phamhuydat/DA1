@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Data.Entities.Products
 {
-	public class AppProduct : AppSEOBase
+	public class AppProduct : AppEntityBase
 	{
 		public AppProduct()
 		{
@@ -16,7 +16,6 @@ namespace App.Data.Entities.Products
 		}
 		public string ProductName { get; set; }
 		public string Description { get; set; }
-		public string Slug { get; set; }
 		public decimal Price { get; set; }
 		public decimal? DiscountPrice { get; set; }
 		public DateTime? DiscountFrom { get; set; }
@@ -26,8 +25,8 @@ namespace App.Data.Entities.Products
 		public int? CategoryId { get; set; }
 		public int? Ram {  get; set; }
 		public int? Rom {  get; set; }
-		public int? inch { get; set; }
-		public int? IsMain { get; set; }
+		public double? Inch { get; set; }
+		public bool? IsMain { get; set; }
 		
 		public virtual AppProductCategory ProductCategory { get; set; }
 		public virtual MstProductColor ProductColor { get; set; }

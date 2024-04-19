@@ -1,6 +1,5 @@
 ﻿using App.Data;
 using App.Data.Repositories;
-using App.Web.Services;
 
 namespace App.Web.WebConfig
 {
@@ -11,7 +10,6 @@ namespace App.Web.WebConfig
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddAppService(config);
-            services.AddServicesDependencies();
             //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             return services;

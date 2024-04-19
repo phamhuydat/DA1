@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DA1\\App.Web\\App.Web.csproj": {}
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj": {}
   },
   "projects": {
-    "D:\\DA1\\App.Data\\App.Data.csproj": {
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DA1\\App.Data\\App.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj",
         "projectName": "App.Data",
-        "projectPath": "D:\\DA1\\App.Data\\App.Data.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DA1\\App.Data\\obj\\",
+        "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj",
+        "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DA1\\App.Share\\App.Share.csproj": {
-                "projectPath": "D:\\DA1\\App.Share\\App.Share.csproj"
+              "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {
+                "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj"
               }
             }
           }
@@ -94,21 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DA1\\App.Share\\App.Share.csproj": {
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DA1\\App.Share\\App.Share.csproj",
+        "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj",
         "projectName": "App.Share",
-        "projectPath": "D:\\DA1\\App.Share\\App.Share.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DA1\\App.Share\\obj\\",
+        "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj",
+        "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,21 +160,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DA1\\App.Web\\App.Web.csproj": {
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DA1\\App.Web\\App.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj",
         "projectName": "App.Web",
-        "projectPath": "D:\\DA1\\App.Web\\App.Web.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DA1\\App.Web\\obj\\",
+        "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj",
+        "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,14 +188,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DA1\\App.Data\\App.Data.csproj": {
-                "projectPath": "D:\\DA1\\App.Data\\App.Data.csproj"
+              "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj": {
+                "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj"
               },
-              "D:\\DA1\\App.Share\\App.Share.csproj": {
-                "projectPath": "D:\\DA1\\App.Share\\App.Share.csproj"
+              "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {
+                "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj"
               },
-              "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
-                "projectPath": "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj"
+              "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
+                "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj"
               }
             }
           }
@@ -299,22 +299,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
       "version": "1.3.6",
       "restore": {
-        "projectUniqueName": "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj",
+        "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj",
         "projectName": "elFinder.NetCore",
-        "projectPath": "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DA1\\elFinder.NetCore\\obj\\",
+        "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj",
+        "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -373,7 +373,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

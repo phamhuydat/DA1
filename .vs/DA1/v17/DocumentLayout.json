@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DA1\\",
+  "WorkspaceRootPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|d:\\da1\\app.data\\entities\\appproductcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|solutionrelative:app.data\\entities\\appproductcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|c:\\users\\henry-pham\\documents\\github\\da1\\app.web\\viewmodels\\product\\productdetailclientvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\viewmodels\\product\\productdetailclientvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|c:\\users\\henry-pham\\documents\\github\\da1\\app.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|d:\\da1\\app.data\\dataseeders\\appuserseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|solutionrelative:app.data\\dataseeders\\appuserseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|d:\\da1\\app.data\\dataseeders\\appproductcategoryseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10EB2870-4FFE-44BB-A42E-02B36C388397}|App.Data\\App.Data.csproj|solutionrelative:app.data\\dataseeders\\appproductcategoryseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|c:\\users\\henry-pham\\documents\\github\\da1\\app.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductDetailClientVM.cs",
+              "DocumentMoniker": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\ViewModels\\Product\\ProductDetailClientVM.cs",
+              "RelativeDocumentMoniker": "App.Web\\ViewModels\\Product\\ProductDetailClientVM.cs",
+              "ToolTip": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\ViewModels\\Product\\ProductDetailClientVM.cs",
+              "RelativeToolTip": "App.Web\\ViewModels\\Product\\ProductDetailClientVM.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T03:30:10.412Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppProductCategory.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Data\\Entities\\AppProductCategory.cs",
-              "RelativeDocumentMoniker": "App.Data\\Entities\\AppProductCategory.cs",
-              "ToolTip": "D:\\DA1\\App.Data\\Entities\\AppProductCategory.cs",
-              "RelativeToolTip": "App.Data\\Entities\\AppProductCategory.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA0wB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T06:58:08.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AppUserSeeder.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Data\\DataSeeders\\AppUserSeeder.cs",
-              "RelativeDocumentMoniker": "App.Data\\DataSeeders\\AppUserSeeder.cs",
-              "ToolTip": "D:\\DA1\\App.Data\\DataSeeders\\AppUserSeeder.cs",
-              "RelativeToolTip": "App.Data\\DataSeeders\\AppUserSeeder.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA0wCUAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T06:52:01.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppProductCategorySeeder.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Data\\DataSeeders\\AppProductCategorySeeder.cs",
-              "RelativeDocumentMoniker": "App.Data\\DataSeeders\\AppProductCategorySeeder.cs",
-              "ToolTip": "D:\\DA1\\App.Data\\DataSeeders\\AppProductCategorySeeder.cs",
-              "RelativeToolTip": "App.Data\\DataSeeders\\AppProductCategorySeeder.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowJQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T06:31:01.025Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "App.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "App.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAAACcBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T03:21:38.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "App.Web\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "App.Web\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAA0wDEAAAADAAAA",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "App.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "App.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwBIAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:18:03.897Z",
+              "WhenOpened": "2024-04-17T12:10:03.758Z",
               "EditorCaption": ""
             }
           ]

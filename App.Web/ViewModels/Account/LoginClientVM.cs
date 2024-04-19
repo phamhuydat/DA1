@@ -1,4 +1,5 @@
-﻿using DNews.Shared.Attributes;
+﻿using App.Web.WebConfig;
+using DNews.Shared.Attributes;
 using System.ComponentModel.DataAnnotations;
 
 namespace App.Web.ViewModels.Account
@@ -11,5 +12,6 @@ namespace App.Web.ViewModels.Account
 		[DataType(DataType.Password)]
 		[AppRequired]
 		public string Password { get; set; }
-	}
+		public bool RemeberMe { get; set; }
+    }
 }

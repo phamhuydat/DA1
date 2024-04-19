@@ -20,7 +20,7 @@ namespace App.Data.Configurations.ProductConfigs
 
 			//builder.Property(x => x.View).HasDefaultValue(0);
 			builder.Property(x => x.ProductName).HasMaxLength(DB.AppProduct.PRODUCTNAME_LENGTH);
-			builder.Property(x => x.Slug).HasMaxLength(DB.AppProduct.SLUG_LENGTH);
+			//builder.Property(x => x.Slug).HasMaxLength(DB.AppProduct.SLUG_LENGTH);
 			//builder.Property(x => x.StampPath).HasMaxLength(DB.AppProduct.STAMP_PATH_LENGTH);
 			builder.Property(x => x.ProductCode).HasMaxLength(DB.AppProduct.PRODUCT_CODE_LENGTH);
 

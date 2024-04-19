@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DA1\\App.Share\\App.Share.csproj": {}
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {}
   },
   "projects": {
-    "D:\\DA1\\App.Share\\App.Share.csproj": {
+    "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DA1\\App.Share\\App.Share.csproj",
+        "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj",
         "projectName": "App.Share",
-        "projectPath": "D:\\DA1\\App.Share\\App.Share.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DA1\\App.Share\\obj\\",
+        "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj",
+        "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

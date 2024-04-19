@@ -3,7 +3,6 @@ using App.Data.Entities.Products;
 using App.Data.Repositories;
 using App.Share.Consts;
 using App.Share.Extensions;
-using App.Web.Areas.Admin.ViewModels.Product;
 using App.Web.Common;
 using App.Web.ViewModels.News;
 using App.Web.ViewModels.Product;
@@ -41,19 +40,26 @@ namespace App.Web.Controllers
 			var data = (await _repository
 			.GetAll<AppProduct>()
 					.Where(s => s.IsActive == true && s.DeletedDate == null)
-					.ProjectTo<ProductListVM>(AutoMapperProfile.ProductClientConf)
 					.OrderByDescending(m => m.DisplayOrder)
 					.ThenByDescending(m => m.Id)
-					.ToPagedListAsync(page, size))
-					.GenRowIndex();
+					.ToListAsync());
+
 			return View(data);
 		}
 
-		public IActionResult ProductDetail(int id)
+		public async Task<IActionResult> ListProduct(string CategoryId)
 		{
 
 			return View();
 		}
+
+		public IActionResult ProductDetail(string ProductId)
+		{
+
+			return View();
+		}
+
+
 
 	}
 }
