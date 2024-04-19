@@ -19,7 +19,6 @@ namespace App.Data
 		public DbSet<AppBranch> AppBranchs { get; set; } // dai chi cua hang
 		public DbSet<AppPolicy> AppPolicies { get; set; }
 		public DbSet<AppSlider> AppSliders { get; set; }
-		public DbSet<SystemEnv> SystemEnvs { get; set; }
 		public DbSet<MstOrderStatus> MstOrderStatus { get; set; }
 		public DbSet<AppVerifyCode> AppVerifyCodes { get; set; }
 		public DbSet<AppNewsCategory> AppNewsCategories { get; set; }
@@ -42,7 +41,6 @@ namespace App.Data
 			modelBuilder.ApplyConfiguration(new AppBranchConfig());
 			modelBuilder.ApplyConfiguration(new AppPolicyConfig());
 			modelBuilder.ApplyConfiguration(new AppSliderConfig());
-			modelBuilder.ApplyConfiguration(new SystemEnvConfig());
 			modelBuilder.ApplyConfiguration(new MstOrderStatusConfig());
 			modelBuilder.ApplyConfiguration(new AppVerifyCodeConfig());
 			modelBuilder.ApplyConfiguration(new AppNewsCategoryConfig());
@@ -64,7 +62,6 @@ namespace App.Data
 			modelBuilder.Entity<AppBranch>().SeedData();
 			//modelBuilder.Entity<AppProductCategory>().SeedData();
 			modelBuilder.Entity<MstOrderStatus>().SeedData();
-			modelBuilder.Entity<SystemEnv>().SeedData();
 
 			modelBuilder.Entity<MstProductColor>().SeedData();
 			modelBuilder.Entity<AppNewsCategory>().SeedData();

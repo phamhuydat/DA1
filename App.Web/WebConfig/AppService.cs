@@ -45,11 +45,6 @@ namespace App.Web.WebConfig
 			mailConfig.LoadFromConfig(Configuration);
 			services.AddSingleton(mailConfig);
 
-			// Khởi tạo SystemEnv
-			SystemEnvironment sysEnv = new(db);
-			sysEnv.LoadSysEnv();
-			services.AddSingleton(sysEnv);
-
 			services.AddNotyf(config =>
 			{
 				config.DurationInSeconds = 10;

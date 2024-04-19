@@ -81,11 +81,12 @@ namespace App.Web.Controllers
 						};
 			var claimsIdentity = new ClaimsIdentity(claims, AppConst.COOKIES_AUTH);
 			var principal = new ClaimsPrincipal(claimsIdentity);
-			var authenPropeties = new AuthenticationProperties()
-			{
-				ExpiresUtc = DateTime.UtcNow.AddHours(AppConst.LOGIN_TIMEOUT),
-				IsPersistent = true
-			};
+            var authenPropeties = new AuthenticationProperties()
+            {
+                ExpiresUtc = DateTime.UtcNow.AddHours(AppConst.LOGIN_TIMEOUT),
+                IsPersistent = model.RemeberMe
+            };
+
 			await HttpContext.SignInAsync(AppConst.COOKIES_AUTH, principal, authenPropeties);
 
 			CreateDirIfNotExist(model.Username);

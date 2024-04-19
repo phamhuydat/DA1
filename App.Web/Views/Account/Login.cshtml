@@ -9,7 +9,7 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a asp-action="Index" asp-controller="Home">Trang chủ</a>
-                    <li><span>›</span> <a href="">Đăng nhập</a>
+                    <li><span> &nbsp;  ›  &nbsp;</span> <a style="color: blue">Đăng nhập</a>
                 </ul>
             </div>
             <div class="page login-page">
@@ -45,9 +45,7 @@
                                         <span class="field-validation-valid" asp-validation-for="Password" data-valmsg-replace=true></span>
                                     </div>
                                     <div class="inputs reversed">
-                                        <input type="checkbox" data-val=true
-                                               data-val-required="The Nhớ mật khẩu field is required."
-                                                name=RememberMe value=true /> 
+                                        <input type="checkbox" asp-for="RemeberMe" />
                                         <label for=RememberMe>Nhơ mật khẩu</label> <span class="forgot-password">
                                             <a href="/">
                                                 Quên mật khẩu?
