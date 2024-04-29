@@ -8711,19 +8711,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Henry-Pham\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj",
+      "projectUniqueName": "D:\\DA1\\App.Web\\App.Web.csproj",
       "projectName": "App.Web",
-      "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\App.Web.csproj",
-      "packagesPath": "C:\\Users\\Henry-Pham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\obj\\",
+      "projectPath": "D:\\DA1\\App.Web\\App.Web.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "D:\\DA1\\App.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Henry-Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8737,14 +8737,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj": {
-              "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Data\\App.Data.csproj"
+            "D:\\DA1\\App.Data\\App.Data.csproj": {
+              "projectPath": "D:\\DA1\\App.Data\\App.Data.csproj"
             },
-            "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj": {
-              "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Share\\App.Share.csproj"
+            "D:\\DA1\\App.Share\\App.Share.csproj": {
+              "projectPath": "D:\\DA1\\App.Share\\App.Share.csproj"
             },
-            "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
-              "projectPath": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj"
+            "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj": {
+              "projectPath": "D:\\DA1\\elFinder.NetCore\\elFinder.NetCore.csproj"
             }
           }
         }
@@ -8848,7 +8848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

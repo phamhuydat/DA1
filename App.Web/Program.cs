@@ -15,7 +15,6 @@ builder.Services.AddDbContext<WebAppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Database"));
 });
 
-builder.Services.AddSession();
 
 builder.Services.AddApplicationServices(builder.Configuration);
 
@@ -32,9 +31,28 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
+app.UseSession();
+app.UseHttpsRedirection();
 
+app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapAreaControllerRoute(
+    name: "Admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
+);
+app.MapControllerRoute(
+    name: "login",
+    pattern: "/login",
+    defaults: new
+    {
+        controller = "Account",
+        action = "Login"
+    }
+);
+
 
 app.MapControllerRoute(
     name: "default",

@@ -72,7 +72,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             Address = "91 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ",
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(1955),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9547),
                             GroupName = "Thành Phố Cần Thơ",
                             IdMap = "113.188.249.73"
                         });
@@ -295,28 +295,28 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9729),
                             Slug = "san-pham",
                             Title = "Sản phẩm"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9729),
                             Slug = "bo-suu-tap",
                             Title = "Bộ sưu tập"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9729),
                             Slug = "ket-hop",
                             Title = "	Kết hợp"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2197),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9729),
                             Slug = "san-pham-moi",
                             Title = "Sản phẩm mới"
                         });
@@ -533,9 +533,6 @@ namespace App.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CoverImgPath")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("CreatedBy")
                         .HasColumnType("int");
@@ -1272,6 +1269,9 @@ namespace App.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("CreatedBy")
                         .HasColumnType("int");
 
@@ -1307,6 +1307,8 @@ namespace App.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("AppSlider", (string)null);
                 });
@@ -1407,8 +1409,8 @@ namespace App.Data.Migrations
                             CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "hello@gmail.com",
                             FullName = "Lilocon",
-                            PasswordHash = new byte[] { 140, 40, 135, 220, 188, 254, 120, 23, 49, 131, 104, 92, 53, 230, 218, 0, 151, 82, 22, 202, 75, 81, 88, 172, 154, 231, 117, 10, 223, 126, 17, 131, 226, 104, 237, 26, 84, 165, 109, 250, 125, 75, 155, 162, 42, 233, 82, 101, 90, 86, 157, 175, 2, 198, 249, 23, 107, 67, 254, 242, 33, 140, 137, 219 },
-                            PasswordSalt = new byte[] { 147, 195, 7, 246, 196, 53, 26, 106, 87, 230, 160, 13, 129, 80, 45, 178, 14, 28, 242, 255, 179, 140, 215, 71, 49, 20, 164, 2, 132, 44, 250, 92, 155, 60, 168, 200, 151, 190, 226, 86, 204, 44, 7, 23, 30, 16, 103, 121, 8, 248, 116, 61, 143, 140, 119, 113, 181, 76, 1, 131, 168, 123, 25, 216, 27, 3, 137, 234, 218, 104, 235, 6, 196, 191, 254, 79, 17, 228, 82, 134, 100, 205, 58, 215, 206, 14, 116, 107, 215, 2, 158, 76, 202, 179, 88, 253, 68, 18, 229, 116, 108, 165, 75, 15, 191, 193, 235, 37, 250, 147, 255, 88, 75, 82, 76, 2, 20, 78, 197, 98, 181, 70, 64, 164, 23, 64, 233, 250 },
+                            PasswordHash = new byte[] { 202, 170, 50, 175, 116, 34, 93, 150, 64, 48, 127, 59, 221, 192, 79, 79, 78, 73, 91, 168, 127, 124, 29, 245, 57, 17, 0, 63, 37, 18, 215, 167, 186, 137, 34, 20, 185, 142, 202, 60, 195, 147, 66, 47, 119, 227, 156, 38, 113, 186, 251, 239, 11, 219, 146, 229, 117, 59, 145, 113, 119, 46, 197, 118 },
+                            PasswordSalt = new byte[] { 229, 230, 1, 108, 23, 134, 145, 12, 200, 55, 189, 56, 47, 169, 189, 179, 123, 35, 67, 45, 183, 28, 225, 97, 111, 112, 44, 83, 199, 69, 165, 103, 14, 118, 99, 70, 243, 28, 15, 37, 67, 3, 87, 40, 137, 229, 35, 47, 247, 204, 193, 158, 235, 150, 85, 172, 215, 152, 57, 161, 36, 189, 254, 220, 7, 170, 132, 80, 217, 134, 134, 76, 239, 35, 230, 107, 187, 60, 31, 98, 5, 106, 95, 81, 63, 254, 206, 120, 137, 70, 180, 46, 229, 25, 181, 12, 73, 225, 202, 51, 79, 37, 199, 123, 135, 69, 153, 192, 138, 35, 25, 146, 71, 51, 249, 30, 104, 233, 193, 184, 90, 254, 246, 49, 155, 137, 106, 134 },
                             PhoneNumber = "0928666158",
                             UpdatedBy = -1,
                             UpdatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1498,25 +1500,25 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9650),
                             Name = "Đang xử lý"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9650),
                             Name = "Đang giao hàng"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9650),
                             Name = "Đã giao hàng"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2081),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9650),
                             Name = "Đã từ chối"
                         });
                 });
@@ -1851,42 +1853,6 @@ namespace App.Data.Migrations
                             Desc = "Xóa màu sản phẩm",
                             GroupName = "Quản lý màu sắc sản phẩm",
                             Table = "MstProductColor"
-                        },
-                        new
-                        {
-                            Id = 1801,
-                            Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Desc = "Xem danh sách size",
-                            GroupName = "Quản lý size sản phẩm",
-                            Table = "MstProductSize"
-                        },
-                        new
-                        {
-                            Id = 1802,
-                            Code = "CREATE",
-                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Desc = "Thêm size",
-                            GroupName = "Quản lý size sản phẩm",
-                            Table = "MstProductSize"
-                        },
-                        new
-                        {
-                            Id = 1803,
-                            Code = "UPDATE",
-                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Desc = "Sửa size",
-                            GroupName = "Quản lý size sản phẩm",
-                            Table = "MstProductSize"
-                        },
-                        new
-                        {
-                            Id = 1804,
-                            Code = "DELETE",
-                            CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Desc = "Xóa size",
-                            GroupName = "Quản lý size sản phẩm",
-                            Table = "MstProductSize"
                         },
                         new
                         {
@@ -2256,6 +2222,58 @@ namespace App.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int?>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("AppProduct", (string)null);
+                });
+
+            modelBuilder.Entity("App.Data.Entities.Products.AppProductDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CPU")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ColorId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime?>("DiscountFrom")
                         .HasColumnType("datetime2");
 
@@ -2268,11 +2286,11 @@ namespace App.Data.Migrations
                     b.Property<int?>("DisplayOrder")
                         .HasColumnType("int");
 
-                    b.Property<double?>("Inch")
-                        .HasColumnType("float");
+                    b.Property<string>("GPU")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                    b.Property<int>("InStock")
+                        .HasColumnType("int");
 
                     b.Property<bool?>("IsMain")
                         .HasColumnType("bit");
@@ -2280,23 +2298,16 @@ namespace App.Data.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("ProductCode")
-                        .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
-
-                    b.Property<int>("ProductColorId")
+                    b.Property<int?>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<string>("Ram")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Ram")
-                        .HasColumnType("int");
+                    b.Property<string>("Rom")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Rom")
+                    b.Property<int>("Sold")
                         .HasColumnType("int");
 
                     b.Property<int?>("UpdatedBy")
@@ -2307,11 +2318,11 @@ namespace App.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("ColorId");
 
-                    b.HasIndex("ProductColorId");
+                    b.HasIndex("ProductId");
 
-                    b.ToTable("AppProduct", (string)null);
+                    b.ToTable("AppProductDetail", (string)null);
                 });
 
             modelBuilder.Entity("App.Data.Entities.Products.AppProductImage", b =>
@@ -2338,6 +2349,9 @@ namespace App.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
+
+                    b.Property<bool?>("IsMobile")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
@@ -2391,21 +2405,21 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             ColorName = "Red",
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9682),
                             CssColor = "#FF0000"
                         },
                         new
                         {
                             Id = 2,
                             ColorName = "Black",
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9682),
                             CssColor = "#000000"
                         },
                         new
                         {
                             Id = 3,
                             ColorName = "Blue",
-                            CreatedDate = new DateTime(2024, 4, 17, 17, 52, 41, 646, DateTimeKind.Local).AddTicks(2147),
+                            CreatedDate = new DateTime(2024, 4, 28, 11, 17, 33, 896, DateTimeKind.Local).AddTicks(9682),
                             CssColor = "#0000FF"
                         });
                 });
@@ -2465,14 +2479,14 @@ namespace App.Data.Migrations
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.NoAction);
 
-                    b.HasOne("App.Data.Entities.Products.AppProduct", "AppProduct")
+                    b.HasOne("App.Data.Entities.Products.AppProductDetail", "AppProdcutDetail")
                         .WithMany("AppOrderDetails")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("AppOrder");
 
-                    b.Navigation("AppProduct");
+                    b.Navigation("AppProdcutDetail");
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppPolicy", b =>
@@ -2504,6 +2518,16 @@ namespace App.Data.Migrations
                     b.Navigation("MstPermission");
                 });
 
+            modelBuilder.Entity("App.Data.Entities.AppSlider", b =>
+                {
+                    b.HasOne("App.Data.Entities.AppProductCategory", "ProductCategory")
+                        .WithMany("AppSlider")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("ProductCategory");
+                });
+
             modelBuilder.Entity("App.Data.Entities.AppUser", b =>
                 {
                     b.HasOne("App.Data.Entities.AppRole", "AppRole")
@@ -2525,20 +2549,29 @@ namespace App.Data.Migrations
 
             modelBuilder.Entity("App.Data.Entities.Products.AppProduct", b =>
                 {
-                    b.HasOne("App.Data.Entities.AppProductCategory", "ProductCategory")
+                    b.HasOne("App.Data.Entities.AppProductCategory", "AppProdcutCategory")
                         .WithMany("AppProducts")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.NoAction);
 
-                    b.HasOne("App.Data.Entities.Products.MstProductColor", "ProductColor")
-                        .WithMany("AppProducts")
-                        .HasForeignKey("ProductColorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("AppProdcutCategory");
+                });
 
-                    b.Navigation("ProductCategory");
+            modelBuilder.Entity("App.Data.Entities.Products.AppProductDetail", b =>
+                {
+                    b.HasOne("App.Data.Entities.Products.MstProductColor", "MstProductColor")
+                        .WithMany("AppProdcutDetails")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.NoAction);
 
-                    b.Navigation("ProductColor");
+                    b.HasOne("App.Data.Entities.Products.AppProduct", "AppProduct")
+                        .WithMany("AppProductDetails")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("AppProduct");
+
+                    b.Navigation("MstProductColor");
                 });
 
             modelBuilder.Entity("App.Data.Entities.Products.AppProductImage", b =>
@@ -2569,6 +2602,8 @@ namespace App.Data.Migrations
             modelBuilder.Entity("App.Data.Entities.AppProductCategory", b =>
                 {
                     b.Navigation("AppProducts");
+
+                    b.Navigation("AppSlider");
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppRole", b =>
@@ -2603,14 +2638,19 @@ namespace App.Data.Migrations
 
             modelBuilder.Entity("App.Data.Entities.Products.AppProduct", b =>
                 {
-                    b.Navigation("AppOrderDetails");
+                    b.Navigation("AppProductDetails");
 
                     b.Navigation("AppProductImages");
                 });
 
+            modelBuilder.Entity("App.Data.Entities.Products.AppProductDetail", b =>
+                {
+                    b.Navigation("AppOrderDetails");
+                });
+
             modelBuilder.Entity("App.Data.Entities.Products.MstProductColor", b =>
                 {
-                    b.Navigation("AppProducts");
+                    b.Navigation("AppProdcutDetails");
                 });
 #pragma warning restore 612, 618
         }

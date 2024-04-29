@@ -1,1243 +1,1915 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\App.Web.bundle.scp.css",
+      "Id": "D:\\DA1\\App.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\App.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\App.Web.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\css\\style.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\css\\style.css",
       "PackagePath": "staticwebassets\\ClientTLE\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\us.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\us.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\flags\\us.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\vn.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\vn.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\flags\\vn.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\thumbs\\0012445_Logo_ShopDunk.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\thumbs\\0012445_Logo_ShopDunk.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\thumbs\\0012445_Logo_ShopDunk.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\Trang chủ\\Bocongthuong.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\Trang chủ\\Bocongthuong.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\Trang chủ\\Bocongthuong.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\IC_home.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\IC_home.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\IC_home.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\News.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\News.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\News.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Shop.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Shop.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\Shop.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Top.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\Top.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\Top.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\arrow-down.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\arrow-down.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\arrow-down.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\bottom-flash-sale.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\bottom-flash-sale.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\bottom-flash-sale.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\cart-icon.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\cart-icon.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\cart-icon.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\fixed.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\fixed.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\fixed.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\hotline.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\hotline.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\hotline.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\ic_messenger.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\ic_messenger.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\ic_messenger.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\icon-footer123.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\icon-footer123.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\icon-footer123.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\login.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\login.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\login.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\nav-menu-mobile.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\nav-menu-mobile.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\nav-menu-mobile.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\play-button.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\play-button.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\remove-cart.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\remove-cart.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Custom.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon-gif\\best-offer.gif",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon-gif\\best-offer.gif"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon-gif\\login.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon-gif\\login.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon-gif\\write.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon-gif\\write.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\tích tròn (1).jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\tích tròn (1).jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Cart_Custom.js",
+      "PackagePath": "staticwebassets\\ClientTLE\\js\\Cart_Custom.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Custom.js",
       "PackagePath": "staticwebassets\\ClientTLE\\js\\Custom.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Footer.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Footer.js",
       "PackagePath": "staticwebassets\\ClientTLE\\js\\Footer.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Head.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Head.js",
       "PackagePath": "staticwebassets\\ClientTLE\\js\\Head.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\cart.js",
+      "PackagePath": "staticwebassets\\ClientTLE\\js\\cart.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",
       "PackagePath": "staticwebassets\\Images\\Avatar\\default.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\Images\\logo.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\adminlte.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\adminlte.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\adminlte.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\adminlte.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\adminlte.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.components.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.components.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.components.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.core.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.core.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.core.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.extra-components.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.pages.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.pages.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.pages.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.plugins.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app-rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app-rtl.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\app-rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app-rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app-rtl.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\app-rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\app.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\app.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\app.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap-rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap-rtl.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\bootstrap-rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap-rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap-rtl.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\bootstrap-rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom-rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom-rtl.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\custom-rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom-rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom-rtl.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\custom-rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\custom.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\custom.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\custom.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\custom.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\icons.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\icons.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\css\\icons.min.css.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\css\\icons.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\.eslintrc.json",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\.eslintrc.json",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\.eslintrc.json"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\adminlte.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.js.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\adminlte.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.min.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\adminlte.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.min.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\adminlte.min.js.map",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\adminlte.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\app.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\app.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\app.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\layout.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\layout.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\layout.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\animation-aos.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\animation-aos.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\animation-aos.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-area.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-area.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-area.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-bar.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-bar.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-bar.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-boxplot.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-boxplot.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-boxplot.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-bubble.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-bubble.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-bubble.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-candlestick.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-candlestick.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-candlestick.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-column.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-column.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-column.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-heatmap.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-heatmap.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-heatmap.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-line.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-line.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-line.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-mixed.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-mixed.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-mixed.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-pie.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-pie.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-pie.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-polararea.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-polararea.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-polararea.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-radar.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-radar.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-radar.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-radialbar.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-radialbar.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-radialbar.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-scatter.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-scatter.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-scatter.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-timeline.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-timeline.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-timeline.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-treemap.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apexcharts-treemap.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apexcharts-treemap.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-auction.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-auction.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apps-nft-auction.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-create.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-create.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apps-nft-create.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-explore.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-explore.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apps-nft-explore.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-item-details.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-item-details.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apps-nft-item-details.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-ranking.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\apps-nft-ranking.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\apps-nft-ranking.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\calendar.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\calendar.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\calendar.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\card.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\card.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\card.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\chartjs.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\chartjs.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\chartjs.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\chat.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\chat.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\chat.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\coming-soon.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\coming-soon.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\coming-soon.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-companies.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-companies.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crm-companies.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-contact.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-contact.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crm-contact.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-deals.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-deals.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crm-deals.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-leads.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crm-leads.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crm-leads.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-buy-sell.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-buy-sell.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crypto-buy-sell.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-kyc.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-kyc.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crypto-kyc.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-orders.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-orders.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crypto-orders.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-transactions.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-transactions.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crypto-transactions.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-wallet.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\crypto-wallet.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\crypto-wallet.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-analytics.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-analytics.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-analytics.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-crm.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-crm.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-crm.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-crypto.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-crypto.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-crypto.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-ecommerce.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-ecommerce.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-ecommerce.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-nft.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-nft.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-nft.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-projects.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard-projects.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard-projects.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard2.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard2.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard2.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard3.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\dashboard3.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\dashboard3.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\datatables.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\datatables.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\datatables.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\echarts.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\echarts.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\echarts.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-cart.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-cart.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-cart.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-customer-list.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-customer-list.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-customer-list.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-order.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-order.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-order.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-checkout.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-checkout.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-product-checkout.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-create.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-create.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-product-create.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-details.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-details.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-product-details.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-list.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ecommerce-product-list.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ecommerce-product-list.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\file-manager.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\file-manager.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\file-manager.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\flag-input.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\flag-input.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\flag-input.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-advanced.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-advanced.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-advanced.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-editor.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-editor.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-editor.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-file-upload.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-file-upload.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-file-upload.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-input-spin.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-input-spin.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-input-spin.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-masks.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-masks.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-masks.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-pickers.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-pickers.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-pickers.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-validation.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-validation.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-validation.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-wizard.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\form-wizard.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\form-wizard.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gallery.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gallery.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\gallery.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gmaps.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gmaps.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\gmaps.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gridjs.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\gridjs.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\gridjs.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoicecreate.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoicecreate.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\invoicecreate.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoicedetails.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoicedetails.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\invoicedetails.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoiceslist.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\invoiceslist.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\invoiceslist.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\landing.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\landing.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\landing.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\leaflet-map.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\leaflet-map.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\leaflet-map.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\leaflet-us-states.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\leaflet-us-states.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\leaflet-us-states.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\listjs.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\listjs.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\listjs.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\mailbox.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\mailbox.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\mailbox.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\materialdesign.list.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\materialdesign.list.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\materialdesign.list.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\modal.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\modal.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\modal.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\nestable.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\nestable.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\nestable.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\nft-landing.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\nft-landing.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\nft-landing.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\notifications.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\notifications.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\notifications.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\particles.app.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\particles.app.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\particles.app.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\passowrd-create.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\passowrd-create.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\passowrd-create.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\password-addon.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\password-addon.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\password-addon.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\plugins\\jsonfull-emoji-list.json",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\plugins\\jsonfull-emoji-list.json",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\plugins\\jsonfull-emoji-list.json"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\plugins\\lord-icon-2.1.0.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\plugins\\lord-icon-2.1.0.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\plugins\\lord-icon-2.1.0.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\pricing.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\pricing.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\pricing.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\profile-setting.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\profile-setting.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\profile-setting.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\profile.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\profile.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\profile.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-create.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-create.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\project-create.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-list.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-list.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\project-list.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-overview.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\project-overview.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\project-overview.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\range-sliders.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\range-sliders.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\range-sliders.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\rating.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\rating.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\rating.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\remix-icons-listing.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\remix-icons-listing.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\remix-icons-listing.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\search-result.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\search-result.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\search-result.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\select2.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\select2.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\select2.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\seller-details.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\seller-details.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\seller-details.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\sellers.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\sellers.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\sellers.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\sweetalerts.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\sweetalerts.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\sweetalerts.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\swiper.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\swiper.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\swiper.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tasks-kanban.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tasks-kanban.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\tasks-kanban.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tasks-list.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tasks-list.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\tasks-list.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\team.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\team.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\team.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ticketdetail.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ticketdetail.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ticketdetail.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ticketlist.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\ticketlist.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\ticketlist.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\timeline.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\timeline.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\timeline.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\todo.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\todo.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\todo.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tour.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\tour.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\tour.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\two-step-verification.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\two-step-verification.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\two-step-verification.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\vector-maps.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\vector-maps.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\vector-maps.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\widgets.init.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\pages\\widgets.init.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\pages\\widgets.init.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\plugins.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\dist\\js\\plugins.js",
       "PackagePath": "staticwebassets\\adminTLE\\dist\\js\\plugins.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\all.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\all.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\all.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\all.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\all.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\all.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\brands.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\brands.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\brands.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\brands.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\brands.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\brands.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\fontawesome.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\regular.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\regular.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\regular.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\regular.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\regular.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\regular.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\solid.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\solid.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\solid.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\solid.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\solid.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\solid.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\svg-with-js.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\css\\v4-shims.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\LICENSE",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\icheck-bootstrap"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\favicon.ico",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.min.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.var.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\index.var.min.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\index.var.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.min.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.var.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\modern.var.min.js",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\modern.var.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.css",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\style.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\awesome-notifications\\style.min.css",
       "PackagePath": "staticwebassets\\lib\\awesome-notifications\\style.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_code.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_code.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_custom-forms.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_input-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_input-group.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_jumbotron.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_media.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_media.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_print.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_print.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_float.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_size.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_align.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_background.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_display.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_float.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_interactions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_interactions.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_position.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_text.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-migrate\\jquery-migrate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-migrate\\jquery-migrate.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-migrate\\jquery-migrate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-migrate\\jquery-migrate.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-migrate\\jquery-migrate.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery-migrate\\jquery-migrate.min.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\AjaxLoader.gif",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\AjaxLoader.gif",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\AjaxLoader.gif"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\grabbing.png",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\grabbing.png",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\grabbing.png"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.theme.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.theme.min.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.theme.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.transitions.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\owl-carousel\\owl.transitions.min.css",
       "PackagePath": "staticwebassets\\lib\\owl-carousel\\owl.transitions.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\ajax-loader.gif",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\ajax-loader.gif"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.eot",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.eot"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.svg",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.svg",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.svg"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.ttf",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.ttf"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.woff",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\fonts\\slick.woff"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.css",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick-theme.min.css.map",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick-theme.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.css",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.js",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.js"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.css"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css.map",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.css.map",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Henry-Pham\\Documents\\GitHub\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.js",
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\slick-carousel\\slick.min.js",
       "PackagePath": "staticwebassets\\lib\\slick-carousel\\slick.min.js"
     },
     {

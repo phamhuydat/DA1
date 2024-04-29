@@ -1,0 +1,568 @@
+﻿@model App.Web.ViewModels.Product.ProductDetailClientVM
+
+@{
+    ViewData["Title"] = "Danh mục sản phẩm" + ViewBag.CategoryName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    <link href="~/lib/slick-carousel/slick.min.css" rel="stylesheet" />
+    <link href="~/lib/slick-carousel/slick-theme.min.css" rel="stylesheet" />
+}
+
+<div class="bg-sg"></div>
+<div id="show_image_popup">
+    <div class="close-btn-area">
+        <button id="close-img-btn" title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </div>
+    <img id="large-image" src="" alt="">
+</div>
+
+<div class="master-wrapper-content">
+    <div class="master-column-wrapper">
+        @* url link *@
+        <div class="breadcrumb">
+            <ul>
+                <li>
+                    <span>
+                        <a asp-action="Index" asp-controller="Home">
+                            <span>Trang chủ</span>
+                        </a>
+                    </span>
+                    <span class="delimiter">&#x203A;</span>
+                </li>
+                <li>
+                    <a asp-action="" asp-controller="">
+                        <span>Mac</span>
+                    </a>
+                    <span>&#x203A;</span>
+                </li>
+
+                <li>
+                    <a asp-action="" asp-controller="">
+                        <span>MacBook Air</span>
+                    </a>
+                    <span class=delimiter>&#x203A;</span>
+                </li>
+
+                <li>
+
+                    <strong>MacBook Air M3 15 inch</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="center-1">
+            <!--product breadcrumb-->
+            <div class="page product-details-page">
+                <div class="page-body">
+                       
+                    <div id="product-details-form">
+                        <div class="product-essential" style="position:relative">
+                            @if(Model.AppProductImages.Count() > 0)
+                            {
+                                <div  class="gallery_sticky">
+                                    <div class="gallery">
+                                    <div class="picture" id="slick-slide">
+                                        <a id="main-product-img-lightbox-anchor-70">
+                                                <img src="@Model.AppProductImages.First().ImagePath"
+                                                    alt="" id="main-product-img-70" />
+                                        </a>
+                                    </div>
+
+                                        <div class="slick slideshow picture-thumbs" id="slick">
+                                            @foreach (var itemImg in Model.AppProductImages)
+                                            {
+                                                <div class="thumb-item">
+                                                    <img src="@itemImg.ImagePath"
+                                                         data-defaultsize= "@itemImg.ImagePath"/>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <!--product pictures-->
+                          
+                            <div class="overview" style="margin-bottom: 0"></div>
+                            <div class="overview">
+                                <div class="wrapper-info">
+                                    <div class="product-name">
+                                        <h1>
+                                            <span class="main-name">@Model.ProductName</span>
+                                            <span class="product-name-variant"></span>
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <!-- flash sale-->
+                                <!--price product-->
+                                <div class="prices">
+                                    <div style="display: flex;">
+                                        <div class="product-price">
+                                            <span class="new-price"> @Model.DiscountPrice?.ToString("#,0")₫</span>
+                                        </div>
+                                        <div class="old-product-price">
+                                            <span id="old-price-val">@Model.Price.ToString("#,0")₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- quantity flash sale-->
+                                <!--attributes-->
+                                <div class="attributes">
+                                    <dl>
+                                        <dt>
+                                            <label class="text-prompt">
+                                                dung lượng
+                                            </label>
+                                            <span class="label-value">128GB</span>
+                                        </dt>
+                                        <dd id="product_attribute_input_3859">
+                                            <ul class="option-list darkcontrols">
+                                                <li>
+                                                    <a>
+                                                        <label class="checked-attr">128GB</label>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </dd>
+
+                                        <dt id="product_attribute_label_3860" class=''>
+                                            <label class="text-prompt">
+                                               Màu sắc
+                                            </label>
+                                            <span class="label-value" id="label_val_3860">Màu đen</span>
+                                        </dt>
+
+                                        <dd id="product_attribute_input_3860">
+                                            <ul data-attr="3860" class="option-list attribute-squares color-squares"
+                                                id="color-squares-3860">
+                                                <li data-attr-value="9049" class="selected-value">
+                                                    <label for="product_attribute_3860_9049">
+                                                        <span class="attribute-square-container">
+                                                            <span class="attribute-square"
+                                                                  style="background-color:#191D20;">&nbsp;</span>
+                                                        </span>
+                                                        <input id="product_attribute_3860_9049" type="radio" name="product_attribute_3860"
+                                                               value="9049" checked="checked" onclick="showHideRadioQuantity(null,'Đen')" />
+                                                    </label>
+
+                                                    <div class="tooltip-container">
+                                                        <div class="not-available-text">Không có sẵn</div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-attr-value="9045">
+                                                    <label for="product_attribute_3860_9045">
+                                                        <span class="attribute-square-container" title="H&#x1ED3;ng">
+                                                            <span class="attribute-square" title="H&#x1ED3;ng"
+                                                                  style="background-color:#efcfd2;">&nbsp;</span>
+                                                        </span>
+
+                                                        <input id="product_attribute_3860_9045" type="radio" name="product_attribute_3860"
+                                                               value="9045" onclick="showHideRadioQuantity(null,'Hồng')" />
+                                                    </label>
+                                                    <div class="tooltip-container">
+                                                        <div class="not-available-text">Không có sẵn</div>
+                                                    </div>
+                                                </li>
+
+                                                <li data-attr-value="9046">
+                                                    <label for="product_attribute_3860_9046">
+                                                        <span class="attribute-square-container" title="V&#xE0;ng">
+                                                            <span class="attribute-square" title="V&#xE0;ng"
+                                                                  style="background-color:#e9dfa7;">&nbsp;</span>
+                                                        </span>
+                                                        <input id="product_attribute_3860_9046" type="radio" name="product_attribute_3860"
+                                                               value="9046" onclick="showHideRadioQuantity(null,'Vàng')" />
+                                                    </label>
+                                                    <div class="tooltip-container">
+                                                        <div class="not-available-text">Không có sẵn</div>
+                                                    </div>
+                                                </li>
+                                                <li data-attr-value="9047">
+                                                    <label for="product_attribute_3860_9047">
+                                                        <span class="attribute-square-container" title="Xanh L&#xE1;">
+                                                            <span class="attribute-square" title="Xanh L&#xE1;"
+                                                                  style="background-color:#b5d999;">&nbsp;</span>
+                                                        </span>
+                                                        <input id="product_attribute_3860_9047" type="radio" name="product_attribute_3860"
+                                                               value="9047" onclick="showHideRadioQuantity(null,'Xanh Lá')" />
+                                                    </label>
+                                                    <div class="tooltip-container">
+                                                        <div class="not-available-text">Không có sẵn</div>
+                                                    </div>
+                                                </li>
+                                                <li data-attr-value="9048">
+                                                    <label for="product_attribute_3860_9048">
+                                                        <span class="attribute-square-container" title="Xanh D&#x1B0;&#x1A1;ng">
+                                                            <span class="attribute-square" title="Xanh D&#x1B0;&#x1A1;ng"
+                                                                  style="background-color:#88adc6;">&nbsp;</span>
+                                                        </span>
+                                                        <input id="product_attribute_3860_9048" type="radio" name="product_attribute_3860"
+                                                               value="9048" onclick="showHideRadioQuantity(null,'Xanh Dương')" />
+                                                    </label>
+                                                    <div class="tooltip-container">
+                                                        <div class="not-available-text">Không có sẵn</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+
+                                <!--Thông tin khuyến mại -->
+                                <partial name="_PromotionInformation.cshtml" />
+
+                                <!--availability-->
+                                <div class="product-detail-action-button normal" id="cart-button-prd">
+                                    <!--add to cart & estimate shipping-->
+                                    <div class="first-add-to-cart">
+                                        <div class="add-to-cart">
+                                            <div class="add-to-cart-panel">
+                                                <a class="button-1 add-to-cart-button once-submit-button"
+                                                    asp-action="Index" asp-controller="Cart"
+                                                    onclick="buyNow(event, @Model.Id)">
+                                                    Mua ngay
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--tra gop - thu cu doi moi-->
+                                    <div class="all-btn_buttom">
+                                        <a class="btn_buttom">Trả góp</a>
+                                        <a class="btn_buttom thucu once-submit-button">Thu cũ đổi mới</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--CrossSell Products-->
+                        <div class="all_cross-sells prd-detail">
+                            <div class="product-grid cross-sells">
+                                <div class="title">
+                                    <strong>Gợi ý phụ kiện đi kèm</strong>
+                                </div>
+                                <div class="item-grid">
+                                    <div class="item-box">
+                                        <div class="product-item" data-productid="2719">
+
+                                            <div class="picture">
+                                                <a href="/cuong-luc-camera-uniq-optix-for-iphone-15-iphone-15-plus"
+                                                   title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho C&#x1B0;&#x1EDD;ng l&#x1EF1;c Camera UNIQ OPTIX for iPhone 15 / iPhone 15 Plus">
+                                                    <img alt="&#x1EA2;nh c&#x1EE7;a C&#x1B0;&#x1EDD;ng l&#x1EF1;c Camera UNIQ OPTIX for iPhone 15 / iPhone 15 Plus"
+                                                         src="https://shopdunk.com~/ClientTLE/images/thumbs/0021877_cuong-luc-camera-uniq-optix-for-iphone-15-iphone-15-plus_240.jpeg"
+                                                         title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho C&#x1B0;&#x1EDD;ng l&#x1EF1;c Camera UNIQ OPTIX for iPhone 15 / iPhone 15 Plus" />
+                                                </a>
+                                            </div>
+                                            <div class="details">
+                                                <span class="product-title">
+                                                    <a href="/cuong-luc-camera-uniq-optix-for-iphone-15-iphone-15-plus">
+                                                        C&#x1B0;&#x1EDD;ng
+                                                        l&#x1EF1;c Camera UNIQ OPTIX for iPhone 15 / iPhone 15 Plus
+                                                    </a>
+                                                </span>
+                                                <div class="product-rating-box" title="0 b&#xE0;i &#x111;&#xE1;nh gi&#xE1;">
+                                                    <div class="rating">
+                                                        <div style="width: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                </div>
+                                                <div class="add-info">
+
+                                                    <div class="prices">
+                                                        <span class="price old-price">400.000&#x20AB;</span>
+                                                        <span class="price actual-price">350.000&#x20AB;</span>
+                                                    </div>
+                                                    <div class="append_price_percent"></div>
+
+                                                    <div class="buttons">
+                                                        <button type="button" class="button-2 product-box-add-to-cart-button"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/2719/1/1?forceredirection=True');return false;">
+                                                            Mua
+                                                            ngay
+                                                        </button>
+                                                        <button type="button" class="button-2 add-to-wishlist-button"
+                                                                title="Thêm vào danh sách yêu thích"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/2719/2/1');return false;">
+                                                            Thêm
+                                                            vào danh sách yêu thích
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="product-item" data-productid="144">
+
+                                            <div class="picture">
+                                                <a href="/20w-usb-c-power-adapter"
+                                                   title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho S&#x1EA1;c 20W USB-C Power Adapter ">
+                                                    <img alt="&#x1EA2;nh c&#x1EE7;a S&#x1EA1;c 20W USB-C Power Adapter "
+                                                         src="https://shopdunk.com~/ClientTLE/images/thumbs/0001395_sac-20w-usb-c-power-adapter_240.png"
+                                                         title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho S&#x1EA1;c 20W USB-C Power Adapter " />
+                                                </a>
+                                            </div>
+                                            <div class="details">
+                                                <span class="product-title">
+                                                    <a href="/20w-usb-c-power-adapter">S&#x1EA1;c 20W USB-C Power Adapter </a>
+                                                </span>
+                                                <div class="product-rating-box" title="0 b&#xE0;i &#x111;&#xE1;nh gi&#xE1;">
+                                                    <div class="rating">
+                                                        <div style="width: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                </div>
+                                                <div class="add-info">
+
+                                                    <div class="prices">
+                                                        <span class="price old-price">690.000&#x20AB;</span>
+                                                        <span class="price actual-price">490.000&#x20AB;</span>
+                                                    </div>
+                                                    <div class="append_price_percent"></div>
+
+                                                    <div class="buttons">
+                                                        <button type="button" class="button-2 product-box-add-to-cart-button"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/144/1/1?forceredirection=True');return false;">
+                                                            Mua
+                                                            ngay
+                                                        </button>
+                                                        <button type="button" class="button-2 add-to-wishlist-button"
+                                                                title="Thêm vào danh sách yêu thích"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/144/2/1');return false;">
+                                                            Thêm
+                                                            vào danh sách yêu thích
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="product-item" data-productid="2767">
+
+                                            <div class="picture">
+                                                <a href="/op-lung-silicon-magsafe-cho-iphone-15"
+                                                   title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho &#x1ED0;p L&#x1B0;ng Silicon MagSafe cho iPhone 15">
+                                                    <img alt="&#x1EA2;nh c&#x1EE7;a &#x1ED0;p L&#x1B0;ng Silicon MagSafe cho iPhone 15"
+                                                         src="https://shopdunk.com~/ClientTLE/images/thumbs/0021819_op-lung-silicon-magsafe-cho-iphone-15_240.jpeg"
+                                                         title="Hi&#x1EC3;n th&#x1ECB; chi ti&#x1EBF;t cho &#x1ED0;p L&#x1B0;ng Silicon MagSafe cho iPhone 15" />
+                                                </a>
+                                            </div>
+                                            <div class="details">
+                                                <span class="product-title">
+                                                    <a href="/op-lung-silicon-magsafe-cho-iphone-15">
+                                                        &#x1ED0;p L&#x1B0;ng Silicon MagSafe
+                                                        cho iPhone 15
+                                                    </a>
+                                                </span>
+                                                <div class="product-rating-box" title="0 b&#xE0;i &#x111;&#xE1;nh gi&#xE1;">
+                                                    <div class="rating">
+                                                        <div style="width: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="description">
+                                                    <p>
+                                                        <span style="color: #000000;">
+                                                            Ưu đãi dự kiến áp dụng đến<strong>
+                                                                23:59 | 30/4/2024
+                                                                :
+                                                            </strong>
+                                                        </span>
+                                                    </p>
+                                                    <hr />
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #e03e2d;">
+                                                            <strong>
+                                                                [11/4 - 30/4] Mua
+                                                                kèm máy giá chỉ : 1.090.000đ
+                                                            </strong>
+                                                        </span>
+                                                    </p>
+                                                    <hr />
+                                                    <p>
+                                                        <span style="color: #e03e2d;">
+                                                            <strong>
+                                                                Ưu đãi mua phụ kiện
+                                                                Non-Apple:
+                                                            </strong>
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <span style="color: #000000;">
+                                                            <img src="~/ClientTLE/images/uploaded/tích tròn (1).jpg" alt=""
+                                                                 width="16" height="17" /> Mua <strong>3 phụ kiện</strong> giảm
+                                                            <strong>100.000đ</strong>
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <span style="color: #000000;">
+                                                            <img src="~/ClientTLE/images/uploaded/tích tròn (1).jpg" alt=""
+                                                                 width="16" height="17" /> Mua <strong>4 phụ kiện</strong> giảm
+                                                            <strong>150.000đ</strong>
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <span style="color: #000000;">
+                                                            <strong>
+                                                                <img src="~/ClientTLE/images/uploaded/tích tròn (1).jpg"
+                                                                     alt="" width="16" height="17" />
+                                                            </strong>Mua<strong> 5 phụ kiện </strong>trở
+                                                            lên<strong> </strong>giảm<strong> 200.000đ</strong>
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <em>
+                                                            <span style="font-size: 9pt;">
+                                                                Ưu đãi có thể kết thúc sớm hơn dự kiến, chi tiết
+                                                                vui lòng liên hệ NVBH hoặc gọi tổng đài <strong>1900.6626</strong> .
+                                                            </span>
+                                                        </em>
+                                                    </p>
+                                                </div>
+                                                <div class="add-info">
+
+                                                    <div class="prices">
+                                                        <span class="price old-price">1.590.000&#x20AB;</span>
+                                                        <span class="price actual-price">1.390.000&#x20AB;</span>
+                                                    </div>
+                                                    <div class="append_price_percent"></div>
+
+                                                    <div class="buttons">
+                                                        <button type="button" class="button-2 product-box-add-to-cart-button"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/2767/1/1?forceredirection=True');return false;">
+                                                            Mua
+                                                            ngay
+                                                        </button>
+                                                        <button type="button" class="button-2 add-to-wishlist-button"
+                                                                title="Thêm vào danh sách yêu thích"
+                                                                onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/2767/2/1');return false;">
+                                                            Thêm
+                                                            vào danh sách yêu thích
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-details">
+                            <ul class="nav nav-pills mb-3 nav-product-detail" id="pills-tab" role="tablist">
+                                <li class="nav-item  nav-product-detail-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                                       aria-controls="pills-profile" aria-selected="false">Thông số kỹ thuật</a>
+                                </li>
+                                <li class="nav-item  nav-product-detail-item">
+                                    <a class="nav-link" id="pills-seo-tab" data-toggle="pill" href="#pills-seo-description"
+                                       role="tab" aria-controls="pills-seo" aria-selected="false">Chi tiết sản phẩm</a>
+                                </li>
+                                <li class="nav-item nav-product-detail-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                                       aria-controls="pills-contact" aria-selected="false">Hỏi đáp</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Tính toán trả góp-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".product-reviews").appendTo($(".container-review"));
+
+            $(".product-grid.cross-sells .item-grid").slick({
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+
+                        }
+                    },
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            
+                        }
+                    }]
+            });
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $("#thumb-video-popup-detail .check_close").click(function () {
+            $('#thumb-video-popup-detail').hide();
+            $('#thumb-video-popup-detail iframe').attr("src", "");
+            $("body").css("overflow", "unset");
+            $(".overview").css("z-index", 0);
+            $(".draggable").css("z-index", 0);
+        });
+        function thumbVideo(src) {
+            console.log(src);
+            $('#thumb-video-popup-detail iframe').attr("src", src);
+            $('#thumb-video-popup-detail').show();
+            $("body").css("overflow", "hidden");
+            $(".overview").css("z-index", -1);
+            $(".draggable").css("z-index", -1);
+        };
+        $(document).ready(function () {
+            $(".picture-thumbs").slick({
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+            });
+            $('.thumb-item img').on('click',
+                function () {
+                    $('#main-product-img-70').attr('src', $(this).attr('data-defaultsize'));
+                    $('#main-product-img-70').attr('title', $(this).attr('title'));
+                    $('#main-product-img-70').attr('alt', $(this).attr('alt'));
+                    $('#main-product-img-lightbox-anchor-70')
+                        .attr('href', $(this).attr('data-fullsize'));
+                    $('#main-product-img-lightbox-anchor-70').attr('title', $(this).attr('title'));
+                    $('#main-product-img-lightbox-anchor-70').removeClass("d-none");
+                    $('.picture-video').addClass('d-none');
+                });
+        });
+    </script>
+
+}

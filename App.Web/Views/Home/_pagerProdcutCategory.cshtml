@@ -1,0 +1,24 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+@model IEnumerable<object>
+
+@{
+	string _params = "";
+	foreach (var item in Context.Request.Query)
+	{
+		if (item.Key != "page")
+		{
+			_params += $"&{item.Key}={item.Value}";
+		}
+	}
+}
+<div class="my-4">
+	@Html.PagedListPager((IPagedList)Model,
+	page => Url.Action("GetProductByCategory", new { page = page }) + _params,
+	new PagedListRenderOptions
+	{
+		LiElementClasses = new string[] { "individual-page" },
+		PageClasses = new string[] { "next-page" },
+	})
+</div>

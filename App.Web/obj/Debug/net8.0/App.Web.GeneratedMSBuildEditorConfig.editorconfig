@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\DA1\App.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/DA1/App.Web/Components/Slider/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTbGlkZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Components/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,12 +42,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Views/Cart/Completed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDb21wbGV0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Cart/_OrderData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxfT3JkZXJEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Home/GetProductByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRQcm9kdWN0QnlDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Views/Home/_pagerProdcutCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFnZXJQcm9kY3V0Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Product/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Product/_PromotionInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfUHJvbW90aW9uSW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_accessory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hY2Nlc3NvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_descriptionWatch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdGlvbldhdGNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Shared/_footer.cshtml]
@@ -50,8 +94,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DA1/App.Web/Views/Shared/_noty.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9ub3R5LmNzaHRtbA==
+[D:/DA1/App.Web/Views/Shared/_pager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_prioritize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wcmlvcml0aXplLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Shared/_ValidationScriptsPartial.cshtml]

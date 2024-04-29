@@ -59,3 +59,4 @@ C:\Users\Henry-Pham\Documents\GitHub\DA1\elFinder.NetCore\obj\Debug\net5.0\elFin
 C:\Users\Henry-Pham\Documents\GitHub\DA1\elFinder.NetCore\obj\Debug\net5.0\refint\elFinder.NetCore.dll
 C:\Users\Henry-Pham\Documents\GitHub\DA1\elFinder.NetCore\obj\Debug\net5.0\elFinder.NetCore.pdb
 C:\Users\Henry-Pham\Documents\GitHub\DA1\elFinder.NetCore\obj\Debug\net5.0\ref\elFinder.NetCore.dll
+D:\DA1\elFinder.NetCore\obj\Debug\net5.0\elFinder.NetCore.sourcelink.json

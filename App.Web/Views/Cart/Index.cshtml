@@ -1,0 +1,754 @@
+﻿@model IEnumerable<App.Web.ViewModels.Cart.CartItemVM>
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal total = 0.0m;
+}
+
+@section head{
+    <script src="~/clienttle/js/cart_custom.js"></script>
+}
+
+<div class="bg-sg"></div>
+<div class="master-wrapper-content">
+    <div class="master-column-wrapper">
+        <div class="center-1">
+            <div class="breadcrumb">
+                <ul>
+                    <li><a>Trang chủ</a></li>
+                    <li><span>›</span> <a style="color:blue">Giỏ hàng</a></li>
+                </ul>
+            </div>
+            <div class="page shopping-cart-page">
+                <div class="page-body">
+                    <div class="order-summary-content container">
+                        <form method="post" id="shopping-cart-form" asp-action="Order">
+                            <div class="shopping-cart-info">
+                                <div class="cart-detail">
+                                    <div class="table-wrapper">
+                                        @if(Model.Count() > 0)
+                                        {
+                                            <table class="cart">
+                                                <colgroup>
+                                                    <col width="1"/>
+                                                    <col />
+                                                    <col width="1"/>
+                                                    <col width="1"/>
+                                                    <col width="1"/>
+                                                    <col width="1" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="product-picture">Hình ảnh </th>
+                                                        <th class="product">Tên sản phẩm </th>
+                                                        <th class="unit-price">Giá bán </th>
+                                                        <th class=quantity>Số lượng </th>
+                                                        <th class=subtotal>Toàn bộ </th>
+                                                        <th class=remove-from-cart> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="cart-body">
+                                                    <!--SẢN PHẨM TRONG GIỎ HÀNG-->
+                                                    @foreach(var item in Model)
+                                                    {
+                                                        var price = item.FinalPrice;
+                                                        total += price * item.Quantity;
+                                                        <tr class="append-item" data-id="">
+                                                            @* img *@
+                                                            <td class="product-picture">
+                                                                <a>
+                                                                    <img src="@item.ImagePath" alt="@item.ProductName"/>
+                                                                </a>
+                                                            </td>
+                                                            @* name *@
+                                                            <td class="product">
+                                                                <a class="product-name">
+                                                                    @item.ProductName
+                                                                </a>
+                                                                <div class="edit-item">
+                                                                    <a asp-action="ProdcutDetail" asp-controller="Prodcut" asp-route-id="">Sửa</a>
+                                                                </div>
+                                                            </td>
+                                                            @* price *@
+                                                            <td class="unit-price">
+                                                                <label class="td-title">Giá bán:</label>
+                                                                <span class="product-unit-price" data-price="@price">@item.Price</span>
+                                                            </td>
+                                                            @* quantity *@
+                                                            <td class="quantity">
+                                                                <div class="cart-quantity-input-container">
+                                                                    <a class="" style="color: blue" onclick="removeFromCart(@item.Id); updateInput(event, @item.Id);">-</a>
+                                                                    <input id="quantity" 
+                                                                        type="text" value="@item.Quantity" 
+                                                                        aria-label="quantity" class="qty-input" />
+                                                                    <a class="" style="color: blue" onclick="addToCart(@item.Id); updateInput(event, @item.Id);">+</a>
+
+                                                                </div>
+                                                            </td>
+                                                            <td class="remove-from-cart">
+                                                                <button type="button" class="remove-btn once-submit-button" onclick="deleteProductFromCart(event, @item.Id)"></button>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        }
+                                        else
+                                        {
+                                            <h2 style="text-align:center" class="cart-empty">Giỏ hàng đang rỗng !</h2>
+                                        }
+                                    </div>
+                                    <div class="cart-options">
+                                        <div class="common-buttons">
+                                            <button type="button"
+                                                    class="button-2 update-cart-button once-submit-button">
+                                                Cập nhật giỏ hàng
+                                            </button>
+                                            <button type="button" asp-action="Index" asp-controller="Home" 
+                                                    class="button-2 continue-shopping-button once-submit-button">
+                                                Tiếp tục mua sắm
+                                            </button>
+                                        </div>
+                                        <div class="selected-checkout-attributes"></div>
+                                    </div>
+                                </div>
+
+                                <!-- phụ kiện đi kèm -->
+                                <div class="all_cross-sells cart_detail">
+                                    <div class="product-grid cross-sells">
+                                        <div class="title">
+                                            <strong>Gợi ý phụ kiện đi kèm</strong>
+                                        </div>
+                                        <div class="item-grid">
+                                            <div class="item-box">
+                                                <div class="product-item" >
+                                                    <div class="picture">
+                                                        <a >
+                                                            <img alt="Ảnh của Phủ phím JCPAL Verskin Learn Macbook 13 inch"
+                                                                    src=https://shopdunk.com/images/thumbs/0002391_phu-phim-jcpal-verskin-learn-macbook-13-inch_240.png />
+                                                        </a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <span class="product-title">
+                                                            <a>
+                                                                Ph&#x1EE7;
+                                                                ph&#xED;m JCPAL Verskin Learn Macbook 13
+                                                                inch
+                                                            </a>
+                                                        </span>
+                                                        <div class="product-rating-box">
+                                                            <div class="rating">
+                                                                <div style="width:0%"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description"></div>
+                                                        <div class="add-info">
+                                                            <div class="prices">
+                                                                <span class="price actual-price">420.000&#x20AB;</span>
+                                                            </div>
+                                                            <div class="append_price_percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-box">
+                                                <div class=product-item data-productid=1352>
+                                                    <div class=picture>
+                                                        <a href=/mieng-dan-man-hinh-jcpal-new-macbook-pro-13-inch
+                                                            title="Hiển thị chi tiết cho Miếng dán màn hình Macbook Air/Pro 13 inch JCPAL">
+                                                            <img alt="Ảnh của Miếng dán màn hình Macbook Air/Pro 13 inch JCPAL"
+                                                                    src=https://shopdunk.com/images/thumbs/0004807_mieng-dan-man-hinh-macbook-airpro-13-inch-jcpal_240.webp
+                                                                    title="Hiển thị chi tiết cho Miếng dán màn hình Macbook Air/Pro 13 inch JCPAL">
+                                                        </a>
+                                                    </div>
+                                                    <div class=details>
+                                                        <span class=product-title>
+                                                            <a href=/mieng-dan-man-hinh-jcpal-new-macbook-pro-13-inch>
+                                                                Mi&#x1EBF;ng
+                                                                d&#xE1;n m&#xE0;n h&#xEC;nh Macbook Air/Pro
+                                                                13 inch JCPAL
+                                                            </a>
+                                                        </span>
+                                                        <div class=product-rating-box
+                                                                title="0 bài đánh giá">
+                                                            <div class=rating>
+                                                                <div style=width:0%></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class=description>
+                                                            <p style=line-height:2>
+                                                                <span style=color:#e03e2d>
+                                                                    <strong>
+                                                                        Ưu đãi thanh
+                                                                        toán <span style=color:#007edb>
+                                                                            <a style=color:#007edb
+                                                                                href=https://shopdunk.com/tong-hop-chuong-trinh-khuyen-mai-thang>
+                                                                                (xem
+                                                                                chi
+                                                                                tiết)
+                                                                            </a>
+                                                                        </span>
+                                                                    </strong>
+                                                                </span>
+                                                            <p style=line-height:2>
+                                                                <span style=color:#e03e2d>
+                                                                    <span style=color:#000>
+                                                                        ● Giảm 5% tối đa
+                                                                        500.000đ qua Kredivo <em>
+                                                                            <span style=font-size:9pt>(</span>
+                                                                        </em><em>
+                                                                            <span style=font-size:9pt>
+                                                                                SL có
+                                                                                hạn)
+                                                                            </span>
+                                                                        </em>
+                                                                    </span>
+                                                                </span>
+                                                        </div>
+                                                        <div class=add-info>
+                                                            <div class=prices>
+                                                                <span class="price actual-price">300.000&#x20AB;</span>
+                                                            </div>
+                                                            <div class=append_price_percent></div>
+                                                            <div class=buttons>
+                                                                <button type=button
+                                                                        class="button-2 product-box-add-to-cart-button"
+                                                                        onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/1352/1/1?forceredirection=True&#34;),!1">
+                                                                    Mua
+                                                                    ngay
+                                                                </button> <button type=button
+                                                                                    class="button-2 add-to-wishlist-button"
+                                                                                    title="Thêm vào danh sách yêu thích"
+                                                                                    onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/1352/2/1&#34;),!1">
+                                                                    Thêm
+                                                                    vào danh sách yêu thích
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                            <div class="item-box">
+                                                <div class=product-item data-productid=1447>
+                                                    <div class=picture>
+                                                        <a href=/tui-chong-soc-tomtoc-briefcase-macbook-pro-13
+                                                            title="Hiển thị chi tiết cho  Túi chống sốc TOMTOC Briefcase MacBook Pro 13”">
+                                                            <img alt="Ảnh của  Túi chống sốc TOMTOC Briefcase MacBook Pro 13”"
+                                                                    src=https://shopdunk.com/images/thumbs/0003494_tui-chong-soc-tomtoc-briefcase-macbook-pro-13_240.jpeg
+                                                                    title="Hiển thị chi tiết cho  Túi chống sốc TOMTOC Briefcase MacBook Pro 13”">
+                                                        </a>
+                                                    </div>
+                                                    <div class=details>
+                                                        <span class=product-title>
+                                                            <a href=/tui-chong-soc-tomtoc-briefcase-macbook-pro-13>
+                                                                T&#xFA;i ch&#x1ED1;ng s&#x1ED1;c TOMTOC
+                                                                Briefcase MacBook Pro 13&#x201D;
+                                                            </a>
+                                                        </span>
+                                                        <div class=product-rating-box
+                                                                title="0 bài đánh giá">
+                                                            <div class=rating>
+                                                                <div style=width:0%></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class=description>
+                                                            <p style=line-height:2>
+                                                                <span style=color:#e03e2d>
+                                                                    <strong>
+                                                                        Ưu đãi thanh
+                                                                        toán <span style=color:#007edb>
+                                                                            <a style=color:#007edb
+                                                                                href=https://shopdunk.com/tong-hop-chuong-trinh-khuyen-mai-thang>
+                                                                                (xem
+                                                                                chi
+                                                                                tiết)
+                                                                            </a>
+                                                                        </span>
+                                                                    </strong>
+                                                                </span>
+                                                            <p style=line-height:2>
+                                                                <span style=color:#e03e2d>
+                                                                    <span style=color:#000>
+                                                                        ● Giảm 5% tối đa
+                                                                        500.000đ qua Kredivo <em>
+                                                                            <span style=font-size:9pt>(</span>
+                                                                        </em><em>
+                                                                            <span style=font-size:9pt>
+                                                                                SL có
+                                                                                hạn)
+                                                                            </span>
+                                                                        </em>
+                                                                    </span>
+                                                                </span>
+                                                        </div>
+                                                        <div class="add-info">
+                                                            <div class="prices">
+                                                                <span class="price actual-price">739.000&#x20AB;</span>
+                                                            </div>
+                                                            <div class=append_price_percent></div>
+                                                            <div class=buttons>
+                                                                <button type=button
+                                                                        class="button-2 product-box-add-to-cart-button"
+                                                                        onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/1447/1/1?forceredirection=True&#34;),!1">
+                                                                    Mua
+                                                                    ngay
+                                                                </button> <button type=button
+                                                                                    class="button-2 add-to-wishlist-button"
+                                                                                    title="Thêm vào danh sách yêu thích"
+                                                                                    onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/1447/2/1&#34;),!1">
+                                                                    Thêm
+                                                                    vào danh sách yêu thích
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-box">
+                                                <div class="product-item" data-productid=2588>
+                                                    <div class=picture>
+                                                        <a href=/microsoft-365-personal
+                                                            title="Hiển thị chi tiết cho Microsoft 365 personal">
+                                                            <img alt="Ảnh của Microsoft 365 personal"
+                                                                    src=https://shopdunk.com/images/thumbs/0022514_microsoft-365-personal_240.jpeg
+                                                                    title="Hiển thị chi tiết cho Microsoft 365 personal">
+                                                        </a>
+                                                    </div>
+                                                    <div class=details>
+                                                        <span class=product-title>
+                                                            <a href=/microsoft-365-personal>
+                                                                Microsoft 365
+                                                                personal
+                                                            </a>
+                                                        </span>
+                                                        <div class=product-rating-box
+                                                                title="0 bài đánh giá">
+                                                            <div class=rating>
+                                                                <div style=width:0%></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class=description>
+                                                            <p>
+                                                                <span style=color:#000>
+                                                                    - Gói thuê bao 365
+                                                                    ngày cho 1 người dùng.
+                                                                </span><br><span style=color:#000>
+                                                                    - Các tính năng cao cấp
+                                                                    của Word, Excel, PowerPoint và
+                                                                    OneNote
+                                                                </span><br><span style=color:#000>
+                                                                    - 1TB lưu trữ đám mây
+                                                                    OneDrive/người dùng với bảo mật nâng
+                                                                    cao
+                                                                </span><br><span style=color:#000>
+                                                                    -
+                                                                    Cài đặt cùng lúc lên tới 5 thiết bị -
+                                                                    trên PC, máy Mac, iPad, iPhone, điện
+                                                                    thoại và máy tính bảng
+                                                                    Android*.&nbsp;
+                                                                </span><br><span style=color:#000>
+                                                                    - Outlook - Sắp xếp
+                                                                    email, lịch biểu, sắp xếp việc cần làm,
+                                                                    danh bạ không có quảng cáo &nbsp;với bảo
+                                                                    mật nâng cao.
+                                                                </span><br><span style=color:#000>
+                                                                    - Trình chỉnh sửa video
+                                                                    Clipchamp với các bộ lọc và hiệu ứng cao
+                                                                    cấp
+                                                                </span><br><span style=color:#000>
+                                                                    -
+                                                                    Nâng cấp Microsoft Teams - Cuộc gọi nhóm
+                                                                    lên đến 30 giờ cho 300 người tham gia,
+                                                                    tạo phụ đề tiếng Anh tự động cho cuộc
+                                                                    họp
+                                                                </span><br><span style=color:#000>
+                                                                    -
+                                                                    Khả năng bảo mật thiết bị và dữ liệu của
+                                                                    Microsoft Defender
+                                                                </span><br><span style=color:#000>
+                                                                    - Sao lưu ảnh và tệp
+                                                                    vào OneDrive với tính năng khôi phục dữ
+                                                                    liệu
+                                                                </span><br><span style=color:#000>
+                                                                    -
+                                                                    Hỗ trợ liên tục cho Microsoft 365 và
+                                                                    Windows 10/11
+                                                                </span><br><span style=color:#000>
+                                                                    * iOS và Android yêu
+                                                                    cầu tải xuống ứng dụng riêng
+                                                                    biệt.
+                                                                </span>
+                                                        </div>
+                                                        <div class=add-info>
+                                                            <div class=prices>
+                                                                <span class="price old-price">1.490.000&#x20AB;</span>
+                                                                <span class="price actual-price">990.000&#x20AB;</span>
+                                                            </div>
+                                                            <div class=append_price_percent></div>
+                                                            <div class=buttons>
+                                                                <button type=button
+                                                                        class="button-2 product-box-add-to-cart-button"
+                                                                        onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/2588/1/1?forceredirection=True&#34;),!1">
+                                                                    Mua
+                                                                    ngay
+                                                                </button> <button type=button
+                                                                                    class="button-2 add-to-wishlist-button"
+                                                                                    title="Thêm vào danh sách yêu thích"
+                                                                                    onclick="return AjaxCart.addproducttocart_catalog(&#34;/addproducttocart/catalog/2588/2/1&#34;),!1">
+                                                                    Thêm
+                                                                    vào danh sách yêu thích
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=title_price_percent>
+                                                    Giảm giá mua kèm:<span class=price_percent>200.000&#x20AB;</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- end code phụ kiện đi kèm -->
+                                    <!-- khung thông tin thanh toan -->
+                                    <div class='title_checkout_billing'>Thông tin thanh toán</div>
+                                    <div class="all_checkout-billing">
+                                        <div id="checkout-billing-load">
+                                            <div class="checkout-data">
+                                                <div class="section new-billing-address"
+                                                        id=billing-new-address-form>
+                                                    <div class="enter-address bg-white">
+                                                        <div class=edit-address>
+                                                            <div class=inputs>
+                                                                <input placeholder=Tên type="text" />
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="inputs two_col left">
+                                                                <input placeholder="Số điện thoại" type="tel" />
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="inputs two_col right">
+                                                                <input placeholder="Email" type="email" />
+                                                                <span></span>
+                                                            </div>
+
+                                                            <div class="inputs two_col left">
+                                                                <label for="BillingNewAddress_StateProvinceId">Chọn tỉnh, thành phố:</label>
+                                                                <input type="text" placeholder="Tỉnh, thành phố">
+                                                               
+                                                            </div>
+
+                                                            <div class="inputs two_col right">
+                                                                <label for=BillingNewAddress_CountyId>Quận, Huyện:</label>
+                                                                <input type="text" placeholder="quận, huyện" name="" id="">
+                                                            </div>
+
+                                                            <div class="all_receive_home">
+                                                                <div class="inputs one-col">
+                                                                    <label>Địa chỉ cụ thể</label>
+                                                                    <input type=text
+                                                                            id=BillingNewAddress_Address1
+                                                                            name=BillingNewAddress.Address1>
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id=checkout-payment-load>
+                                            <div class=checkout-data>
+                                                <div class="section payment-method">
+                                                    <div class=tt-address-select>Thông tin thanh toán</div>
+                                                    <div class=notice-payment style="text-align:left">
+                                                        Quý khách
+                                                        vui lòng lựa chọn các hình thức thanh toán dưới đây:
+                                                    </div>
+                                                    <ul class="method-list" id="payment-method-block">
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentKredivo&#34;)"
+                                                                                id=paymentmethod_0 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.Kredivo> <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_0>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.Kredivo/logo.jpg
+                                                                                    alt="Thanh toán Kredivo"
+                                                                                    width=36 height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_0>
+                                                                            Thanh to&#xE1;n
+                                                                            Kredivo
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentOnepay&#34;)"
+                                                                                id=paymentmethod_1 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.Onepay> <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_1>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.Onepay/logo.jpg
+                                                                                    alt="Thanh toán OnePay" width=36
+                                                                                    height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_1>
+                                                                            Thanh to&#xE1;n
+                                                                            OnePay
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentPayoo&#34;)"
+                                                                                id=paymentmethod_2 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.Payoo> <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_2>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.Payoo/logo.jpg
+                                                                                    alt="Thanh toán Payoo" width=36
+                                                                                    height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_2>
+                                                                            Thanh to&#xE1;n
+                                                                            Payoo
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentVietQr&#34;)"
+                                                                                id=paymentmethod_3 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.VietQr checked>
+                                                                        <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_3>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.VietQr/logo.jpg
+                                                                                    alt="Chuyển khoản ngân hàng"
+                                                                                    width=36 height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_3>
+                                                                            Chuy&#x1EC3;n
+                                                                            kho&#x1EA3;n ng&#xE2;n
+                                                                            h&#xE0;ng
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentVNPay&#34;)"
+                                                                                id=paymentmethod_4 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.VNPay> <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_4>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.VNPay/logo.jpg
+                                                                                    alt="Thanh toán VNPay" width=36
+                                                                                    height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_4>
+                                                                            Thanh to&#xE1;n
+                                                                            VNPay
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <li style=display:block>
+                                                            <div class=method-name>
+                                                                <div class="payment-details d-flex">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input onclick="selectPaymentMethod(&#34;PaymentZaloPay&#34;)"
+                                                                                id=paymentmethod_5 type=radio
+                                                                                name=paymentmethod
+                                                                                value=Payments.ZaloPay> <input id=flash-sale value=false hidden>
+                                                                    </div>
+                                                                    <div class=payment-logo>
+                                                                        <label for=paymentmethod_5>
+                                                                            <img src=https://shopdunk.com/Plugins/Payments.ZaloPay/logo.jpg
+                                                                                    alt="Thanh toán ZaloPay"
+                                                                                    width=36 height=36>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                                            style=width:100%>
+                                                                        <label for=paymentmethod_5>
+                                                                            Thanh to&#xE1;n
+                                                                            ZaloPay
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=payment-info-busy></div>
+                                                <div id=checkout-payment-info></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cart-footer col-sm-12 col-lg-6">
+                                    <div class=sidebar-cart>
+                                        <div class=cart-collaterals>
+                                            <div class=deals>
+                                                <div class=coupon-box>
+                                                    <div class="title"><strong>Mã giảm giá</strong></div>
+                                                </div>
+                                                <div class="coupon-code">
+                                                    <input placeholder="Mã giảm giá"
+                                                            type=text class="discount-coupon-code">
+                                                    <button type=submit class="button-2 apply-discount-coupon-code-button voucher">
+                                                        Áp dụng
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="totals">
+                                        <div class="total-info">
+                                            <table class="cart-total">
+                                                <tbody>
+                                                    <tr class=order-subtotal>
+                                                        <td class=cart-total-left>
+                                                            <label>
+                                                                Tổng phụ:
+                                                            </label>
+                                                        </td>
+                                                        <td class="cart-total-right">
+                                                            <span class=value-summary >148.950.000&#x20AB;</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="order-total">
+                                                        <td class="cart-total-left">
+                                                            <label>
+                                                                Tổng cộng:
+                                                            </label>
+                                                        </td>
+                                                        <td class="cart-total-right">
+                                                            <span class="value-summary">148.950.000&#x20AB;</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id=terms-of-service-warning-box title="Điều khoản dịch vụ"
+                                                style=display:none>
+                                            <p>
+                                                Vui lòng chấp nhận các điều khoản dịch vụ trước bước tiếp
+                                                theo.
+                                        </div>
+                                        <div class=terms-of-service>
+                                            <div class=d-flex>
+                                                <div>
+                                                    <input id=termsofservice type=checkbox
+                                                            name=termsofservice>
+                                                </div>
+                                                <label>
+                                                    <span class="rule-web">Tôi đã đọc và đồng ý với điều khoản và điều kiện</span>
+                                                    <span class="rule-web">của website</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-buttons">
+                                            <button type="submit" id="checkout"
+                                                    class="button-1 checkout-button">
+                                                    Tiến hành đặt hàng
+                                            </button>
+                                        </div>
+                                        <div class="note-ck">
+                                            (*) Phí phụ thu sẽ được tính khi bạn tiến
+                                            hành thanh toán.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src=https://campaign.tsminifier.net/v2/opt/seo/index.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".all_cross-sells.cart_detail .item-grid").slick({
+                slidesToShow: 4,
+                slidesToScroll: 4, 
+                infinite: !1,
+                responsive: [
+                    {
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 4, slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 1e3,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            })
+        })
+    </script>
+} 

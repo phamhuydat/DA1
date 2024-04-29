@@ -1,4 +1,6 @@
-﻿<div class="header">
+﻿@using App.Web.WebConfig.Consts
+
+<div class="header">
     <div class="header-lower">
         <div class="header-logo">
             <a href="">
@@ -7,13 +9,13 @@
         </div>
         <div class="header-menu">
             <ul class="top-menu notmobile">
-                <li class="category-menu-items"><a href=/iphone> iPhone </a>
-                <li class="category-menu-items"><a href=/ipad> iPad </a>
-                <li class="category-menu-items"><a href=/mac> Mac </a>
-                <li class="category-menu-items"><a href=/apple-watch> Watch </a>
-                <li class=topic-items-news><a href=/phu-kien> Phụ kiện </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="1"> iPhone </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="2"> iPad </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="3"> Mac </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="4"> Watch </a>
+                <li class=topic-items-news><a asp-controller="Home" asp-route-id="5"> Phụ kiện </a>
                 <li class=topic-items>
-                    <a href= "">
+                    <a >
                         D&#x1ECB;ch v&#x1EE5;
                         <svg width=12 height=4
                              viewBox="0 0 18 10" fill=none xmlns=http://www.w3.org/2000/svg>
@@ -33,21 +35,41 @@
             </ul>
             <div class=menu-toggle></div>
             <ul class="top-menu mobile">
-                <div class=header-links>
-                    <ul class=popup-header-links>
-                        <li class=li_ico-register>
-                            <a asp-action="Register" asp-controller="Account"
-                               class="ico-register">
-                                Tạo tài khoản ngay
-                            </a>
-                        </li>
-                        <li class="li_ico-login">
-                            <a asp-action="Login" asp-controller="Account"
-                               class="ico-login">
-                                Đăng nhập
-                            </a>
-                        </li>
-                    </ul>
+                <div class="header-links">
+                    @if (Context.User.Identity.IsAuthenticated)
+                    {
+                        <ul class="popup-header-links">
+                            <li class=li_ico-register>
+                                <a asp-action="Register" asp-controller="Account"
+                                   class="ico-register">
+                                    Tạo tài khoản ngay
+                                </a>
+                            </li>
+                            <li class="li_ico-login">
+                                <a asp-action="Login" asp-controller="Account"
+                                   class="ico-login">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class=popup-header-links>
+                            <li class=li_ico-register>
+                                <a asp-action="Register" asp-controller="Account"
+                                   class="ico-register">
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li class="li_ico-login">
+                                <a asp-action="Logout" asp-controller="Account"
+                                   class="ico-login">
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    }
                 </div>
                 <li class=items-services-news><a>Phụ kiện</a>
                 <li class=items-services-news><a href="" >Tin Tức</a> </li>
@@ -75,18 +97,18 @@
         <div class="header-links-wrapper">
             <div class="search-icon"></div>
             <div class="header-links">
-                <ul class="popup-header-links">
-                    <li class=li_ico-register>
-                        <a href="/register?returnUrl=%2Fcustomer%2Finfo"
-                           class=ico-register>Tạo tài khoản ngay</a>
-                    <li class=li_ico-login>
-                        <a href="/login?returnUrl=%2Fcustomer%2Finfo"
-                           class=ico-login>Đăng nhập</a>
 
-                    <li id=topcartlink>
-                        <a href=/cart class=ico-cart>         
-                            <span class=cart-label>Giỏ hàng</span>
-                            <span class=cart-qty>0</span>
+                <ul class="popup-header-links">
+                    <li class="li_ico-register">
+                        <a asp-action="Register" asp-controller="Account">Tạo tài khoản ngay</a>
+                    <li class="li_ico-login">
+                        <a asp-action="Login" asp-controller="Account"
+                           class="ico-login">Đăng nhập</a>
+
+                    <li id="topcartlink">
+                        <a asp-action="Index" asp-controller="Cart">         
+                            <span class="cart-label">Giỏ hàng</span>
+                            <span class="cart-qty">0</span>
                         </a>
                 </ul>
             </div>
@@ -100,42 +122,65 @@
         <div class="account-desktop">
             <div class="header-links">
                 <ul class="popup-header-links">
-                    <li class="li_ico-register">
-                        <a asp-action="Register" asp-controller="Account"
-                           class="ico-register">Tạo tài khoản ngay</a>
-                    </li>
-                    <li class="li_ico-login">
-                        <a asp-action="Login" asp-controller="Account"
-                           class="ico-login">Đăng nhập</a>
-                    </li>
+                    @if (!Context.User.Identity.IsAuthenticated)
+                    {
+                        <li class="li_ico-register">
+                            <a asp-action="Register" asp-controller="Account"
+                               class="ico-register">Tạo tài khoản ngay</a>
+                        </li>
+                        <li class="li_ico-login">
+                            <a asp-action="Login" asp-controller="Account"
+                               class="ico-login">Đăng nhập</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="li_ico-register">
+                            <a asp-action="Register" asp-controller="Account"
+                               class="ico-register">Thông tin tài khoản</a>
+                        </li>
+                        <li class="li_ico-login">
+                            <a asp-action="Logout" asp-controller="Account"
+                               class="ico-login">Đăng xuất</a>
+                        </li>
+                    }
+
                 </ul>
             </div>
         </div>
     </div>
     <div class="header-menu mobile">
         <ul class="top-menu notmobile">
-            <li class="category-menu-items"><a href=/iphone> iPhone </a>
-
-            <li class="category-menu-items"><a href=/ipad> iPad </a>
-
-            <li class="category-menu-items"><a href=/mac> Mac </a>
-            <li class="category-menu-items"><a href=/apple-watch> Watch </a>
-
-            <li class="category-menu-items"><a href=/phu-kien> Phụ kiện </a>
+            <li class="category-menu-items">
+                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1"> iPhone </a>
+            </li>
+            <li class="category-menu-items">
+                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="2"> iPad </a>
+            </li>
+            <li class="category-menu-items">
+                <a asp-action ="GetProductByCategory" asp-controller="Home" asp-route-id="3">
+                    Mac </a>
+            </li>
+            <li class="category-menu-items">
+                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="4"> Watch </a>
+                </li>
+            <li class="category-menu-items">
+                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="5"> Phụ kiện </a>
+                </li>
             <li class="category-menu-items"><a href=/tin-tuc> Tin Tức </a>
         </ul>
         <div class=menu-toggle></div>
         <ul class="top-menu mobile">
-            <div class=header-links>
-                <ul class=popup-header-links>
-                    <li class=li_ico-register>
-                        <a href="/register?returnUrl=%2Fcustomer%2Finfo"
-                           class=ico-register>Tạo tài khoản ngay</a>
-                    <li class=li_ico-login>
-                        <a href="/login?returnUrl=%2Fcustomer%2Finfo"
-                           class=ico-login>Đăng nhập</a>
-                    <li id=topcartlink>
-                        <a href=/cart class=ico-cart>
+            <div class="header-links">
+                <ul class="popup-header-links">
+                    <li class="li_ico-register">
+                        <a class="ico-register" asp-action="Register" asp-controller="Account">Tạo tài khoản ngay</a>
+                    </li>
+                    <li class="li_ico-login">
+                        <a class="ico-login" asp-action="Login" asp-controller="Account">Đăng nhập</a>
+                    </li>
+                    <li id="topcartlink">
+                        <a asp-action="Index" asp-controller="Cart" class="ico-cart">
                             <span class=cart-label>Giỏ hàng</span>
                             <span class=cart-qty>0</span>
                         </a>
@@ -173,7 +218,7 @@
             <li class=items-services-news><a href=/tin-tuc>Tin Tức</a> </li>
 
             <li class="items-services-news">
-                <a href=/logout class=ico-logout>Đăng xuất</a>
+                <a asp-action="Logout" asp-controller="Account" class=ico-logout>Đăng xuất</a>
             </li>
         </ul>
     </div>

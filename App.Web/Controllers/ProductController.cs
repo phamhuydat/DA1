@@ -11,55 +11,54 @@ using App.Web.WebConfig.Consts;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Microsoft.AspNetCore.Components.RenderTree;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using X.PagedList;
 
 namespace App.Web.Controllers
 {
-	public class ProductController : BaseController
-	{
-		private readonly INotyfService _notyf;
-		private const int DEFAULT_PAGE_SIZE = 30;
-		private const int MAX_RECENT_PRODUCT = 8;
-		public ProductController(IMapper mapper, GenericRepository repository, INotyfService notyf) : base(mapper, repository)
-		{
-			_notyf = notyf;
-		}
-		[Route(RouteConst.PRODUCT_ROUTE)]
-		public async Task<IActionResult> Index(int page = 1, int size = DEFAULT_PAGE_SIZE)
-		{
-			var data = (await _repository
-			.GetAll<AppProduct>()
-					.Where(s => s.IsActive == true && s.DeletedDate == null)
-					.OrderByDescending(m => m.DisplayOrder)
-					.ThenByDescending(m => m.Id)
-					.ToListAsync());
+    public class ProductController : BaseController
+    {
+        private readonly INotyfService _notyf;
+        private const int DEFAULT_PAGE_SIZE = 30;
+        private const int MAX_RECENT_PRODUCT = 8;
+        public ProductController(IMapper mapper, GenericRepository repository, INotyfService notyf) : base(mapper, repository)
+        {
+            _notyf = notyf;
+        }
 
-			return View(data);
-		}
+        public async Task<IActionResult> ProductDetail(int id)
+        {
+            var product = await _repository.GetOneAsync<AppProduct, ProductDetailClientVM>(id, p => new ProductDetailClientVM
+            {
+                Id = p.Id,
+                ProductName = p.ProductName,
+                CategoryName = p.AppProdcutCategory.Name,
+                Price = p.AppProductDetails.First().Price,
+                DiscountPrice = p.AppProductDetails.First().DiscountPrice,
+                DiscountFrom = p.AppProductDetails.First().DiscountFrom,
+                DiscountTo = p.AppProductDetails.First().DiscountTo,
+                AppProductImages = p.AppProductImages.Where(x => x.ProductId == id).ToList(),
+                CategoryId = p.AppProdcutCategory.Id,
+                ProductColorId = p.AppProductDetails.First().ColorId,
+                ProductCode = p.ProductCode,
+            });
 
-		public async Task<IActionResult> ListProduct(string CategoryId)
-		{
-
-			return View();
-		}
-
-		public IActionResult ProductDetail(string ProductId)
-		{
-
-			return View();
-		}
+            if (product is null)
+            {
+                _notyf.Error("Sản phẩm không tồn tại!");
+                return RedirectToAction(nameof(Index), "Home");
+            }
+            ViewBag.CategoryName = product.CategoryName;
+            return View(product);
+        }
 
 
+        public async Task<IActionResult> ProductSearch(string search)
+        {
+            var listProduct = 1;
 
-	}
+            return View(listProduct);
+        }
+
+    }
 }

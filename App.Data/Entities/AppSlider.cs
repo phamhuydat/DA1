@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace App.Data.Entities
 {
-	public class AppSlider : AppEntityBase
-	{
-		public string ImagePath { get; set; }
-		public DateTime? FromDate { get; set; }
-		public DateTime? ToDate { get; set; }
-		public string Link { get; set; }
-	}
+    public class AppSlider : AppEntityBase
+    {
+        public string ImagePath { get; set; }
+        public DateTime? FromDate { get; set; }
+        public DateTime? ToDate { get; set; }
+        public string Link { get; set; }
+        public int? CategoryId { get; set; }
+        public AppProductCategory ProductCategory { get; set; }
+    }
 }

@@ -1,6 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Trang chủ";
 }
+@section head{
+    <link href="~/ClientTLE/css/style.css" rel="stylesheet" />
+}
 <div class=master-wrapper-content>
     <div class=master-column-wrapper>
         <div class=center-1>
@@ -8,230 +11,90 @@
                 <div class=page-body>
                     <div class="banner_home-page desktop" style="display:none">
                         <div class="topic-block">
-                            <div class=topic-block-body>
-                               @*  <div class=banner_cate_slick>
-                                    <a href=https://shopdunk.com/iphone-15-series>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/CD iphone 15 pro-banner_PC.jpg"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/iphone-15-series>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/2560x800 (23).png"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/apple-watch>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_PC.jpg"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/macbook-air>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/airm1t4pc.png"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/ipad>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner ipad gen 9 T4_PC.jpg"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/iphone-13>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/13t4pc.png"
-                                             alt="" width=1280 height=400>
-                                    </a> <a href=https://shopdunk.com/macbook-pro-m3-2023>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner macbook pro m3 T4_PC.jpg"
-                                             alt="" width=1280 height=400>
-                                    </a><a href=https://shopdunk.com/shopdunk-badminton-cup-c%C3%B9ng-apple-watch-khai-ph%C3%A1-gi%E1%BB%9Bi-h%E1%BA%A1n>
-                                        <img src=~ClientTLE/images/uploaded/2560x800-Copy-1.png alt="" width=1280
-                                             height=400>
-                                    </a>
-                                </div> *@
+                            <div class="topic-block-body">
+                                <div class="banner_cate_slick">
+                                    <img src="~/clienttle/images/uploaded/banner/banner apple watch 9 t4_danh mục.jpg"
+                                         width=1200 height=400>
+                                    <img src="~/clienttle/images/uploaded/banner/banner apple watch se t4_danh mục.jpg" width=1200 height=400 />
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="banner_home-page mobile">
-                        <div class=topic-block>
-                            <div class=topic-block-body>
-                                <div class=banner_cate_slick>
-                                    <a href=https://shopdunk.com/iphone-15-pro-max>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/CD iphone 15 pro-banner_MB.jpg"
-                                             alt="" width=600 height=600>
-                                    </a><a href=https://shopdunk.com/iphone-15-pro-max>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/1284x1284 copy 2 (2).png"
-                                             alt="" width=600 height=600>
-                                    </a> <a href=https://shopdunk.com/apple-watch>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_MB.jpg"
-                                             alt="" width=600 height=600>
-                                    </a> <a href=https://shopdunk.com/iphone-13>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/13t4mb.png"
-                                             alt="" width=600 height=600>
-                                    </a> <a href=https://shopdunk.com/macbook-pro-m3-2023>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner macbook pro m3 T4_MB.jpg"
-                                             alt="" width=600 height=600>
-                                    </a> <a href=https://shopdunk.com/ipad>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner ipad gen 9 T4_MB.jpg"
-                                             alt="" width=600 height=600>
-                                    </a> <a href=https://shopdunk.com/macbook-air>
-                                        <img src="~ClientTLE/images/uploaded/banner/banner 2024/Thang_4/airm1t4mb.png"
-                                             alt="" width=600 height=600>
-                                    </a><a href=https://shopdunk.com/shopdunk-badminton-cup-c%C3%B9ng-apple-watch-khai-ph%C3%A1-gi%E1%BB%9Bi-h%E1%BA%A1n>
-                                        <img src=~ClientTLE/images/uploaded/1284x1284-Copy-1.png alt="" width=600
-                                             height=600>
-                                    </a>
+                       <div class="topic-block">
+                            <div class="topic-block-body">
+                                <div class="banner_cate_slick">
+                                    <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_MB.jpg"
+                                        alt="" width=600 height=600>
+                                    <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch SE T4_MB.jpg"
+                                        alt="" width=600 height=600>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=content_home-page>
-                        <div class=topic-block>
-                            <div class=topic-block-body>
-                                <div class="Topic_Block_content splide">
-                                    <div id=splide-track class=splide__track>
-                                        <div class=splide__list>
-                                            <a class="item_ss_top splide__slide"
-                                               href=https://shopdunk.com/news-vip-customer target=_blank
-                                               rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/B Trần.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Bình An _ Phương Nga.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Duydam.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer target=_blank
-                                                    rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/HUyền Lizze _ Quỳnh Koool.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Huỳnh Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Hà Việt Dũng.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer target=_blank
-                                                    rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Hồng Diễm.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Lâm Đức Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Lê Bống.png"
-                                                     alt="" height=166>
-                                            </a><a class="item_ss_top splide__slide"
-                                                   href=https://shopdunk.com/news-vip-customer target=_blank
-                                                   rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Mạnh Trường.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Quang Thắng.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Thu Mít.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer target=_blank
-                                                    rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Trung Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Trung Ruồi.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/VIệt Anh.png"
-                                                     alt="" height=166>
-                                            </a><a class="item_ss_top splide__slide"
-                                                   href=https://shopdunk.com/news-vip-customer>
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~ClientTLE/images/uploaded/banner/bonus banner/xx1/Đình Tú.png"
-                                                     alt="" height=166>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="content_home-page">
                         <div class="home-page-category-list">
                             <div class="item-list">
-                                <div class="item-box-list">
-                                    <div class="category-item">
-                                        <h2 class="title"><a href= ""> iPhone </a></h2>
-                                        <div class="page category-page">
-                                            <div class="page-body">
-                                                <div class="product-grid featured-product-grid">
-                                                    <div class="item-grid">
-                                                        @* item product iphone *@
-                                                        <div class="item-box">
-                                                            <div class="product-item" data-productid=59>
-                                                                @* icon discount *@
-                                                                <div class="product_tag">
-                                                                    <img src=~ClientTLE/images/uploaded/icon/0-phantram.png
-                                                                         alt="">
-                                                                </div>
-                                                                <div class="picture">
-                                                                    <a
-                                                                       title="Hiển thị chi tiết cho iPhone 13">
-                                                                        <img alt="Ảnh của iPhone 13"
-                                                                             src=https://shopdunk.com~ClientTLE/images/thumbs/0024430_iphone-13_240.png
-                                                                             title="Hiển thị chi tiết cho iPhone 13">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="details">
-                                                                    <h3 class="product-title">
-                                                                        <a>iPhone 13</a>
-                                                                    </h3>
-                                                                    <div class="add-info">
-                                                                        <div class=prices>
-                                                                            <div class=price-ratio-container>
-                                                                                <span class="price price-ratio">-45%</span>
-                                                                            </div><span class="price old-price">24.990.000&#x20AB;</span>
-                                                                            <span class="price actual-price">13.690.000&#x20AB;</span>
+            
+                                @foreach(var item in ViewBag.iphone)
+                                {
+                                    <div class="item-box-list">
+                                        <div class="category-item">
+                                            <h2 class="title">
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1"> IPhone </a>
+                                            </h2>
+                                            <div class="page category-page">
+                                                <div class="page-body">
+                                                    <div class="product-grid featured-product-grid">
+                                                        <div class="item-grid">
+                                                            <div class="item-box">
+                                                                <div class="product-item" data-productid=73>
+                                                                    <div class="product_tag">
+                                                                        <img src="~ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                                alt="">
+                                                                    </div>
+                                                                    <div class="picture">
+                                                                        <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id"
+                                                                            title="Hiển thị chi tiết cho iPad mini 6">
+                                                                            <img alt="Ảnh của iPad mini 6"
+                                                                                    src="@item.ImagePath"
+                                                                                    title="Hiển thị chi tiết cho iPad mini 6">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="details">
+                                                                        <h3 class=product-title>
+                                                                            <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
+                                                                                @item.ProductName
+                                                                            </a>
+                                                                        </h3>
+                                                                        <div class=add-info>
+                                                                            <div class=prices>
+                                                                                <div class=price-ratio-container>
+                                                                                    <span class="price price-ratio">-25%</span>
+                                                                                </div><span class="price old-price">@item.Price.ToString("#,##0") VNĐ</span>
+                                                                                <span class="price actual-price">@item.DiscountPrice.ToString("#,##0") VNĐ</span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class=products-container>
-                                                    <div class=ajax-products-busy></div>
-                                                    <div class=products-wrapper></div>
+                                                    <div class=products-container>
+                                                        <div class=ajax-products-busy></div>
+                                                        <div class=products-wrapper></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="show-all">
-                                    <a>
-                                        Xem tất cả iPhone 
-                                        <i class="fa-regular fa-chevron-right"></i>
-                                    </a>
-                                </div>
-
+                                    <div class="show-all">
+                                        <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.CategoryId">
+                                            Xem tất cả iPhone 
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                }
                                 @* ipad *@
                                 <div class="item-box-list">
                                     <div class="category-item">
@@ -544,3 +407,107 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+      <script>
+            (function (n) {
+            n(document).ready(function () {
+                n(window).on("load", function () {
+                    if (n(".category-description").length > 0) {
+                        var t = n(".category-description"),
+                        r = t.height(),
+                        i = 500;
+                        if (r > i) {
+                            t.css("height", i + "px");
+                            t.append(function () {
+                                return '<div class="devvn_readmore_flatsome devvn_readmore_flatsome_more">
+        <a title="Xem thêm" href="javascript:void(0);">
+            Tìm hiểu thêm<\ /a>
+                <\ /div>
+                    '
+                    });
+                    t.append(function () {
+                    return '<div class="devvn_readmore_flatsome devvn_readmore_flatsome_less" style="display: none;">
+                        <a title="Xem thêm" href="javascript:void(0);">
+                            Thu gọn<\ /a>
+                                <\ /div>
+                                    ' });
+                                    n("body").on("click", ".devvn_readmore_flatsome_more", function () {
+                                    t.removeAttr("style");
+                                    n("body .devvn_readmore_flatsome_more").hide();
+                                    n("body .devvn_readmore_flatsome_less").show()
+                                    });
+                                    n("body").on("click", ".devvn_readmore_flatsome_less", function () {
+                                    t.css("height", i + "px");
+                                    n("body .devvn_readmore_flatsome_less").hide();
+                                    n("body .devvn_readmore_flatsome_more").show()
+                                    })
+                                    }
+                                    }
+                                    })
+                                    }) })(jQuery);
+                                    </script>
+
+                                    <script>
+                                        $(window).resize(function () {
+                                            window.matchMedia("(max-width: 1000px)").matches && ($(".search-icon").click(function () {
+                                                $(".header-menu.mobile").css("display", "none")
+                                            }),
+                                                $(".bg-sg").click(function () {
+                                                    $(".header-menu.mobile").css("display", "block")
+                                                }))
+                                        });
+                                        $(window).resize(function () {
+                                            window.matchMedia("(min-width: 1001px)").matches && ($(".search-icon").click(function () {
+                                                $(".header-menu.mobile").css("display", "none")
+                                            }),
+                                                $(".bg-sg").click(function () {
+                                                    $(".header-menu.mobile").css("display", "none")
+                                                }))
+                                        });
+                                        $(".search-icon").click(function () {
+                                            $(".search-box").css("display", "block");
+                                            $(".bg-sg").css("display", "block");
+                                            $(".header .header-lower").css("max-width", "100%");
+                                            $(".admin-header-links").css("display", "none");
+                                            $("input#small-searchterms").focus()
+                                        });
+                                        $(".bg-sg").click(function () {
+                                            $(".search-box").css("display", "none");
+                                            $(".bg-sg").css("display", "none");
+                                            $(".header .header-lower").css("max-width", "1200px");
+                                            $(".admin-header-links").css("display", "block")
+                                        });
+                                        $(".login-icon").hover(function () {
+                                            $(".account-desktop").css("display", "block")
+                                        },
+                                            function () {
+                                                $(".account-desktop").css("display", "none")
+                                            });
+                                        $(".account-desktop").hover(function () {
+                                            $(this).css("display", "block")
+                                        },
+                                            function () {
+                                                $(".account-desktop").css("display", "none")
+                                            });
+                                        $("ul.top-menu.mobile .header-links a").hasClass("ico-login") && $(".block.block-account-navigation.customer-navigation").css("display", "none");
+                                        $(".popup-remind-search .check_close").click(function () {
+                                            localStorage.setItem("SearchPopup", "0");
+                                            $(".popup-remind-search").hide()
+                                        });
+
+                                        $(document).ready(function () {
+                                            var n = localStorage.getItem("SearchPopup");
+                                            (n == null || n == undefined || n != "0") && $(".popup-remind-search").show();
+                                            $(".banner_cate_slick").slick({
+                                                autoplay: !0,
+                                                autoplaySpeed: 7e3,
+                                                dots: !0,
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1,
+                                                infinite: !0
+                                            });
+                                            $(".banner_home-page.desktop").show()
+                                        })
+                                    </script>
+}

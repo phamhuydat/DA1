@@ -1,11 +1,17 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html-shopping-cart-page html-category-page mdl-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/slick-carousel/slick.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/awesome-notifications/style.min.css" rel="stylesheet" />
+
     <link href="~/clienttle/css/style.css" rel="stylesheet" />
-    @* <script src="~/clienttle/js/head.js"></script> *@
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     @RenderSection("head", required: false)
 </head>
@@ -22,16 +28,24 @@
                 <strong>Thành công! @TempData["Err"]</strong>
             </div>
         }
+
         <partial name="_header.cshtml" />
 
          @RenderBody()
 
          <partial name="_footer.cshtml" />
     </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @await Component.InvokeAsync("Notyf")
+
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    @* <script src="~/clienttle/js/footer.js"></script> *@
+    <script src="https://campaign.tsminifier.net/v2/opt/seo/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="~/lib/slick-carousel/slick.min.js" asp-append-version="true"></script>
+    <script src="~/lib/awesome-notifications/index.var.min.js"></script>
 
     <script src="~/clienttle/js/custom.js"></script>
-    <script src="~/lib/slick-carousel/slick.min.js"></script>
+    <script src="~/clienttle/js/cart_custom.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

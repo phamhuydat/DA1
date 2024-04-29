@@ -1,0 +1,42 @@
+﻿@model IEnumerable<App.Web.ViewModels.Slider.ListSliderVM>
+
+@if (Model.Count() > 0)
+{
+    <div class="catelog_banner desktop">
+        <div class="topic-block">
+            <div class="topic-block-body">
+                <div class="banner_cate_slick">
+                @foreach (var item in Model)
+				{
+					if (!item.ImagePath.IsNullOrEmpty() )
+                    {
+                        <a href="@item.Link" title="">
+                            <img src="@item.ImagePath"
+                                    alt="" width="1200" height="400"/>
+                        </a>
+                    }
+                }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catelog_banner catelog_banner_mobile">
+        <div class="topic-block">
+            <div class="topic-block-body">
+                <div class="banner_cate_slick">
+                    @foreach (var item in Model)
+                    {
+                        if (!item.ImagePath.IsNullOrEmpty() )
+                        {
+                            <a href="@item.Link" title="">
+                                <img src="@item.ImagePath"
+                                     alt="" width="600" height="600" />
+                            </a>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+} 
+

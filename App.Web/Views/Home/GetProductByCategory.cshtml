@@ -1,0 +1,471 @@
+﻿@model  IEnumerable<App.Web.ViewModels.Product.ProductListVM>
+
+@{
+    ViewData["Title"] = "GetProductByCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-sg"></div>
+<div class="master-wrapper-content">
+    <div class="master-column-wrapper">
+        <div class="breadcrumb">
+            <ul>
+                <li><a asp-action="Index" asp-controller="Home">Trang chủ</a> 
+                    <span class="delimiter">&#x203A;</span>
+                </li>
+                <li >
+                    <strong class="current-item">Iphone</strong> 
+                </li>
+            </ul>
+        </div>
+        <div class="center-1">
+            <div class="page category-page">
+                <div class="all_content_category">
+                    <div class="card card-primary card-outline card-outline-tabs">
+                        <div class="page-title" id="category-page-title" style="scroll-margin-top:115px">
+                            <h1>Watch</h1>
+                        </div>
+                        <div class="catelog_banner desktop">
+                            <div class="topic-block">
+                                <div class="topic-block-body">
+                                    <div class="banner_cate_slick">
+                                            <img src="~/clienttle/images/uploaded/banner/banner apple watch 9 t4_danh mục.jpg"
+                                                width=1200 height=400>
+                                            <img src="~/clienttle/images/uploaded/banner/banner apple watch se t4_danh mục.jpg" width=1200 height=400 />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catelog_banner catelog_banner_mobile">
+                            <div class="topic-block">
+                                <div class="topic-block-body">
+                                    <div class="banner_cate_slick">
+                                        <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_MB.jpg"
+                                            alt="" width=600 height=600>
+                                        <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch SE T4_MB.jpg"
+                                            alt="" width=600 height=600>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-body">
+                            <!-- filler -->
+                            <div class="all_sub-category-grid">
+                                <div class="category-grid sub-category-grid">
+                                    <div class="item-box active">
+                                        <div class="sub-category-item">
+                                            <div class=title>
+                                                <a title="All model"> 
+                                                    Tất cả
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=item-box>
+                                        <div class=sub-category-item>
+                                            <div class=title>
+                                                <a>
+                                                    Apple Watch Ultra 2 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="sub-category-item">
+                                            <div class=title>
+                                                <a>Apple Watch Series 9 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="sub-category-item">
+                                            <div class="title">
+                                                <a> Apple Watch SE </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="sub-category-item">
+                                            <div class="title">
+                                                <a> Apple Watch Series 8 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="sub-category-item">
+                                            <div class="title">
+                                                <a>Apple Watch Series 7 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class=sub-category-item>
+                                            <div class="title">
+                                                <a>Apple Watch Series 6 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=item-box>
+                                        <div class=sub-category-item>
+                                            <div class=title><a href=/apple-watch-series-3
+                                                    title="Hiển thị sản phẩm trong danh mục Apple Watch Series 3">
+                                                    Apple Watch Series 3 </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=product-selectors>
+                                    <div class=product-sorting>
+                                        <span>Sắp xếp theo</span> 
+                                        <select id="products-orderby">
+                                            <option selected>
+                                               Thứ tự hiển thị
+                                            </option>
+                                            <option value="1">Mới nhất </option>
+                                            <option value="2">Tên: A -> Z</option>
+                                            <option value="3">Tên: Z -> A</option>
+                                            <option value="4">Giá từ cao đến thấp</option>
+                                            <option value="5">Giá thấp đến cao</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- list prodcut -->
+
+                            <div class="products-container">
+                                <div class="ajax-products-busy"></div>
+                                <div class="products-wrapper">
+                                    <div class="product-grid">
+                                        <div class="item-grid">
+                                            <!--item product-->
+                                            @if(Model.Count() > 0)
+                                            {
+                                                foreach(var item in Model)
+                                                {
+                                                    <div class="item-box">
+                                                        <div class="product-item">
+                                                            <div class="product_tag"></div>
+                                                            <div class="picture">
+                                                                <a>
+                                                                    <img src="@item.ImagePath" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="details">
+                                                                <h2 class="product-title">
+                                                                    <a asp-action="ProductDetail" asp-controller="Prodcut" asp-route-id="@item.id">
+                                                                       @item.ProductName
+                                                                    </a>
+                                                                </h2>
+                                                                <div class="add-info">
+                                                                    <div class="prices">
+                                                                        <div class="price-ratio-container">
+                                                                            <span class="price price-ratio">-25%</span>
+                                                                        </div>
+                                                                        <span class="price old-price">@item.Price</span>
+                                                                        <span class="price actual-price">@item.DiscountPrice</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <h3 style="text-align: center; color: red; margin: 0px 15px 40px;" class="on-show">Đang cập nhật thêm sản phẩm!</h3>
+                                            }
+                                            
+                                        </div>
+                                    </div>
+                                    @if(Model.Count() > 0)
+                                    {
+                                        <div class="pager">
+                                           @*  <ul>
+                                                <li class="current-page">
+                                                    <span>1</span>
+                                                </li>
+                                                <li class="individual-page">
+                                                    <a data-page=2
+                                                        >
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li class="individual-page">
+                                                    <a >3
+                                                    </a>
+                                                </li>
+                                                <li class="next-page">
+                                                    <a >
+                                                        Kế tiếp
+                                                    </a>
+                                                </li>
+                                            </ul> *@
+                                            <partial name="_pageProductCategory.cshtml" />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                            <!-- phụ kiện đi kèm-->
+
+                            <div class="topic-block">
+                                <div class="topic-block-body">
+                                    <div class="section_catelog_bottom">
+                                        <div class="section_ss sosanh">
+                                            <div class="ss_image">
+                                                <a href=/compareproducts> 
+                                                    <img title="Image Standard"
+                                                        src="~/ClientTLE/images/uploaded/trang danh muc/watch/Image-Standard-6.png"
+                                                        alt="Image Standard" width=142 height=139> 
+                                                </a>
+                                            </div>
+                                            <div class="ss_all_content">
+                                                <div class=title>Tìm Apple Watch&nbsp;<br>phù hợp với bạn
+                                                </div>
+                                                <a class=button-link href=/compareproducts>So sánh các
+                                                    Apple Watch&nbsp;
+                                                    </a>
+                                                    <a class=button-link
+                                                    href=/compareproducts>›</a>
+                                            </div>
+                                        </div>
+                                        <div class="section_ss muakem">
+                                            <div class=ss_image><a href=/compareproducts> <img
+                                                        title="Image Standard-1"
+                                                        src="~/ClientTLE/images/uploaded/trang danh muc/watch/Image-Standard-7.png"
+                                                        alt="Image Standard-1" width=142 height=139> </a>
+                                            </div>
+                                            <div class=ss_all_content>
+                                                <div class=title>Phụ kiện Apple Watch<br>thường mua kèm
+                                                </div><a class=button-link href=/phu-kien>Tìm phụ
+                                                    kiện&nbsp;</a><a class=button-link
+                                                    href=/compareproducts>›</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                         
+                            <!-- mô tả đồng hồ -->
+                            <partial name="../Shared/_descriptionWatch.cshtml" />
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <!-- <div class=product-reviews>
+                        <p class=title id=scroll_product-reviews>Đánh giá danh mục
+                        <div class=container-product-reviews>
+                            <div class="product-reviews-content category-review-content">
+                                <div class=all_rating-list>
+                                    <div class="page product-reviews-page">
+                                        <div class=page-title></div>
+                                        <div class=page-body>
+                                            <div class=write-review id=category-reviews>
+                                                <div class=title><strong>Viết đánh giá của riêng
+                                                        bạn</strong></div>
+                                                <div class=result-error
+                                                    style=color:#f00;padding-bottom:24px></div>
+                                                <form id=product-review-form>
+                                                    <div class=fieldset>
+                                                        <div class=form-fields>
+                                                            <div class=inputs style=margin:0!important>
+                                                                <input type=hidden class=review-title
+                                                                    value=13 data-val=true
+                                                                    data-val-required="The CategoryId field is required."
+                                                                    id=CategoryId name=CategoryId></div>
+                                                            <div class=review-rating>
+                                                                <div class=name-description><label
+                                                                        for=AddCategoryReview_Rating>Ch&#x1EA5;t
+                                                                        l&#x1B0;&#x1EE3;ng*:</label></div>
+                                                                <div class=rating-wrapper>
+                                                                    <div class=rating-options>
+                                                                        <ul class=rate-area><input value=5
+                                                                                type=radio
+                                                                                id=addproductrating_5
+                                                                                aria-label="Xuất sắc"
+                                                                                checked data-val=true
+                                                                                data-val-required="The Chất lượng* field is required."
+                                                                                name=AddCategoryReview.Rating>
+                                                                            <label for=addproductrating_5
+                                                                                title=Amazing></label>
+                                                                            <input value=4 type=radio
+                                                                                id=addproductrating_4
+                                                                                aria-label=Tốt
+                                                                                name=AddCategoryReview.Rating>
+                                                                            <label for=addproductrating_4
+                                                                                title=Amazing></label>
+                                                                            <input value=3 type=radio
+                                                                                id=addproductrating_3
+                                                                                aria-label="Không tệ nhưng cũng không xuất sắc"
+                                                                                name=AddCategoryReview.Rating>
+                                                                            <label for=addproductrating_3
+                                                                                title=Amazing></label>
+                                                                            <input value=2 type=radio
+                                                                                id=addproductrating_2
+                                                                                aria-label="Không tốt"
+                                                                                name=AddCategoryReview.Rating>
+                                                                            <label for=addproductrating_2
+                                                                                title=Amazing></label>
+                                                                            <input value=1 type=radio
+                                                                                id=addproductrating_1
+                                                                                aria-label=Xấu
+                                                                                name=AddCategoryReview.Rating>
+                                                                            <label for=addproductrating_1
+                                                                                title=Amazing></label></ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=inputs><label>Tên của bạn</label>
+                                                                <input class=review-title type=text
+                                                                    id=AddCategoryReview_Title
+                                                                    name=AddCategoryReview.Title> <span
+                                                                    class=required>*</span> <span
+                                                                    class=field-validation-valid
+                                                                    data-valmsg-for=AddCategoryReview.Title
+                                                                    data-valmsg-replace=true></span></div>
+                                                            <div class="inputs text_textarea"><label>Đánh
+                                                                    giá danh mục</label> <textarea
+                                                                    class=review-text
+                                                                    id=AddCategoryReview_ReviewText
+                                                                    name=AddCategoryReview.ReviewText></textarea>
+                                                                <span class=required>*</span> <span
+                                                                    class=field-validation-valid
+                                                                    data-valmsg-for=AddCategoryReview.ReviewText
+                                                                    data-valmsg-replace=true></span></div>
+                                                            <div class=all_image_content>
+                                                                <div class=fieldset><input
+                                                                        id=uploadedFileImg name=uploadedFile
+                                                                        accept="image/jpeg, image/gif, image/png"
+                                                                        type=file multiple
+                                                                        onchange=loadFile(event) hidden>
+                                                                    <div class=btn-upload><input type=button
+                                                                            class=btn-upload-img
+                                                                            value="Upload image"
+                                                                            onclick="document.getElementById(&#34;uploadedFileImg&#34;).click()">
+                                                                    </div>
+                                                                    <div class=img-preview id=img-preview>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=captcha-box>
+                                                                <script>var onloadCallbackcaptcha_844627583 = function () { grecaptcha.render("captcha_844627583", { sitekey: "6LcXUmEkAAAAAKzfE5n-_q9I4ojdMDPuf0M1_peS", theme: "light" }) }</script>
+                                                                <div></div>
+                                                                <script async defer
+                                                                    src="https://www.google.com/recaptcha/api.js?onload=onloadCallbackcaptcha_844627583&amp;render=explicit&amp;hl=vi"></script>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script>
+        (function (n) { 
+        n(document).ready(function () { 
+            n(window).on("load", function () { 
+                if (n(".category-description").length > 0) { 
+                    var t = n(".category-description"), 
+                    r = t.height(), 
+                    i = 500; 
+                    if (r > i) { 
+                        t.css("height", i + "px"); 
+                        t.append(function () { 
+                            return '<div class="devvn_readmore_flatsome devvn_readmore_flatsome_more"><a title="Xem thêm" href="javascript:void(0);">Tìm hiểu thêm<\/a><\/div>' 
+                        }); 
+                        t.append(function () { 
+                            return '<div class="devvn_readmore_flatsome devvn_readmore_flatsome_less" style="display: none;"><a title="Xem thêm" href="javascript:void(0);">Thu gọn<\/a><\/div>' }); 
+                            n("body").on("click", ".devvn_readmore_flatsome_more", function () { 
+                                t.removeAttr("style"); 
+                                n("body .devvn_readmore_flatsome_more").hide(); 
+                                n("body .devvn_readmore_flatsome_less").show() 
+                            }); 
+                            n("body").on("click", ".devvn_readmore_flatsome_less", function () { 
+                                t.css("height", i + "px"); 
+                                n("body .devvn_readmore_flatsome_less").hide(); 
+                                n("body .devvn_readmore_flatsome_more").show() 
+                            }) 
+                       } 
+                    } 
+                }) 
+             }) })(jQuery); 
+    </script>
+   
+    <script>
+        $(window).resize(function () {
+            window.matchMedia("(max-width: 1000px)").matches && ($(".search-icon").click(function () {
+                $(".header-menu.mobile").css("display", "none")
+            }),
+                $(".bg-sg").click(function () {
+                    $(".header-menu.mobile").css("display", "block")
+                }))
+        });
+        $(window).resize(function () {
+            window.matchMedia("(min-width: 1001px)").matches && ($(".search-icon").click(function () {
+                $(".header-menu.mobile").css("display", "none")
+            }),
+                $(".bg-sg").click(function () {
+                    $(".header-menu.mobile").css("display", "none")
+                }))
+        });
+        $(".search-icon").click(function () {
+            $(".search-box").css("display", "block");
+            $(".bg-sg").css("display", "block");
+            $(".header .header-lower").css("max-width", "100%");
+            $(".admin-header-links").css("display", "none");
+            $("input#small-searchterms").focus()
+        });
+        $(".bg-sg").click(function () {
+            $(".search-box").css("display", "none");
+            $(".bg-sg").css("display", "none");
+            $(".header .header-lower").css("max-width", "1200px");
+            $(".admin-header-links").css("display", "block")
+        });
+        $(".login-icon").hover(function () {
+            $(".account-desktop").css("display", "block")
+        },
+            function () {
+                $(".account-desktop").css("display", "none")
+            });
+        $(".account-desktop").hover(function () {
+            $(this).css("display", "block")
+        },
+            function () {
+                $(".account-desktop").css("display", "none")
+            });
+        $("ul.top-menu.mobile .header-links a").hasClass("ico-login") && $(".block.block-account-navigation.customer-navigation").css("display", "none");
+        $(".popup-remind-search .check_close").click(function () {
+            localStorage.setItem("SearchPopup", "0");
+            $(".popup-remind-search").hide()
+        });
+
+        $(document).ready(function () {
+            var n = localStorage.getItem("SearchPopup");
+            (n == null || n == undefined || n != "0") && $(".popup-remind-search").show();
+            $(".banner_cate_slick").slick({
+                autoplay: !0,
+                autoplaySpeed: 7e3,
+                dots: !0,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: !0
+            });
+            $(".banner_home-page.desktop").show()
+        })
+    </script>
+}
+                 
