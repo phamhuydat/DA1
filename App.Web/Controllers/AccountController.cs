@@ -139,5 +139,114 @@ namespace App.Web.Controllers
                 System.IO.File.WriteAllText(file, $"Hello {username}!");
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> UpdateProfile()
+        {
+            var user = await _repository.FindAsync<AppUser>(CurrentUserId);
+
+            if (user == null)
+            {
+                _notyf.Error("Tài khoản không tồn tại");
+                return RedirectToAction(nameof(Login), "Account");
+            }
+            var data = new UpdateProfileVM();
+            data.Username = user.Username;
+            data.address = user.Address;
+            data.phone = user.PhoneNumber;
+            data.email = user.Email;
+            data.fullname = user.FullName;
+            return View(data);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateProfile(UpdateProfileVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                _notyf.Error("Thông tin bị lỗi");
+                return RedirectToAction(nameof(UpdateProfile));
+            }
+            var user = await _repository.FindAsync<AppUser>(CurrentUserId);
+            user.FullName = model.fullname;
+            user.PhoneNumber = model.phone;
+            try
+            {
+                await _repository.UpdateAsync(user);
+                _notyf.Success("Update thông tin tài khoản thành công");
+            }
+            catch (Exception ex)
+            {
+                _notyf.Error("Update thất bại");
+            }
+
+            return RedirectToAction(nameof(UpdateProfile));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateAddress()
+        {
+            var user = await _repository.FindAsync<AppUser>(CurrentUserId);
+            if (user == null)
+            {
+                _notyf.Error("Tài khoản không tồn tại");
+                return RedirectToAction(nameof(Login), "Account");
+            }
+            var data = new UpdateProfileVM();
+            data.Username = user.Username;
+            data.address = user.Address;
+            data.phone = user.PhoneNumber;
+            data.email = user.Email;
+            data.fullname = user.FullName;
+            return View(data);
+        }
+        public async Task<IActionResult> UpdateAddress(UpdateProfileVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var user = await _repository.FindAsync<AppUser>(CurrentUserId);
+            user.Address = model.address;
+            user.Email = model.email;
+            user.PhoneNumber = model.phone;
+            user.FullName = model.fullname;
+            await _repository.UpdateAsync(user);
+            _notyf.Success("Cập nhật thông tin thành công");
+            return View();
+        }
+
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePwdVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var user = await _repository.FindAsync<AppUser>(CurrentUserId);
+            var encryptPassword = this.HashHMACSHA512WithKey(model.Pwd, user.PasswordSalt);
+            if (!encryptPassword.SequenceEqual(user.PasswordHash))
+            {
+                _notyf.Error("Mật khẩu cũ không chính xác");
+                return View();
+            }
+
+            var hashResult = this.HashHMACSHA512(model.NewPwd);
+            user.PasswordHash = hashResult.Value;
+            user.PasswordSalt = hashResult.Key;
+            await _repository.UpdateAsync<AppUser>(user);
+
+            if (model.LogoutAfterChangePwd)
+            {
+                _notyf.Success("Đổi mật khẩu thành công");
+                return RedirectToAction(nameof(Logout));
+            }
+
+            _notyf.Success("Đổi mật khẩu thành công");
+            return View();
+        }
+
     }
 }

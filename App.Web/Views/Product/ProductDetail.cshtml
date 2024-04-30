@@ -221,9 +221,8 @@
                                     <div class="first-add-to-cart">
                                         <div class="add-to-cart">
                                             <div class="add-to-cart-panel">
-                                                <a class="button-1 add-to-cart-button once-submit-button"
-                                                    asp-action="Index" asp-controller="Cart"
-                                                    onclick="buyNow(event, @Model.Id)">
+                                                <a class="button-1 add-to-cart-button once-submit-button add-cart" data-id="@Model.Id"
+                                                    asp-action="Index" asp-controller="Cart">
                                                     Mua ngay
                                                 </a>
                                             </div>

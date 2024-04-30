@@ -54,6 +54,7 @@ namespace App.Web.Controllers
                         && x.IsMain == true).Take(8);
             return View();
         }
+
         public async Task<IActionResult> SearchProducts(string? search)
         {
             return View(search);

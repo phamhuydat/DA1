@@ -16,7 +16,7 @@ namespace App.Data.Entities.Products
         }
         public string ProductName { get; set; }
         public string Description { get; set; }
-        public bool IsActive { get; set; } // còn bán hay ko
+        public bool IsActive { get; set; } // còn bán hay ko 
         public string ProductCode { get; set; }
         public int? CategoryId { get; set; }
 

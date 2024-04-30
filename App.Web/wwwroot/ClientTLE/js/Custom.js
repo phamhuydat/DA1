@@ -69,8 +69,8 @@ $(".search-icon").click(function () {
     $(".admin-header-links").css("display", "none");
     $("input#small-searchterms").focus()
 });
+
 $(".bg-sg").click(function () {
-    $(".search-box").css("display", "none");
     $(".bg-sg").css("display", "none");
     $(".header .header-lower").css("max-width", "1200px");
     $(".admin-header-links").css("display", "block")
@@ -90,9 +90,9 @@ $(".account-desktop").hover(function () {
     $(".account-desktop").css("display", "none")
 });
 
-$("ul.top-menu.mobile .header-links a")
-    .hasClass("ico-login") && $(".block.block-account-navigation.customer-navigation")
-        .css("display", "none");
+//$("ul.top-menu.mobile .header-links a")
+//    .hasClass("ico-login") && $(".block.block-account-navigation.customer-navigation")
+//        .css("display", "none");
 
 
 //$(".chat-box_toggle")

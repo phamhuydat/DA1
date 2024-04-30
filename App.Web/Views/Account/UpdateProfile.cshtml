@@ -1,0 +1,132 @@
+﻿@model App.Web.ViewModels.Account.UpdateProfileVM
+
+@{
+    ViewData["Title"] = "Infomation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+}
+
+<div class="bg-sg"></div>
+<div class="master-wrapper-content">
+    <div class="master-column-wrapper">
+
+        <partial name="_side-2.cshtml" />
+        <div class=center-2>
+            <div class="page account-page customer-info-page">
+                <div class=page-title>
+                    <h1>Thông tin tài khoản</h1>
+                </div>
+                <div class=page-body>
+                    <form method="post" asp-action="Information" asp-controller="Account" >
+                        <div class=fieldset>
+                            <div class=form-fields>
+                                <div class="inputs first_name">
+                                    <label for=FirstName>Tên, Họ: </label> 
+                                    <input type="text" value="@Model.fullname"> 
+                                    <span class="field-validation-valid" ></span>
+                                </div>
+                                <div class="inputs email">
+                                    <label for=FirstName>Email: </label>
+                                    <input type="email" value="@Model.email">
+                                    <span class="field-validation-valid"></span>
+                                </div>
+                                <div class="inputs phone-number">
+                                    <label for=FirstName>Điện thoại:</label>
+                                    <input type="tel" value="@Model.phone">
+                                    <span class="field-validation-valid"></span>
+                                </div>
+                                <div class="inputs user-name">
+                                    <label for=Username>Username:</label> 
+                                    <span class=readonly-username>@Model.Username</span>
+                                </div>
+                                <div class=buttons>
+                                    <button type="submit"  class="button-1 save-customer-info-button">
+                                        Lưu lại
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        solution 1:
+        .datepicker {
+            font-size: 0.875em;
+        }
+        /* solution 2: the original datepicker use 20px so replace with the following:*/
+
+        .datepicker td, .datepicker th {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    </style>
+    <script type="text/javascript">
+        $('#datepicker').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#datepicker').datepicker("setDate", new Date());
+    </script>
+    <script>
+        $(window).resize(function () { 
+            window.matchMedia("(max-width: 1000px)").matches && ($(".search-icon").click(function () {
+                $(".header-menu.mobile").css("display", "none") }), $(".bg-sg").click(function () { 
+                    $(".header-menu.mobile").css("display", "block") 
+                })) 
+        }); 
+        $(window).resize(function () { 
+            window.matchMedia("(min-width: 1001px)").matches && ($(".search-icon").click(function () { 
+                $(".header-menu.mobile").css("display", "none") }), 
+                $(".bg-sg").click(function () { 
+                    $(".header-menu.mobile").css("display", "none") 
+                }))
+        }); 
+        $(".search-icon").click(function () { 
+            $(".search-box").css("display", "block"); 
+            $(".bg-sg").css("display", "block");
+            $(".header .header-lower").css("max-width", "100%");
+            $(".admin-header-links").css("display", "none");
+            $("input#small-searchterms").focus() });
+            $(".bg-sg").click(function () { 
+                $(".search-box").css("display", "none"); 
+                $(".bg-sg").css("display", "none");
+                $(".header .header-lower").css("max-width", "1200px");
+                $(".admin-header-links").css("display", "block") }); 
+                $(".login-icon").hover(function () { 
+                    $(".account-desktop").css("display", "block")
+                }, 
+                function () { 
+                    $(".account-desktop").css("display", "none") 
+                });
+                $(".account-desktop").hover(function () { 
+                    $(this).css("display", "block") 
+                }, function () { 
+                    $(".account-desktop").css("display", "none") 
+                }); 
+                $(".popup-remind-search .check_close").click(function () {
+                    localStorage.setItem("SearchPopup", "0"); 
+                    $(".popup-remind-search").hide() }); 
+                    $(document).ready(function () { 
+                        var n = localStorage.getItem("SearchPopup"); 
+                        n == null || n == undefined || n != "0") && $(".popup-remind-search").show(); 
+                        $(".banner_cate_slick").slick({
+                            autoplay: !0, autoplaySpeed: 7e3, dots: !0, slidesToShow: 1, slidesToScroll: 1, infinite: !0 });
+                            $(".banner_home-page.desktop").show() })
+     </script>
+
+
+}

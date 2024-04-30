@@ -10,13 +10,13 @@ using AspNetCoreHero.ToastNotification.Abstractions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing;
 
 namespace App.Web.Controllers
 {
     public class CartController : BaseController
     {
         private readonly INotyfService _notyf;
-
         public CartController(IMapper mapper, GenericRepository repo, INotyfService notyf) : base(mapper, repo)
         {
             _notyf = notyf;
@@ -44,7 +44,6 @@ namespace App.Web.Controllers
             }
             return View(data);
         }
-
         private async Task<List<CartItemVM>> GetCartFromCustomer()
         {
             //Lấy cookie

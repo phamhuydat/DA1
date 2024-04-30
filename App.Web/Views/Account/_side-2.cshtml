@@ -1,0 +1,27 @@
+﻿<div class="side-2">
+    <div class="block block-account-navigation ">
+        <div class="title"><strong>Tài khoản của tôi</strong></div>
+        <div class="listbox">
+            <ul class="list">
+                <li class="customer-info active">
+                    <a asp-action="UpdateProfile" asp-controller="Account">Thông tin tài khoản</a>
+                </li>
+                <li class="customer-addresses inactive">
+                    <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
+                </li>
+                <li class="customer-orders inactive">
+                    <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                </li>
+                <li class="change-password inactive">
+                    <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
+                </li>
+
+                <li class="customer-avatar inactive">
+                    <a href=/customer/avatar>
+                        Ảnh đại diện
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
