@@ -1,0 +1,116 @@
+﻿@model App.Web.Areas.Admin.ViewModels.Order.ListItemOrderVM
+
+@{
+	ViewData["Title"] = "Chi tiết đơn hàng";
+	var i = 0;
+}
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="card">
+			<h3 class="card-header">Thông tin đơn hàng</h3>
+			<div class="card-body">
+				<strong><i class="fas fa-book mr-1"></i>Họ tên</strong>
+				<p class="text-muted bigger-text">@Model.CusName</p>
+
+				<strong><i class="fas fa-envelope mr-1"></i>Email</strong>
+				<p class="text-muted bigger-text">@Model.CusEmail</p>
+
+				<strong><i class="fas fa-phone mr-1"></i>Số điện thoại</strong>
+				<p class="text-muted bigger-text">@Model.CusPhone</p>
+
+				<strong><i class="fas fa-map-marker mr-1"></i>Địa chỉ</strong>
+				<p class="text-muted bigger-text">@Model.DeliveryAddress</p>
+
+				<strong><i class="fas fa-sticky-note mr-1"></i>Ghi chú</strong>
+				<p class="text-muted bigger-text">@Model.CusNote</p>
+
+				<strong><i class="fas fa-money-bill mr-1"></i>Tổng tiền</strong>
+				<p class="text-muted bigger-text">@Model.Total.ToString("#,0") VNĐ</p>
+
+				<strong><i class="fas fa-ticket mr-1"></i>Mã giảm giá</strong>
+				<p class="text-muted bigger-text">
+					<span class="badge badge-info">@Model.DiscountCode</span>
+				</p>
+
+				<strong><i class="fas fa-bookmark mr-1"></i>Trạng thái đơn hàng</strong>
+				<p class="text-muted bigger-text">
+					<h5>
+						@if (Model.StatusId == DB.OrderStatusId.STATUS_PENDING)
+						{
+							<span class="badge status-@Model.Id border border-dark">@Model.StatusName</span>
+						}
+						@if (Model.StatusId == DB.OrderStatusId.STATUS_PROCESSING)
+						{
+							<span class="badge status-@Model.Id border bg-info">@Model.StatusName</span>
+						}
+						@if (Model.StatusId == DB.OrderStatusId.STATUS_DONE)
+						{
+							<span class="badge status-@Model.Id border bg-success">@Model.StatusName</span>
+						}
+						@if (Model.StatusId == DB.OrderStatusId.STATUS_CANCELED)
+						{
+							<span class="badge status-@Model.Id border bg-dark">@Model.StatusName</span>
+						}
+					</h5>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="card">
+			<h3 class="card-header">Chi tiết đơn hàng</h3>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>STT</th>
+								<th>Tên sản phẩm</th>
+								<th class="text-center">Ảnh sản phẩm</th>
+								<th>Đơn giá</th>
+								<th>Số lượng</th>
+								<th>Tổng tiền</th>
+							</tr>
+						</thead>
+						<tbody>
+							@if (Model.AppOrderDetails.Count > 0)
+							{
+								foreach (var item in Model.AppOrderDetails)
+								{
+									<tr>
+										<td>@(++i)</td>
+										<td>
+											@item.ProductName
+											<a class="text-secondary ml-1" target="_blank" asp-controller="Products"
+											   asp-action="ProductDetail" asp-area="" asp-route-slug="@item.ProductName.Slugify()"
+											   asp-route-productId="@item.ProductId">
+												<i class="fas fa-external-link-alt text-secondary"></i>
+											</a>
+										</td>
+										<td class="text-center">
+											@{
+												if (item.ImagePath != null)
+												{
+													<img src="@item.ImagePath" class="item-news-image" />
+												}
+												else
+												{
+													<img src="~/files/logo.png" style=" width: 50px;height: 50px;object-fit: cover;" />
+												}
+											}
+										</td>
+										<td>@item.ProductPrice.ToString("#,0")</td>
+										<td>@item.Quantity</td>
+										<td>@item.Price.ToString("#,0")</td>
+									</tr>
+								}
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<partial name="_BackToList" />
+</div>

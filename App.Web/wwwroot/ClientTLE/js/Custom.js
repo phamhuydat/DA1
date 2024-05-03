@@ -46,14 +46,14 @@ $(document).ready(function () {
 //AjaxCart.init(!1, ".header-links .cart-qty",
 //    ".header-links .wishlist-qty",
 //    "#flyout-cart", localized_data);
-$(window).resize(function () {
-    window.matchMedia("(max-width: 1000px)")
-        .matches && ($(".search-icon").click(function () {
-            $(".header-menu.mobile").css("display", "none")
-        }), $(".bg-sg").click(function () {
-            $(".header-menu.mobile").css("display", "block")
-        }))
-});
+//$(window).resize(function () {
+//    window.matchMedia("(max-width: 1000px)")
+//        .matches && ($(".search-icon").click(function () {
+//            $(".header-menu.mobile").css("display", "none")
+//        }), $(".bg-sg").click(function () {
+//            $(".header-menu.mobile").css("display", "block")
+//        }))
+//});
 $(window).resize(function () {
     window.matchMedia("(min-width: 1001px)")
         .matches && ($(".search-icon").click(function () {
@@ -90,21 +90,6 @@ $(".account-desktop").hover(function () {
     $(".account-desktop").css("display", "none")
 });
 
-//$("ul.top-menu.mobile .header-links a")
-//    .hasClass("ico-login") && $(".block.block-account-navigation.customer-navigation")
-//        .css("display", "none");
-
-
-//$(".chat-box_toggle")
-//    .on("click", function () {
-//        $(this)
-//            .toggleClass("active")
-//            .siblings(".all_chat-box")
-//            .toggle(200, "swing");
-//        $(".items-chat-icon")
-//            .animate({ opacity: "1" }, 1e3);
-//        $("#backTop").css("display", "none")
-//    })
 
 $(document).ready(function () {
     $(".block .title").on("click", function () {
@@ -131,3 +116,5 @@ $("#sl_bill_company").on("click", function () {
     $(".answer").toggle(this.checked)
 }); $(".items_international").hide();
 $(".items_installment").hide();
+
+

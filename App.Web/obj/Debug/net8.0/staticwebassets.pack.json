@@ -89,8 +89,80 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\1284x1284-Copy-1.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\1284x1284-Copy-1.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\2560x800-Copy-1.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\2560x800-Copy-1.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\Trang chủ\\2.jpeg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\Trang chủ\\2.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner-doanh-nghiep-04.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner-doanh-nghiep-04.png"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\13t4mb.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\13t4mb.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\13t4pc.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\13t4pc.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\2560x800 (23).png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\2560x800 (23).png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\CD iphone 15 pro-banner_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\CD iphone 15 pro-banner_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\CD iphone 15 pro-banner_PC.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\CD iphone 15 pro-banner_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\airm1t4mb.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\airm1t4mb.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\airm1t4pc.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\airm1t4pc.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_PC.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner ipad gen 9 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner ipad gen 9 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner ipad gen 9 T4_PC.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner ipad gen 9 T4_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_Danh mục.jpg",
@@ -109,6 +181,70 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_MB.jpg"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\B Trần.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\B Trần.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Bình An _ Phương Nga.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Bình An _ Phương Nga.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Duydam.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Duydam.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\HUyền Lizze _ Quỳnh Koool.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\HUyền Lizze _ Quỳnh Koool.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Huỳnh Anh.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Huỳnh Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Hà Việt Dũng.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Hà Việt Dũng.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Hồng Diễm.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Hồng Diễm.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Lâm Đức Anh.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Lâm Đức Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Lê Bống.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Lê Bống.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Mạnh Trường.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Mạnh Trường.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Quang Thắng.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Quang Thắng.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Thu Mít.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Thu Mít.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Trung Anh.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Trung Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Trung Ruồi.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Trung Ruồi.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\VIệt Anh.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\VIệt Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Đình Tú.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\Đình Tú.png"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon-gif\\best-offer.gif",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon-gif\\best-offer.gif"
     },
@@ -119,6 +255,30 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon-gif\\write.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon-gif\\write.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\0-phantram.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\0-phantram.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\giam1trieu.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\giam1trieu.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\giam2trieu.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\giam2trieu.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\new.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\new.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\vnpay250k.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\vnpay250k.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\vnpay500k.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\vnpay500k.png"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\tích tròn (1).jpg",
@@ -923,6 +1083,22 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css",
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\emailTemplate\\InfoNewMessager.html",
+      "PackagePath": "staticwebassets\\emailTemplate\\InfoNewMessager.html"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\emailTemplate\\emailSuccess.html",
+      "PackagePath": "staticwebassets\\emailTemplate\\emailSuccess.html"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\emailTemplate\\emailSuccessOrder.html",
+      "PackagePath": "staticwebassets\\emailTemplate\\emailSuccessOrder.html"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\emailTemplate\\emailTemplate.html",
+      "PackagePath": "staticwebassets\\emailTemplate\\emailTemplate.html"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\favicon.ico",

@@ -163,19 +163,19 @@ namespace App.Web.WebConfig
             mapper.CreateMap<AppNews, ListNewsVM>().ReverseMap();
         });
 
-        //public static MapperConfiguration ProductCategoryConf = new(mapper =>
-        //{
-        //    mapper.CreateMap<AppProductCategory, ListItemProductCategoryVM>()
-        //    .ForMember(x => x.ChildCategories, opt => opt.MapFrom(e => e.ChildCategories))
-        //    .ReverseMap();
-        //});
-        //public static MapperConfiguration ProductCategorySelectConf = new(mapper =>
-        //{
-        //    mapper.CreateMap<AppProductCategory, ListProductCateSelectVM>()
-        //    .ForMember(x => x.Name, opt => opt.MapFrom(e => e.ParentCategory == null ? e.Name : $"[{e.ParentCategory.Name}] > [{e.Name}]"))
-        //    .ForMember(x => x.CateLevel, opt => opt.MapFrom(e => "Danh mục cấp " + e.CateLevel))
-        //    .ReverseMap();
-        //});
+        public static MapperConfiguration ProductCategoryConf = new(mapper =>
+        {
+            mapper.CreateMap<AppProductCategory, ListItemProductCategoryVM>()
+            //.ForMember(x => x.ChildCategories, opt => opt.MapFrom(e => e.ChildCategories))
+            .ReverseMap();
+        });
+        public static MapperConfiguration ProductCategorySelectConf = new(mapper =>
+        {
+            mapper.CreateMap<AppProductCategory, ListProductCateSelectVM>()
+            //.ForMember(x => x.Name, opt => opt.MapFrom(e => e.ParentCategory == null ? e.Name : $"[{e.ParentCategory.Name}] > [{e.Name}]"))
+            //.ForMember(x => x.CateLevel, opt => opt.MapFrom(e => "Danh mục cấp " + e.CateLevel))
+            .ReverseMap();
+        });
 
         //public static MapperConfiguration ProductsConf = new(mapper =>
         //{

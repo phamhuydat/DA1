@@ -1,5 +1,5 @@
 ﻿using App.Web.WebConfig;
-using DNews.Shared.Attributes;
+using App.Shared.Attributes;
 using System.ComponentModel.DataAnnotations;
 
 namespace App.Web.ViewModels.Account

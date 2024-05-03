@@ -9,8 +9,8 @@
         <div class=center-1>
             <div class="breadcrumb">
                 <ul>
-                    <li><a asp-action="Index" asp-controller="Home">Trang chủ</a>
-                    <li><span> &nbsp; › &nbsp;</span> <a style="color: blue">Đăng ký</a>
+                    <li><a asp-action="Index" asp-controller="Home">Trang chủ</a> </li>
+                    <li><span> &nbsp; › &nbsp;</span> <a style="color: blue">Đăng ký</a> </li>
                 </ul>
             </div>
             <div class="page registration-page">
@@ -29,19 +29,14 @@
                                     <h1>Đăng ký</h1>
                                 </div>
                                 <div class="form-fields">
-                                    <div class="inputs first_name">
-                                        <label asp-for="FullName" >
-                                            Họ và Tên   
-                                        </label> 
-                                        <input type=text data-val=true
-                                            data-val-required="Trường bắt buộc."  asp-for="FullName"/>  
+                                    <div class="inputs">
+                                        <label asp-for="FullName"> Họ và Tên</label> 
+                                        <input type=text data-val=true asp-for="FullName"/>  
                                             <span class="field-validation-valid" asp-validation-for="FullName"></span>
                                     </div>
                                     <div class="inputs">
                                         <label asp-for="Email">E-mail:</label> 
-                                        <input type="email"
-                                            data-val=true data-val-email="Email sai"
-                                             asp-for="Email"> 
+                                        <input type="email" asp-for="Email"> 
                                         <span class="ield-validation-valid" asp-validation-for="Email"></span>
                                     </div>
                                     <div class="inputs">

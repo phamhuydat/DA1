@@ -1,0 +1,6 @@
+﻿@model App.Web.Areas.Admin.ViewModels.AppDiscountCode.AddOrUpdateDiscountCodeVM
+
+<select asp-for="UnApplyCategoryId"
+		asp-items="(SelectList)ViewBag.ListCate"
+		class="bs-autocomplete form-control" title="Danh mục">
+</select>

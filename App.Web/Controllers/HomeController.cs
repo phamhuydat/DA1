@@ -35,23 +35,22 @@ namespace App.Web.Controllers
 
             ViewBag.ipad = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.IPAD
-                        && x.IsMain == true).Take(4);
+                        && x.CategoryId == DB.AppProductCategory.IPAD).Take(4);
 
             ViewBag.mac = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
                         && x.CategoryId == DB.AppProductCategory.MAC
-                        && x.IsMain == true).Take(4);
+                      ).Take(4);
 
             ViewBag.watch = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
                         && x.CategoryId == DB.AppProductCategory.WATCH
-                        && x.IsMain == true).Take(4);
+                        ).Take(4);
 
             ViewBag.accessory = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
                         && x.CategoryId == DB.AppProductCategory.ACCESSORY
-                        && x.IsMain == true).Take(8);
+                       ).Take(8);
             return View();
         }
 
@@ -59,8 +58,7 @@ namespace App.Web.Controllers
         {
             return View(search);
         }
-
-        public async Task<IActionResult> GetProductByCategory(int id, int? filler = null, int page = 1, int size = DEFAULT_PAGE_SIZE)
+        public async Task<IActionResult> GetProductByCategory(int id, int? filler = null, int? page = 1, int? size = DEFAULT_PAGE_SIZE)
         {
             ViewBag.Category = _repository.FindAsync<AppProductCategory>(id);
             if (filler == 1)

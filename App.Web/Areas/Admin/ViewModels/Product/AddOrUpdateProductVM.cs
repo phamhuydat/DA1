@@ -1,5 +1,5 @@
 ﻿using App.Share.Consts;
-using DNews.Shared.Attributes;
+using App.Shared.Attributes;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System;

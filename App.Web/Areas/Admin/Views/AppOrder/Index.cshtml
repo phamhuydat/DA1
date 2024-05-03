@@ -1,0 +1,144 @@
+﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.Order.ListItemOrderVM>
+
+@{
+	ViewData["Title"] = "Danh sách đơn hàng";
+}
+
+
+<div class="my-2">
+	<button class="btn btn-success" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		<i class="fas fa-search"></i> &nbsp; Tìm kiếm đơn hàng
+	</button>
+	@if (User.IsInPermission(AuthConst.AppOrder.DELETE))
+	{
+		<div class="btn btn-light">
+			<div class="custom-control custom-switch">
+				<input id="chkAllowBulkDel" type="checkbox" class="custom-control-input">
+				<label for="chkAllowBulkDel" class="custom-control-label form-check-label hover:pointer">Cho phép xóa nhiều</label>
+			</div>
+		</div>
+		<button id="btnBulkDel" class="d-none btn btn-outline-danger"
+				data-keyword="đơn hàng"
+				data-url="/Admin/AppOrder/BulkDelete">
+			Xóa hàng loạt (<span id="delCount">0</span> đơn hàng)
+		</button>
+	}
+</div>
+
+<partial name="_FormSearch" />
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th class="js-col-checkbox d-none position-relative">
+					<input id="chkAll" type="checkbox" style="transform: scale(1.5)" />
+					<label for="chkAll" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
+				</th>
+				<th>#</th>
+				<th>Tên khách hàng</th>
+				<th class="fit">Số điện thoại</th>
+				@*<th>Email</th>*@
+				<th>Địa chỉ</th>
+				<th>Tổng tiền</th>
+				<th class="fit">Ngày đặt hàng</th>
+				<th>Trạng thái</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="fit js-col-checkbox d-none position-relative">
+						<input id="chk@(item.Id)" type="checkbox" data-id="@item.Id" style="transform: scale(1.5)" />
+						<label for="chk@(item.Id)" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
+					</td>
+					<td class="fit">@item.RowIndex</td>
+					<td>@item.CusName</td>
+					<td class="fit">@item.CusPhone</td>
+					@*<td class="fit">@item.CusEmail</td>*@
+					<td>@item.DeliveryAddress</td>
+					<td class="fit">@item.Total.ToString("#,0") VNĐ</td>
+					<td class="fit">@item.CreatedDate?.ToString("dd/MM/yyyy")</td>
+					<td class="fit">
+						<h5>
+							@if (item.StatusId == DB.OrderStatusId.STATUS_PENDING)
+							{
+								<span class="badge status-@item.Id border border-dark">@item.StatusName</span>
+							}
+							@if (item.StatusId == DB.OrderStatusId.STATUS_PROCESSING)
+							{
+								<span class="badge status-@item.Id border bg-info">@item.StatusName</span>
+							}
+							@if (item.StatusId == DB.OrderStatusId.STATUS_DONE)
+							{
+								<span class="badge status-@item.Id border bg-success">@item.StatusName</span>
+							}
+							@if (item.StatusId == DB.OrderStatusId.STATUS_CANCELED)
+							{
+								<span class="badge status-@item.Id border bg-dark">@item.StatusName</span>
+							}
+						</h5>
+					</td>
+					<td class="fit">
+						@if (User.IsInPermission(AuthConst.AppOrder.UPDATE))
+						{
+							if (item.StatusId == DB.OrderStatusId.STATUS_PENDING || item.StatusId == DB.OrderStatusId.STATUS_PROCESSING)
+							{
+								<button data-toggle="modal" data-target="#modalUpdateStatus"
+										data-order-id="@item.Id" data-status-id="@item.StatusId"
+										class="btn btn-outline-secondary btn-sm btn-update-status btn-status-@item.Id">
+									<i class="fas fa-pen"></i>
+								</button>
+							}
+							else
+							{
+								<button class="btn btn-outline-secondary btn-sm invisible">
+									<i class="fas fa-pen"></i>
+								</button>
+							}
+						}
+						@if (User.IsInPermission(AuthConst.AppOrder.DETAILS))
+						{
+							<a asp-action="OrderDetail" asp-route-id="@item.Id"
+							   class="btn btn-outline-info btn-sm"><i class="fas fa-eye"></i></a>
+						}
+						@if (User.IsInPermission(AuthConst.AppOrder.DELETE))
+						{
+							<a asp-action="Delete" asp-route-id="@item.Id"
+							   class="btn btn-outline-danger btn-sm js-delete-confirm"
+							   onclick="return confirm('Xác nhận xóa đơn hàng này?')"><i class="fa fas fa-trash"></i></a>
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+<partial name="_Pager" />
+
+<!-- Modal -->
+<div class="modal fade" id="modalUpdateStatus" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title modal-status-title" id="staticBackdropLabel">Cập nhật trạng thái đơn hàng</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				@await Component.InvokeAsync("SelectListMstOrderStatus")
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-submit-status">Lưu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section scripts {
+	<script src="~/js/Admin/order/order.js" asp-append-version="true"></script>
+}

@@ -1,11 +1,11 @@
-﻿using DNews.Shared.Attributes;
+﻿using App.Shared.Attributes;
 
 namespace App.Web.Areas.Admin.ViewModels.AppBranch
 {
-	public class AddOrUpdateBranchVM
-	{
-		public int Id { get; set; }
-		[AppRequired]
-		public string Address { get; set; }
-	}
+    public class AddOrUpdateBranchVM
+    {
+        public int Id { get; set; }
+        [AppRequired]
+        public string Address { get; set; }
+    }
 }

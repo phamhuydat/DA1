@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("elFinder ASP.NET Core backend")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3.6.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.6+8b11a5d6fb12fdca8e7645cd2ca7b684017d8458")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.6+a513e76db86a37b5896064f944dd069372ae50bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("elFinder.NetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("elFinder.NetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.3.6.0")]

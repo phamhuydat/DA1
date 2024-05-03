@@ -1,13 +1,13 @@
 ﻿using App.Share.Consts;
 using System.ComponentModel.DataAnnotations;
 
-namespace DNews.Shared.Attributes
+namespace App.Shared.Attributes
 {
-	public class AppRegexAttribute : RegularExpressionAttribute
-	{
-		public AppRegexAttribute(string pattern) : base(pattern)
-		{
-			this.ErrorMessage = AttributeErrMesg.REGEX;
-		}
-	}
+    public class AppRegexAttribute : RegularExpressionAttribute
+    {
+        public AppRegexAttribute(string pattern) : base(pattern)
+        {
+            this.ErrorMessage = AttributeErrMesg.REGEX;
+        }
+    }
 }
