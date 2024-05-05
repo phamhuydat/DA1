@@ -16,7 +16,7 @@ namespace App.Web.Controllers
         }
 
         [Route("tin-tuc")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> News()
         {
 
 

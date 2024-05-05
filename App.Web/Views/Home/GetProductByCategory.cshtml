@@ -14,7 +14,7 @@
                     <span class="delimiter">&#x203A;</span>
                 </li>
                 <li >
-                    <strong class="current-item">Iphone</strong> 
+                    <strong class="current-item">@ViewBag.Title</strong> 
                 </li>
             </ul>
         </div>
@@ -22,8 +22,8 @@
             <div class="page category-page">
                 <div class="all_content_category">
                     <div class="card card-primary card-outline card-outline-tabs">
-                        <div class="page-title" id="category-page-title" style="scroll-margin-top:115px">
-                            <h1>Watch</h1>
+                        <div class="page-title" id="category-page-title" style="scroll-margin-top:115px; display: flex; margin: auto">
+                            <h1>@ViewBag.Title</h1>
                         </div>
                         <div class="catelog_banner desktop">
                             <div class="topic-block">
@@ -117,16 +117,14 @@
 
                                 <div class=product-selectors>
                                     <div class=product-sorting>
-                                        <span>Sắp xếp theo</span> 
-                                        <select id="products-orderby">
-                                            <option selected>
-                                               Thứ tự hiển thị
-                                            </option>
-                                            <option value="1">Mới nhất </option>
-                                            <option value="2">Tên: A -> Z</option>
-                                            <option value="3">Tên: Z -> A</option>
-                                            <option value="4">Giá từ cao đến thấp</option>
-                                            <option value="5">Giá thấp đến cao</option>
+                                        <span>Sắp xếp theo</span>
+                                        <select name="orderby">
+                                            <option selected value=20>Th&#x1EE9; t&#x1EF1; hi&#x1EC3;n th&#x1ECB;</option>
+                                            <option value="11">Gi&#xE1; cao &#x111;&#x1EBF;n th&#x1EA5;p</option>
+                                            <option value="15">M&#x1EDB;i nh&#x1EA5;t</option>
+                                            <option value="5">T&#xEA;n: A &#x111;&#x1EBF;n Z</option>
+                                            <option value="6">T&#xEA;n: Z &#x111;&#x1EBF;n A</option>
+                                            <option value="10">Gi&#xE1; th&#x1EA5;p &#x111;&#x1EBF;n cao</option>
                                         </select>
                                     </div>
                                 </div>
@@ -182,28 +180,8 @@
 
                                     @if(Model.Count() > 0)
                                     {
-                                        <div class="pager">
-                                           @*  <ul>
-                                                <li class="current-page">
-                                                    <span>1</span>
-                                                </li>
-                                                <li class="individual-page">
-                                                    <a data-page=2
-                                                        >
-                                                        2
-                                                    </a>
-                                                </li>
-                                                <li class="individual-page">
-                                                    <a >3
-                                                    </a>
-                                                </li>
-                                                <li class="next-page">
-                                                    <a >
-                                                        Kế tiếp
-                                                    </a>
-                                                </li>
-                                            </ul> *@
-                                            @* <partial name="_pagerProdcutCategory" /> *@
+                                        <div class="pager" style="display: flex">
+                                            <partial name="_page" /> 
                                         </div>
                                     }
                                 </div>
@@ -211,7 +189,7 @@
 
                             <!-- phụ kiện đi kèm-->
 
-                            <div class="topic-block">
+                           @*  <div class="topic-block">
                                 <div class="topic-block-body">
                                     <div class="section_catelog_bottom">
                                         <div class="section_ss sosanh">
@@ -247,10 +225,30 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> *@
                                          
                             <!-- mô tả đồng hồ -->
-                            <partial name="../Shared/_descriptionWatch.cshtml" />
+                            @if (Model.First().CategoryId == 1)
+                            {
+                                <partial name="../Shared/_descriptIphone.cshtml" />
+                            }
+                            else if (Model.First().CategoryId == 2)
+                            {
+                                <partial name="../Shared/_descriptIphone.cshtml" />
+                            }
+                            else if (Model.First().CategoryId == 3)
+                            {
+                                <partial name="../Shared/_descriptionMac.cshtml" />
+                            }
+                            else if (Model.First().CategoryId == 4)
+                            {
+                                <partial name="../Shared/_descriptionWatch.cshtml" />
+                            }
+                            else
+                            {
+                                <partial name="../Shared/_descriptAccessory.cshtml" />
+                            }
+
                         </div>
                     </div>
 

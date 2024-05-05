@@ -422,6 +422,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxfT3JkZXJEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Views/Components/SelectListViewAccessory/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTZWxlY3RMaXN0Vmlld0FjY2Vzc29yeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Home/GetProductByCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRQcm9kdWN0QnlDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -430,12 +434,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DA1/App.Web/Views/Home/_pagerProdcutCategory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFnZXJQcm9kY3V0Q2F0ZWdvcnkuY3NodG1s
+[D:/DA1/App.Web/Views/Home/SearchProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DA1/App.Web/Views/News/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
+[D:/DA1/App.Web/Views/Home/_page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/News/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xOZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Product/ProductDetail.cshtml]
@@ -454,8 +462,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hY2Nlc3NvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Views/Shared/_descriptAccessory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdEFjY2Vzc29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_descriptionMac.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdGlvbk1hYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Shared/_descriptionWatch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdGlvbldhdGNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_descriptIpad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdElwYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_descriptIphone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kZXNjcmlwdElwaG9uZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Shared/_footer.cshtml]
@@ -464,6 +488,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Shared/_header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_LayoutInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Shared/_page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Shared/_pager.cshtml]

@@ -13,7 +13,7 @@ namespace App.Data.DataSeeders
     {
         public static void SeedData(this EntityTypeBuilder<MstPermission> builder)
         {
-            var now = new DateTime(year: 2021, month: 11, day: 10);
+            var now = DateTime.Now;
             var groupName = "";
 
             #region Data liên quan đến bảng Role
@@ -277,28 +277,6 @@ namespace App.Data.DataSeeders
                     Table = DB.AppDiscountCode.TABLE_NAME,
                     GroupName = groupName,
                     Desc = "Xóa mã khuyến mãi",
-                    CreatedDate = now
-                });
-            #endregion
-            #region Data liên quan đến quản lý cửa hàng SystemEnv
-            groupName = "Quản lý thông tin cửa hàng";
-            builder.HasData(
-                new MstPermission
-                {
-                    Id = AuthConst.SystemEnv.VIEW_LIST,
-                    Code = "VIEW_LIST",
-                    Table = DB.SystemEnv.TABLE_NAME,
-                    GroupName = groupName,
-                    Desc = "Xem thông tin cửa hàng",
-                    CreatedDate = now
-                },
-                new MstPermission
-                {
-                    Id = AuthConst.SystemEnv.UPDATE,
-                    Code = "UPDATE",
-                    Table = DB.SystemEnv.TABLE_NAME,
-                    GroupName = groupName,
-                    Desc = "Sửa thông tin cửa hàng",
                     CreatedDate = now
                 });
             #endregion

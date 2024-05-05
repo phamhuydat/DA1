@@ -1,13 +1,39 @@
 ﻿@model App.Web.ViewModels.Account.UpdateProfileVM
 @{
     ViewData["Title"] = "UpdateAddress";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutInfo.cshtml";
 }
 
 <div class="bg-sg"></div>
 <div class="master-wrapper-content">
     <div class="master-column-wrapper">
-        <partial name="_side-2.cshtml" />
+        <div class="side-2">
+            <div class="block block-account-navigation ">
+                <div class="title"><strong>Tài khoản của tôi</strong></div>
+                <div class="listbox">
+                    <ul class="list">
+                        <li class="customer-info inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Thông tin tài khoản</a>
+                        </li>
+                        <li class="customer-addresses active">
+                            <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
+                        </li>
+                        <li class="customer-orders inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                        </li>
+                        <li class="change-password inactive">
+                            <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
+                        </li>
+
+                        <li class="customer-avatar inactive">
+                            <a href=/customer/avatar>
+                                Ảnh đại diện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class=center-2>            
             <form method="post" asp-action="UpdateAddress" asp-controller="Account">
                 <div class="page account-page address-edit-page">

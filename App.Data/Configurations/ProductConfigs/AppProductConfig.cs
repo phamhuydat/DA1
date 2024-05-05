@@ -29,11 +29,6 @@ namespace App.Data.Configurations.ProductConfigs
                 .WithMany(c => c.AppProducts)
                 .HasForeignKey(x => x.CategoryId)
                 .OnDelete(DeleteBehavior.NoAction);
-
-
-
-
-
         }
     }
 }

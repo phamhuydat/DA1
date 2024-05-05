@@ -20,8 +20,11 @@ namespace App.Web.ViewModels.Product
         public string ProductCode { get; set; }
         public string CategoryName { get; set; }
         public string ColorName { get; set; }
-
+        public List<String> RamOptions { get; set; }
+        public List<String> RomOptions { get; set; }
         public ICollection<AppProductImage> AppProductImages { get; set; }
+        public ICollection<AppProductDetail> AppProductDetails { get; set; }
+        public ICollection<MstProductColor> MstProductColors { get; set; }
         public bool IsDiscountProduct
         {
             get

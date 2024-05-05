@@ -1,7 +1,10 @@
 ﻿using App.Data.Entities.Products;
 using App.Data.Repositories;
+using App.Web.ViewModels.Product;
+using App.Web.WebConfig;
 using AspNetCore;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace App.Web.Components.Accessory
 {
@@ -14,11 +17,12 @@ namespace App.Web.Components.Accessory
         }
         public async Task<IViewComponentResult> InvokeAsync(int cate, int pro)
         {
-            var data = _repo.GetAll<AppProduct>()
+            var data = await _repo.GetAll<AppProduct, ProductListVM>
+                (AutoMapperProfile.ProductClientConf)
                 .Where(u => u.CategoryId == cate)
                 .Where(u => u.Id == pro)
                 .Take(4)
-                .ToList();
+                .ToListAsync();
             return View(data);
         }
     }

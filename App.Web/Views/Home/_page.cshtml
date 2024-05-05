@@ -13,7 +13,7 @@
 		}
 	}
 }
-<div class="my-4">
+<div class="my-4" style="display: flex; margin:auto">
 	@Html.PagedListPager((IPagedList)Model,
 	page => Url.Action("GetProductByCategory", new { page = page }) + _params,
 	new PagedListRenderOptions

@@ -7,6 +7,11 @@
             t = 0; t < i.length; t++)r = i[t],
                 r.classList.contains("show") && r.classList.remove("show")
 }
+$("#small-search-box-form").on("submit", function (n) {
+    $("#small-searchterms").focus();
+    $("#small-searchterms").val() == "" && (alert("Vui lòng nhập một số từ khóa tìm kiếm"), $("#small-searchterms").focus(), n.preventDefault())
+});
+
 $(document).ready(function () {
     $(".header").on("mouseenter",
         "#topcartlink", function () {
@@ -40,20 +45,8 @@ $(document).ready(function () {
         $(".show-down-news").slideToggle()
     })
 })
-//var localized_data = {
-//    AjaxCartFailure: "Thêm sản phẩm thất bại. Xin tải lại trang và thử một lần nữa."
-//};
-//AjaxCart.init(!1, ".header-links .cart-qty",
-//    ".header-links .wishlist-qty",
-//    "#flyout-cart", localized_data);
-//$(window).resize(function () {
-//    window.matchMedia("(max-width: 1000px)")
-//        .matches && ($(".search-icon").click(function () {
-//            $(".header-menu.mobile").css("display", "none")
-//        }), $(".bg-sg").click(function () {
-//            $(".header-menu.mobile").css("display", "block")
-//        }))
-//});
+
+
 $(window).resize(function () {
     window.matchMedia("(min-width: 1001px)")
         .matches && ($(".search-icon").click(function () {

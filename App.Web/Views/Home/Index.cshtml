@@ -4,7 +4,7 @@
 @section head{
     <link href="~/ClientTLE/css/style.css" rel="stylesheet" />
 }
-
+<div class=bg-sg></div>
 <div class=master-wrapper-content>
     <div class=master-column-wrapper>
         <div class=center-1>
@@ -146,16 +146,16 @@
                                     <div class="item-box-list">
                                         <div class="category-item">
                                             <h2 class="title">
-                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1"> IPhone </a>
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1">IPhone </a>
                                             </h2>
                                             <div class="page category-page">
                                                 <div class="page-body">
                                                     <div class="product-grid featured-product-grid">
                                                         <div class="item-grid">
                                                             <div class="item-box">
-                                                                <div class="product-item" data-productid=73>
+                                                                <div class="product-item">
                                                                     <div class="product_tag">
-                                                                        <img src="~ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                        <img src="~/ClientTLE/images/uploaded/icon/vnpay500k.png"
                                                                                 alt="">
                                                                     </div>
                                                                     <div class="picture">
@@ -174,10 +174,16 @@
                                                                         </h3>
                                                                         <div class=add-info>
                                                                             <div class=prices>
-                                                                                <div class=price-ratio-container>
-                                                                                    <span class="price price-ratio">-25%</span>
-                                                                                </div><span class="price old-price">@item.Price.ToString("#,##0") VNĐ</span>
-                                                                                <span class="price actual-price">@item.DiscountPrice.ToString("#,##0") VNĐ</span>
+                                                                                @if (item.DiscountPrice == null)
+                                                                                {
+                                                                                    <div class="price old-price"></div>
+                                                                                    <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                                                                    <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                                                                }
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -504,7 +510,7 @@
                             </div>
                         </div>
                         <div class="view-all">
-                            <a >Xem tất cả Tin Tức</a>
+                            <a asp-action="News" asp-controller="News" >Xem tất cả Tin Tức</a>
                         </div>
                     </div>
                 </div>

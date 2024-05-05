@@ -10,12 +10,6 @@ builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddDbContext<WebAppDbContext>(opt =>
-{
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("Database"));
-});
-
-
 builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();

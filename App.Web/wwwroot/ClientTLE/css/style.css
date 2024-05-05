@@ -91524,7 +91524,7 @@ input#termsofservice {
     }
 
     .html-shopping-cart-page .sidebar-cart {
-        position: sticky;
+        /*position: sticky;*/
         top: 72px;
     }
 
@@ -91569,13 +91569,13 @@ input#termsofservice {
         border-top: 1px solid #ebebeb;
     }
     /*Css reset password account page*/
-    .html-account-page.html-change-password-page form {
+    .html-account-page form {
         background-color: #fff;
         border-radius: 8px;
         padding-bottom: 0;
     }
 
-    .html-account-page.html-change-password-page .form-fields {
+    .html-account-page .form-fields {
         width: auto;
         margin: auto;
         padding: 16px 15px 0 15px;
@@ -91583,7 +91583,7 @@ input#termsofservice {
         border-top: 0;
     }
 
-    .html-account-page.html-change-password-page .change-password-page .fieldset {
+    .html-account-page .change-password-page .fieldset {
         margin: 0 0 24px;
     }
     /*Css review account page*/
@@ -93003,7 +93003,7 @@ input#termsofservice {
         padding: 15px 0px;
     }
 
-    .html-account-page.html-change-password-page .form-fields {
+    .html-account-page .form-fields {
         background-color: #fff;
         padding: 16px 0;
         border-top: 0;
@@ -94672,7 +94672,7 @@ img.Topic_Block_item {
         float: right;
     }
 
-    .html-account-page.html-change-password-page form {
+    .html-account-page form {
         background-color: #fff;
         border-radius: 8px;
         padding: 20px 20px 0 20px;
@@ -99444,6 +99444,16 @@ html.html-product-details-page.tis .attributes li {
 
 html.html-product-details-page.tis .attributes .option-list.darkcontrols label {
     text-align: left;
+}
+
+.attributes .option-list.darkcontrols label {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    padding: 8px 15.668px;
+    cursor: pointer;
+    min-width: 70px;
+    min-height: 38px;
 }
 
 html.html-product-details-page.tis .product-details-page label.text-prompt {
@@ -104970,7 +104980,7 @@ label, label + * {
         width: 14px;
         height: 18px;
         border: 0;
-        background: url(/images/uploaded-source/icon/remove-cart.png) center no-repeat;
+        background: url("../images/uploaded-source/icon/remove-cart.png") center no-repeat;
         position: relative;
         top: 8px;
     }
@@ -115167,4 +115177,31 @@ a.button-1.add-to-cart-button.once-submit-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.short-des {
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+    margin-bottom: 15px;
+}
+
+p.title.ud_mo {
+    padding: 12px 16px 12px 15px;
+}
+
+.short-des .title {
+    padding: 16px 16px 12px 15px;
+    color: #1D1D1F;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    /* border-bottom: 1px solid #EFEFEF; */
+    text-align: left;
+}
+
+.option-list.darkcontrols {
+    display: flex;
+    flex-wrap: wrap;
 }

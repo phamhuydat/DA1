@@ -11,34 +11,34 @@ using System.Threading.Tasks;
 
 namespace App.Data.DataSeeders
 {
-	public static class AppRoleSeeder
-	{
-		public static void SeedData(this EntityTypeBuilder<AppRole> builder)
-		{
-			var now = new DateTime(year: 2021, month: 12, day: 10);
+    public static class AppRoleSeeder
+    {
+        public static void SeedData(this EntityTypeBuilder<AppRole> builder)
+        {
+            var now = DateTime.Now;
 
-			// Tạo vai trò
-			var roleCustomer = new AppRole
-			{
-				Id = 1,
-				Name = "Khách hàng",
-				Desc = "Khách hàng",
-				CreatedDate = now,
-				UpdatedDate = now,
-				CanDelete = false
-			};
+            // Tạo vai trò
+            var roleCustomer = new AppRole
+            {
+                Id = 1,
+                Name = "Khách hàng",
+                Desc = "Khách hàng",
+                CreatedDate = now,
+                UpdatedDate = now,
+                CanDelete = false
+            };
 
-			var roleAdmin = new AppRole
-			{
-				Id = 2,
-				Name = "Quản trị hệ thống",
-				Desc = "Quản trị toàn bộ hệ thống",
-				CreatedDate = now,
-				UpdatedDate = now,
-				CanDelete = true
-			};
+            var roleAdmin = new AppRole
+            {
+                Id = 2,
+                Name = "Quản trị hệ thống",
+                Desc = "Quản trị toàn bộ hệ thống",
+                CreatedDate = now,
+                UpdatedDate = now,
+                CanDelete = true
+            };
 
-			builder.HasData(roleCustomer, roleAdmin);
-		}
-	}
+            builder.HasData(roleCustomer, roleAdmin);
+        }
+    }
 }

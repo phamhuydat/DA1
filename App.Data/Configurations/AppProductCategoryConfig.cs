@@ -19,9 +19,30 @@ namespace App.Data.Configurations
             // Khóa chính
             builder.HasKey(s => s.Id);
 
+            builder.Property(s => s.Id)
+                .UseIdentityColumn();
+
             builder.Property(s => s.Name)
-                .HasMaxLength(DB.AppProductCategory.NAME_LENGTH)
+                .HasMaxLength(DB.AppProductCategory.LENGTH_CATEGORY)
                 .IsRequired();
+
+            builder.Property(s => s.Slug)
+                .HasMaxLength(DB.AppProductCategory.LENGTH_CATEGORY);
+
+            builder.Property(s => s.CateLevel)
+                .HasMaxLength(DB.AppProductCategory.LENGTH_LEVEL)
+                .HasDefaultValue(1);
+
+            builder.Property(s => s.HasChild)
+                .HasDefaultValue(DB.AppProductCategory.DEFAULT_VALUE);
+
+            builder.Property(s => s.Content)
+                .HasMaxLength(DB.AppProductCategory.DEFAULT_CONTENT);
+
+            builder.HasOne(s => s.ParentCategory)
+                .WithMany(s => s.ChildCategories)
+                .HasForeignKey(s => s.ParentCateId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             // Khóa ngoại
             builder.HasMany(m => m.AppSlider)

@@ -28,6 +28,7 @@ namespace App.Web.Controllers
 
         public async Task<IActionResult> ProductDetail(int id)
         {
+
             var product = await _repository.GetOneAsync<AppProduct, ProductDetailClientVM>(id, p => new ProductDetailClientVM
             {
                 Id = p.Id,
@@ -41,6 +42,14 @@ namespace App.Web.Controllers
                 CategoryId = p.AppProdcutCategory.Id,
                 ProductColorId = p.AppProductDetails.First().ColorId,
                 ProductCode = p.ProductCode,
+                AppProductDetails = p.AppProductDetails.Where(x => x.ProductId == id).ToList(),
+                MstProductColors = p.AppProductDetails
+                        .Where(x => x.ProductId == id)
+                        .Select(x => x.MstProductColor)
+                        .Distinct()
+                        .ToList(),
+                RamOptions = p.AppProductDetails.Select(x => x.Ram).Distinct().ToList(),
+                RomOptions = p.AppProductDetails.Select(x => x.Rom).Distinct().ToList()
             });
 
             if (product is null)
@@ -50,8 +59,35 @@ namespace App.Web.Controllers
             }
             ViewBag.CategoryName = product.CategoryName;
             return View(product);
-        }
 
+        }
+        public Task<ProductDetailClientVM> GetPriceProduct(int id)
+        {
+            var product = _repository.GetOneAsync<AppProduct, ProductDetailClientVM>(id, p => new ProductDetailClientVM
+            {
+                Id = p.Id,
+                ProductName = p.ProductName,
+                CategoryName = p.AppProdcutCategory.Name,
+                Price = p.AppProductDetails.First().Price,
+                DiscountPrice = p.AppProductDetails.First().DiscountPrice,
+                DiscountFrom = p.AppProductDetails.First().DiscountFrom,
+                DiscountTo = p.AppProductDetails.First().DiscountTo,
+                AppProductImages = p.AppProductImages.Where(x => x.ProductId == id).ToList(),
+                CategoryId = p.AppProdcutCategory.Id,
+                ProductColorId = p.AppProductDetails.First().ColorId,
+                ProductCode = p.ProductCode,
+                AppProductDetails = p.AppProductDetails.Where(x => x.ProductId == id).ToList(),
+                MstProductColors = p.AppProductDetails
+            .Where(x => x.ProductId == id)
+            .Select(x => x.MstProductColor)
+            .Distinct()
+            .ToList(),
+                RamOptions = p.AppProductDetails.Select(x => x.Ram).Distinct().ToList(),
+                RomOptions = p.AppProductDetails.Select(x => x.Rom).Distinct().ToList()
+            });
+
+            return product;
+        }
 
         public async Task<IActionResult> ProductSearch(string search)
         {

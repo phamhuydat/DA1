@@ -13,7 +13,10 @@ namespace App.Web.WebConfig
     {
         public static void AddAppService(this IServiceCollection services, IConfiguration Configuration)
         {
-            var db = services.BuildServiceProvider().GetService<WebAppDbContext>();
+            services.AddDbContext<WebAppDbContext>(opt =>
+            {
+                opt.UseSqlServer(Configuration.GetConnectionString("Database"));
+            });
             services.AddScoped<GenericRepository>();
 
             // Cấu hình đăng nhập
@@ -49,7 +52,7 @@ namespace App.Web.WebConfig
             {
                 config.DurationInSeconds = 10;
                 config.IsDismissable = true;
-                config.Position = NotyfPosition.TopRight;
+                config.Position = NotyfPosition.BottomRight;
             });
 
             services.AddHttpContextAccessor();

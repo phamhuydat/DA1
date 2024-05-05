@@ -1,0 +1,53 @@
+﻿@model IEnumerable<App.Web.ViewModels.Product.ProductListVM>
+
+@foreach(var item in Model)
+{
+    <div class="all_cross-sells prd-detail">
+        <div class="product-grid cross-sells">
+            <div class="title">
+                <strong>Gợi ý phụ kiện đi kèm</strong>
+            </div>
+            <div class="item-grid">
+                <div class="item-box">
+                    <div class="product-item" data-productid="1389">
+                        <div class="picture">
+                            <a >
+                                <img src="@item.ImagePath"/>
+                            </a>
+                        </div>
+                        <div class="details">
+                            <span class="product-title">
+                                <a >
+                                    @item.ProductName
+                                </a>
+                            </span>
+                            <div class="product-rating-box"
+                                 title="0 b&#xE0;i &#x111;&#xE1;nh gi&#xE1;">
+                                <div class="rating">
+                                    <div style="width: 0%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="add-info">
+                                <div class="prices">
+                                    @if (item.DiscountPrice == null)
+                                    {
+                                        <div class="price old-price"></div>
+                                        <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                    }
+                                    else
+                                    {
+                                        <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                        <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

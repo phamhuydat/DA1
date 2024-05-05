@@ -62,7 +62,7 @@ namespace App.Data
             modelBuilder.Entity<AppUser>().SeedData();
             modelBuilder.Entity<AppRolePermission>().SeedData();
             modelBuilder.Entity<AppBranch>().SeedData();
-            //modelBuilder.Entity<AppProductCategory>().SeedData();
+            modelBuilder.Entity<AppProductCategory>().SeedData();
             modelBuilder.Entity<MstOrderStatus>().SeedData();
 
             modelBuilder.Entity<MstProductColor>().SeedData();

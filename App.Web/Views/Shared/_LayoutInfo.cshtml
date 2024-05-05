@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" class="html-login-page html-shopping-cart-page html-category-page html-registration-page html-news-list-page .html-product-details-page mdl-js">
+<html lang="en" class="html-account-page mdl-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
         <div class="search-box store-search-box">
             <form method="get" id="small-search-box-form" asp-action="SearchProducts" asp-controller="Home">
                 <input type="text" class="search-box-text" id="small-searchterms" autocomplete=off name="search"
-                       placeholder="Tìm kiếm">
+                       placeholder="Tìm kiếm" >
                 <button type="submit"
                         class="button-1 search-box-button">
                     Tìm kiếm
@@ -29,9 +29,9 @@
 
         <partial name="_header.cshtml" />
 
-         @RenderBody()
+        @RenderBody()
 
-         <partial name="_footer.cshtml" />
+        <partial name="_footer.cshtml" />
     </div>
     @await Component.InvokeAsync("Notyf")
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -41,7 +41,7 @@
     <script src="~/lib/awesome-notifications/index.var.min.js"></script>
 
     <script src="~/clienttle/js/custom.js"></script>
-    <script src="~/clienttle/js/cart_custom.js" asp-append-version="true"></script>
+    <script src="~/clienttle/js/cart_custom.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

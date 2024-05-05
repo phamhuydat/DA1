@@ -44,65 +44,10 @@ namespace App.Web.Controllers
             }
             return View(data);
         }
-        private async Task<List<CartItemVM>> GetCartFromCustomer()
-        {
-            //Lấy cookie
-            String[] cookie = Request.Cookies.Keys.Where(c => c.IndexOf("sp_") == 0).ToArray();
-            List<CartItemVM> cartItems = new List<CartItemVM>();
-            foreach (var item in cookie)
-            {
-                var listId = item.Split('_');
-                cartItems.Add(new CartItemVM
-                {
-                    Id = Convert.ToInt32(item.Split('_')[1]),
-                    Quantity = Convert.ToInt32(Request.Cookies[item])
-                });
-            }
 
-            // Get dữ liệu sản phẩm dựa vào cookie giỏ hàng
-            var productTempIds = cartItems.Select(x => x.Id).ToList();
-
-            var data = await _repository.GetAll<AppProduct, CartItemVM>(
-                             AutoMapperProfile.CartConf,
-                             false,
-                             where: x => productTempIds.Contains(x.Id) && x.IsActive)
-                            .ToListAsync();
-
-            var productIds = cartItems.Select(x => x.Id).ToList();
-            for (int i = 0; i < data.Count; i++)
-            {
-                var tmp = cartItems.SingleOrDefault(x => x.Id == data[i].Id);
-                if (tmp != null)
-                {
-                    data[i].Quantity = tmp.Quantity;
-                }
-            }
-
-            // Xóa sản phẩm không khả dụng (bị xóa hoặc có IsActive == false) đã được thêm vào giỏ hàng trước đó
-
-            var invalidIds = productTempIds.Where(x => !data.Select(x => x.Id).ToList().Contains(x)).ToList();
-            foreach (var x in invalidIds)
-            {
-                String[] cookies = Request.Cookies.Keys.Where(c => c.IndexOf("sp_" + x) == 0).ToArray();
-                foreach (var item in cookies)
-                {
-                    Response.Cookies.Delete(item);
-                }
-            }
-            return data ?? new List<CartItemVM>();
-        }
-
-        private void RemoveAllCartData()
-        {
-            String[] cookie = Request.Cookies.Keys.Where(c => c.IndexOf("sp_") == 0).ToArray();
-            foreach (var item in cookie)
-            {
-                Response.Cookies.Delete(item);
-            }
-        }
         [HttpPost]
         [AppAuthorize]
-        public async Task<IActionResult> Order(OrderDataVM model)
+        public async Task<IActionResult> Order([FromServices] OrderDataVM model)
         {
             if (!ModelState.IsValid)
             {
@@ -115,10 +60,9 @@ namespace App.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        private async Task AddDataToOrder(OrderDataVM model)
+        private async Task AddDataToOrder([FromServices] OrderDataVM model)
         {
             model.StatusId = DB.OrderStatusId.STATUS_PENDING;
-
             var order = new AppOrder();
             var qualityPro = 0;
             _mapper.Map(model, order);
@@ -142,22 +86,121 @@ namespace App.Web.Controllers
                 order.AppOrderDetails.Add(tmp);
             }
             var count = orderDetail.Select(s => s.Quantity).Sum();
-            //SendEmailSuccessOrder(model.CusName,
-            //    model.CusEmail, model.CusPhone, model.DeliveryAddress, order.Total, orderDetail.Select(s => s.Quantity).Sum());
+            SendEmailSuccessOrder(model.CusName,
+                model.CusEmail, model.CusPhone, model.DeliveryAddress, order.Total, orderDetail.Select(s => s.Quantity).Sum());
             await _repository.AddAsync(order);
         }
 
-        public async Task<IActionResult> AddVoucher(string voucher)
+        private async Task<List<CartItemVM>> GetCartFromCustomer()
         {
-            var data = await _repository.GetOneAsync<AppDiscountCode>(x => x.Code == voucher);
-            if (data != null)
+            //Lấy cookie
+            String[] cookie = Request.Cookies.Keys.Where(c => c.IndexOf("sp_") == 0).ToArray();
+            List<CartItemVM> cartItems = new List<CartItemVM>();
+            foreach (var item in cookie)
             {
-                return Ok(data);
+                cartItems.Add(new CartItemVM
+                {
+                    Id = Convert.ToInt32(item.Split('_')[1]),
+                    Quantity = Convert.ToInt32(Request.Cookies[item])
+                });
             }
-            else
+
+            // Get dữ liệu sản phẩm dựa vào cookie giỏ hàng
+            var productIds = cartItems.Select(x => x.Id).ToList();
+            var data = await _repository.GetAll<AppProduct, CartItemVM>(
+                            AutoMapperProfile.CartConf,
+                            false,
+                            where: x => productIds.Contains(x.Id) && x.IsActive)
+                        .ToListAsync();
+
+            for (int i = 0; i < data.Count; i++)
             {
-                return Ok(false);
+                var tmp = cartItems.SingleOrDefault(x => x.Id == data[i].Id);
+                if (tmp != null)
+                {
+                    data[i].Quantity = tmp.Quantity;
+                }
             }
+
+
+            // Xóa sản phẩm không khả dụng (bị xóa hoặc có IsActive == false) đã được thêm vào giỏ hàng trước đó
+            var invalidIds = productIds.Where(x => !data.Select(x => x.Id).ToList().Contains(x)).ToList();
+            foreach (var x in invalidIds)
+            {
+                Response.Cookies.Delete("sp_" + x);
+            }
+            return data ?? new List<CartItemVM>();
+        }
+
+        private void RemoveAllCartData()
+        {
+            String[] cookie = Request.Cookies.Keys.Where(c => c.IndexOf("sp_") == 0).ToArray();
+            foreach (var item in cookie)
+            {
+                Response.Cookies.Delete(item);
+            }
+        }
+        private void SendEmailSuccessOrder([FromServices] string cusName, string email, string phone, string address, decimal TotalPrice, int qualityPro)
+        {
+            var pathToFile =
+                    $"{Path.DirectorySeparatorChar}" +
+                    $"emailTemplate{Path.DirectorySeparatorChar}emailSuccessOrder.html";
+
+            var appMailSender = new AppMailSender()
+            {
+                Name = "Admin",
+                Subject = $"Thông tin đến khách hàng về đơn hàng!"
+            };
+
+            using (StreamReader SourceReader = System.IO.File.OpenText(pathToFile))
+            {
+                appMailSender.Content = SourceReader.ReadToEnd();
+            };
+
+            var appMailReciver = new AppMailReciver()
+            {
+                Email = email,
+                Name = cusName
+            };
+
+            //var listMailReciver = new List<AppMailReciver>();
+            //listMailReciver.Add(appMailReciver);
+            //if (sysEnv[SysEnvConst.EMAILFORORDERINFORMATION] != null)
+            //{
+            //    var listEmailPersonnel = sysEnv[SysEnvConst.EMAILFORORDERINFORMATION];
+            //    foreach (var item in listEmailPersonnel.ReplaceTagInput().Split(","))
+            //    {
+            //        var appMailPersonnel = new AppMailReciver()
+            //        {
+            //            Email = item.Trim(),
+            //            Name = "Personnel"
+            //        };
+
+            //        listMailReciver.Add(appMailPersonnel);
+            //    }
+            //}
+
+            // var logo = $"{_contextAccessor.HttpContext.Request.Scheme}://{_contextAccessor.HttpContext.Request.Host}{sysEnv[SysEnvConst.LOGO_HEADER]}";
+
+            //var contentMessage = Engine.Razor
+            //    .RunCompile(appMailSender.Content, "@",
+            //    null,
+            //    new
+            //    {
+            //        Name = appMailReciver.Name,
+            //        TotalPrice = TotalPrice.ToString("#,0 VNĐ"),
+            //        Phone = phone,
+            //        Email = email,
+            //        Address = address,
+            //        QualityPro = qualityPro,
+            //        Signature = _mailConfig.Signature,
+            //        Year = DateTime.Now.Year,
+            //        CompanyName = appMailSender.Name,
+            //        // LogoCompany = logo
+            //    });
+
+            //appMailSender.Content = contentMessage;
+            //AppMailer.SendToList(appMailSender, listMailReciver.AsEnumerable(), _mailConfig);
         }
         public IActionResult Completed()
         {
