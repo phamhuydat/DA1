@@ -48,8 +48,8 @@ namespace App.Web.Controllers
                         .Select(x => x.MstProductColor)
                         .Distinct()
                         .ToList(),
-                RamOptions = p.AppProductDetails.Select(x => x.Ram).Distinct().ToList(),
-                RomOptions = p.AppProductDetails.Select(x => x.Rom).Distinct().ToList()
+                RamOptions = p.AppProductDetails.Select(x => x.Ram).Distinct().OrderByDescending(x => x).ToList(),
+                RomOptions = p.AppProductDetails.Select(x => x.Rom).Distinct().OrderBy(x => x).ToList()
             });
 
             if (product is null)
@@ -78,12 +78,11 @@ namespace App.Web.Controllers
                 ProductCode = p.ProductCode,
                 AppProductDetails = p.AppProductDetails.Where(x => x.ProductId == id).ToList(),
                 MstProductColors = p.AppProductDetails
-            .Where(x => x.ProductId == id)
-            .Select(x => x.MstProductColor)
-            .Distinct()
-            .ToList(),
-                RamOptions = p.AppProductDetails.Select(x => x.Ram).Distinct().ToList(),
-                RomOptions = p.AppProductDetails.Select(x => x.Rom).Distinct().ToList()
+                                    .Where(x => x.ProductId == id)
+                                    .Select(x => x.MstProductColor)
+                                    .Distinct()
+                                    .ToList(),
+
             });
 
             return product;

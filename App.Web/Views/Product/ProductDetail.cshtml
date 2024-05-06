@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     var now = DateTime.Now;
     var tst = 0;
+    var ramtst = 0;
 }
 @section head{
     <link href="~/lib/slick-carousel/slick.min.css" rel="stylesheet" />
@@ -89,7 +90,7 @@
                                     <div class="product-name">
                                         <h1>
                                             <input type="hidden" id="id-product" value="@Model.Id" />
-                                            <span class="main-name">@Model.ProductName</span>
+                                            <span class="main-name">@Model.ProductName </span>
                                             <span class="product-name-variant"></span>
                                         </h1>
                                     </div>
@@ -108,7 +109,7 @@
                                     {
                                         <div style="display: flex;">
                                             <div class="product-price">
-                                                <span id="new-price-discount" class="new-price"> @Model.DiscountPrice?.ToString("#,0")₫</span>
+                                                <span id="new-price-discount" class="new-price">@Model.DiscountPrice?.ToString("#,0")₫</span>
                                             </div>
                                             <div class="old-product-price">
                                                 <span id="old-price-val" data-price ="@Model.Price">@Model.Price.ToString("#,0")₫</span>
@@ -130,18 +131,18 @@
                                         </dt>
 
                                         <dd id="product_attribute_input_3859">
-                                            <ul class="option-list darkcontrols">
-                                                @foreach(var rom in Model.AppProductDetails)
+                                            <ul class="option-list rom darkcontrols">
+                                                @foreach(var rom in Model.RomOptions)
                                                 { 
                                                     <li class="">
-                                                        <a class="change-price" data-id="@rom.Price" @* data-price="@rom.DiscountPrice" *@>
-                                                            @if(tst == 0)
+                                                        <a class="change-price selected" data-id="@rom" @* data-price="@rom.DiscountPrice" *@>
+                                                            @if(tst == 0 )
                                                             {
-                                                                <label class="checked-attr">@rom.Rom</label>
+                                                                <label id="rom-options" class="checked-attr">@rom</label>
                                                             }
                                                             else
                                                             {
-                                                                <label>@rom.Rom</label>
+                                                                <label id="rom-options">@rom</label>
                                                             }
                                                         </a>
                                                     </li>
@@ -150,27 +151,33 @@
                                             </ul>
                                         </dd>
 
-                                        @if(!(Model.CategoryId == 1 || Model.CategoryId == 4) || Model.CategoryId == 5 )
+                                        @if((Model.CategoryId == 1 || Model.CategoryId == 4) || Model.CategoryId == 5 )
                                         {
                                             <dt>
                                                 <label class="text-prompt">
                                                     Ram
                                                 </label>
-                                                @* <span class="label-value"></span> *@
                                             </dt>
-                                            @foreach(var ram in Model.AppProductDetails)
-                                            {
-                                                <dd id="product_attribute_input_3859">
-                                                    <ul class="option-list darkcontrols">
-                                                        <li>
-                                                            <a>
-                                                                <label class="checked-attr">@ram.Ram</label>
-                                                            </a>
-                                                        </li>
-
-                                                    </ul>
-                                                </dd>
-                                            }
+                                            <dd id="product_attribute_input_3859">
+                                                <ul class="option-list ram darkcontrols">
+                                                @foreach(var ram in Model.RamOptions)
+                                                {
+                                                    <li>
+                                                        <a class="change-price-ram selected" data-id="@ram">
+                                                            @if(ramtst == 0)
+                                                            {
+                                                                <label id="ram-options" class="checked-attr">@ram</label>
+                                                            }
+                                                            else
+                                                            {
+                                                                <label id="ram-options">@ram</label>
+                                                            }
+                                                        </a>
+                                                    </li>
+                                                    ramtst++;
+                                                }
+                                                </ul>
+                                            </dd>
                                         }
 
                                         <dt id="product_attribute_label_3860" class=''>
@@ -295,24 +302,75 @@
 
         });
 
-        $(".change-price").click(ev => {
-            var price = $(ev.currentTarget).attr("data-id");
 
-            var disPrice = $(ev.currentTarget).attr("data-price");
+        var selectedRom = @Html.Raw(Json.Serialize(Model.AppProductDetails.First().Rom));
+        var selectedRam = @Html.Raw(Json.Serialize(Model.AppProductDetails.First().Ram));
+        var productName = "@Model.ProductName";
+
+        $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+
+
+        $(".change-price").click(ev => {
+
+            selectedRom = $(ev.currentTarget).attr("data-id");
+
+            var disPrice = findDisPrice(selectedRam, selectedRom);
+
+            var price = findPrice(selectedRam, selectedRom);
+
             if (disPrice == null) {
-                $("#new-price-discount").html(price);
+                $("#new-price-discount").html(price + "₫");
             }
             else {
-                $("#new-price-discount").html(disPrice);
-                $("#old-price-val").html(price);
+                $("#new-price-discount").html(disPrice + "₫");
+                $("#old-price-val").html(price + "₫");
             }
-            $('.option-list .checked-attr').removeClass('checked-attr');
+            $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+            $('.option-list.rom .checked-attr').removeClass('checked-attr');
 
             // Thêm lớp checked-attr vào nhãn của tùy chọn được chọn
             $(ev.currentTarget).find('label').addClass('checked-attr');
         });
 
+        $(".change-price-ram").click(ev => {
+            selectedRam = $(ev.currentTarget).attr("data-id");
 
+            var disPrice = findDisPrice(selectedRam, selectedRom);
+
+            var price = findPrice(selectedRam, selectedRom);
+            if (disPrice == null) {
+                $("#new-price-discount").html(price + "₫");
+            }
+            else {
+                $("#new-price-discount").html(disPrice + "₫");
+                $("#old-price-val").html(price + "₫");
+            }
+            $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+            $('.option-list.ram .checked-attr').removeClass('checked-attr');
+
+            // Thêm lớp checked-attr vào nhãn của tùy chọn được chọn
+            $(ev.currentTarget).find('label').addClass('checked-attr');
+        });
+
+        var dataFromView = @Html.Raw(Json.Serialize(Model.AppProductDetails));
+        function findPrice(ram, rom) {          
+            for (var i = 0; i < dataFromView.length; i++) {
+                if (dataFromView[i].ram === ram && dataFromView[i].rom === rom) {
+                    console.log(dataFromView[i].price);
+                    return dataFromView[i].price;
+                }
+            }
+            return "N/A"; // Trả về "N/A" nếu không tìm thấy giá tương ứng
+        }
+        function findDisPrice(ram, rom) {          
+            for (var i = 0; i < dataFromView.length; i++) {
+                if (dataFromView[i].ram === ram && dataFromView[i].rom === rom) {
+                    console.log(dataFromView[i].discountPrice);
+                    return dataFromView[i].discountPrice;
+                }
+            }
+            return "N/A"; // Trả về "N/A" nếu không tìm thấy giá tương ứng
+        }
 
     </script>
 
