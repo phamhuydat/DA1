@@ -20,31 +20,82 @@ function getCookie(cname) {
     return "";
 }
 
+window.addEventListener("load", () => {
+    recountCart();
+    $(".voucher").click((ev) => {
+        ev.preventDefault();
+        var voucher = $(".discount-coupon-code").val();
+        $.post("/cart/addVoucher", { voucher }, (res) => {
+            if (res == false) {
+                //new AWN().alert('Không tìm thấy mã giảm giá', { durations: { success: 0 }, labels: { alert: "Thất bại" } });
+                $(".dis-voucher").addClass("d-none");
+                $(".text-error-voucher").text("(*) Không tìm thấy Voucher.");
+                var totalprice = $(".value-summary.total-price").text();
+                $(".value-summary.new").text(totalprice.toLocaleString("de-DE") + "đ");
+                allprice();
+                return;
+            }
+
+            $(".dis-voucher").removeClass("d-none");
+            $(".text-error-voucher").text("");
+            $(".useVoucher").val(voucher);
+            if (res.percent !== null) {
+                var totalprice = $(".value-summary.total-price").text();
+                var text = splittotal(totalprice);
+                var pay = Number(text) - ((Number(text) * res.percent) / 100);
+                var pricevoucher = res.percent + "%";
+                $(".price-voucher").text(pricevoucher)
+                $(".value-summary.new").text(pay.toLocaleString("de-DE") + " " + "đ")
+
+            }
+            else if (res.price != null) {
+                var totalprice = $(".value-summary.total-price").text();
+                var text = splittotal(totalprice);
+                var pay = Number(text) - Number(res.price);
+                var pricevoucher = res.price.toLocaleString("de-DE")
+                $(".price-voucher").text(pricevoucher + " " + "đ")
+                $(".value-summary.new").text(pay.toLocaleString("de-DE") + " " + "đ")
+            }
+            allprice();
+            //new AWN().success('Thêm mã giảm giá thành công', { durations: { success: 0 }, labels: { success: " thành công" } })
+        })
+    })
+})
+
+function splittotal(text) {
+    var total = "";
+    text = text.split(" ")[0];
+    //text = text.split(" ")[0];
+    for (let i = 0; i < text.length; i++) {
+        total = total + text[i];
+    }
+    return total
+}
+
 function updateProductCount(isUp = true, quan = 1) {
-    var point = document.querySelector(".cart-shopping .cart-text");
+    var point = document.querySelector(".cart-shopping .cart-qty");
     var num = Number(point.innerText);
     num = isUp ? quan + num : num - quan;
     point.innerText = num;
 }
 
 function setProductCount(val = 1) {
-    var point = $(`<span class="cart-text color">${val}</span>`);
+    var point = $(`<span class="cart-qty color">${val}</span>`);
     var cart = $("a.cart-shopping");
-    cart.find(".cart-text").remove();
+    cart.find(".cart-qty").remove();
     cart.append(point);
 }
 
 function hasProductCount() {
-    var point = $(".cart-shopping .cart-text");
+    var point = $(".cart-shopping .cart-qty");
     return point.length > 0;
 }
 
-function addToCart(productId) {
-    var cName = "sp_" + productId;
+function addToCart(productId, idDetail) {
+    var cName = "prodcutcart_" + productId + "_" + idDetail;
     var quan = 1;   // Chỉ thêm vào 1 sản phẩm mỗi lần click
     var expDay = 30;    // Giỏ hàng tồn tại 1 tháng
     // setCookie(cName, 1, -1);
-    var tsest = getCookie(cName);
     if (getCookie(cName)) {
         setCookie(cName, Number(getCookie(cName)) + quan, expDay);
     }
@@ -59,8 +110,8 @@ function addToCart(productId) {
     }
 }
 
-function deleteProductFromCart(evt, id) {
-    setCookie("sp_" + id, 0, -1);
+function deleteProductFromCart(evt, id, idDetail) {
+    setCookie("prodcutcart_" + id + "_" + idDetail, 0, -1);
     $(evt.target).closest(".append-item").remove();
     recountCart();
     setTimeout(() => {
@@ -70,8 +121,8 @@ function deleteProductFromCart(evt, id) {
     }, 0);
 }
 
-function removeFromCart(productId) {
-    var cName = "sp_" + productId;
+function removeFromCart(productId, idDetail) {
+    var cName = "prodcutcart_" + productId + "_" + idDetail;
     var quan = -1;   // Giảm 1 sản phẩm mỗi lần click
     var expDay = 30;    // Giỏ hàng tồn tại 1 tháng
     if (Number(getCookie(cName)) <= 1) {
@@ -88,7 +139,7 @@ function recountCart() {
     var cookie = document.cookie.split(";");
     var numOfProduct = 0;
     for (let i = 0; i < cookie.length; i++) {
-        if (cookie[i].indexOf("sp_") >= 0) {
+        if (cookie[i].indexOf("prodcutcart_") >= 0) {
             numOfProduct += Number(cookie[i].split("=").slice(-1)[0]);
         }
     }
@@ -99,22 +150,26 @@ function recountCart() {
             let prices = $(".cart-price[data-price]");
             let total = 0;
             prices.each(function () {
-                let quan = Number($(this).prev().find("input").val());
+                let quan = Number($(this).closest('td').next().find("input.input-quantity").val());
+                //let quan = Number($(this).prev().find("input").val());
                 total += quan * Number($(this).attr("data-price"));
             });
-            totalEle.text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            totalEle.text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " " + "đ");
+            allprice();
         }, 100);
     }
     if (numOfProduct <= 0) {
-        $(".cart-shopping .cart-text").remove();
+        $(".cart-shopping .cart-qty").remove();
     }
+    allprice();
 }
 
-function updateInput(ev, productId) {
+function updateInput(ev, productId, idDetail) {
     $(ev.target)
         .closest(".cart-quantity")
         .find("input")
-        .val(getCookie("sp_" + productId));
+        .val(getCookie("prodcutcart_" + productId + "_" + idDetail));
+
 }
 
 $(function () {
@@ -122,7 +177,16 @@ $(function () {
 });
 
 function buyNow(evt, productId) {
+    var idDetail = $("#pro-detail-id").val();
     evt.preventDefault();
-    addToCart(productId);
+    addToCart(productId, idDetail);
     location.href = $(evt.currentTarget).attr("href");
+}
+
+
+function allprice() {
+    var postprice = $(".totalMoney");
+    var price = $(".value-summary.new").text();
+    var temp = splittotal(price);
+    postprice.val(temp)
 }

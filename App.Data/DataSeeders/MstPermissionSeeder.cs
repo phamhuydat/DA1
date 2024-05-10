@@ -247,7 +247,7 @@ namespace App.Data.DataSeeders
                 {
                     Id = AuthConst.AppDiscountCode.VIEW_LIST,
                     Code = "VIEW_LIST",
-                    Table = DB.AppDiscountCode.TABLE_NAME,
+                    Table = DB.AppVoucher.TABLE_NAME,
                     GroupName = groupName,
                     Desc = "Xem danh sách mã khuyến mãi",
                     CreatedDate = now
@@ -256,7 +256,7 @@ namespace App.Data.DataSeeders
                 {
                     Id = AuthConst.AppDiscountCode.CREATE,
                     Code = "CREATE",
-                    Table = DB.AppDiscountCode.TABLE_NAME,
+                    Table = DB.AppVoucher.TABLE_NAME,
                     GroupName = groupName,
                     Desc = "Thêm mã khuyến mãi",
                     CreatedDate = now
@@ -265,7 +265,7 @@ namespace App.Data.DataSeeders
                 {
                     Id = AuthConst.AppDiscountCode.UPDATE,
                     Code = "UPDATE",
-                    Table = DB.AppDiscountCode.TABLE_NAME,
+                    Table = DB.AppVoucher.TABLE_NAME,
                     GroupName = groupName,
                     Desc = "Sửa mã khuyến mãi",
                     CreatedDate = now
@@ -274,7 +274,7 @@ namespace App.Data.DataSeeders
                 {
                     Id = AuthConst.AppDiscountCode.DELETE,
                     Code = "DELETE",
-                    Table = DB.AppDiscountCode.TABLE_NAME,
+                    Table = DB.AppVoucher.TABLE_NAME,
                     GroupName = groupName,
                     Desc = "Xóa mã khuyến mãi",
                     CreatedDate = now

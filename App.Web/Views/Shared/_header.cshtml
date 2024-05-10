@@ -3,17 +3,17 @@
 <div class="header">
     <div class="header-lower">
         <div class="header-logo">
-            <a href="">
-                <img alt="" src="">
+            <a asp-action="Index" asp-controller="Home">
+                <img alt="" src="~/ClientTLE/images/uploaded/Apple Line.png">
             </a>
         </div>
         <div class="header-menu">
             <ul class="top-menu notmobile">
-                <li class="category-menu-items"><a asp-controller="Home" asp-action="" asp-route-id="1"> iPhone </a>
-                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="2"> iPad </a>
-                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="3"> Mac </a>
-                <li class="category-menu-items"><a asp-controller="Home" asp-route-id="4"> Watch </a>
-                <li class=topic-items-news><a asp-controller="Home" asp-route-id="5"> Phụ kiện </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-action="GetProductByCategory" asp-route-id="1"> iPhone </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-action="GetProductByCategory" asp-route-id="2"> iPad </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-action="GetProductByCategory" asp-route-id="3"> Mac </a>
+                <li class="category-menu-items"><a asp-controller="Home" asp-action="GetProductByCategory" asp-route-id="4"> Watch </a>
+                <li class=topic-items-news><a asp-controller="Home" asp-action="GetProductByCategory" asp-route-id="5"> Phụ kiện </a>
                 <li class=topic-items-news><a href=/tin-tuc> Tin Tức </a>
             </ul>
             <div class=menu-toggle></div>
@@ -89,7 +89,7 @@
                            class="ico-login">Đăng nhập</a>
 
                     <li id="topcartlink">
-                        <a asp-action="Index" asp-controller="Cart">         
+                        <a asp-action="Index" asp-controller="Cart" class="cart-shopping">         
                             <span class="cart-label">Giỏ hàng</span>
                             <span class="cart-qty">0</span>
                         </a>

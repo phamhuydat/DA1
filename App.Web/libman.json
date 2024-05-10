@@ -25,6 +25,16 @@
     {
       "library": "jquery-migrate@3.4.1",
       "destination": "wwwroot/lib/jquery-migrate/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "bs4-autocomplete@2.0.1-a",
+      "destination": "wwwroot/lib/bs4-autocomplete/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "bs4-pagination@0.0.4",
+      "destination": "wwwroot/lib/bs4-pagination/"
     }
   ]
 }

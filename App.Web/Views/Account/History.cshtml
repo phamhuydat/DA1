@@ -1,0 +1,66 @@
+﻿@model IEnumerable<App.Web.ViewModels.Order.OrderClientVM>
+@{
+    ViewData["Title"] = "Đơn hàng của bạn";
+    Layout = "~/Views/Shared/_LayoutInfo.cshtml";
+}
+<div class=bg-sg></div>
+<div class="master-wrapper-content">
+    <div class=master-column-wrapper>
+        <div class="side-2">
+            <div class="block block-account-navigation ">
+                <div class="title"><strong>Tài khoản của tôi</strong></div>
+                <div class="listbox">
+                    <ul class="list">
+                        <li class="customer-info inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Thông tin tài khoản</a>
+                        </li>
+                        <li class="customer-addresses inactive">
+                            <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
+                        </li>
+                        <li class="customer-orders active">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                        </li>
+                        <li class="change-password inactive">
+                            <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
+                        </li>
+
+                        <li class="customer-avatar inactive">
+                            <a href=/customer/avatar>
+                                Ảnh đại diện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=center-2>
+            <div class="page account-page order-list-page">
+                <div class=page-title>
+                    <h1>Đơn đặt hàng</h1>
+                </div>
+                <div class=page-body>
+                    <div class=order-list>
+                        @foreach(var item in Model)
+                        {
+                            <div class="section order-item">
+                            <ul class=info>
+                                <li><span class="order-status cancelled">&#x110;&#xE3; h&#x1EE7;y</span>
+                                <li>Mã đơn hàng:<span>@item.Id</span>
+                                <li>Ngày đặt hàng: <span class=order-date>@item.CreatedDate</span>
+                                <li>Tổng tiền: <span class=order-total>@item.Total.ToString("#,0")</span>
+                                <li>Phương thức thanh toán: <span class=order-total>@item.MethodPay</span>
+                                <li>
+                                    <a class=order-details-btn asp-action="HistoryDetail" asp-route-id="@item.Id">
+                                        Xem chi
+                                        tiết
+                                    </a>
+                                 </li>
+                            </ul>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

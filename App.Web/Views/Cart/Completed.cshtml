@@ -4,3 +4,140 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class=bg-sg></div>
+<div id=show_image_popup>
+    <div class=close-btn-area>
+        <button id=close-img-btn title="Close (Esc)" type=button
+                class=mfp-close>
+            ×
+        </button>
+    </div><img id=large-image src="" alt="">
+</div>
+<div class=master-column-wrapper>
+    <div class=center-1>
+        <div class="page checkout-page order-completed-page order-details-page">
+            <div class="section order-summary">
+                <div class=page-title>
+                    <h1>Chi tiết đơn hàng</h1>
+                </div>
+                <div class=page-body>
+                    <div class=order-overview>
+                        <ul class=order-overview-content>
+                            <li class=order-number><label>Mã đơn hàng:</label><span>#30047</span>
+                            <li class=order-date><label>Ngày đặt hàng:</label><span>08/05/2024</span>
+                            <li class=order-status>
+                                <label>Tình trạng:</label><span>
+                                    &#x110;&#xE3;
+                                    h&#x1EE7;y
+                                </span>
+                            <li class=name><label>Tên khách hàng:</label> <span>fgfd </span>
+                            <li class=phone><label>Số điện thoại:</label> <span>6787867867</span>
+                            <li class=email><label>Email:</label> <span>abc@gmail.com</span>
+                        </ul>
+                    </div>
+                    <div class=order-details-area>
+                        <div class=billing-info-wrap>
+                            <div class=payment-method-info>
+                                <ul class=info-list>
+                                    <li class=payment-method>
+                                        <span class=label>
+                                            Phương thức thanh toán:
+                                        </span> <span class=value> Thanh toán VNPay </span>
+                                    <li class=payment-method-status>
+                                        <span class=label>
+                                            Tình trạng thanh
+                                            toán:
+                                        </span> <span class=value>
+                                            &#x110;ang ch&#x1EDD;
+                                            x&#x1EED; l&#xFD;
+                                        </span>
+                                </ul>
+                            </div>
+
+                            <div class="section products">
+                                <div class=title><span>Sản phẩm</span></div>
+                                <div class=item_order_product>
+                                    <div class=it_order_products>
+                                        <a >
+                                            MacBook Pro 16
+                                            M1 Pro (16 Core/16GB/1TB) - 48.990.000&#x20AB;
+                                        </a>
+                                        <div class="attributes">
+                                            <p>M&#224;u sắc: Space Gray
+                                        </div>
+                                    </div>
+                                    <div class=quantity>
+                                        <label class=td-title>SL:</label> <span class=product-quantity>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section totals">
+                                <div class=total-info>
+                                    <table class=cart-total>
+                                        <tbody>
+                                            <tr>
+                                                <td class=cart-total-left>
+                                                    <label>
+                                                        Tổng số tiền đã đặt
+                                                        hàng:
+                                                    </label>
+                                                </td>
+                                                <td class=cart-total-right>
+                                                    <span><strong>48.990.000&#x20AB;</strong></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=checkout-data>
+                <div class="section order-completed">
+                    <div class=details>
+                        <div class=details-link>
+                            <a>
+                                Nhấp vào đây để biết chi
+                                tiết đơn hàng.
+                            </a>
+                        </div>
+                    </div>
+                    <div class=buttons>
+                        <button type=button
+                                class="button-1 order-completed-continue-button"
+                                onclick="setLocation(&#34;/&#34;)">
+                            Tiếp tục mua hàng
+                        </button> 
+                        <button type=button class="button-1 order-completed-continue-button"
+                                          onclick="setLocation(&#34;/checkout/opccompleteredirectionpayment&#34;)">
+                            Thanh toán
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id=countdownModal tabindex=-1 role=dialog
+                 aria-labelledby=countdownModalLabel aria-hidden=true data-backdrop=static
+                 data-keyboard=false>
+                <div class=modal-dialog role=document>
+                    <div class=modal-content>
+                        <div class=modal-header>
+                            <h5 class=modal-title id=countdownModalLabel>Thông báo</h5>
+                        </div>
+                        <div class=modal-body>
+                            Thời gian thanh toán đã hết. Vui lòng quay về trang
+                            FlashSale.
+                        </div>
+                        <div class=modal-footer>
+                            <button type=button class="btn btn-secondary"
+                                    onclick=reloadOrderDetailsAndNavigateToFlashSale()>
+                                Về trang FlashSale
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

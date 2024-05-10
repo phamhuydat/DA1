@@ -1,0 +1,17 @@
+﻿@model IEnumerable<App.Web.Components.CateMenu.CateMenuViewModel>
+
+@if(Model.Count() > 0)
+{
+    @foreach(var item in Model)
+    {        
+        <div class=item-box>
+            <div class=sub-category-item>
+                <div class=title>
+                    <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.Id">
+                        @item.Name
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+}

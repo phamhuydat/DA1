@@ -134,7 +134,7 @@ namespace App.Share.Consts
             public const int ACCESSORY = 5;
         }
 
-        public static class AppDiscountCode
+        public static class AppVoucher
         {
             public const string TABLE_NAME = "AppDiscountCode";
             public const short CODE_LENGTH = 100;

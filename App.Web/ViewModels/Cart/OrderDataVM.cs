@@ -6,8 +6,8 @@
         public string CusPhone { get; set; }
         public string CusEmail { get; set; }
         public string DeliveryAddress { get; set; }
-        public string CusNote { get; set; }
+        public string? UseVoucher { get; set; }
         public decimal Total { get; set; }
-        public int StatusId { get; set; }
+        public int? StatusId { get; set; }
     }
 }

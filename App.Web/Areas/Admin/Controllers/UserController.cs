@@ -32,10 +32,10 @@ namespace App.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Index(int page = 1, int size = DEFAULT_PAGE_SIZE)
         {
             // Chú ý dấu ngoặc khi dùng await cùng với GenRowIndex
-            var data = (await _repository
+            var data = await _repository
                 .GetAll<AppUser>(u => u.Username != this.CurrentUsername)
                 .ProjectTo<UserListItemVM>(AutoMapperProfile.UserIndexConf)
-                .ToPagedListAsync(page, size));
+                .ToPagedListAsync(page, size);
             return View(data);
         }
 

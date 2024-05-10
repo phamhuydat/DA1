@@ -91083,7 +91083,7 @@ body a:hover {
     padding: 16px 16px;
 }
 
-.html-shopping-cart-page .shopping-cart-page .common-buttons button {
+.html-shopping-cart-page .shopping-cart-page .common-buttons a {
     margin: 0 0 0 20px;
     font-size: 14px;
 }
@@ -93402,7 +93402,7 @@ input#termsofservice {
         color: #1d1d1f;
     }
     /*css cart page*/
-    .master-wrapper-content .shopping-cart-page .common-buttons button {
+    .master-wrapper-content .shopping-cart-page .common-buttons a {
         min-width: 50%;
         font-size: 14px;
     }
@@ -108580,7 +108580,7 @@ label, label + * {
     font-size: 0;
 }
 
-    .shopping-cart-page .common-buttons button {
+    .shopping-cart-page .common-buttons a {
         display: inline-block;
         min-width: 180px;
         margin: 5px;
@@ -108589,19 +108589,20 @@ label, label + * {
         padding: 10px 20px;
         font-size: 15px;
         color: #fff;
+        text-align: center;
     }
 
-        .shopping-cart-page .common-buttons button:hover,
-        .shopping-cart-page .common-buttons button:focus {
+        .shopping-cart-page .common-buttons a:hover,
+        .shopping-cart-page .common-buttons a:focus {
             background-color: #999;
         }
 
-        .shopping-cart-page .common-buttons button:first-child {
+        .shopping-cart-page .common-buttons a:first-child {
             background-color: #0066cc;
         }
 
-            .shopping-cart-page .common-buttons button:first-child:hover,
-            .shopping-cart-page .common-buttons button:first-child:focus {
+            .shopping-cart-page .common-buttons a:first-child:hover,
+            .shopping-cart-page .common-buttons a:first-child:focus {
                 background-color: #248ece;
             }
 
@@ -108770,7 +108771,7 @@ label, label + * {
     width: 350px;
     max-width: 100%;
     margin: 0 auto 50px;
-    padding: 24px 0;
+    padding: 24px 0 0 0;
 }
 
     .cart-collaterals > div {
@@ -115204,4 +115205,23 @@ p.title.ud_mo {
 .option-list.darkcontrols {
     display: flex;
     flex-wrap: wrap;
+}
+
+input#discountcouponcode {
+    border-radius: 8px 0 0 8px;
+    margin-left: 4px;
+    border: 1px solid #EBEBEB;
+}
+
+.coupon-code a {
+    float: left;
+    width: 39%;
+    height: 48px;
+    padding: 15px !important;
+    font-size: 15px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }

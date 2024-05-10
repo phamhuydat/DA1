@@ -2,6 +2,7 @@
 using App.Data.Repositories;
 using App.Web.Common;
 using App.Web.Common.Mailer;
+using App.Web.ViewModels.Cart;
 using AspNetCoreHero.ToastNotification;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -18,6 +19,7 @@ namespace App.Web.WebConfig
                 opt.UseSqlServer(Configuration.GetConnectionString("Database"));
             });
             services.AddScoped<GenericRepository>();
+            services.AddTransient<OrderDataVM>();
 
             // Cấu hình đăng nhập
             services.AddAuthentication(AppConst.COOKIES_AUTH).AddCookie(options =>

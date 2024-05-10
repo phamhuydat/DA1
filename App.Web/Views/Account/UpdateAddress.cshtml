@@ -19,7 +19,7 @@
                             <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
                         </li>
                         <li class="customer-orders inactive">
-                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                            <a asp-action="History" asp-controller="Account">Đơn đặt hàng</a>
                         </li>
                         <li class="change-password inactive">
                             <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class=center-2>            
-            <form method="post" asp-action="UpdateAddress" asp-controller="Account">
+            <form method="post" asp-action="UpdateAddress" asp-controller="Account" style="margin-top: -15px">
                 <div class="page account-page address-edit-page">
                     <div class="page-title">
                         <h1>Sửa địa chỉ</h1>
@@ -64,12 +64,13 @@
                                 <span class="field-validation-valid" asp-validation-for="@Model.address"></span>
                             </div>
                         </div>
-                        <div class="buttons">
+                        <div class="buttons mt-4">
                             <button type="submit" class="button-1 save-address-button">
                                 Lưu lại
                             </button>
                         </div>
                     </div>
+                </div>
             </form>
         </div>
     </div>

@@ -1,5 +1,4 @@
 ﻿@model App.Web.ViewModels.Product.ProductDetailClientVM
-
 @{
     ViewData["Title"] = "Danh mục sản phẩm" + ViewBag.CategoryName;
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,6 +12,14 @@
 }
 
 <div class="bg-sg"></div>
+<div id=show_image_popup>
+    <div class=close-btn-area>
+        <button id=close-img-btn title="Close (Esc)" type=button
+                class=mfp-close>
+            ×
+        </button>
+    </div><img id=large-image src="" alt="">
+</div>
 <div id="show_image_popup">
     <div class="close-btn-area">
         <button id="close-img-btn" title="Close (Esc)" type="button" class="mfp-close">×</button>
@@ -46,9 +53,7 @@
                     </a>
                     <span class=delimiter>&#x203A;</span>
                 </li>
-
                 <li>
-
                     <strong>MacBook Air M3 15 inch</strong>
                 </li>
             </ul>
@@ -69,7 +74,6 @@
                                                     alt="" id="main-product-img-70" />
                                         </a>
                                     </div>
-
                                         <div class="slick slideshow picture-thumbs" id="slick">
                                             @foreach (var itemImg in Model.AppProductImages)
                                             {
@@ -133,7 +137,7 @@
                                         <dd id="product_attribute_input_3859">
                                             <ul class="option-list rom darkcontrols">
                                                 @foreach(var rom in Model.RomOptions)
-                                                { 
+                                                {
                                                     <li class="">
                                                         <a class="change-price selected" data-id="@rom" @* data-price="@rom.DiscountPrice" *@>
                                                             @if(tst == 0 )
@@ -218,13 +222,13 @@
                                     <div class="first-add-to-cart">
                                         <div class="add-to-cart">
                                             <div class="add-to-cart-panel">
+                                                <input type="hidden" id="pro-detail-id" value="@Model.AppProductDetails.First().Id"/>
                                                 <a class="button-1 add-to-cart-button once-submit-button"
-                                                    asp-action="Index" asp-controller="Cart"
+                                                    asp-action="Index" asp-controller="Cart" data-id=""
                                                     onclick="buyNow(event, @Model.Id)">
-                                                    Mua ngay
+                                                    Mua ngay 
                                                 </a>
                                             </div>
-
                                         </div>
                                     </div>
 
@@ -306,7 +310,6 @@
         var selectedRom = @Html.Raw(Json.Serialize(Model.AppProductDetails.First().Rom));
         var selectedRam = @Html.Raw(Json.Serialize(Model.AppProductDetails.First().Ram));
         var productName = "@Model.ProductName";
-
         $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
 
 
@@ -314,16 +317,16 @@
 
             selectedRom = $(ev.currentTarget).attr("data-id");
 
-            var disPrice = findDisPrice(selectedRam, selectedRom);
+            var item = findPrice(selectedRam, selectedRom);
 
-            var price = findPrice(selectedRam, selectedRom);
+            $("#pro-detail-id").val(item[0]);
 
-            if (disPrice == null) {
-                $("#new-price-discount").html(price + "₫");
+            if (item[2] == null) {
+                $("#new-price-discount").html(item[1] + "₫");
             }
             else {
-                $("#new-price-discount").html(disPrice + "₫");
-                $("#old-price-val").html(price + "₫");
+                $("#new-price-discount").html(item[2] + "₫");
+                $("#old-price-val").html(item[1] + "₫");
             }
             $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
             $('.option-list.rom .checked-attr').removeClass('checked-attr');
@@ -335,15 +338,16 @@
         $(".change-price-ram").click(ev => {
             selectedRam = $(ev.currentTarget).attr("data-id");
 
-            var disPrice = findDisPrice(selectedRam, selectedRom);
+            var item = findPrice(selectedRam, selectedRom);
 
-            var price = findPrice(selectedRam, selectedRom);
-            if (disPrice == null) {
-                $("#new-price-discount").html(price + "₫");
+            $("#pro-detail-id").val(item[0]);
+
+            if (item[2] == null) {
+                $("#new-price-discount").html(item[1] + "₫");
             }
             else {
-                $("#new-price-discount").html(disPrice + "₫");
-                $("#old-price-val").html(price + "₫");
+                $("#new-price-discount").html(item[2] + "₫");
+                $("#old-price-val").html(item[1] + "₫");
             }
             $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
             $('.option-list.ram .checked-attr').removeClass('checked-attr');
@@ -351,22 +355,16 @@
             // Thêm lớp checked-attr vào nhãn của tùy chọn được chọn
             $(ev.currentTarget).find('label').addClass('checked-attr');
         });
-
+        var itemPro = [];
         var dataFromView = @Html.Raw(Json.Serialize(Model.AppProductDetails));
-        function findPrice(ram, rom) {          
+        function findPrice(ram, rom) {
             for (var i = 0; i < dataFromView.length; i++) {
                 if (dataFromView[i].ram === ram && dataFromView[i].rom === rom) {
-                    console.log(dataFromView[i].price);
-                    return dataFromView[i].price;
-                }
-            }
-            return "N/A"; // Trả về "N/A" nếu không tìm thấy giá tương ứng
-        }
-        function findDisPrice(ram, rom) {          
-            for (var i = 0; i < dataFromView.length; i++) {
-                if (dataFromView[i].ram === ram && dataFromView[i].rom === rom) {
-                    console.log(dataFromView[i].discountPrice);
-                    return dataFromView[i].discountPrice;
+                    itemPro[0] = dataFromView[i].id;
+                    itemPro[1] = dataFromView[i].price;
+                    itemPro[2] = dataFromView[i].discountPrice;
+                    console.log(itemPro)
+                    return itemPro;
                 }
             }
             return "N/A"; // Trả về "N/A" nếu không tìm thấy giá tương ứng
@@ -399,6 +397,7 @@
             });
             $('.thumb-item img').on('click',
                 function () {
+                    console.log($(this).attr('data-defaultsize'));
                     $('#main-product-img-70').attr('src', $(this).attr('data-defaultsize'));
                     $('#main-product-img-70').attr('title', $(this).attr('title'));
                     $('#main-product-img-70').attr('alt', $(this).attr('alt'));

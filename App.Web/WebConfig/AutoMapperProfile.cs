@@ -30,6 +30,7 @@ using App.Web.ViewModels.Product;
 using App.Web.ViewModels.Cart;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System.Security.Policy;
+using App.Web.ViewModels.Order;
 
 namespace App.Web.WebConfig
 {
@@ -47,7 +48,7 @@ namespace App.Web.WebConfig
             CreateMap<AppUser, AcceptUpdateViewModel>().ReverseMap();
 
             CreateMap<AppBranch, AddOrUpdateBranchVM>().ReverseMap();
-            CreateMap<AppDiscountCode, AddOrUpdateDiscountCodeVM>().ReverseMap();
+            CreateMap<AppVoucher, AddOrUpdateDiscountCodeVM>().ReverseMap();
             CreateMap<MstProductColor, AddOrUpdateProductColorVM>().ReverseMap();
             CreateMap<AppSlider, AddOrUpdateSliderVM>().ReverseMap();
             CreateMap<AppPolicy, AddOrUpdatePolicyVM>().ReverseMap();
@@ -60,6 +61,8 @@ namespace App.Web.WebConfig
             CreateMap<AppPolicy, PolicyDetailVM>().ReverseMap();
             CreateMap<AppUser, RegisterClientVM>().ReverseMap();
             CreateMap<AppProduct, CartItemVM>().ReverseMap();
+            CreateMap<OrderDataVM, AppOrder>().ReverseMap();
+            CreateMap<AppOrder, OrderClientVM>().ReverseMap();
         }
 
         public static MapperConfiguration RoleIndexConf = new(mapper =>
@@ -123,8 +126,8 @@ namespace App.Web.WebConfig
 
         public static MapperConfiguration AppDiscountCodeConf = new(mapper =>
         {
-            mapper.CreateMap<AppDiscountCode, DiscountCodeListItemVM>();
-            mapper.CreateMap<AppDiscountCode, AppDiscountCodeListItemVM>();
+            mapper.CreateMap<AppVoucher, DiscountCodeListItemVM>();
+            mapper.CreateMap<AppVoucher, AppDiscountCodeListItemVM>();
         });
 
         public static MapperConfiguration MstProductColorConf = new MapperConfiguration(mapper =>
@@ -284,17 +287,33 @@ namespace App.Web.WebConfig
             .ForMember(uItem => uItem.DiscountTo,
                 opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountTo))
             .ForMember(uItem => uItem.DiscountPrice,
-                opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountPrice))
-            ;
+                opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountPrice));
 
+        });
+
+        //public static MapperConfiguration CartConf = new(mapper =>
+        //{
+        //    mapper.CreateMap<AppProduct, CartItemVM>()
+        //    .ForMember(uItem => uItem.ImagePath, opts =>
+        //        opts.MapFrom(uEntity => uEntity.AppProductImages.FirstOrDefault() == null ? "" : uEntity.AppProductImages.First().ImagePath)
+        //    )
+
+        //    .ReverseMap();
+        //});
+        public static MapperConfiguration OrderClientConf = new(mapper =>
+        {
+            mapper.CreateMap<AppOrder, OrderClientVM>().ReverseMap();
         });
 
         public static MapperConfiguration CartConf = new(mapper =>
         {
-            mapper.CreateMap<AppProduct, CartItemVM>()
+            mapper.CreateMap<AppProductDetail, CartItemVM>()
             .ForMember(uItem => uItem.ImagePath, opts =>
-                opts.MapFrom(uEntity => uEntity.AppProductImages.FirstOrDefault() == null ? "" : uEntity.AppProductImages.First().ImagePath)
-            ).ReverseMap();
+                opts.MapFrom(uEntity => uEntity.AppProduct.AppProductImages.FirstOrDefault() == null ? "" :
+                            uEntity.AppProduct.AppProductImages.First().ImagePath))
+            .ForMember(uItem => uItem.ProductName, opts =>
+                opts.MapFrom(uEntity => uEntity.AppProduct.ProductName + " | " + uEntity.Ram + " | " + uEntity.Rom))
+            .ReverseMap();
         });
 
     }

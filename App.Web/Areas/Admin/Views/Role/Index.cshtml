@@ -3,7 +3,9 @@
 @{
 	ViewData["Title"] = "Danh sách vai trò";
 }
+@{
 
+}
 @if (User.IsInPermission(AuthConst.AppRole.CREATE))
 {
 	<div class="my-2">
@@ -41,7 +43,7 @@
 								   class="btn btn-outline-secondary btn-sm"><i class="fa fas fa-pen"></i></a>
 							}
 							@if (User.IsInPermission(AuthConst.AppRole.DELETE))
-							{
+							{	
 								<a asp-action="Delete" asp-route-id="@item.Id"
 								   class="btn btn-outline-secondary btn-sm"><i class="fa fas fa-trash"></i></a>
 							}

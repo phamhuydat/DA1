@@ -25,7 +25,7 @@
                             <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
                         </li>
                         <li class="customer-orders inactive">
-                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                            <a asp-action="History" asp-controller="Account">Đơn đặt hàng</a>
                         </li>
                         <li class="change-password inactive">
                             <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
@@ -46,22 +46,22 @@
                     <h1>Thông tin tài khoản</h1>
                 </div>
                 <div class=page-body>
-                    <form method="post" asp-action="Information" asp-controller="Account" >
+                    <form method="post" asp-action="UpdateProfile" asp-controller="Account" >
                         <div class=fieldset>
                             <div class=form-fields>
                                 <div class="inputs first_name">
                                     <label for=FirstName>Tên, Họ: </label> 
-                                    <input type="text" value="@Model.fullname"> 
+                                    <input type="text" value="@Model.fullname" asp-for="@Model.fullname"> 
                                     <span class="field-validation-valid" ></span>
                                 </div>
                                 <div class="inputs email">
                                     <label for=FirstName>Email: </label>
-                                    <input type="email" value="@Model.email">
+                                    <input type="email" value="@Model.email" asp-for="@Model.email">
                                     <span class="field-validation-valid"></span>
                                 </div>
                                 <div class="inputs phone-number">
                                     <label for=FirstName>Điện thoại:</label>
-                                    <input type="tel" value="@Model.phone">
+                                    <input type="tel" value="@Model.phone" asp-for="@Model.phone">
                                     <span class="field-validation-valid"></span>
                                 </div>
                                 <div class="inputs user-name">

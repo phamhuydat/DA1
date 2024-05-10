@@ -190,22 +190,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DA1/App.Web/Areas/Admin/Views/MstProductBrand/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXN0UHJvZHVjdEJyYW5kXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/DA1/App.Web/Areas/Admin/Views/MstProductBrand/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXN0UHJvZHVjdEJyYW5kXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/DA1/App.Web/Areas/Admin/Views/MstProductBrand/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXN0UHJvZHVjdEJyYW5kXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/DA1/App.Web/Areas/Admin/Views/MstProductBrand/_AddOrUpdateBrand.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXN0UHJvZHVjdEJyYW5kXF9BZGRPclVwZGF0ZUJyYW5kLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/DA1/App.Web/Areas/Admin/Views/MstProductColor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXN0UHJvZHVjdENvbG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -378,6 +362,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Components/CateMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Components/Slider/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTbGlkZXJcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -388,6 +376,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Account/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Account/HistoryDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxIaXN0b3J5RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Account/Login.cshtml]
@@ -422,6 +418,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxfT3JkZXJEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Views/Components/CateMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDYXRlTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Views/Components/SelectListViewAccessory/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTZWxlY3RMaXN0Vmlld0FjY2Vzc29yeVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -440,6 +440,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Home/_page.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Home/_pagerSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfcGFnZXJTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/News/News.cshtml]
@@ -492,10 +496,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Shared/_LayoutInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbmZvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/DA1/App.Web/Views/Shared/_page.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Shared/_pager.cshtml]

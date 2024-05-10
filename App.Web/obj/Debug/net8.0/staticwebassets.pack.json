@@ -97,8 +97,20 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\2560x800-Copy-1.png"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\Apple Line.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\Apple Line.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\Apple Line.svg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\Apple Line.svg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\Trang chủ\\2.jpeg",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\Trang chủ\\2.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\apple-xxl.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\apple-xxl.png"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner-doanh-nghiep-04.png",
@@ -279,6 +291,10 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\icon\\vnpay500k.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\icon\\vnpay500k.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\logo-apple-hien-tai.jpg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\logo-apple-hien-tai.jpg"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\tích tròn (1).jpg",
@@ -1085,6 +1101,10 @@
       "PackagePath": "staticwebassets\\adminTLE\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\emailTemplate\\InfoNewMessager.html",
       "PackagePath": "staticwebassets\\emailTemplate\\InfoNewMessager.html"
     },
@@ -1763,6 +1783,166 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\README.md",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\README.md"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.d.ts",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.d.ts"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\package.json",
+      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\package.json"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\README.md",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\README.md"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bs4-pagination.d.ts",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bs4-pagination.d.ts"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bs4-pagination.metadata.json",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bs4-pagination.metadata.json"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.js.map",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\bundles\\bs4-pagination.umd.min.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\bs4-pagination.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\bs4-pagination.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\bs4-pagination.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\bs4-pagination.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.component.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.component.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.component.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.component.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.module.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.module.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.module.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\lib\\bs4-pagination.module.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\public-api.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\public-api.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm2015\\public-api.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm2015\\public-api.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\bs4-pagination.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\bs4-pagination.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\bs4-pagination.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\bs4-pagination.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.component.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.component.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.component.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.component.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.module.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.module.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.module.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\lib\\bs4-pagination.module.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\public-api.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\public-api.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\esm5\\public-api.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\esm5\\public-api.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.js.map",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm2015\\bs4-pagination.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm5\\bs4-pagination.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm5\\bs4-pagination.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm5\\bs4-pagination.js.map",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm5\\bs4-pagination.js.map"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\fesm5\\bs4-pagination.min.js",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\fesm5\\bs4-pagination.min.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\lib\\bs4-pagination.component.d.ts",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\lib\\bs4-pagination.component.d.ts"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\lib\\bs4-pagination.module.d.ts",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\lib\\bs4-pagination.module.d.ts"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\package.json",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\package.json"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-pagination\\public-api.d.ts",
+      "PackagePath": "staticwebassets\\lib\\bs4-pagination\\public-api.d.ts"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\font-awesome\\css\\all.css",

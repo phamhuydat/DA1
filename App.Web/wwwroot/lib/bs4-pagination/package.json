@@ -1,0 +1,19 @@
+{
+  "name": "bs4-pagination",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^9.0.3",
+    "@angular/core": "^9.0.3",
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/bs4-pagination.umd.js",
+  "module": "fesm5/bs4-pagination.js",
+  "es2015": "fesm2015/bs4-pagination.js",
+  "esm5": "esm5/bs4-pagination.js",
+  "esm2015": "esm2015/bs4-pagination.js",
+  "fesm5": "fesm5/bs4-pagination.js",
+  "fesm2015": "fesm2015/bs4-pagination.js",
+  "typings": "bs4-pagination.d.ts",
+  "metadata": "bs4-pagination.metadata.json",
+  "sideEffects": false
+}

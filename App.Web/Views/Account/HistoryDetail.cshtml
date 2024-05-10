@@ -1,0 +1,138 @@
+﻿@model IEnumerable<App.Data.Entities.AppOrderDetail>
+@{
+    ViewData["Title"] = "HistoryDetail";
+    Layout = "~/Views/Shared/_LayoutInfo.cshtml";
+}
+
+<div class=master-wrapper-content>
+    <div class=master-column-wrapper>
+        <div class="side-2">
+            <div class="block block-account-navigation ">
+                <div class="title"><strong>Tài khoản của tôi</strong></div>
+                <div class="listbox">
+                    <ul class="list">
+                        <li class="customer-info inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Thông tin tài khoản</a>
+                        </li>
+                        <li class="customer-addresses inactive">
+                            <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
+                        </li>
+                        <li class="customer-orders active">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                        </li>
+                        <li class="change-password inactive">
+                            <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
+                        </li>
+
+                        <li class="customer-avatar inactive">
+                            <a href=/customer/avatar>
+                                Ảnh đại diện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=center-2>
+            <div class="page order-details-page">
+                <div class=actions_back><a asp-action="History" class=return-items-back>Trở lại</a></div>
+                <div class=page-title>
+                    <h1>Chi tiết đơn hàng</h1>
+                </div>
+                <div class=page-body>
+                    <div class=order-overview>
+                        <ul class=order-overview-content>
+                            <li class=order-number><label>Mã đơn hàng</label><span>@ViewBag.Info.Id</span>
+                            <li class=order-date><label>Ngày đặt hàng:</label><span>@ViewBag.Info.CreatedDate</span>
+                            <li class=order-status-cancelled>
+                                <label>Tình trạng:</label><span>
+                                    đã hủy
+                                </span>
+                        </ul>
+@*                         <div class=order-detail-print>
+                            <a href=/orderdetails/pdf/30047
+                               class="button-2 pdf-invoice-button">Xuất PDF</a>
+                        </div> *@
+                    </div>
+                    <div class=order-details-area>
+                        <div class=billing-info-wrap>
+                            <div class=billing-info>
+                                <ul class=info-list>
+                                    <li class=name>
+                                        <span class=label>Tên khách hàng:</span> <span class=value>@ViewBag.Info.CusName</span>
+                                    <li class=phone>
+                                        <span class=label>Điện thoại:</span> <span class=value>@ViewBag.Info.CusPhone</span>
+                                    <li class=email>
+                                        <span class=label>E-mail:</span> <span class=value>@ViewBag.Info.CusEmail</span>
+                                </ul>
+                            </div>
+                            <div class="billing-info address">
+                                <div class=title><span>Địa chỉ nhận hàng:</span></div>
+                                <ul class=info-list>
+                                    <li class=address1>
+                                    <li class=city-state-zip>@ViewBag.Info.DeliveryAddress
+                                </ul>
+                            </div>
+                            <div class=payment-method-info>
+                                <ul class=info-list>
+                                    <li class=payment-method>
+                                        <span class=label>
+                                            Phương thức thanh toán:
+                                        </span> <span class=value>@ViewBag.Info.MethodPay </span>
+                                    <li class=payment-method-status>
+                                        <span class=label>
+                                            Tình trạng thanh
+                                            toán:
+                                        </span> 
+                                        <span class=value>
+                                            &#x110;ang ch&#x1EDD; x&#x1EED;
+                                            l&#xFD;
+                                        </span>
+                                </ul>
+                            </div>
+                            <div class="section products">
+                                <div class=title><span>Sản phẩm</span></div>
+                                @foreach(var item in Model)
+                                {                                    
+                                    <div class=item_order_product>
+                                        <div class=it_order_products>
+                                            <a asp-action="" asp-controller="" >
+                                                @item.ProductName - @item.Price&#x20AB;
+                                            </a>
+                                            <div class=attributes>
+                                                <p>Màu sắc: Space Gray
+                                            </div>
+                                        </div>
+                                        <div class=quantity>
+                                            <label class=td-title>SL:</label> <span class=product-quantity>@item.Quantity</span>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="section totals">
+                                <div class=total-info>
+                                    <table class=cart-total>
+                                        <tbody>
+                                            <tr>
+                                                <td class=cart-total-left>
+                                                    <label>
+                                                        Tổng số tiền đã đặt
+                                                        hàng:
+                                                    </label>
+                                                <td class=cart-total-right>
+                                                    <span><strong>@ViewBag.Info.Total&#x20AB;</strong></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section options"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

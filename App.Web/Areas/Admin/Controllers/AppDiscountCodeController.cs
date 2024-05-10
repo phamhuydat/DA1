@@ -27,7 +27,7 @@ namespace App.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Index(int page = 1, int size = DEFAULT_PAGE_SIZE)
         {
             var listDC = await _repo
-                .GetAll<AppDiscountCode>(x => x.DeletedDate == null)
+                .GetAll<AppVoucher>(x => x.DeletedDate == null)
                 .ProjectTo<DiscountCodeListItemVM>(AutoMapperProfile.AppDiscountCodeConf)
                 .ToListAsync();
             foreach (var item in listDC)
@@ -53,14 +53,14 @@ namespace App.Web.Areas.Admin.Controllers
                 SetErrorMesg(MODEL_STATE_INVALID_MESG, true);
                 return View(model);
             }
-            if (await _repo.AnyAsync<AppDiscountCode>(x => x.Code.ToLower().Equals(model.Code.ToLower()) && x.DeletedDate == null))
+            if (await _repo.AnyAsync<AppVoucher>(x => x.Code.ToLower().Equals(model.Code.ToLower()) && x.DeletedDate == null))
             {
                 SetErrorMesg("Mã khuyến mãi này đã tồn tại!");
                 return View(model);
             }
             try
             {
-                var discountCode = _mapper.Map<AppDiscountCode>(model);
+                var discountCode = _mapper.Map<AppVoucher>(model);
                 await _repo.AddAsync(discountCode);
                 SetSuccessMesg($"Thêm mã khuyến mãi [{discountCode.Code}] thành công!");
                 return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
@@ -74,7 +74,7 @@ namespace App.Web.Areas.Admin.Controllers
         [AppAuthorize(AuthConst.AppDiscountCode.UPDATE)]
         public async Task<IActionResult> Update(int id)
         {
-            var discountCode = await _repo.FindAsync<AppDiscountCode>(id);
+            var discountCode = await _repo.FindAsync<AppVoucher>(id);
             if (discountCode == null)
             {
                 SetErrorMesg(PAGE_NOT_FOUND_MESG);
@@ -87,7 +87,7 @@ namespace App.Web.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(AddOrUpdateDiscountCodeVM model)
         {
-            var discountCode = await _repo.FindAsync<AppDiscountCode>(model.Id);
+            var discountCode = await _repo.FindAsync<AppVoucher>(model.Id);
             if (!ModelState.IsValid)
             {
                 SetErrorMesg(MODEL_STATE_INVALID_MESG, true);
@@ -98,14 +98,14 @@ namespace App.Web.Areas.Admin.Controllers
                 SetErrorMesg(PAGE_NOT_FOUND_MESG);
                 return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
             }
-            if (await _repo.AnyAsync<AppDiscountCode>(u => u.Code.ToLower().Equals(model.Code.ToLower()) && u.Code.ToLower() != discountCode.Code.ToLower() && u.DeletedDate == null))
+            if (await _repo.AnyAsync<AppVoucher>(u => u.Code.ToLower().Equals(model.Code.ToLower()) && u.Code.ToLower() != discountCode.Code.ToLower() && u.DeletedDate == null))
             {
                 SetErrorMesg("Thương hiệu này đã tồn tại!");
                 return View(model);
             }
             try
             {
-                _mapper.Map<AddOrUpdateDiscountCodeVM, AppDiscountCode>(model, discountCode);
+                _mapper.Map<AddOrUpdateDiscountCodeVM, AppVoucher>(model, discountCode);
                 await _repo.UpdateAsync(discountCode);
                 SetSuccessMesg($"Cập nhật thương hiệu [{discountCode.Code}] thành công!");
                 return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
@@ -119,7 +119,7 @@ namespace App.Web.Areas.Admin.Controllers
         [AppAuthorize(AuthConst.AppDiscountCode.DELETE)]
         public async Task<IActionResult> Delete(int id)
         {
-            var discountCode = await _repo.FindAsync<AppDiscountCode>(id);
+            var discountCode = await _repo.FindAsync<AppVoucher>(id);
             if (discountCode == null)
             {
                 SetErrorMesg("Mã khuyến mãi không tồn tại hoặc đã được xóa trước đó!");

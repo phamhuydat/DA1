@@ -8,14 +8,12 @@
 	<!-- Google Font: Source Sans Pro -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="/adminLTE/plugins/fontawesome-free/css/all.min.css">
+    <link href="~/admintle/plugins/fontawesome-free/css/all.min.css" rel="stylesheet" />
 	<!-- Theme style -->
-	<link rel="stylesheet" href="/adminLTE/dist/css/adminlte.min.css">
-
+    <link href="~/admintle/dist/css/adminlte.min.css" rel="stylesheet" />
 	<link href="~/lib/bs4-toast-snackbar/css/toast-snackbar.css" rel="stylesheet" asp-append-version="true" />
 	<link href="~/lib/bs4-autocomplete/css/bs4-autocomplete.css" rel="stylesheet" />
-
-	<link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/site.css" rel="stylesheet" />
 	@RenderSection("head", false)
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -23,7 +21,7 @@
 	<div class="wrapper">
 		<partial name="_HeaderBar" />
 
-		@* <vc:main-nav-bar></vc:main-nav-bar> *@
+		<vc:main-nav-bar></vc:main-nav-bar>
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
@@ -57,13 +55,14 @@
 	<partial name="_ChangePassword" model="null" />
 	<!-- ./wrapper -->
 	<!-- jQuery -->
-	<script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap 4 -->
-	<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- Thư viện toast-->
 	<script src="~/lib/bs4-toast-snackbar/js/toast-snackbar.js"></script>
 	<!-- AdminLTE App -->
-	<script src="/adminLTE/dist/js/adminlte.min.js"></script>
+    <script src="~/admintle/dist/js/adminlte.min.js"></script>
+    
 	<!-- Validation -->
 	<partial name="_ValidationScriptsPartial" />
 	<!-- Thư viện modal -->

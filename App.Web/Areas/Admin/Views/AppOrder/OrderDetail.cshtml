@@ -82,9 +82,9 @@
 										<td>@(++i)</td>
 										<td>
 											@item.ProductName
-											<a class="text-secondary ml-1" target="_blank" asp-controller="Products"
+											<a class="text-secondary ml-1" target="_blank" asp-controller="Product"
 											   asp-action="ProductDetail" asp-area="" asp-route-slug="@item.ProductName.Slugify()"
-											   asp-route-productId="@item.ProductId">
+											   asp-route-id="@item.ProductId">
 												<i class="fas fa-external-link-alt text-secondary"></i>
 											</a>
 										</td>

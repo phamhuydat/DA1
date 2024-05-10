@@ -1,7 +1,7 @@
 ﻿@model  IEnumerable<App.Web.ViewModels.Product.ProductListVM>
 
 @{
-    ViewData["Title"] = "GetProductByCategory";
+    ViewData["Title"] = ViewBag.TitleName;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,7 +14,7 @@
                     <span class="delimiter">&#x203A;</span>
                 </li>
                 <li >
-                    <strong class="current-item">@ViewBag.Title</strong> 
+                    <strong class="current-item">@ViewBag.TitleName</strong>
                 </li>
             </ul>
         </div>
@@ -23,7 +23,7 @@
                 <div class="all_content_category">
                     <div class="card card-primary card-outline card-outline-tabs">
                         <div class="page-title" id="category-page-title" style="scroll-margin-top:115px; display: flex; margin: auto">
-                            <h1>@ViewBag.Title</h1>
+                            <h1>@ViewBag.TitleName</h1>
                         </div>
                         <div class="catelog_banner desktop">
                             <div class="topic-block">
@@ -53,66 +53,20 @@
                             <!-- filler -->
                             <div class="all_sub-category-grid">
                                 <div class="category-grid sub-category-grid">
-                                    <div class="item-box active">
-                                        <div class="sub-category-item">
-                                            <div class=title>
-                                                <a title="All model"> 
-                                                    Tất cả
-                                                </a>
+                                    @if(Model.Count() > 0)
+                                    {
+                                        <div class="item-box active">
+                                            <div class="sub-category-item">
+                                                <div class=title>
+                                                    <a title="All model">
+                                                        Tất cả
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class=item-box>
-                                        <div class=sub-category-item>
-                                            <div class=title>
-                                                <a>
-                                                    Apple Watch Ultra 2 
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class="sub-category-item">
-                                            <div class=title>
-                                                <a>Apple Watch Series 9 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class="sub-category-item">
-                                            <div class="title">
-                                                <a> Apple Watch SE </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class="sub-category-item">
-                                            <div class="title">
-                                                <a> Apple Watch Series 8 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class="sub-category-item">
-                                            <div class="title">
-                                                <a>Apple Watch Series 7 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class=sub-category-item>
-                                            <div class="title">
-                                                <a>Apple Watch Series 6 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=item-box>
-                                        <div class=sub-category-item>
-                                            <div class=title><a href=/apple-watch-series-3
-                                                    title="Hiển thị sản phẩm trong danh mục Apple Watch Series 3">
-                                                    Apple Watch Series 3 </a></div>
-                                        </div>
-                                    </div>
+                                        @await Component.InvokeAsync("CateMenu", new { id = Model.First().CategoryId })
+                                    }
+
                                 </div>
 
                                 <div class=product-selectors>
@@ -146,13 +100,13 @@
                                                         <div class="product-item">
                                                             <div class="product_tag"></div>
                                                             <div class="picture">
-                                                                <a>
+                                                                <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
                                                                     <img src="@item.ImagePath" />
                                                                 </a>
                                                             </div>
                                                             <div class="details">
                                                                 <h2 class="product-title">
-                                                                    <a asp-action="ProductDetail" asp-controller="Prodcut" asp-route-id="@item.id">
+                                                                    <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
                                                                        @item.ProductName
                                                                     </a>
                                                                 </h2>
@@ -227,28 +181,30 @@
                                 </div>
                             </div> *@
                                          
-                            <!-- mô tả đồng hồ -->
-                            @if (Model.First().CategoryId == 1)
+                            @if(Model.Count() > 0)
                             {
-                                <partial name="../Shared/_descriptIphone.cshtml" />
+                                <!-- mô tả đồng hồ -->
+                                @if (Model.First().CategoryId == 1)
+                                {
+                                    <partial name="../Shared/_descriptIphone.cshtml" />
+                                }
+                                else if (Model.First().CategoryId == 2)
+                                {
+                                    <partial name="../Shared/_descriptIphone.cshtml" />
+                                }
+                                else if (Model.First().CategoryId == 3)
+                                {
+                                    <partial name="../Shared/_descriptionMac.cshtml" />
+                                }
+                                else if (Model.First().CategoryId == 4)
+                                {
+                                    <partial name="../Shared/_descriptionWatch.cshtml" />
+                                }
+                                else if (Model.First().CategoryId == 5)
+                                {
+                                    <partial name="../Shared/_descriptAccessory.cshtml" />
+                                }
                             }
-                            else if (Model.First().CategoryId == 2)
-                            {
-                                <partial name="../Shared/_descriptIphone.cshtml" />
-                            }
-                            else if (Model.First().CategoryId == 3)
-                            {
-                                <partial name="../Shared/_descriptionMac.cshtml" />
-                            }
-                            else if (Model.First().CategoryId == 4)
-                            {
-                                <partial name="../Shared/_descriptionWatch.cshtml" />
-                            }
-                            else
-                            {
-                                <partial name="../Shared/_descriptAccessory.cshtml" />
-                            }
-
                         </div>
                     </div>
 

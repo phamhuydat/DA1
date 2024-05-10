@@ -62,7 +62,8 @@ namespace App.Web.Controllers
                 _notyf.Error("Không tìm thấy sản phẩm");
                 return View();
             }
-            var data = await _repository.GetAll<AppProduct>(x => x.IsActive == true && x.DeletedDate == null && x.ProductName.Contains(search.Slugify()))
+            var data = await _repository.GetAll<AppProduct>(x => x.IsActive == true
+                    && x.DeletedDate == null && x.ProductName.Contains(search.Slugify()))
                                 .ToPagedListAsync(page, size);
             ViewBag.keyword = search;
             ViewBag.countSearch = data.Count;
@@ -131,7 +132,7 @@ namespace App.Web.Controllers
                         .ToPagedListAsync(page, size);
 
                 var cate = await _repository.GetOneAsync<AppProductCategory>(x => x.Id == id);
-                ViewBag.Title = cate.Name;
+                ViewBag.TitleName = cate.Name;
 
                 return View(data);
             }

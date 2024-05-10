@@ -32,21 +32,40 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapAreaControllerRoute(
-    name: "Admin",
-    areaName: "Admin",
-    pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
-);
 app.MapControllerRoute(
-    name: "login",
-    pattern: "/login",
-    defaults: new
-    {
-        controller = "Account",
-        action = "Login"
-    }
-);
+        name: "login",
+        pattern: "/login",
+        defaults: new
+        {
+            controller = "Account",
+            action = "Login"
+        });
 
+app.MapAreaControllerRoute(
+        areaName: "Admin",
+        name: "adminLogin",
+        pattern: "/Admin/Login",
+        defaults: new
+        {
+            controller = "Account",
+            action = "Login",
+            area = "Admin"
+        });
+
+app.MapControllerRoute(
+        name: "error",
+        pattern: "/error/{statusCode}",
+        defaults: new
+        {
+            controller = "Home",
+            action = "Error"
+        });
+
+app.MapAreaControllerRoute(
+        areaName: "Admin",
+        name: "Admin",
+        pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
+        );
 
 app.MapControllerRoute(
     name: "default",

@@ -24,7 +24,7 @@ namespace App.Data
         public DbSet<AppNewsCategory> AppNewsCategories { get; set; }
         public DbSet<AppNews> AppNews { get; set; }
         public DbSet<AppProductCategory> AppProductCategories { get; set; }
-        public DbSet<AppDiscountCode> AppDiscountCodes { get; set; }
+        public DbSet<AppVoucher> AppVoucher { get; set; }
         public DbSet<AppOrder> AppOrders { get; set; }
         public DbSet<AppOrderDetail> AppOrderDetails { get; set; }
         public DbSet<MstProductColor> MstProductColors { get; set; }
@@ -47,7 +47,7 @@ namespace App.Data
             modelBuilder.ApplyConfiguration(new AppNewsCategoryConfig());
             modelBuilder.ApplyConfiguration(new AppNewsConfig());
             modelBuilder.ApplyConfiguration(new AppProductCategoryConfig());
-            modelBuilder.ApplyConfiguration(new AppDiscountCodeConfig());
+            modelBuilder.ApplyConfiguration(new AppVoucherConfig());
             modelBuilder.ApplyConfiguration(new AppOrderConfig());
             modelBuilder.ApplyConfiguration(new AppOrderDetailConfig());
 
@@ -67,6 +67,8 @@ namespace App.Data
 
             modelBuilder.Entity<MstProductColor>().SeedData();
             modelBuilder.Entity<AppNewsCategory>().SeedData();
+            modelBuilder.Entity<AppVoucher>().SeedData();
+
         }
     }
 }

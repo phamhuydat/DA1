@@ -23,7 +23,7 @@ namespace App.Data.Configurations.ProductConfigs
                 .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(x => x.AppOrderDetails)
-                .WithOne(x => x.AppProdcutDetail)
+                .WithOne(x => x.AppProductDetail)
                 .HasForeignKey(x => x.ProductId)
                 .OnDelete(DeleteBehavior.NoAction);
 

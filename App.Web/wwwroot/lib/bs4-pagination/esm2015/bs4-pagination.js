@@ -1,0 +1,6 @@
+/**
+ * Generated bundle index. Do not edit.
+ */
+export * from './public-api';
+export { Bs4PaginationComponent as ɵa } from './lib/bs4-pagination.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnM0LXBhZ2luYXRpb24uanMiLCJzb3VyY2VSb290Ijoibmc6Ly9iczQtcGFnaW5hdGlvbi8iLCJzb3VyY2VzIjpbImJzNC1wYWdpbmF0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxjQUFjLENBQUM7QUFFN0IsT0FBTyxFQUFDLHNCQUFzQixJQUFJLEVBQUUsRUFBQyxNQUFNLGdDQUFnQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpYy1hcGknO1xuXG5leHBvcnQge0JzNFBhZ2luYXRpb25Db21wb25lbnQgYXMgybVhfSBmcm9tICcuL2xpYi9iczQtcGFnaW5hdGlvbi5jb21wb25lbnQnOyJdfQ==

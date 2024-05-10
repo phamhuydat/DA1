@@ -13,6 +13,7 @@
 		}
 	}
 }
+
 <div class="my-4">
 	@Html.PagedListPager((IPagedList)Model,
 	page => Url.Action("GetProductByCategory", new { page = page }) + _params,
