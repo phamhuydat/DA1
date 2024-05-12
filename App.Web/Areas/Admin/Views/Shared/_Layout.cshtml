@@ -11,9 +11,12 @@
     <link href="~/admintle/plugins/fontawesome-free/css/all.min.css" rel="stylesheet" />
 	<!-- Theme style -->
     <link href="~/admintle/dist/css/adminlte.min.css" rel="stylesheet" />
-	<link href="~/lib/bs4-toast-snackbar/css/toast-snackbar.css" rel="stylesheet" asp-append-version="true" />
-	<link href="~/lib/bs4-autocomplete/css/bs4-autocomplete.css" rel="stylesheet" />
-    <link href="~/css/site.css" rel="stylesheet" />
+
+    <link href="~/lib/bs4-toast-snackbar/css/toast-snackbar.css" rel="stylesheet"  asp-append-version="true"/>
+    <link href="~/lib/bs4-autocomplete/css/bs4-autocomplete.css" rel="stylesheet" />
+
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true"/>
+
 	@RenderSection("head", false)
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -66,13 +69,12 @@
 	<!-- Validation -->
 	<partial name="_ValidationScriptsPartial" />
 	<!-- Thư viện modal -->
-	<script src="~/lib/bs4-modal/modal.js"></script>
+	<script src="~/lib/bs4-modal/modal.js" asp-append-version="true"></script>
 	<script src="~/lib/axios/axios.min.js"></script>
+    <script src="~/lib/bs4-autocomplete/dist/bs4-autocomplete.js" asp-append-version="true"></script>
 
-	<script src="~/lib/bs4-autocomplete/js/bs4-autocomplete.js" asp-append-version="true"></script>
 	<!-- Javascript dùng chung -->
 	<script src="~/js/site.js" asp-append-version="true"></script>
-
 	@RenderSection("scripts", false)
 </body>
 </html>

@@ -10,25 +10,22 @@ using System.Threading.Tasks;
 
 namespace App.Data.Configurations.ProductConfigs
 {
-    public class AppProductConfig : IEntityTypeConfiguration<AppProduct>
-    {
-        public void Configure(EntityTypeBuilder<AppProduct> builder)
-        {
-            builder.ToTable(DB.AppProduct.TABLE_NAME);
+	public class AppProductConfig : IEntityTypeConfiguration<AppProduct>
+	{
+		public void Configure(EntityTypeBuilder<AppProduct> builder)
+		{
+			builder.ToTable(DB.AppProduct.TABLE_NAME);
 
-            builder.HasKey(x => x.Id);
+			builder.HasKey(x => x.Id);
 
-            //builder.Property(x => x.View).HasDefaultValue(0);
-            builder.Property(x => x.ProductName).HasMaxLength(DB.AppProduct.PRODUCTNAME_LENGTH);
-            //builder.Property(x => x.Slug).HasMaxLength(DB.AppProduct.SLUG_LENGTH);
-            //builder.Property(x => x.StampPath).HasMaxLength(DB.AppProduct.STAMP_PATH_LENGTH);
-            builder.Property(x => x.ProductCode).HasMaxLength(DB.AppProduct.PRODUCT_CODE_LENGTH);
+			builder.Property(x => x.ProductName).HasMaxLength(DB.AppProduct.PRODUCTNAME_LENGTH);
 
-            // Khóa ngoại
-            builder.HasOne(x => x.AppProdcutCategory)
-                .WithMany(c => c.AppProducts)
-                .HasForeignKey(x => x.CategoryId)
-                .OnDelete(DeleteBehavior.NoAction);
-        }
-    }
+
+			// Khóa ngoại
+			builder.HasOne(x => x.AppProdcutCategory)
+				.WithMany(c => c.AppProducts)
+				.HasForeignKey(x => x.CategoryId)
+				.OnDelete(DeleteBehavior.NoAction);
+		}
+	}
 }

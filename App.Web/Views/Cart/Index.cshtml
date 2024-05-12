@@ -218,7 +218,7 @@
                                         @if (Context.User.Identity.IsAuthenticated)
                                         {
                                             <div class="checkout-buttons">
-                                                <button type="submit" id="btnSubmitCart"
+                                                <button type="button" id="btnSubmitCart"
                                                         class="button-1 checkout-button">
                                                         Tiến hành đặt hàng
                                                 </button>
@@ -282,7 +282,7 @@
             var form = $(ev.currentTarget).closest("form");
             if (!$("#dong-y").is(":checked")) {
                 notyf.error("Bạn chưa đồng ý với điều khoản & chính sách sử dụng");
-                return;
+                return ;
             }
             if ($("#CusName").val() == null || $("#CusPhone").val() == null
                 || $("#CusEmail").val() == null || $("#DeliveryAddress").val() == null) {

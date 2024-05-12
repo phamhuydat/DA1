@@ -72,7 +72,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             Address = "91 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(655),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9795),
                             GroupName = "Thành Phố Cần Thơ",
                             IdMap = "113.188.249.73"
                         });
@@ -245,42 +245,42 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "tin-tuc-apple",
                             Title = "Tin tức Apple"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "bai-viet-review",
                             Title = "Bài viết Review"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "kham-pha",
                             Title = "Khám phá"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "thu-thuat",
                             Title = "Thủ thuật"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "khuyen-mai",
                             Title = "Khuyến mãi"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2065),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1192),
                             Slug = "tin-khac",
                             Title = "Tin khác"
                         });
@@ -559,293 +559,293 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             CateLevel = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = true,
                             Name = "Iphone",
                             Slug = "iphone",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 2,
                             CateLevel = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = true,
                             Name = "IPad",
                             Slug = "ipad",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 3,
                             CateLevel = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = true,
                             Name = "Mac",
                             Slug = "mac",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 4,
                             CateLevel = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = true,
                             Name = "Watch",
                             Slug = "watch",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 5,
                             CateLevel = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = true,
                             Name = "Phụ kiện",
                             Slug = "phu-kien",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 6,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Chuột/ Bàn phím",
                             ParentCateId = 5,
                             Slug = "chuot-ban-phim",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 7,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Óp lưng",
                             ParentCateId = 5,
                             Slug = "op-lung",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 8,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Balo/ Túi chống sốc",
                             ParentCateId = 5,
                             Slug = "balo-tui-chong-soc",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 9,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Ốp lưng",
                             ParentCateId = 5,
                             Slug = "op-lung",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 10,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Kính cường lực",
                             ParentCateId = 5,
                             Slug = "kinh-cuong-luc",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 11,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Apple Watch Ultra 2",
                             ParentCateId = 4,
                             Slug = "apple-watch-ultra-2",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 12,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "Apple Watch SE",
                             ParentCateId = 4,
                             Slug = "apple-watch-se",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 13,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "MacBook Pro",
                             ParentCateId = 3,
                             Slug = "macbook-pro",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 14,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "MacBook Air",
                             ParentCateId = 3,
                             Slug = "macbook-air",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 15,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "MacBook Pro M1",
                             ParentCateId = 3,
                             Slug = "macbook-pro-m1",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 16,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "MacBook Pro M2",
                             ParentCateId = 3,
                             Slug = "macbook-pro-m2",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 17,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IMac",
                             ParentCateId = 3,
                             Slug = "imac",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 18,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPad Pro M1",
                             ParentCateId = 2,
                             Slug = "ipad-pro-m1",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 19,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPad Pro M2",
                             ParentCateId = 2,
                             Slug = "ipad-pro-m2",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 20,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPad Air",
                             ParentCateId = 2,
                             Slug = "ipad-air",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 21,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPad Mini",
                             ParentCateId = 2,
                             Slug = "ipad-mini",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 22,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone 15 series",
                             ParentCateId = 1,
                             Slug = "iphone-15-series",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 23,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone 14 series",
                             ParentCateId = 1,
                             Slug = "iphone-14-series",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 24,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone 13 series",
                             ParentCateId = 1,
                             Slug = "iphone-13-series",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 25,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone 12 series",
                             ParentCateId = 1,
                             Slug = "iphone-12-series",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 26,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone 11 series",
                             ParentCateId = 1,
                             Slug = "iphone-11-series",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         },
                         new
                         {
                             Id = 27,
                             CateLevel = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861),
                             HasChild = false,
                             Name = "IPhone SE",
                             ParentCateId = 1,
                             Slug = "iphone-se",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(724)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9861)
                         });
                 });
 
@@ -897,19 +897,19 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             CanDelete = false,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(9227),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8384),
                             Desc = "Khách hàng",
                             Name = "Khách hàng",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(9227)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8384)
                         },
                         new
                         {
                             Id = 2,
                             CanDelete = true,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(9227),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8384),
                             Desc = "Quản trị toàn bộ hệ thống",
                             Name = "Quản trị hệ thống",
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(9227)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8384)
                         });
                 });
 
@@ -958,545 +958,545 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1101,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 2,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1102,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 3,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1103,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 4,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1104,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 5,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1105,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 6,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1001,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 7,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1002,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 8,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1003,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 9,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1004,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 10,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1005,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 11,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1006,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 12,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1007,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 13,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1008,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 14,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1205,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 15,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1301,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 16,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1302,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 17,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1303,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 18,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1304,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 19,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1401,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 20,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1402,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 21,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1403,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 22,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1404,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 23,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1501,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 24,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1502,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 25,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1503,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 26,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1504,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 27,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1701,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 28,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1702,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 29,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1703,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 30,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1704,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 31,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1901,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 32,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1902,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 33,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1903,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 34,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 1904,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 35,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2001,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 36,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2002,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 37,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2003,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 38,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2004,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 39,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2005,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 40,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2101,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 41,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2102,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 42,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2103,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 43,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2104,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 44,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2201,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 45,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2202,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 46,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2203,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 47,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2204,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 48,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2205,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 49,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2206,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 50,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2207,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 51,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2208,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 52,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2301,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 53,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2302,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 54,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2401,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 55,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2402,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 56,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2403,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 57,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2404,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 58,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2501,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 59,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2502,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 60,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2503,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 61,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2504,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 62,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2506,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 63,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2507,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 64,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2508,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 65,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2601,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 66,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2602,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 67,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2603,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         },
                         new
                         {
                             Id = 68,
                             AppRoleId = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328),
                             MstPermissionId = 2604,
-                            UpdatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(213)
+                            UpdatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(9328)
                         });
                 });
 
@@ -1648,8 +1648,8 @@ namespace App.Data.Migrations
                             CreatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "hello@gmail.com",
                             FullName = "Lilocon",
-                            PasswordHash = new byte[] { 158, 117, 27, 89, 32, 17, 38, 34, 83, 162, 6, 148, 211, 209, 221, 5, 60, 223, 252, 170, 215, 74, 240, 62, 63, 252, 189, 55, 169, 152, 168, 130, 24, 18, 243, 157, 85, 99, 193, 18, 63, 222, 232, 214, 58, 40, 3, 159, 205, 200, 54, 6, 32, 158, 90, 223, 42, 194, 123, 221, 52, 133, 71, 253 },
-                            PasswordSalt = new byte[] { 96, 38, 199, 108, 181, 75, 17, 226, 98, 13, 131, 213, 16, 149, 74, 221, 49, 17, 251, 70, 206, 40, 55, 38, 63, 252, 185, 136, 144, 85, 167, 189, 113, 3, 248, 85, 105, 187, 40, 3, 97, 249, 199, 64, 227, 175, 95, 238, 131, 135, 143, 156, 124, 92, 84, 66, 38, 175, 55, 224, 63, 128, 174, 149, 143, 57, 66, 97, 202, 163, 142, 27, 5, 41, 109, 249, 36, 103, 183, 227, 169, 127, 43, 175, 116, 18, 186, 177, 35, 14, 191, 150, 94, 239, 206, 245, 193, 168, 66, 69, 148, 39, 44, 125, 167, 141, 63, 220, 122, 52, 225, 214, 132, 71, 247, 85, 89, 240, 51, 48, 209, 84, 169, 136, 184, 164, 153, 67 },
+                            PasswordHash = new byte[] { 44, 91, 246, 96, 1, 169, 151, 150, 72, 197, 222, 20, 82, 46, 92, 180, 128, 43, 29, 186, 177, 150, 210, 236, 96, 181, 112, 49, 207, 144, 101, 79, 211, 154, 206, 74, 100, 76, 231, 179, 220, 255, 128, 147, 190, 241, 65, 198, 145, 194, 234, 225, 220, 229, 146, 157, 90, 6, 207, 89, 224, 202, 168, 203 },
+                            PasswordSalt = new byte[] { 80, 125, 138, 22, 63, 203, 144, 159, 88, 110, 195, 148, 49, 205, 226, 156, 205, 210, 233, 250, 14, 170, 217, 117, 14, 225, 82, 138, 164, 199, 173, 221, 18, 43, 29, 225, 248, 64, 28, 126, 199, 204, 227, 225, 65, 104, 196, 159, 26, 105, 148, 120, 208, 138, 20, 23, 212, 131, 198, 65, 198, 35, 109, 40, 203, 60, 142, 59, 206, 127, 208, 121, 220, 157, 244, 187, 149, 137, 162, 109, 75, 156, 191, 19, 50, 159, 142, 42, 228, 40, 175, 124, 46, 35, 96, 45, 130, 188, 70, 127, 167, 144, 95, 181, 178, 197, 64, 9, 29, 240, 196, 239, 72, 122, 67, 1, 237, 96, 72, 42, 251, 138, 141, 255, 93, 171, 213, 244 },
                             PhoneNumber = "0928666158",
                             UpdatedBy = -1,
                             UpdatedDate = new DateTime(2021, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1769,10 +1769,10 @@ namespace App.Data.Migrations
                             Amount = 10,
                             Code = "voucher",
                             CreatedBy = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2314),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1378),
                             Percent = 10,
                             Price = 50m,
-                            StartDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2314)
+                            StartDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1378)
                         },
                         new
                         {
@@ -1780,9 +1780,9 @@ namespace App.Data.Migrations
                             Amount = 10,
                             Code = "voucher1",
                             CreatedBy = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2314),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1378),
                             Price = 50m,
-                            StartDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2314)
+                            StartDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1378)
                         });
                 });
 
@@ -1816,25 +1816,25 @@ namespace App.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2002),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1117),
                             Name = "Đang xử lý"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2002),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1117),
                             Name = "Đang giao hàng"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2002),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1117),
                             Name = "Đã giao hàng"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2002),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1117),
                             Name = "Đã từ chối"
                         });
                 });
@@ -1886,7 +1886,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1103,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm quyền",
                             GroupName = "Quản lý phân quyền",
                             Table = "AppRole"
@@ -1895,7 +1895,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1105,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa quyền",
                             GroupName = "Quản lý phân quyền",
                             Table = "AppRole"
@@ -1904,7 +1904,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1104,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa quyền",
                             GroupName = "Quản lý phân quyền",
                             Table = "AppRole"
@@ -1913,7 +1913,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1102,
                             Code = "VIEW_DETAIL",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết quyền",
                             GroupName = "Quản lý phân quyền",
                             Table = "AppRole"
@@ -1922,7 +1922,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1101,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách quyền",
                             GroupName = "Quản lý phân quyền",
                             Table = "AppRole"
@@ -1931,7 +1931,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1006,
                             Code = "BLOCK",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Khóa người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1940,7 +1940,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1003,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1949,7 +1949,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1008,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1958,7 +1958,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1007,
                             Code = "UNBLOCK",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Mở khóa người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1967,7 +1967,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1004,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Cập nhật người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1976,7 +1976,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1005,
                             Code = "UPDATE_PWD",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Đổi mật khẩu",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1985,7 +1985,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1002,
                             Code = "VIEW_DETAIL",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -1994,7 +1994,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1001,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách người dùng",
                             GroupName = "Quản lý người dùng",
                             Table = "AppUser"
@@ -2003,7 +2003,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1205,
                             Code = "MANAGER",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Quản lý file hệ thống",
                             GroupName = "Quản lý file",
                             Table = "FileManager"
@@ -2012,7 +2012,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1301,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách thương hiệu",
                             GroupName = "Quản lý thương hiệu",
                             Table = "MstProductBrand"
@@ -2021,7 +2021,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1302,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm thương hiệu",
                             GroupName = "Quản lý thương hiệu",
                             Table = "MstProductBrand"
@@ -2030,7 +2030,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1303,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa thương hiệu",
                             GroupName = "Quản lý thương hiệu",
                             Table = "MstProductBrand"
@@ -2039,7 +2039,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1304,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa thương hiệu",
                             GroupName = "Quản lý thương hiệu",
                             Table = "MstProductBrand"
@@ -2048,7 +2048,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1401,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách chi nhánh",
                             GroupName = "Quản lý chi nhánh",
                             Table = "AppBranch"
@@ -2057,7 +2057,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1402,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm chi nhánh",
                             GroupName = "Quản lý chi nhánh",
                             Table = "AppBranch"
@@ -2066,7 +2066,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1403,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa chi nhánh",
                             GroupName = "Quản lý chi nhánh",
                             Table = "AppBranch"
@@ -2075,7 +2075,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1404,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa chi nhánh",
                             GroupName = "Quản lý chi nhánh",
                             Table = "AppBranch"
@@ -2084,7 +2084,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1501,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách mã khuyến mãi",
                             GroupName = "Quản lý mã khuyến mãi",
                             Table = "AppDiscountCode"
@@ -2093,7 +2093,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1502,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm mã khuyến mãi",
                             GroupName = "Quản lý mã khuyến mãi",
                             Table = "AppDiscountCode"
@@ -2102,7 +2102,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1503,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa mã khuyến mãi",
                             GroupName = "Quản lý mã khuyến mãi",
                             Table = "AppDiscountCode"
@@ -2111,7 +2111,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1504,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa mã khuyến mãi",
                             GroupName = "Quản lý mã khuyến mãi",
                             Table = "AppDiscountCode"
@@ -2120,7 +2120,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1701,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách màu sản phẩm",
                             GroupName = "Quản lý màu sắc sản phẩm",
                             Table = "MstProductColor"
@@ -2129,7 +2129,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1702,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm màu sản phẩm",
                             GroupName = "Quản lý màu sắc sản phẩm",
                             Table = "MstProductColor"
@@ -2138,7 +2138,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1703,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa màu sản phẩm",
                             GroupName = "Quản lý màu sắc sản phẩm",
                             Table = "MstProductColor"
@@ -2147,7 +2147,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1704,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa màu sản phẩm",
                             GroupName = "Quản lý màu sắc sản phẩm",
                             Table = "MstProductColor"
@@ -2156,7 +2156,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1901,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách slider",
                             GroupName = "Quản lý slider",
                             Table = "AppSlider"
@@ -2165,7 +2165,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1902,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm slider",
                             GroupName = "Quản lý slider",
                             Table = "AppSlider"
@@ -2174,7 +2174,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1903,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa slider",
                             GroupName = "Quản lý slider",
                             Table = "AppSlider"
@@ -2183,7 +2183,7 @@ namespace App.Data.Migrations
                         {
                             Id = 1904,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa slider",
                             GroupName = "Quản lý slider",
                             Table = "AppSlider"
@@ -2192,7 +2192,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2001,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách chính sách",
                             GroupName = "Quản lý chính sách",
                             Table = "AppPolicy"
@@ -2201,7 +2201,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2002,
                             Code = "VIEW_DETAIL",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết chính sách",
                             GroupName = "Quản lý chính sách",
                             Table = "AppPolicy"
@@ -2210,7 +2210,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2003,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm chính sách",
                             GroupName = "Quản lý chính sách",
                             Table = "AppPolicy"
@@ -2219,7 +2219,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2004,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa chính sách",
                             GroupName = "Quản lý chính sách",
                             Table = "AppPolicy"
@@ -2228,7 +2228,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2005,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa chính sách",
                             GroupName = "Quản lý chính sách",
                             Table = "AppPolicy"
@@ -2237,7 +2237,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2101,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách thể loại tin tức",
                             GroupName = "Quản lý thể loại tin tức",
                             Table = "AppNewsCategory"
@@ -2246,7 +2246,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2102,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm thể loại tin tức",
                             GroupName = "Quản lý thể loại tin tức",
                             Table = "AppNewsCategory"
@@ -2255,7 +2255,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2103,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa thể loại tin tức",
                             GroupName = "Quản lý thể loại tin tức",
                             Table = "AppNewsCategory"
@@ -2264,7 +2264,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2104,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa thể loại tin tức",
                             GroupName = "Quản lý thể loại tin tức",
                             Table = "AppNewsCategory"
@@ -2273,7 +2273,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2201,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2282,7 +2282,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2202,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2291,7 +2291,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2203,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2300,7 +2300,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2204,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2309,7 +2309,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2205,
                             Code = "PUBLIC",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Hiển thị tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2318,7 +2318,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2206,
                             Code = "UNPUBLIC",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Ẩn tin tức",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2327,7 +2327,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2207,
                             Code = "SENDMAILREGISTER",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Gửi mail cho ngươi đăng ký",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2336,7 +2336,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2208,
                             Code = "VIEW_DETAIL",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết bài viết",
                             GroupName = "Quản lý tin tức",
                             Table = "AppNews"
@@ -2345,7 +2345,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2301,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem trang giới thiệu",
                             GroupName = "Quản lý giới thiệu công ty",
                             Table = "SystemEnv"
@@ -2354,7 +2354,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2302,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Cập nhật trang giới thiệu",
                             GroupName = "Quản lý giới thiệu công ty",
                             Table = "SystemEnv"
@@ -2363,7 +2363,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2401,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách thể loại sản phẩm",
                             GroupName = "Quản lý thể loại sản phẩm",
                             Table = "AppProductCategory"
@@ -2372,7 +2372,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2402,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm thể loại sản phẩm",
                             GroupName = "Quản lý thể loại sản phẩm",
                             Table = "AppProductCategory"
@@ -2381,7 +2381,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2403,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa thể loại sản phẩm",
                             GroupName = "Quản lý thể loại sản phẩm",
                             Table = "AppProductCategory"
@@ -2390,7 +2390,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2404,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa thể loại sản phẩm",
                             GroupName = "Quản lý thể loại sản phẩm",
                             Table = "AppProductCategory"
@@ -2399,7 +2399,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2501,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2408,7 +2408,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2502,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Thêm sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2417,7 +2417,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2503,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2426,7 +2426,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2504,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2435,7 +2435,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2506,
                             Code = "PUBLIC",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Hiển thị sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2444,7 +2444,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2507,
                             Code = "UNPUBLIC",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Ẩn sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2453,7 +2453,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2508,
                             Code = "VIEW_DETAIL",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết sản phẩm",
                             GroupName = "Quản lý sản phẩm",
                             Table = "AppProduct"
@@ -2462,7 +2462,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2601,
                             Code = "VIEW_LIST",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem danh sách đơn hàng",
                             GroupName = "Quản lý đơn hàng",
                             Table = "AppOrder"
@@ -2471,7 +2471,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2602,
                             Code = "CREATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xem chi tiết đơn hàng",
                             GroupName = "Quản lý đơn hàng",
                             Table = "AppOrder"
@@ -2480,7 +2480,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2603,
                             Code = "UPDATE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Sửa đơn hàng",
                             GroupName = "Quản lý đơn hàng",
                             Table = "AppOrder"
@@ -2489,7 +2489,7 @@ namespace App.Data.Migrations
                         {
                             Id = 2604,
                             Code = "DELETE",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 899, DateTimeKind.Local).AddTicks(8952),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 236, DateTimeKind.Local).AddTicks(8149),
                             Desc = "Xóa đơn hàng",
                             GroupName = "Quản lý đơn hàng",
                             Table = "AppOrder"
@@ -2525,11 +2525,6 @@ namespace App.Data.Migrations
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
-
-                    b.Property<string>("ProductCode")
-                        .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -2595,6 +2590,11 @@ namespace App.Data.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
@@ -2703,21 +2703,21 @@ namespace App.Data.Migrations
                         {
                             Id = 1,
                             ColorName = "Red",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2037),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1144),
                             CssColor = "#FF0000"
                         },
                         new
                         {
                             Id = 2,
                             ColorName = "Black",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2037),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1144),
                             CssColor = "#000000"
                         },
                         new
                         {
                             Id = 3,
                             ColorName = "Blue",
-                            CreatedDate = new DateTime(2024, 5, 9, 18, 51, 42, 900, DateTimeKind.Local).AddTicks(2037),
+                            CreatedDate = new DateTime(2024, 5, 12, 14, 17, 31, 237, DateTimeKind.Local).AddTicks(1144),
                             CssColor = "#0000FF"
                         });
                 });
@@ -2777,14 +2777,14 @@ namespace App.Data.Migrations
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.NoAction);
 
-                    b.HasOne("App.Data.Entities.Products.AppProductDetail", "AppProdcutDetail")
+                    b.HasOne("App.Data.Entities.Products.AppProductDetail", "AppProductDetail")
                         .WithMany("AppOrderDetails")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("AppOrder");
 
-                    b.Navigation("AppProdcutDetail");
+                    b.Navigation("AppProductDetail");
                 });
 
             modelBuilder.Entity("App.Data.Entities.AppPolicy", b =>

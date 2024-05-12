@@ -1,0 +1,216 @@
+﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.Product.ListOptionVM>
+@{
+	ViewData["Title"] = $"Danh sách tùy chọn sản phẩm {ViewBag.TitleProdcut}";
+	var row = 0;
+}
+
+<div class="d-flex">
+	@if (User.IsInPermission(AuthConst.AppProduct.CREATE))
+	{
+		<div class="my-2 mr-2">
+			<a asp-action="Create" class="btn btn-primary">
+				<i class="fas fa-book-medical"></i> &nbsp; Thêm tùy chọn
+			</a>
+		</div>
+	}
+	<div class="my-2 mr-2">
+		<button class="btn btn-success" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			<i class="fas fa-search"></i> &nbsp; Tìm kiếm sản phẩm
+		</button>
+	</div>
+	@if (User.IsInPermission(AuthConst.AppProduct.DELETE))
+	{
+		<div class="my-2 mr-2">
+			<div class="btn btn-light">
+				<div class="custom-control custom-switch">
+					<input id="chkAllowBulkDel" type="checkbox" class="custom-control-input">
+					<label for="chkAllowBulkDel" class="custom-control-label form-check-label hover:pointer">Cho phép xóa nhiều</label>
+				</div>
+			</div>
+		</div>
+		<div class="my-2 mr-2">
+			<button id="btnBulkDel" class="d-none btn btn-outline-danger"
+					data-keyword="sản phẩm"
+					data-url="/Admin/Product/BulkDelete">
+				Xóa hàng loạt (<span id="delCount">0</span> sản phẩm)
+			</button>
+		</div>
+	}
+</div>
+
+<partial name="_FormSearch" />
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th class="js-col-checkbox d-none position-relative">
+					<input id="chkAll" type="checkbox" style="transform: scale(1.5)" />
+					<label for="chkAll" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
+				</th>
+				<th class="fit">#</th>
+				<th>Mã</th>
+				<th class="text-center">Ảnh bìa</th>
+				<th>Tên sản phẩm</th>
+				<th>Màu sắc</th>
+				<th>Số lượng</th>
+				<th>Đã bán</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				row++;
+				<tr>
+					<td class="fit js-col-checkbox d-none position-relative">
+						<input id="chk@(item.Id)" type="checkbox" data-id="@item.Id" style="transform: scale(1.5)" />
+						<label for="chk@(item.Id)" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
+					</td>
+					<td class="fit">@row</td>
+					<td>@item.ProductCode</td>
+					<td class="text-center">
+						@{
+							if (item.ImagePath != null)
+							{
+								<img src="@item.ImagePath" class="item-news-image" />
+							}
+							else
+							{
+								<img src="~/files/logo.png" style=" width: 50px;height: 50px;object-fit: cover;" />
+							}
+						}
+					</td>
+					<td>
+						<div>
+							@if (item.IsActive)
+							{
+								<i class="fas fa-globe text-secondary"></i>
+							}
+							else
+							{
+								<i class="fas fa-lock text-secondary"></i>
+							}
+							@if (item.IsDiscountProduct)
+							{
+								<div class="badge badge-danger">
+									<i class="fas fa-tags"></i> Sale
+								</div>
+							}
+							@if (item.CategoryName.IsNullOrEmpty())
+							{
+								<div class="badge badge-secondary">Không có danh mục</div>
+							}
+							else
+							{
+								<div class="badge badge-primary">@item.CategoryName</div>
+							}
+							@if (item.ColorName != null)
+							{
+								<div class="badge badge-danger">@item.ColorName</div>
+							}
+							@if (item.BrandName != null)
+							{
+								<div class="badge badge-success">@item.BrandName</div>
+
+							}
+							<span class="ml-1 text-secondary small"><i class="fa fa-eye"></i> @item.View</span>
+							@if (item.DisplayOrder != null)
+							{
+								<span title="Đã ghim" class="ml-1 text-secondary small">
+									<i class="fas fa-thumbtack"></i>
+								</span>
+							}
+						</div>
+						@item.ProductName
+						<a class="text-secondary ml-1" target="_blank" asp-area="" asp-controller="Product" asp-action="ProductDetail"  asp-route-id="@item.Id"><i class="fas fa-external-link-alt text-secondary"></i></a>
+					</td>
+					<td>
+						<div class="d-flex">
+							<div style="padding: 11px; background-color: @item.ColorCss"></div>
+							<div class="ml-2">@item.ColorName</div>
+						</div>
+					</td>
+                    <td>
+						<div class="row">
+							<div class="col-md-3">
+								<span class="badge">@item.InStock</span> 
+							</div>
+						</div>
+                    </td>
+					<td>
+						<div class="row">
+							<div class="col-md-3">
+								<span class="badge">@item.Sold</span> 
+							</div>
+						</div>
+                    </td>
+
+					<td class="fit">
+						@{
+							if (item.IsActive)
+							{
+								if (User.IsInPermission(AuthConst.AppProduct.UNPUBLIC))
+								{
+									<a asp-action="UnPublicProduct" asp-route-id="@item.Id"
+									   class="btn btn-outline-secondary btn-sm js-delete-confirm"
+									   data-msg="Xác nhận ẩn sản phẩm [@item.ProductName] khỏi hệ thống?">
+										<i class="fas fa-lock"></i>
+									</a>
+								}
+							}
+							else
+							{
+								if (User.IsInPermission(AuthConst.AppProduct.PUBLIC))
+								{
+									<a asp-action="PublicProduct" asp-route-id="@item.Id"
+									   class="btn btn-outline-secondary btn-sm js-delete-confirm"
+									   data-msg="Xác nhận công khai sản phẩm [@item.ProductName]?">
+										<i class="fas fa-globe"></i>
+									</a>
+								}
+							}
+							if (User.IsInPermission(AuthConst.AppProduct.VIEW_DETAIL))
+							{
+								<a title="Tùy chọn sản phẩm" asp-action="ProductDetail" asp-route-id="@item.Id"
+								   class="btn btn-outline-info btn-sm"><i class="fas fa-eye"></i></a>
+							}
+							if (User.IsInPermission(AuthConst.AppProduct.UPDATE))
+							{
+								if (item.DisplayOrder == null)
+								{
+									<a title="Ghim sản phẩm" asp-action="ProductGhim" asp-route-id="@item.Id"
+									   class="btn btn-outline-secondary btn-sm"><i class="fas fa-plus"></i></a>
+								}
+								else
+								{
+									<a title="Bỏ ghim sản phẩm" asp-action="ProductUnGhim" asp-route-id="@item.Id"
+									   class="btn btn-outline-secondary btn-sm"><i class="fas fa-minus"></i></a>
+								}
+								<a asp-action="Update" asp-route-id="@item.Id"
+								   class="btn btn-outline-secondary btn-sm"><i class="fas fa-pen"></i></a>
+							}
+							if (User.IsInPermission(AuthConst.AppProduct.DELETE))
+							{
+								<a asp-action="Delete" asp-route-id="@item.Id"
+								   class="btn btn-outline-danger btn-sm js-delete-confirm"
+								   data-msg="Xác nhận xóa sản phẩm [@item.ProductName]?"><i class="fas fa-trash"></i></a>
+							}
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+<div class="d-flex">
+	<partial name="_BackToList" />
+</div>
+
+
+<partial name="_Pager" />
+
+
+
+
+

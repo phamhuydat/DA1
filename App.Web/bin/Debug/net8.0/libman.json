@@ -35,6 +35,10 @@
       "provider": "jsdelivr",
       "library": "bs4-pagination@0.0.4",
       "destination": "wwwroot/lib/bs4-pagination/"
+    },
+    {
+      "library": "summernote@0.8.20",
+      "destination": "wwwroot/summernote/"
     }
   ]
 }

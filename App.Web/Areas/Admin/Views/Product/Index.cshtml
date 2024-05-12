@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.Product.ListItemProductVM>
 
 @{
-	ViewData["Title"] = "Danh sách sản phẩm";
+	ViewData["Title"] = "Danh sách sản phầm";
+	var row = 0;
 }
 
 <div class="d-flex">
@@ -49,23 +50,24 @@
 					<label for="chkAll" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
 				</th>
 				<th class="fit">#</th>
-				<th>Mã sản phẩm</th>
+				<th>Mã dòng sản phẩm</th>
 				<th class="text-center">Ảnh bìa</th>
 				<th>Tên sản phẩm</th>
-				<th>Giá</th>
-				<th>Size & Số lượng</th>
+				@* <th>Giá</th> *@
+				<th>Tùy chọn & Số lượng</th>
 				<th></th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
 					<td class="fit js-col-checkbox d-none position-relative">
 						<input id="chk@(item.Id)" type="checkbox" data-id="@item.Id" style="transform: scale(1.5)" />
 						<label for="chk@(item.Id)" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
 					</td>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td>@item.ProductCode</td>
 					<td class="text-center">
 						@{
@@ -89,12 +91,6 @@
 							{
 								<i class="fas fa-lock text-secondary"></i>
 							}
-							@if (item.IsDiscountProduct)
-							{
-								<div class="badge badge-danger">
-									<i class="fas fa-tags"></i> Sale
-								</div>
-							}
 							@if (item.CategoryName.IsNullOrEmpty())
 							{
 								<div class="badge badge-secondary">Không có danh mục</div>
@@ -102,15 +98,6 @@
 							else
 							{
 								<div class="badge badge-primary">@item.CategoryName</div>
-							}
-							@if (item.ColorName != null)
-							{
-								<div class="badge badge-danger">@item.ColorName</div>
-							}
-							@if (item.BrandName != null)
-							{
-								<div class="badge badge-success">@item.BrandName</div>
-
 							}
 							<span class="ml-1 text-secondary small"><i class="fa fa-eye"></i> @item.View</span>
 							@if (item.DisplayOrder != null)
@@ -121,41 +108,13 @@
 							}
 						</div>
 						@item.ProductName
-						<a class="text-secondary ml-1" target="_blank" asp-area="" asp-controller="Product" asp-action="ProductDetail" asp-route-slug="@item.Slug" asp-route-id="@item.Id"><i class="fas fa-external-link-alt text-secondary"></i></a>
+						<a class="text-secondary ml-1" target="_blank" asp-area="" asp-controller="Product" asp-action="ProductDetail"asp-route-id="@item.Id"><i class="fas fa-external-link-alt text-secondary"></i></a>
 					</td>
 					<td>
-						@if (item.IsDiscountProduct)
-						{
-							<span class="small text-secondary d-block" style="text-decoration: line-through;">@item.Price.ToString("#,0 VNĐ")</span>
-							<span>@item.DiscountPrice?.ToString("#,0 VNĐ")</span>
-						}
-						else
-						{
-							<span>@item.Price.ToString("#,0 VNĐ")</span>
-						}
-					</td>
-					<td>
-@* 						@if (item.AppIntermediateProducts.Count > 0)
-						{
-							<div class="row">
-								@foreach (var size in item.AppIntermediateProducts)
-								{
-									if (size.AppProductQuantities.Count > 0)
-									{
-										if (size.MstProductSize != null)
-										{
-											var instock = size.AppProductQuantities.FirstOrDefault();
-											if (instock != null)
-											{
-												<div class="col-md-3">
-													<span class="badge badge-dark">@size.MstProductSize.SizeCode</span> (@instock.InStock)
-												</div>
-											}
-										}
-									}
-								}
-							</div>
-						} *@
+						<div class="d-block">
+							<div>Tùy chọn: @item.TotalOption</div>
+							<div>Tổng số lượng:  @item.TotalQuantity</div>
+						</div>
 					</td>
 					<td class="fit">
 						@{
@@ -183,7 +142,7 @@
 							}
 							if (User.IsInPermission(AuthConst.AppProduct.VIEW_DETAIL))
 							{
-								<a title="Chi tiết sản phẩm" asp-action="ProductDetail" asp-route-id="@item.Id"
+								<a title="Tùy chọn sản phẩm" asp-action="ListOption" asp-route-id="@item.Id"
 								   class="btn btn-outline-info btn-sm"><i class="fas fa-eye"></i></a>
 							}
 							if (User.IsInPermission(AuthConst.AppProduct.UPDATE))

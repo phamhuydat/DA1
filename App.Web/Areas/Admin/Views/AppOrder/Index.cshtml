@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Danh sách đơn hàng";
+	var row = 0;
 }
 
 
@@ -49,12 +50,13 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
 					<td class="fit js-col-checkbox d-none position-relative">
 						<input id="chk@(item.Id)" type="checkbox" data-id="@item.Id" style="transform: scale(1.5)" />
 						<label for="chk@(item.Id)" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
 					</td>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td>@item.CusName</td>
 					<td class="fit">@item.CusPhone</td>
 					@*<td class="fit">@item.CusEmail</td>*@
@@ -140,5 +142,5 @@
 </div>
 
 @section scripts {
-	<script src="~/js/Admin/order/order.js" asp-append-version="true"></script>
+	<script src="~/js/admin/order/order.js" asp-append-version="true"></script>		
 }

@@ -69,7 +69,20 @@ namespace App.Web.Controllers
 			}
 			if (model != null)
 			{
+				var orderDetail = await GetCartFromCustomer();
+				foreach (var detail in orderDetail)
+				{
+					//var currentID = Convert.ToInt32(detail.Key.Replace("products_", ""));
+					var product = await _repository.FindAsync<AppProductDetail>(detail.Id);
+					if (product.InStock < detail.Quantity)
+					{
+						_notyf.Error($"Số lượng sản phầm [{detail.ProductName}] trong kho không đủ [{product.InStock}]", 10);
+						return RedirectToAction("Index", "Cart");
+					}
+				}
+
 				await AddDataToOrder(model);
+
 				RemoveAllCartData();
 				_notyf.Success("Đơn đặt hàng đã được gửi thành công!", 10);
 				return RedirectToAction("Index", "Home");

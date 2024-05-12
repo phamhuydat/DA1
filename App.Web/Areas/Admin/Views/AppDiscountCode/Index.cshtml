@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Danh sách mã khuyến mãi";
+	var row = 0;
 }
 
 
@@ -30,8 +31,9 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td>
 						@item.Code
 					</td>

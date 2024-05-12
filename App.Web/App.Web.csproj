@@ -52,7 +52,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Areas\Admin\Views\" />
 	  <Folder Include="Components\Accessory\" />
 	  <Folder Include="wwwroot\adminTLE\" />
 	  <Folder Include="wwwroot\Upload\" />
