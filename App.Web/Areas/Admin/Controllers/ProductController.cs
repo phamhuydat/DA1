@@ -12,6 +12,7 @@ using AutoMapper.QueryableExtensions;
 using Humanizer.Localisation.DateToOrdinalWords;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -83,6 +84,7 @@ namespace App.Web.Areas.Admin.Controllers
 
 			return data;
 		}
+		// tạo danh mục sản phẩm 
 		[AppAuthorize(AuthConst.AppProduct.CREATE)]
 		public async Task<IActionResult> Create()
 		{
@@ -91,7 +93,7 @@ namespace App.Web.Areas.Admin.Controllers
 		}
 		[AppAuthorize(AuthConst.AppProduct.CREATE)]
 		[HttpPost]
-		public async Task<IActionResult> Create([FromServices] AddOrUpdateProductVM model)
+		public async Task<IActionResult> Create(AddOrUpdateProductVM model)
 		{
 			var imgs = new string[] { model.LinkImage1 , model.LinkImage2 , model.LinkImage3,
 										model.LinkImage4 , model.LinkImage5 , model.LinkImage6 };
@@ -116,22 +118,14 @@ namespace App.Web.Areas.Admin.Controllers
 				ViewBag.CheckProductCode = true;
 				return View(model);
 			}
-			if (await _repo.AnyAsync<AppProduct>(s => /*s.ProductCode.Equals(model.ProductCode) &&*/ s.DeletedDate == null))
+			if (await _repo.AnyAsync<AppProduct>(s => s.ProductCode.Equals(model.ProductCode) && s.DeletedDate == null))
 			{
 				ViewBag.CheckProductCode = true;
 				ModelState.AddModelError("ProductCode", "Mã sản phẩm đã tồn tại!");
 				return View(model);
 			}
-
-			if (model.Price <= model.DiscountPrice)
-			{
-				SetErrorMesg("Giá khuyến mãi không thể cao hơn hoặc bằng giá gốc!");
-				ViewBag.CheckProductCode = true;
-				return View(model);
-			}
 			try
 			{
-				//product.Slug = product.ProductName.Slugify();
 				product.CreatedBy = CurrentUserId;
 				product.IsActive = true;
 
@@ -146,10 +140,93 @@ namespace App.Web.Areas.Admin.Controllers
 				return View(model);
 			}
 		}
+		[AppAuthorize(AuthConst.AppProduct.CREATE)]
+		public async Task<IActionResult> CreateOption(int id)
+		{
+			var data = await _repo.FindAsync<AppProduct>(id);
+
+			var option = new AddOrUpProOptionVM();
+			option.ProductId = data.Id;
+			ViewBag.CheckProductCode = true;
+			return View(option);
+		}
+
+		[AppAuthorize(AuthConst.AppProduct.CREATE)]
+		[HttpPost]
+		public async Task<IActionResult> CreateOption(AddOrUpProOptionVM model)
+		{
+			var item = await _repo.FindAsync<AppProduct>(model.ProductId);
+			if (item is null)
+			{
+				SetErrorMesg(MODEL_STATE_INVALID_MESG, true);
+				ViewBag.CheckProductCode = true;
+				return View(model);
+			}
+
+			var product = _mapper.Map<AppProductDetail>(model);
+			product.Id = 0;
+			if (!ModelState.IsValid)
+			{
+				SetErrorMesg(MODEL_STATE_INVALID_MESG, true);
+				ViewBag.CheckProductCode = true;
+				return View(model);
+			}
+			if (await _repo.AnyAsync<AppProductDetail>(s => s.ProductCode.Equals(model.ProductCode) && s.DeletedDate == null))
+			{
+				ViewBag.CheckProductCode = true;
+				ModelState.AddModelError("ProductCode", "Mã sản phẩm đã tồn tại!");
+				return View(model);
+			}
+
+			if (model.Price <= model.DiscountPrice)
+			{
+				SetErrorMesg("Giá khuyến mãi không thể cao hơn hoặc bằng giá gốc!");
+				ViewBag.CheckProductCode = true;
+				return View(model);
+			}
+			try
+			{
+				product.CreatedBy = CurrentUserId;
+				product.ProductId = model.ProductId;
+				//product.AppProduct = item;
+				await _repo.AddAsync(product);
+
+				SetSuccessMesg($"Thêm tùy chọn sản phẩm thành công!");
+				return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
+			}
+			catch (Exception ex)
+			{
+				ViewBag.CheckProductCode = true;
+				LogException(ex);
+				return View(model);
+			}
+		}
+		[AppAuthorize(AuthConst.AppProduct.UPDATE)]
+		public async Task<IActionResult> UpdateOption(int? id)
+		{
+			ViewBag.CheckProductCode = false;
+			if (id is null)
+			{
+				SetErrorMesg("Không tìm thấy sản phẩm!");
+				return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
+			}
+
+			var product = await GetProductOtionById(id.Value);
+			if (product is null)
+			{
+				SetErrorMesg("Không tìm thấy sản phẩm!");
+				return RedirectToAction(nameof(Index), ROUTE_FOR_AREA);
+			}
+			ViewBag.BeforeUrl = Referer;
+			return View(product);
+		}
+
+
 		[AppAuthorize(AuthConst.AppProduct.DELETE)]
 		public async Task<IActionResult> Delete(int id)
 		{
 			var product = await _repo.FindAsync<AppProduct>(id);
+			var productDetail = await _repo.GetAll<AppProductDetail>(x => x.ProductId == id).ToListAsync();
 			if (product == null)
 			{
 				SetErrorMesg("Bài viết này không tồn tại hoặc đã được xóa trước đó!");
@@ -159,6 +236,10 @@ namespace App.Web.Areas.Admin.Controllers
 			product.CategoryId = null;
 
 			await _repo.DeleteAsync(product);
+			foreach (var item in productDetail)
+			{
+				await _repo.DeleteAsync(item);
+			}
 			SetSuccessMesg($"Sản phẩm [{product.ProductName}] được xóa thành công!");
 			if (Referer != null)
 			{
@@ -241,12 +322,12 @@ namespace App.Web.Areas.Admin.Controllers
 		[AppAuthorize(AuthConst.AppProduct.UPDATE)]
 		public async Task<IActionResult> Update(AddOrUpdateProductVM product)
 		{
-			if (product.Price <= product.DiscountPrice)
-			{
-				ViewBag.CheckProductCode = false;
-				SetErrorMesg("Giá khuyến mãi không thể cao hơn hoặc bằng giá gốc!");
-				return View(product);
-			}
+			//if (product.Price <= product.DiscountPrice)
+			//{
+			//    ViewBag.CheckProductCode = false;
+			//    SetErrorMesg("Giá khuyến mãi không thể cao hơn hoặc bằng giá gốc!");
+			//    return View(product);
+			//}
 			try
 			{
 				var oldProduct = await _repo.FindAsync<AppProduct>(product.Id);
@@ -279,23 +360,6 @@ namespace App.Web.Areas.Admin.Controllers
 				}
 				await _repo.UpdateAsync(productImgs);
 
-				// Update số lượng size
-				//var listTemp = await _repo
-				//	.GetAll<AppIntermediateProduct>(x => x.ProductId == product.Id)
-				//	.OrderBy(x => x.Id)
-				//	.ToListAsync();
-				//var newListQuantity = product.AppIntermediateProducts.ToList();
-				//for (int i = 0; i < listTemp.Count; i++)
-				//{
-				//	var item = listTemp[i];
-				//	var listQuantity = newListQuantity[i].AppProductQuantities.ToList();
-				//	var quantity = await _repo.GetOneAsync<AppProductQuantity>(x => x.AppIntermediateId == item.Id);
-				//	quantity.InStock = listQuantity[0].InStock;
-				//	quantity.UpdatedBy = CurrentUserId;
-				//	quantity.UpdatedDate = now;
-				//	await _repo.UpdateAsync(quantity);
-				//}
-
 				SetSuccessMesg($"Cập nhật sản phẩm [{product.ProductName}] thành công!");
 				var indexUrl = Request.Form["beforeUrl"].ToString();
 				if (indexUrl.IsNullOrEmpty())
@@ -316,6 +380,12 @@ namespace App.Web.Areas.Admin.Controllers
 		{
 			var product = await _repo.GetAll<AppProduct>()
 				.Include(s => s.AppProductImages)
+				.SingleOrDefaultAsync(s => s.Id.Equals(id));
+			return _mapper.Map<AddOrUpdateProductVM>(product);
+		}
+		private async Task<AddOrUpdateProductVM> GetProductOtionById(int id)
+		{
+			var product = await _repo.GetAll<AppProductDetail>()
 				.SingleOrDefaultAsync(s => s.Id.Equals(id));
 			return _mapper.Map<AddOrUpdateProductVM>(product);
 		}
@@ -382,6 +452,7 @@ namespace App.Web.Areas.Admin.Controllers
 				.ToPagedListAsync(page, size);
 
 			ViewBag.TitleProdcut = item.ProductName;
+			ViewBag.IdPro = item.Id;
 			return View(product);
 		}
 	}

@@ -18,7 +18,7 @@ namespace App.Web.Areas.Admin.Components.SelectProductColor
 		{
 			repository = _db;
 		}
-		public async Task<IViewComponentResult> InvokeAsync(AddOrUpdateProductVM product)
+		public async Task<IViewComponentResult> InvokeAsync(AddOrUpProOptionVM product)
 		{
 			var proColor = await repository
 				.GetAllMst<MstProductColor>()
@@ -28,7 +28,7 @@ namespace App.Web.Areas.Admin.Components.SelectProductColor
 			var listColor = new SelectList(proColor, "Id", "ColorName", -1);
 			if (product != null)
 			{
-				listColor = new SelectList(proColor, "Id", "ColorName", product.ProductColorId);
+				listColor = new SelectList(proColor, "Id", "ColorName", product.ColorId);
 			};
 			ViewBag.ProductColor = listColor;
 			return View(product);

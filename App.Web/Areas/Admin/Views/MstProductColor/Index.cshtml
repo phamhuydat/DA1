@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Danh sách màu sản phẩm";
+	var row = 0;
 }
 @if (User.IsInPermission(AuthConst.MstProductColor.CREATE))
 {
@@ -45,6 +46,7 @@
 			<tr>
 				<th>#</th>
 				<th>Màu sắc</th>
+				<th>Mã màu</th>
 				<th>Ngày tạo</th>
 				<th></th>
 			</tr>
@@ -52,12 +54,17 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td data-item-address="@item.Id">
 						@item.ColorName <small>(@item.CountProduct sản phẩm)</small>
 					</td>
+					<td>
+						@item.CssColor
+					</td>
 					<td class="fit">@item.CreatedDate?.ToString("dd/MM/yyyy")</td>
+
 					<td class="fit">
 						@if (User.IsInPermission(AuthConst.MstProductColor.UPDATE))
 						{

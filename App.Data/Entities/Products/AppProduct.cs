@@ -14,6 +14,7 @@ namespace App.Data.Entities.Products
 			AppProductImages = new HashSet<AppProductImage>();
 			AppProductDetails = new HashSet<AppProductDetail>();
 		}
+		public string ProductCode { get; set; }
 		public string ProductName { get; set; }
 		public string Description { get; set; }
 		public bool IsActive { get; set; } // còn bán hay ko 

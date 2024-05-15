@@ -1,7 +1,7 @@
 ﻿@model App.Web.Areas.Admin.ViewModels.Product.AddOrUpdateProductVM
 
 @{
-	ViewData["Title"] = "Thêm sản phẩm";
+	ViewData["Title"] = "Thêm sản dòng phẩm";
 }
 
 @section head{
@@ -25,11 +25,12 @@
 <partial name="_BackToList" />
 
 @section scripts{
+    <script src="~/js/file-news-manager/products.js" asp-append-version="true"></script>
 	<script src="~/js/elfinder/common_elfinder.js" asp-append-version="true"></script>
 	<script src="~/lib/tagify/tagify.js"></script>
+    <script src="~/js/elfinder/common_elfinder.js"></script>
 	<script src="~/lib/tagify/tagify.polyfills.min.js"></script>
-	<script src="~/js/Admin/product/seo_product.js" asp-append-version="true"></script>
-	<script src="~/js/Admin/product/product.js" asp-append-version="true"></script>
+	<script src="~/js/admin/product/seo_product.js" asp-append-version="true"></script>
 	<script>
 		var input = document.querySelector('input[name=TagProduct]');
 		new Tagify(input)

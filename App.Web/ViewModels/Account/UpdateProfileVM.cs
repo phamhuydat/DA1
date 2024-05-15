@@ -16,5 +16,8 @@ namespace App.Web.ViewModels.Account
         public string email { get; set; }
         [MaxLength(DB.AppUser.ADDRESS_LENGTH)]
         public string address { get; set; }
+
+        public IFormFile Avatar { get; set; }
+        public string? AvatarPath { get; set; }
     }
 }

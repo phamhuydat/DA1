@@ -30,6 +30,8 @@ namespace App.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
+
+
             ViewBag.iphone = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
                         && x.CategoryId == DB.AppProductCategory.IPHONE).Take(4);
@@ -69,8 +71,30 @@ namespace App.Web.Controllers
             ViewBag.countSearch = data.Count;
             return View(data);
         }
+        [Route("San-pham-theo-danh-muc/{id}")]
         public async Task<IActionResult> GetProductByCategory(int id = 0, int orderby = 0, int page = 1, int size = DEFAULT_PAGE_SIZE)
         {
+
+            var cate = await _repository
+                        .GetOneAsync<AppProductCategory>(s => s.Id == id);
+
+            if (cate == null) return NotFound();
+
+            var listCateId = new List<int>();
+            if (cate.CateLevel == 1)
+            {
+                listCateId = await _repository.GetAll<AppProductCategory>(s => s.ParentCateId.Equals(cate.Id))
+                        .Select(x => x.Id)
+                        .ToListAsync();
+
+                listCateId.Add(cate.Id);
+            }
+            else
+            {
+                listCateId.Add(cate.Id);
+            }
+            ViewBag.cateId_by = listCateId.Last();
+
             if (orderby == 15)
             {
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
@@ -101,6 +125,7 @@ namespace App.Web.Controllers
                         .OrderByDescending(x => x.ProductName).ToPagedListAsync(page, size);
                 return View(data);
             }
+
             if (orderby == 4)
             {
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
@@ -126,14 +151,11 @@ namespace App.Web.Controllers
             else
             {
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
-                        (AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.CategoryId == id)
-                        .Where(x => x.DeletedDate == null)
+                        (AutoMapperProfile.ProductClientConf, false,
+                        s => s.IsActive == true && (s.CategoryId != null && listCateId.Contains(s.CategoryId.Value)))
                         .ToPagedListAsync(page, size);
 
-                var cate = await _repository.GetOneAsync<AppProductCategory>(x => x.Id == id);
                 ViewBag.TitleName = cate.Name;
-
                 return View(data);
             }
 

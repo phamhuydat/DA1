@@ -178,9 +178,22 @@ $(function () {
 
 function buyNow(evt, productId) {
     var idDetail = $("#pro-detail-id").val();
-    evt.preventDefault();
-    addToCart(productId, idDetail);
-    location.href = $(evt.currentTarget).attr("href");
+
+    var check = $("#new-price-discount").text();
+    if (check == "Hêt hàng" || idDetail == "") {
+        notyf.error("Hiện tại sản phẩm đang hết hàng vui lòng thử lại");
+        setTimeout(function () {
+            location.reload();
+        }, 2000);
+    }
+    else {
+        addToCart(productId, idDetail);
+        setTimeout(function () {
+            location.reload();
+        }, 2000);
+        evt.preventDefault();
+    }
+
 }
 
 

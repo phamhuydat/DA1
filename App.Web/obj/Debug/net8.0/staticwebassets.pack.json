@@ -89,14 +89,6 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded-source\\icon\\search-icon-1.png"
     },
     {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\1284x1284-Copy-1.png",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\1284x1284-Copy-1.png"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\2560x800-Copy-1.png",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\2560x800-Copy-1.png"
-    },
-    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\Apple Line.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\Apple Line.png"
     },
@@ -1125,6 +1117,74 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\admin.txt",
+      "PackagePath": "staticwebassets\\files\\admin\\admin.txt"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0001417_pencil-2_240.png",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0001417_pencil-2_240.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0003500_bao-da-ipad-mini-6-83-inch-dux-ducis_240.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0003500_bao-da-ipad-mini-6-83-inch-dux-ducis_240.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0011239_applecare-for-ipad-mini-6th-generation_240.png",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0011239_applecare-for-ipad-mini-6th-generation_240.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0012445_Logo_ShopDunk.png",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0012445_Logo_ShopDunk.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024840_ipad-mini-6-256gb_100.png",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024840_ipad-mini-6-256gb_100.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024840_ipad-mini-6-256gb_550.png",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024840_ipad-mini-6-256gb_550.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024911_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024911_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024912_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024912_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024913_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024913_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024914_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024914_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024915_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024915_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024916_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024916_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024917_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024917_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024918_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024918_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024919_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024919_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024920_pink_550.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024920_pink_550.jpeg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\Admin\\branch\\branch.js",
       "PackagePath": "staticwebassets\\js\\Admin\\branch\\branch.js"
     },
@@ -1171,6 +1231,18 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\file-manager\\elfinder.js",
       "PackagePath": "staticwebassets\\js\\file-manager\\elfinder.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\file-news-manager\\news_file_manager.js",
+      "PackagePath": "staticwebassets\\js\\file-news-manager\\news_file_manager.js"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\file-news-manager\\news_file_manager.js.orig",
+      "PackagePath": "staticwebassets\\js\\file-news-manager\\news_file_manager.js.orig"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\file-news-manager\\products.js",
+      "PackagePath": "staticwebassets\\js\\file-news-manager\\products.js"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\i18n\\elfinder.vi.js",
@@ -2085,40 +2157,12 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\CHANGELOG.md",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\CHANGELOG.md"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\README.md",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\README.md"
-    },
-    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\css\\bs4-autocomplete.css",
       "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\css\\bs4-autocomplete.css"
     },
     {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.d.ts",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.d.ts"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.js",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.js"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.min.js",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\dist\\bs4-autocomplete.min.js"
-    },
-    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\js\\bs4-autocomplete.js",
       "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\js\\bs4-autocomplete.js"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-autocomplete\\package.json",
-      "PackagePath": "staticwebassets\\lib\\bs4-autocomplete\\package.json"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\lib\\bs4-modal\\modal.js",

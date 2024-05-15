@@ -20,6 +20,7 @@ namespace App.Web.ViewModels.Product
         public string ProductCode { get; set; }
         public string CategoryName { get; set; }
         public string ColorName { get; set; }
+        public int Instok { get; set; }
         public List<String> RamOptions { get; set; }
         public List<String> RomOptions { get; set; }
         public ICollection<AppProductImage> AppProductImages { get; set; }

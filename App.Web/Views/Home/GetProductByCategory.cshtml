@@ -64,7 +64,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        @await Component.InvokeAsync("CateMenu", new { id = Model.First().CategoryId })
+                                        @await Component.InvokeAsync("CateMenu", new { id = ViewBag.cateId_by })
                                     }
 
                                 </div>
@@ -140,67 +140,27 @@
                                     }
                                 </div>
                             </div>
-
-                            <!-- phụ kiện đi kèm-->
-
-                           @*  <div class="topic-block">
-                                <div class="topic-block-body">
-                                    <div class="section_catelog_bottom">
-                                        <div class="section_ss sosanh">
-                                            <div class="ss_image">
-                                                <a href=/compareproducts> 
-                                                    <img title="Image Standard"
-                                                        src="~/ClientTLE/images/uploaded/trang danh muc/watch/Image-Standard-6.png"
-                                                        alt="Image Standard" width=142 height=139> 
-                                                </a>
-                                            </div>
-                                            <div class="ss_all_content">
-                                                <div class=title>Tìm Apple Watch&nbsp;<br>phù hợp với bạn
-                                                </div>
-                                                <a class=button-link href=/compareproducts>So sánh các
-                                                    Apple Watch&nbsp;
-                                                    </a>
-                                                    <a class=button-link
-                                                    href=/compareproducts>›</a>
-                                            </div>
-                                        </div>
-                                        <div class="section_ss muakem">
-                                            <div class=ss_image><a href=/compareproducts> <img
-                                                        title="Image Standard-1"
-                                                        src="~/ClientTLE/images/uploaded/trang danh muc/watch/Image-Standard-7.png"
-                                                        alt="Image Standard-1" width=142 height=139> </a>
-                                            </div>
-                                            <div class=ss_all_content>
-                                                <div class=title>Phụ kiện Apple Watch<br>thường mua kèm
-                                                </div><a class=button-link href=/phu-kien>Tìm phụ
-                                                    kiện&nbsp;</a><a class=button-link
-                                                    href=/compareproducts>›</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> *@
                                          
                             @if(Model.Count() > 0)
                             {
                                 <!-- mô tả đồng hồ -->
-                                @if (Model.First().CategoryId == 1)
+                                @if ( ViewBag.cateId_by == 1)
                                 {
                                     <partial name="../Shared/_descriptIphone.cshtml" />
                                 }
-                                else if (Model.First().CategoryId == 2)
+                                else if ( ViewBag.cateId_by == 2)
                                 {
                                     <partial name="../Shared/_descriptIphone.cshtml" />
                                 }
-                                else if (Model.First().CategoryId == 3)
+                                else if ( ViewBag.cateId_by == 3)
                                 {
                                     <partial name="../Shared/_descriptionMac.cshtml" />
                                 }
-                                else if (Model.First().CategoryId == 4)
+                                else if ( ViewBag.cateId_by == 4)
                                 {
                                     <partial name="../Shared/_descriptionWatch.cshtml" />
                                 }
-                                else if (Model.First().CategoryId == 5)
+                                else if ( ViewBag.cateId_by == 5)
                                 {
                                     <partial name="../Shared/_descriptAccessory.cshtml" />
                                 }

@@ -12,8 +12,11 @@ namespace App.Web.WebConfig
 {
     public static class AppService
     {
-        public static void AddAppService(this IServiceCollection services, IConfiguration Configuration)
+        public static string WebRootPath { get; private set; }
+
+        public static void AddAppService(this IServiceCollection services, IConfiguration Configuration, IWebHostEnvironment env)
         {
+            WebRootPath = env.WebRootPath;
             services.AddDbContext<WebAppDbContext>(opt =>
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("Database"));

@@ -1,0 +1,70 @@
+﻿@model App.Web.ViewModels.Account.UpdateProfileVM
+@{
+    ViewData["Title"] = "UpdateImg";
+    Layout = "~/Views/Shared/_LayoutInfo.cshtml";
+}
+
+<div class=bg-sg></div>
+<div class="master-wrapper-content">
+    <div class=master-column-wrapper>
+        <div class="side-2">
+            <div class="block block-account-navigation ">
+                <div class="title"><strong>Tài khoản của tôi</strong></div>
+                <div class="listbox">
+                    <ul class="list">
+                        <li class="customer-info inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Thông tin tài khoản</a>
+                        </li>
+                        <li class="customer-addresses inactive">
+                            <a asp-action="UpdateAddress" asp-controller="Account">Địa chỉ nhận hàng</a>
+                        </li>
+                        <li class="customer-orders inactive">
+                            <a asp-action="UpdateProfile" asp-controller="Account">Đơn đặt hàng</a>
+                        </li>
+                        <li class="change-password inactive">
+                            <a asp-action="ChangePassword" asp-controller="Account">Đổi mật khẩu</a>
+                        </li>
+
+                        <li class="customer-avatar active">
+                            <a asp-action="UpdateImg">
+                                Ảnh đại diện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=center-2>
+            <form method="post" enctype="multipart/form-data">
+                <div class="page account-page order-list-page">
+                    <div class=page-title>
+                        <h1>Ảnh đại diện</h1>
+                    </div>
+                    <div class=page-body>
+                        <div style="border-radius: 50%; height: 250px !important; width; 250px; ">
+                            <img src="@(Model.AvatarPath ?? "/Images/Avatar/default.png")" alt="ảnh đại diện" />
+                        </div>
+
+
+                        <div class=all_avatar_content>
+                            <div class=fieldset>
+                                <input asp-for="Avatar" accept="image/jpeg, image/gif"
+                                       type=file>
+                            </div>
+                            <div class="info">
+                                Hình đại diện phải ở định dạng GIF hoặc JPEG có kích thước tối
+                                đa là 20 KB
+                            </div>
+                            <div class="buttons">
+                                <button class="button-1 upload-avatar-button">
+                                    Tải lên
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

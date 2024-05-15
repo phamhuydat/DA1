@@ -250,6 +250,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Areas/Admin/Views/Product/CreateOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGVPcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -266,8 +270,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Areas/Admin/Views/Product/UpdateOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGVPcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Areas/Admin/Views/Product/_AddOrUpdateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxfQWRkT3JVcGRhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Areas/Admin/Views/Product/_AddOrUpProOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxfQWRkT3JVcFByb09wdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Areas/Admin/Views/Product/_FormSearch.cshtml]
@@ -392,6 +404,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Account/UpdateAddress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGVBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Account/UpdateImg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGVJbWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Account/UpdateProfile.cshtml]

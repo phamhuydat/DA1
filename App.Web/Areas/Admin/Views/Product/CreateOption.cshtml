@@ -1,0 +1,38 @@
+﻿@model App.Web.Areas.Admin.ViewModels.Product.AddOrUpProOptionVM
+
+@{
+	ViewData["Title"] = "Thêm Tùy chọn sản phẩm";
+}
+
+@section head {
+	<link href="~/lib/summernote/summernote-bs4.min.css" rel="stylesheet" />
+	<link href="~/lib/tagify/tagify.css" rel="stylesheet" />
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<form asp-action="CreateOption" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<partial name="_AddOrUpProOption" model="Model" />
+			<div class="form-group">
+				<button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Lưu</button>
+				<button type="reset" class="btn btn-default"><i class="fa fa-undo"></i> Nhập lại</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<partial name="_BackToList" />
+
+@section scripts {
+	<script src="~/js/elfinder/common_elfinder.js" asp-append-version="true"></script>
+	<script src="~/lib/tagify/tagify.js"></script>
+	<script src="~/lib/tagify/tagify.polyfills.min.js"></script>
+	<script src="~/js/Admin/product/seo_product.js" asp-append-version="true"></script>
+	<script src="~/js/Admin/product/product.js" asp-append-version="true"></script>
+	<script>
+		var input = document.querySelector('input[name=TagProduct]');
+		new Tagify(input)
+	</script>
+	@await Html.PartialAsync("_Summernote", new { height = 300, selector = "#Description" })
+}

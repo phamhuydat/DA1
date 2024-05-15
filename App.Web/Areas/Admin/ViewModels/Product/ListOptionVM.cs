@@ -23,6 +23,7 @@ namespace App.Web.Areas.Admin.ViewModels.Product
 		public string ColorCss { get; set; }
 		public string ImagePath { get; set; }
 		public int? DisplayOrder { get; set; }
+		public int? ProductId { get; set; }
 		public bool IsDiscountProduct
 		{
 			get
