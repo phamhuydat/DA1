@@ -14,6 +14,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.EntityFrameworkCore;
 using App.Data.Entities;
 using App.Share.Extensions;
+using AutoMapper.QueryableExtensions;
 
 namespace App.Web.Controllers
 {
@@ -30,8 +31,6 @@ namespace App.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-
-
             ViewBag.iphone = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
                     .Where(x => x.IsActive == true
                         && x.CategoryId == DB.AppProductCategory.IPHONE).Take(4);
@@ -56,7 +55,7 @@ namespace App.Web.Controllers
                        ).Take(8);
             return View();
         }
-        [Route("search")]
+
         public async Task<IActionResult> SearchProducts(string search = "", int orderby = 0, int page = 1, int size = DEFAULT_PAGE_SIZE)
         {
             if (search is null)
@@ -64,9 +63,11 @@ namespace App.Web.Controllers
                 _notyf.Error("Không tìm thấy sản phẩm");
                 return View();
             }
-            var data = await _repository.GetAll<AppProduct>(x => x.IsActive == true
-                    && x.DeletedDate == null && x.ProductName.Contains(search.Slugify()))
+            var data = await _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive == true
+                         && x.DeletedDate == null && x.ProductName.Contains(search.Slugify()))
                                 .ToPagedListAsync(page, size);
+
             ViewBag.keyword = search;
             ViewBag.countSearch = data.Count;
             return View(data);
@@ -159,6 +160,12 @@ namespace App.Web.Controllers
                 return View(data);
             }
 
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error(int statusCode)
+        {
+            return View(statusCode.ToString());
         }
     }
 }

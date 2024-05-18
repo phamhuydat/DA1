@@ -8,5 +8,6 @@ namespace App.Web.ViewModels.Slider
 		public DateTime? FromDate { get; set; }
 		public DateTime? ToDate { get; set; }
 		public string Link { get; set; }
+		public int? CategoryId { get; set; }
 	}
 }

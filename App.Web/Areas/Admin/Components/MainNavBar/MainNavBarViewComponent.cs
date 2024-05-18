@@ -90,15 +90,15 @@ namespace App.Web.Areas.Admin.Components.MainNavBar
                             Icon = "fa-th-large",
                             Permission = AuthConst.AppProductCategory.VIEW_LIST,
                         },
-                        new MenuItem
-                        {
-                            Area = "Admin",
-                            Action = "Index",
-                            Controller = "MstProductBrand",
-                            DisplayText = "Quản lý thương hiệu",
-                            Icon = "fa-copyright",
-                            Permission = AuthConst.MstProductBrand.VIEW_LIST,
-                        },
+                        //new MenuItem
+                        //{
+                        //    Area = "Admin",
+                        //    Action = "Index",
+                        //    Controller = "MstProductBrand",
+                        //    DisplayText = "Quản lý thương hiệu",
+                        //    Icon = "fa-copyright",
+                        //    Permission = AuthConst.MstProductBrand.VIEW_LIST,
+                        //},
                         new MenuItem
                         {
                             Area = "Admin",
@@ -170,15 +170,15 @@ namespace App.Web.Areas.Admin.Components.MainNavBar
                             Icon = "fa-puzzle-piece",
                             Permission = AuthConst.SystemEnv.VIEW_LIST,
                         },
-                        new MenuItem
-                        {
-                            Area = "Admin",
-                            Action = "CompanyIntroduction",
-                            Controller = "AboutCompany",
-                            DisplayText = "Giới thiệu",
-                            Icon = "fa-eject",
-                            Permission = AuthConst.AppAboutCompany.VIEW_LIST,
-                        },
+                        //new MenuItem
+                        //{
+                        //    Area = "Admin",
+                        //    Action = "CompanyIntroduction",
+                        //    Controller = "AboutCompany",
+                        //    DisplayText = "Giới thiệu",
+                        //    Icon = "fa-eject",
+                        //    Permission = AuthConst.AppAboutCompany.VIEW_LIST,
+                        //},
                         new MenuItem
                         {
                             Area = "Admin",

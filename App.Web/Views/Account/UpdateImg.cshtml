@@ -1,6 +1,6 @@
 ﻿@model App.Web.ViewModels.Account.UpdateProfileVM
 @{
-    ViewData["Title"] = "UpdateImg";
+    ViewData["Title"] = "Avatar";
     Layout = "~/Views/Shared/_LayoutInfo.cshtml";
 }
 
@@ -40,15 +40,17 @@
                     <div class=page-title>
                         <h1>Ảnh đại diện</h1>
                     </div>
-                    <div class=page-body>
-                        <div style="border-radius: 50%; height: 250px !important; width; 250px; ">
-                            <img src="@(Model.AvatarPath ?? "/Images/Avatar/default.png")" alt="ảnh đại diện" />
+                    <div class=page-body style="padding-bottom: 20px">
+                        <div style="padding: 10px">
+                            <div style="border: 3px dashed gray ;border-radius: 50%; height: 260px; width: 260px; margin: 20px 5px">
+                                <img id="imagePreview" src="@(Model.AvatarPath ?? "/Images/Avatar/default.png")" alt="ảnh đại diện" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; margin-top: 3px; margin-left: 3px" />
+                            </div>
                         </div>
 
 
                         <div class=all_avatar_content>
                             <div class=fieldset>
-                                <input asp-for="Avatar" accept="image/jpeg, image/gif"
+                                <input id="fileInput" asp-for="Avatar" accept="image/jpeg, image/gif"
                                        type=file>
                             </div>
                             <div class="info">
@@ -67,4 +69,18 @@
         </div>
     </div>
 </div>
+<script>
+    const fileInput = document.getElementById('fileInput');
+    const imagePreview = document.getElementById('imagePreview');
 
+    fileInput.addEventListener('change', function () {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>

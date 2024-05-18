@@ -10,30 +10,8 @@
         <div class=center-1>
             <div class="page home-page">
                 <div class=page-body>
-                    <div class="banner_home-page desktop" style="display: none">
-                        <div class="topic-block">
-                            <div class="topic-block-body">
-                                <div class="banner_cate_slick">
-                                    <img src="~/ClientTLE/images/uploaded/banner/banner apple watch 9 t4_danh mục.jpg"
-                                         width="1200" height="400">
-                                    <img src="~/ClientTLE/images/uploaded/banner/banner apple watch se t4_danh mục.jpg" 
-                                            width="1200" height="400" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner_home-page mobile">
-                       <div class="topic-block">
-                            <div class="topic-block-body">
-                                <div class="banner_cate_slick">
-                                    <img src="~/ClientTLE~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_MB.jpg"
-                                        alt="" width=600 height=600>
-                                    <img src="~/ClientTLE~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch SE T4_MB.jpg"
-                                        alt="" width=600 height=600>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @await Component.InvokeAsync("Slider") 
+
 
                     <div class="content_home-page">
                         <div class=topic-block>
@@ -207,223 +185,273 @@
                                     </div>
                                 }
                                 @* ipad *@
-                                <div class="item-box-list">
-                                    <div class="category-item">
-                                        <h2 class="title">
-                                            <a asp-action="" asp-controller="" asp-route-id="" alt="Ipad"> iPad </a>
-                                        </h2>
-                                        <div class="page category-page">
-                                            <div class=page-body>
-                                                <div class="product-grid featured-product-grid">
-                                                    <div class="item-grid">
-                                                        <div class="item-box">
-                                                            <div class="product-item" data-productid=73>
-                                                                <div class="product_tag">
-                                                                    <img src="~ClientTLE/images/uploaded/icon/vnpay500k.png"
-                                                                         alt="">
-                                                                </div>
-                                                                <div class="picture">
-                                                                    <a href=/ipad-mini-6
-                                                                       title="Hiển thị chi tiết cho iPad mini 6">
-                                                                        <img alt="Ảnh của iPad mini 6"
-                                                                             src=https://shopdunk.com~ClientTLE/images/thumbs/0000593_ipad-mini-6_240.png
-                                                                             title="Hiển thị chi tiết cho iPad mini 6">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="details">
-                                                                    <h3 class=product-title>
-                                                                        <a >
-                                                                            iPad mini
-                                                                            6
+                                @foreach (var item in ViewBag.ipad)
+                                {
+                                    <div class="item-box-list">
+                                        <div class="category-item">
+                                            <h2 class="title">
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1">IPhone </a>
+                                            </h2>
+                                            <div class="page category-page">
+                                                <div class="page-body">
+                                                    <div class="product-grid featured-product-grid">
+                                                        <div class="item-grid">
+                                                            <div class="item-box">
+                                                                <div class="product-item">
+                                                                    <div class="product_tag">
+                                                                        <img src="~/ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                             alt="">
+                                                                    </div>
+                                                                    <div class="picture">
+                                                                        <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id"
+                                                                           title="Hiển thị chi tiết cho iPad mini 6">
+                                                                            <img alt="Ảnh của iPad mini 6"
+                                                                                 src="@item.ImagePath"
+                                                                                 title="Hiển thị chi tiết cho iPad mini 6">
                                                                         </a>
-                                                                    </h3>
-                                                                    <div class=add-info>
-                                                                        <div class=prices>
-                                                                            <div class=price-ratio-container>
-                                                                                <span class="price price-ratio">-25%</span>
-                                                                            </div><span class="price old-price">14.990.000&#x20AB;</span>
-                                                                            <span class="price actual-price">11.190.000&#x20AB;</span>
+                                                                    </div>
+                                                                    <div class="details">
+                                                                        <h3 class=product-title>
+                                                                            <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
+                                                                                @item.ProductName
+                                                                            </a>
+                                                                        </h3>
+                                                                        <div class=add-info>
+                                                                            <div class=prices>
+                                                                                @if (item.DiscountPrice == null)
+                                                                                {
+                                                                                    <div class="price old-price"></div>
+                                                                                    <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                                                                    <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                                                                }
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="products-container">
-                                                    <div class="ajax-products-busy"></div>
-                                                    <div class="products-wrapper"></div>
+                                                    <div class=products-container>
+                                                        <div class=ajax-products-busy></div>
+                                                        <div class=products-wrapper></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class=show-all>
-                                    <a asp-action="" asp-controller="" asp-route-id="">
-                                        Xem tất cả iPad <i class="fa-regular fa-chevron-right"></i>
-                                    </a>
-                                </div>
+                                    <div class="show-all">
+                                        <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.CategoryId">
+                                            Xem tất cả ipad
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                }
 
-                                <div class=item-box-list>
-                                    <div class=category-item>
-                                        <h2 class=title>
-                                            <a asp-action="" asp-controller="" asp-route-id="" alt="Mac"> Mac </a>
-                                        </h2>
-                                        <div class="page category-page">
-                                            <div class=page-body>
-                                                <div class="product-grid featured-product-grid">
-                                                    <div class=item-grid>
-                                                        <div class=item-box>
-                                                            <div class=product-item data-productid=94>
-                                                                <div class=product_tag>
-                                                                    <img src=~ClientTLE/images/uploaded/icon/vnpay250k.png
-                                                                         alt="">
-                                                                </div>
-                                                                <div class=picture>
-                                                                    <a href=/macbook-air-m1-2020
-                                                                       title="Hiển thị chi tiết cho MacBook Air M1 2020 (8GB RAM | 256GB SSD)">
-                                                                        <img alt="Ảnh của MacBook Air M1 2020 (8GB RAM | 256GB SSD)"
-                                                                             src=https://shopdunk.com~ClientTLE/images/thumbs/0000723_macbook-air-m1-2020-8gb-ram-256gb-ssd_240.png
-                                                                             title="Hiển thị chi tiết cho MacBook Air M1 2020 (8GB RAM | 256GB SSD)">
-                                                                    </a>
-                                                                </div>
-                                                                <div class=details>
-                                                                    <h3 class=product-title>
-                                                                        <a href=/macbook-air-m1-2020>
-                                                                            MacBook
-                                                                            Air M1 2020 (8GB RAM | 256GB
-                                                                            SSD)
+                                @* mac *@
+                                @foreach (var item in ViewBag.mac)
+                                {
+                                    <div class="item-box-list">
+                                        <div class="category-item">
+                                            <h2 class="title">
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1">IPhone </a>
+                                            </h2>
+                                            <div class="page category-page">
+                                                <div class="page-body">
+                                                    <div class="product-grid featured-product-grid">
+                                                        <div class="item-grid">
+                                                            <div class="item-box">
+                                                                <div class="product-item">
+                                                                    <div class="product_tag">
+                                                                        <img src="~/ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                             alt="">
+                                                                    </div>
+                                                                    <div class="picture">
+                                                                        <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id"
+                                                                           title="Hiển thị chi tiết cho iPad mini 6">
+                                                                            <img alt="Ảnh của iPad mini 6"
+                                                                                 src="@item.ImagePath"
+                                                                                 title="Hiển thị chi tiết cho iPad mini 6">
                                                                         </a>
-                                                                    </h3>
-                                                                    <div class=add-info>
-                                                                        <div class=prices>
-                                                                            <div class=price-ratio-container>
-                                                                                <span class="price price-ratio">-36%</span>
-                                                                            </div><span class="price old-price">28.990.000&#x20AB;</span>
-                                                                            <span class="price actual-price">18.490.000&#x20AB;</span>
+                                                                    </div>
+                                                                    <div class="details">
+                                                                        <h3 class=product-title>
+                                                                            <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
+                                                                                @item.ProductName
+                                                                            </a>
+                                                                        </h3>
+                                                                        <div class=add-info>
+                                                                            <div class=prices>
+                                                                                @if (item.DiscountPrice == null)
+                                                                                {
+                                                                                    <div class="price old-price"></div>
+                                                                                    <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                                                                    <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                                                                }
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class=products-container>
-                                                    <div class=ajax-products-busy></div>
-                                                    <div class=products-wrapper></div>
+                                                    <div class=products-container>
+                                                        <div class=ajax-products-busy></div>
+                                                        <div class=products-wrapper></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class=show-all>
-                                    <a asp-action ="" asp-controller="" asp-route-id="">
-                                        Xem tất cả Mac <i class="fa-regular fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class=item-box-list>
-                                    <div class=category-item>
-                                        <h2 class=title><a href=/apple-watch> Watch </a></h2>
-                                        <div class="page category-page">
-                                            <div class=page-body>
-                                                <div class="product-grid featured-product-grid">
-                                                    <div class=item-grid>
-                                                        <div class=item-box>
-                                                            <div class=product-item data-productid=77>
-                                                                <div class=product_tag></div>
-                                                                <div class=picture>
-                                                                    <a href=/apple-watch-se-2022-nhom-gps
-                                                                       title="Hiển thị chi tiết cho Apple Watch SE Nhôm 2022 GPS">
-                                                                        <img alt="Ảnh của Apple Watch SE Nhôm 2022 GPS"
-                                                                             src=https://shopdunk.com~ClientTLE/images/thumbs/0022272_apple-watch-se-nhom-2022-gps_240.jpeg
-                                                                             title="Hiển thị chi tiết cho Apple Watch SE Nhôm 2022 GPS">
-                                                                    </a>
-                                                                </div>
-                                                                <div class=details>
-                                                                    <h3 class=product-title>
-                                                                        <a href=/apple-watch-se-2022-nhom-gps>
-                                                                            Apple
-                                                                            Watch SE Nh&#xF4;m 2022 GPS
+                                    <div class="show-all">
+                                        <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.CategoryId">
+                                            Xem tất cả macbook
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                }
+
+                                @* watch *@
+                                @foreach (var item in ViewBag.watch)
+                                {
+                                    <div class="item-box-list">
+                                        <div class="category-item">
+                                            <h2 class="title">
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1">IPhone </a>
+                                            </h2>
+                                            <div class="page category-page">
+                                                <div class="page-body">
+                                                    <div class="product-grid featured-product-grid">
+                                                        <div class="item-grid">
+                                                            <div class="item-box">
+                                                                <div class="product-item">
+                                                                    <div class="product_tag">
+                                                                        <img src="~/ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                             alt="">
+                                                                    </div>
+                                                                    <div class="picture">
+                                                                        <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id"
+                                                                           title="Hiển thị chi tiết cho iPad mini 6">
+                                                                            <img alt="Ảnh của iPad mini 6"
+                                                                                 src="@item.ImagePath"
+                                                                                 title="Hiển thị chi tiết cho iPad mini 6">
                                                                         </a>
-                                                                    </h3>
-                                                                    <div class=add-info>
-                                                                        <div class=prices>
-                                                                            <div class=price-ratio-container>
-                                                                                <span class="price price-ratio">-34%</span>
-                                                                            </div><span class="price old-price">8.990.000&#x20AB;</span>
-                                                                            <span class="price actual-price">5.890.000&#x20AB;</span>
+                                                                    </div>
+                                                                    <div class="details">
+                                                                        <h3 class=product-title>
+                                                                            <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
+                                                                                @item.ProductName
+                                                                            </a>
+                                                                        </h3>
+                                                                        <div class=add-info>
+                                                                            <div class=prices>
+                                                                                @if (item.DiscountPrice == null)
+                                                                                {
+                                                                                    <div class="price old-price"></div>
+                                                                                    <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                                                                    <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                                                                }
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class=products-container>
-                                                    <div class=ajax-products-busy></div>
-                                                    <div class=products-wrapper></div>
+                                                    <div class=products-container>
+                                                        <div class=ajax-products-busy></div>
+                                                        <div class=products-wrapper></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class=show-all>
-                                    <a href=/apple-watch>
-                                        Xem tất cả Watch <i class="fa-regular fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class=item-box-list>
-                                    <div class=category-item>
-                                        <h2 class=title><a href=/phu-kien> Ph&#x1EE5; ki&#x1EC7;n </a></h2>
-                                        <div class="page category-page">
-                                            <div class=page-body>
-                                                <div class="product-grid featured-product-grid">
-                                                    <div class=item-grid>
-                                                        <div class=item-box>
-                                                            <div class=product-item data-productid=15>
-                                                                <div class=product_tag></div>
-                                                                <div class=picture>
-                                                                    <a href=/airpods-pro-2
-                                                                       title="Hiển thị chi tiết cho AirPods Pro 2">
-                                                                        <img alt="Ảnh của AirPods Pro 2"
-                                                                             src=https://shopdunk.com~ClientTLE/images/thumbs/0000211_airpods-pro-2_240.png
-                                                                             title="Hiển thị chi tiết cho AirPods Pro 2">
-                                                                    </a>
-                                                                </div>
-                                                                <div class=details>
-                                                                    <h3 class=product-title>
-                                                                        <a href=/airpods-pro-2>
-                                                                            AirPods Pro
-                                                                            2
+                                    <div class="show-all">
+                                        <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.CategoryId">
+                                            Xem tất cả watch
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                }
+
+                                @* accessory *@
+                                @foreach (var item in ViewBag.accessory)
+                                {
+                                    <div class="item-box-list">
+                                        <div class="category-item">
+                                            <h2 class="title">
+                                                <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="1">IPhone </a>
+                                            </h2>
+                                            <div class="page category-page">
+                                                <div class="page-body">
+                                                    <div class="product-grid featured-product-grid">
+                                                        <div class="item-grid">
+                                                            <div class="item-box">
+                                                                <div class="product-item">
+                                                                    <div class="product_tag">
+                                                                        <img src="~/ClientTLE/images/uploaded/icon/vnpay500k.png"
+                                                                             alt="">
+                                                                    </div>
+                                                                    <div class="picture">
+                                                                        <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id"
+                                                                           title="Hiển thị chi tiết cho iPad mini 6">
+                                                                            <img alt="Ảnh của iPad mini 6"
+                                                                                 src="@item.ImagePath"
+                                                                                 title="Hiển thị chi tiết cho iPad mini 6">
                                                                         </a>
-                                                                    </h3>
-                                                                    <div class=add-info>
-                                                                        <div class=prices>
-                                                                            <div class=price-ratio-container>
-                                                                                <span class="price price-ratio">-26%</span>
-                                                                            </div><span class="price old-price">6.790.000&#x20AB;</span>
-                                                                            <span class="price actual-price">4.990.000&#x20AB;</span>
+                                                                    </div>
+                                                                    <div class="details">
+                                                                        <h3 class=product-title>
+                                                                            <a asp-action="ProductDetail" asp-controller="Product" asp-route-id="@item.id">
+                                                                                @item.ProductName
+                                                                            </a>
+                                                                        </h3>
+                                                                        <div class=add-info>
+                                                                            <div class=prices>
+                                                                                @if (item.DiscountPrice == null)
+                                                                                {
+                                                                                    <div class="price old-price"></div>
+                                                                                    <span class="price actual-price">@item.Price.ToString("#,##0")</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="price old-price">@item.Price.ToString("#,##0")</div>
+                                                                                    <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
+                                                                                }
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class=products-container>
-                                                    <div class=ajax-products-busy></div>
-                                                    <div class=products-wrapper></div>
+                                                    <div class=products-container>
+                                                        <div class=ajax-products-busy></div>
+                                                        <div class=products-wrapper></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class=show-all>
-                                    <a href=/phu-kien>
-                                        Xem tất cả phụ kiện 
-                                        <i class="fa-regular fa-chevron-right"></i>
-                                    </a>
-                                </div>
+                                    <div class="show-all">
+                                        <a asp-action="GetProductByCategory" asp-controller="Home" asp-route-id="@item.CategoryId">
+                                            Xem tất cả phụ kiện
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>

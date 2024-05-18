@@ -141,7 +141,10 @@ namespace App.Web.WebConfig
 
         public static MapperConfiguration AppSliderConf = new MapperConfiguration(mapper =>
         {
-            mapper.CreateMap<AppSlider, SliderListItemVM>();
+            mapper.CreateMap<AppSlider, SliderListItemVM>()
+                .ForMember(uItem => uItem.CategoryName, opt =>
+                    opt.MapFrom(uEntity => uEntity.ProductCategory.Name == null ? "Trang chủ" : uEntity.ProductCategory.Name));
+
             mapper.CreateMap<AppSlider, ListSliderVM>();
         });
 
@@ -303,7 +306,9 @@ namespace App.Web.WebConfig
                 opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountTo))
             .ForMember(uItem => uItem.DiscountPrice,
                 opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountPrice))
-
+            .ForMember(uItem => uItem.CategoryId, opt =>
+                opt.MapFrom(uEntity => uEntity.AppProdcutCategory.CateLevel == 1 ?
+                            uEntity.AppProdcutCategory.Id : uEntity.AppProdcutCategory.ParentCateId))
             .ReverseMap();
 
         });

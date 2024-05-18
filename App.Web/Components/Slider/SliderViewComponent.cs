@@ -19,18 +19,34 @@ namespace App.Web.Components.Slider
         {
             _repo = repo;
         }
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int id = 0)
         {
             var now = DateTime.Now;
-            var data = await _repo
-                .GetAll<AppSlider>(x => x.DeletedDate == null
-                    && ((x.FromDate ?? DateTime.MinValue) < now
-                    && (x.ToDate ?? DateTime.MaxValue) > now))
-                .Take(10)
-                .OrderBy(x => x.Id)
-                .ProjectTo<ListSliderVM>(AutoMapperProfile.AppSliderConf)
-                .ToListAsync();
-            return View(data);
+
+            if (id == 0)
+            {
+                var data = await _repo
+                    .GetAll<AppSlider>(x => x.DeletedDate == null
+                        && ((x.FromDate ?? DateTime.MinValue) < now
+                        && (x.ToDate ?? DateTime.MaxValue) > now))
+                    .Take(10)
+                    .OrderBy(x => x.Id)
+                    .ProjectTo<ListSliderVM>(AutoMapperProfile.AppSliderConf)
+                    .ToListAsync();
+                return View(data);
+            }
+            else
+            {
+                var data = await _repo
+                    .GetAll<AppSlider>(x => x.DeletedDate == null
+                        && ((x.FromDate ?? DateTime.MinValue) < now
+                        && (x.ToDate ?? DateTime.MaxValue) > now) && x.CategoryId == id)
+                    .Take(10)
+                    .OrderBy(x => x.Id)
+                    .ProjectTo<ListSliderVM>(AutoMapperProfile.AppSliderConf)
+                    .ToListAsync();
+                return View(data);
+            }
         }
     }
 }

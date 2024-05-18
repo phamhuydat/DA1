@@ -8,7 +8,7 @@ namespace App.Web.ViewModels.Order
         public DateTime CreatedDate { get; set; }
         public int Total { get; set; }
         public string? MethodPay { get; set; }
-        public int Status { get; set; }
+        public int StatusId { get; set; }
         public int CreatedBy { get; set; }
     }
 }

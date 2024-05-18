@@ -26,11 +26,11 @@
             </form>
         </div>
 
-        <partial name="_header.cshtml" />
+        <partial name="_header" />
 
         @RenderBody()
 
-        <partial name="_footer.cshtml" />
+        <partial name="_footer" />
     </div>
     @await Component.InvokeAsync("Notyf")
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

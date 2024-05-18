@@ -11,26 +11,27 @@ using System.Threading.Tasks;
 
 namespace App.Web.Areas.Admin.Components.Product
 {
-    public class SelectProductCategoryViewComponent : ViewComponent
-    {
-        readonly GenericRepository repository;
-        public SelectProductCategoryViewComponent(GenericRepository _db)
-        {
-            repository = _db;
-        }
-        public async Task<IViewComponentResult> InvokeAsync(AddOrUpdateProductVM product)
-        {
-            var proCate = await repository
-                .GetAll<AppProductCategory>(s => /*(s.CateLevel.Equals(2) || s.CateLevel.Equals(3)) &&*/ s.DeletedDate == null)
-                .ProjectTo<ListProductCateSelectVM>(AutoMapperProfile.ProductCategorySelectConf)
-                .ToListAsync();
-            var listCategory = new SelectList(proCate, "Id", "Name", -1, "CateLevel");
-            if (product != null)
-            {
-                listCategory = new SelectList(proCate, "Id", "Name", product.CategoryId, "CateLevel");
-            };
-            ViewBag.ProductCate = listCategory;
-            return View(product);
-        }
-    }
+	public class SelectProductCategoryViewComponent : ViewComponent
+	{
+		readonly GenericRepository repository;
+		public SelectProductCategoryViewComponent(GenericRepository _db)
+		{
+			repository = _db;
+		}
+		public async Task<IViewComponentResult> InvokeAsync(AddOrUpdateProductVM product)
+		{
+			var proCate = await repository
+				.GetAll<AppProductCategory>(s => /*(s.CateLevel.Equals(2) || s.CateLevel.Equals(3)) &&*/ s.DeletedDate == null)
+				.ProjectTo<ListProductCateSelectVM>(AutoMapperProfile.ProductCategorySelectConf)
+				.ToListAsync();
+
+			var listCategory = new SelectList(proCate, "Id", "Name", -1, "CateLevel");
+			if (product != null)
+			{
+				listCategory = new SelectList(proCate, "Id", "Name", product.CategoryId, "CateLevel");
+			};
+			ViewBag.ProductCate = listCategory;
+			return View(product);
+		}
+	}
 }

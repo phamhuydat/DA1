@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RMaXN0UHJvZHVjdENhdGVnb3J5XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Areas/Admin/Components/SelectProCategorySlide/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RQcm9DYXRlZ29yeVNsaWRlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Areas/Admin/Components/SelectProductCategory/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RQcm9kdWN0Q2F0ZWdvcnlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -436,6 +440,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DA1/App.Web/Views/Components/SelectListViewAccessory/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTZWxlY3RMaXN0Vmlld0FjY2Vzc29yeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Home/404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVw0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DA1/App.Web/Views/Home/500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVw1MDAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DA1/App.Web/Views/Home/GetProductByCategory.cshtml]

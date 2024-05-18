@@ -88,6 +88,20 @@
 			<span asp-validation-for="Inch" class="text-danger"></span>
 		</div>
 	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label asp-for="CPU" class="control-label">CPU</label>
+			<input asp-for="CPU" type="text" class="form-control" placeholder ="Rom..."/>
+			<span asp-validation-for="CPU" class="text-danger"></span>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label asp-for="GPU" class="control-label">GPU</label>
+			<input asp-for="GPU" type="text" class="form-control" placeholder ="kích thước màn hình..."/>
+			<span asp-validation-for="GPU" class="text-danger"></span>
+		</div>
+	</div>
 
 
 	<div class="col-md-4">
@@ -106,6 +120,7 @@
 	<textarea asp-for="Description" class="form-control"> </textarea>
 	<span asp-validation-for="Description" class="text-danger"></span>
 </div>
+
 @*
 <div class="form-group">
 	<section class="content">

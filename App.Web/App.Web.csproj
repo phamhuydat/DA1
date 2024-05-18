@@ -57,4 +57,11 @@
 	  <Folder Include="wwwroot\Upload\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Update="wwwroot\files\admin\banner\banner 2024\Thang_4\banner apple watch 9 T4_MB.jpg">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
 </Project>

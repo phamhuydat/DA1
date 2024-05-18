@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\App.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\1143a19f2d25ae36b1a44dfcd7f549fe638514059978003665.jpg",
+      "PackagePath": "staticwebassets\\1143a19f2d25ae36b1a44dfcd7f549fe638514059978003665.jpg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\css\\style.css",
       "PackagePath": "staticwebassets\\ClientTLE\\css\\style.css"
     },
@@ -109,10 +113,6 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner-doanh-nghiep-04.png"
     },
     {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg"
-    },
-    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png"
     },
@@ -167,22 +167,6 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_Danh mục.jpg",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_Danh mục.jpg"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_MB.jpg",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch 9 T4_MB.jpg"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_Danh mục.jpg",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_Danh mục.jpg"
-    },
-    {
-      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_MB.jpg",
-      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner apple watch SE T4_MB.jpg"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\bonus banner\\xx1\\B Trần.png",
@@ -313,8 +297,16 @@
       "PackagePath": "staticwebassets\\ClientTLE\\js\\cart.js"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638514061000414614.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638514061000414614.jpg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",
       "PackagePath": "staticwebassets\\Images\\Avatar\\default.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\bn_404.png",
+      "PackagePath": "staticwebassets\\Images\\bn_404.png"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\logo.png",
@@ -1119,6 +1111,174 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\admin.txt",
       "PackagePath": "staticwebassets\\files\\admin\\admin.txt"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\13t4mb.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\13t4mb.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\13t4pc.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\13t4pc.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\TND_M402_010 1.jpeg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\TND_M402_010 1.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\airm1t4mb.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\airm1t4mb.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\airm1t4pc.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\airm1t4pc.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_PC.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch 9 T4_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch SE T4_MB.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\banner apple watch SE T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_MB.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_4\\banner macbook pro m3 T4_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\15 PRM PC.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\15 PRM PC.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\15PRM MB.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\15PRM MB.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\Banner ipad pro m2 T5_MB.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\Banner ipad pro m2 T5_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\Banner ipad pro m2 T5_PC.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\Banner ipad pro m2 T5_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\banner iPad Pro M4_MB.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\banner iPad Pro M4_MB.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\banner iPad Pro M4_PC.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\banner iPad Pro M4_PC.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\tong 1mb.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\tong 1mb.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\Thang_5\\tong1.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\Thang_5\\tong1.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\banner apple watch 9 T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\banner apple watch 9 T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\banner 2024\\banner apple watch SE T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\banner 2024\\banner apple watch SE T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\B Trần.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\B Trần.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Bình An _ Phương Nga.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Bình An _ Phương Nga.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Duydam.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Duydam.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\HUyền Lizze _ Quỳnh Koool.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\HUyền Lizze _ Quỳnh Koool.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Huỳnh Anh.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Huỳnh Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Hà Việt Dũng.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Hà Việt Dũng.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Hồng Diễm.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Hồng Diễm.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Lâm Đức Anh.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Lâm Đức Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Lê Bống.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Lê Bống.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Mạnh Trường.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Mạnh Trường.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Quang Thắng.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Quang Thắng.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Thu Mít.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Thu Mít.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Trung Anh.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Trung Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Trung Ruồi.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Trung Ruồi.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\VIệt Anh.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\VIệt Anh.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\bonus banner\\xx1\\Đình Tú.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\bonus banner\\xx1\\Đình Tú.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\ipad\\banner ipad air 4 T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\ipad\\banner ipad air 4 T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\ipad\\banner ipad gen 10 T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\ipad\\banner ipad gen 10 T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\ipad\\banner ipad gen 9 T4_Danh mục.jpg",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\ipad\\banner ipad gen 9 T4_Danh mục.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\iphone\\11t4dm.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\iphone\\11t4dm.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\iphone\\13t4dm.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\iphone\\13t4dm.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\banner\\iphone\\15t4dm.png",
+      "PackagePath": "staticwebassets\\files\\admin\\banner\\iphone\\15t4dm.png"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0001417_pencil-2_240.png",

@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Danh sách slider";
+	var row = 0;
 }
 
 @if (User.IsInPermission(AuthConst.AppSlider.CREATE))
@@ -20,6 +21,7 @@
 			<tr>
 				<th>#</th>
 				<th class="text-center fit">Hình ảnh</th>
+				<th>Danh mục</th>
 				<th>Từ ngày</th>
 				<th>Đến ngày</th>
 				<th>Liên kết</th>
@@ -29,8 +31,9 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td class="text-center fit">
 						@if (item.ImagePath != null)
 						{
@@ -41,6 +44,7 @@
 							<img width="50" height="50" src="~/Images/logo.png" />
 						}
 					</td>
+					<td>@item.CategoryName</td>
 					<td>@item.FromDate?.ToString("dd/MM/yyyy")</td>
 					<td>@item.ToDate?.ToString("dd/MM/yyyy")</td>
 					<td>@item.Link</td>

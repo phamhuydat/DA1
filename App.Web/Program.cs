@@ -61,11 +61,12 @@ app.MapControllerRoute(
             action = "Error"
         });
 
+
 app.MapAreaControllerRoute(
         areaName: "Admin",
         name: "Admin",
-        pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
-        );
+        pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
 
 app.MapControllerRoute(
     name: "default",

@@ -1,0 +1,7 @@
+﻿@model App.Web.Areas.Admin.ViewModels.AppSlider.AddOrUpdateSliderVM
+
+<select asp-for="CategoryId"
+		asp-items="(SelectList)ViewBag.ProductCateSlide"
+		class="form-control" title="Category">
+	<option value="" selected>-- Chọn một giá trị --</option>
+</select>

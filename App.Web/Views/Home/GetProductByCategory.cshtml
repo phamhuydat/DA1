@@ -25,29 +25,7 @@
                         <div class="page-title" id="category-page-title" style="scroll-margin-top:115px; display: flex; margin: auto">
                             <h1>@ViewBag.TitleName</h1>
                         </div>
-                        <div class="catelog_banner desktop">
-                            <div class="topic-block">
-                                <div class="topic-block-body">
-                                    <div class="banner_cate_slick">
-                                            <img src="~/clienttle/images/uploaded/banner/banner apple watch 9 t4_danh mục.jpg"
-                                                width=1200 height=400>
-                                            <img src="~/clienttle/images/uploaded/banner/banner apple watch se t4_danh mục.jpg" width=1200 height=400 />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="catelog_banner catelog_banner_mobile">
-                            <div class="topic-block">
-                                <div class="topic-block-body">
-                                    <div class="banner_cate_slick">
-                                        <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch 9 T4_MB.jpg"
-                                            alt="" width=600 height=600>
-                                        <img src="~/ClientTLE/images/uploaded/banner/banner 2024/Thang_4/banner apple watch SE T4_MB.jpg"
-                                            alt="" width=600 height=600>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @await Component.InvokeAsync("Slider", new { id = ViewBag.cateId_by })
 
                         <div class="page-body">
                             <!-- filler -->
@@ -284,6 +262,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 

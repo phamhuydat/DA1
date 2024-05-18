@@ -25,20 +25,33 @@
 			</div>
 			<span asp-validation-for="ImagePath" class="text-danger"></span>
 		</div>
-		<div class="form-group">
-			<label asp-for="FromDate" class="control-label">Từ ngày</label>
-			<input asp-for="FromDate" class="form-control" />
-			<span asp-validation-for="FromDate" class="text-danger"></span>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label asp-for="FromDate" class="control-label">Từ ngày</label>
+					<input asp-for="FromDate" class="form-control" />
+					<span asp-validation-for="FromDate" class="text-danger"></span>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label asp-for="ToDate" class="control-label">Đến ngày</label>
+					<input asp-for="ToDate" class="form-control" />
+					<span asp-validation-for="ToDate" class="text-danger"></span>
+				</div>
+			</div>
 		</div>
-		<div class="form-group">
-			<label asp-for="ToDate" class="control-label">Đến ngày</label>
-			<input asp-for="ToDate" class="form-control" />
-			<span asp-validation-for="ToDate" class="text-danger"></span>
-		</div>
+
+
 		<div class="form-group">
 			<label asp-for="Link" class="control-label">Liên kết</label>
 			<input asp-for="Link" class="form-control" />
 			<span asp-validation-for="Link" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="CategoryId" class="control-label required">Danh mục</label>
+			<vc:select-pro-category-slide slide="Model"/>
+			<span asp-validation-for="CategoryId" class="text-danger"></span>
 		</div>
 	</div>
 </div>

@@ -313,7 +313,9 @@ namespace App.Web.Controllers
                     + Path.GetExtension(fName);
             var res = "/Images/Avatar/" + fName;
             // tạo đường dẫn tuyệt đối (Ví dụ: E:/Project/wwwroot/upload/xxxx.jpg)
-            fName = Path.Combine(dir, "/Images/Avatar/", fName);
+            // fName = Path.Combine(dir, "/Images/Avatar/", fName);
+
+            fName = PathHelper.MapPath(res);
             // Tạo stream để lưu file
             var stream = System.IO.File.Create(fName);
             file.CopyTo(stream);

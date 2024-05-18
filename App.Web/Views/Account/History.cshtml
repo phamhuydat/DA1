@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<App.Web.ViewModels.Order.OrderClientVM>
+@using App.Share.Consts
 @{
     ViewData["Title"] = "Đơn hàng của bạn";
     Layout = "~/Views/Shared/_LayoutInfo.cshtml";
@@ -43,8 +44,25 @@
                         @foreach(var item in Model)
                         {
                             <div class="section order-item">
-                            <ul class=info>
-                                <li><span class="order-status cancelled">&#x110;&#xE3; h&#x1EE7;y</span>
+                            <ul class="info">
+                                    @if(item.StatusId == DB.OrderStatusId.STATUS_PENDING)
+                                    {
+                                        <li><span class="order-status pending">@DB.OrderStatusId.STATUS_PENDING_NAME</span></li>
+                                    }
+                                    else if(item.StatusId == DB.OrderStatusId.STATUS_CANCELED)
+                                    {
+                                        <li><span class="order-status cancelled">@DB.OrderStatusId.STATUS_CANCELED_NAME</span></li>
+                                    }
+                                    else if (item.StatusId == DB.OrderStatusId.STATUS_PROCESSING)
+                                    {
+                                        <li><span class="order-status cancelled">@DB.OrderStatusId.STATUS_PROCESSING_NAME</span></li>
+
+                                    }
+                                    else if (item.StatusId == DB.OrderStatusId.STATUS_DONE)
+                                    {
+                                        <li><span class="order-status complete">@DB.OrderStatusId.STATUS_DONE_NAME</span></li>
+                                    }
+
                                 <li>Mã đơn hàng:<span>@item.Id</span>
                                 <li>Ngày đặt hàng: <span class=order-date>@item.CreatedDate</span>
                                 <li>Tổng tiền: <span class=order-total>@item.Total.ToString("#,0")</span>
