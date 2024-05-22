@@ -113,6 +113,14 @@
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner-doanh-nghiep-04.png"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\TND_M402_010 1.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\VNU_M492_08 1.jpeg",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\VNU_M492_08 1.jpeg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\uploaded\\banner\\banner 2024\\Thang_4\\1284x1284 copy 2 (2).png"
     },
@@ -299,6 +307,34 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638514061000414614.jpg",
       "PackagePath": "staticwebassets\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638514061000414614.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638518161503786373.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638518161503786373.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638518161607332173.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638518161607332173.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638518160931182729.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638518160931182729.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638518161295936982.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638518161295936982.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638519658278894600.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\142047b5de87b6375dd2b07438c988e4638519658278894600.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\170037118_1407365926291472_5172742280128908325_n638519658002059390.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\170037118_1407365926291472_5172742280128908325_n638519658002059390.jpg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\379668059_839156241201402_7409234859527942427_n638519657777982659.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\379668059_839156241201402_7409234859527942427_n638519657777982659.jpg"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",

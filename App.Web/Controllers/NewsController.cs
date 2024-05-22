@@ -1,4 +1,5 @@
-﻿using App.Data.Repositories;
+﻿using App.Data.Entities;
+using App.Data.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,10 +17,15 @@ namespace App.Web.Controllers
         }
 
         [Route("tin-tuc")]
-        public async Task<IActionResult> News()
+        public async Task<IActionResult> News(int? cateId = null)
         {
+            //var data = await _repository.GetAll<AppNews>()
 
 
+            return View();
+        }
+        public async Task<IActionResult> NewsDetails(int id)
+        {
             return View();
         }
     }

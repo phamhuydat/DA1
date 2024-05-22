@@ -1,4 +1,4 @@
-using App.Data;
+﻿using App.Data;
 using App.Data.Repositories;
 using App.Web.WebConfig;
 using Microsoft.EntityFrameworkCore;
@@ -17,9 +17,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+	app.UseExceptionHandler("/Home/Error");
+	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+	app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -33,44 +33,44 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-        name: "login",
-        pattern: "/login",
-        defaults: new
-        {
-            controller = "Account",
-            action = "Login"
-        });
+		name: "login",
+		pattern: "/login",
+		defaults: new
+		{
+			controller = "Account",
+			action = "Login"
+		});
 
 app.MapAreaControllerRoute(
-        areaName: "Admin",
-        name: "adminLogin",
-        pattern: "/Admin/Login",
-        defaults: new
-        {
-            controller = "Account",
-            action = "Login",
-            area = "Admin"
-        });
+		areaName: "Admin",
+		name: "adminLogin",
+		pattern: "/Admin/Login",
+		defaults: new
+		{
+			controller = "Account",
+			action = "Login",
+			area = "Admin"
+		});
 
+// Đường dẫn cho trang lỗiz
 app.MapControllerRoute(
-        name: "error",
-        pattern: "/error/{statusCode}",
-        defaults: new
-        {
-            controller = "Home",
-            action = "Error"
-        });
-
+	name: "error",
+	pattern: "/error/{statusCode}",
+	defaults: new
+	{
+		controller = "Home",
+		action = "Error"
+	});
 
 app.MapAreaControllerRoute(
-        areaName: "Admin",
-        name: "Admin",
-        pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+		areaName: "Admin",
+		name: "Admin",
+		pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
 
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 

@@ -65,6 +65,7 @@ namespace App.Web.Controllers
                 _notyf.Error("Tên đăng nhập hoặc mật khẩu không chính xác!");
                 return View(model);
             }
+
             var claims = new List<Claim> {
                             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                             new Claim(ClaimTypes.Name, user.Username),
@@ -296,12 +297,12 @@ namespace App.Web.Controllers
             {
                 await _repository.UpdateAsync(user);
                 _notyf.Success("Cập nhật ảnh đại diện thành công");
-                return View(model);
+                return RedirectToAction(nameof(UpdateImg));
             }
             catch (Exception ex)
             {
-                _notyf.Error("sai r");
-                return View(model);
+                _notyf.Error("Cập nhật thất bại");
+                return View();
             }
         }
 
