@@ -11,27 +11,29 @@ using System.Threading.Tasks;
 
 namespace App.Web.Areas.Admin.Components.SelectProductColor
 {
-	public class SelectProductColorViewComponent : ViewComponent
-	{
-		readonly GenericRepository repository;
-		public SelectProductColorViewComponent(GenericRepository _db)
-		{
-			repository = _db;
-		}
-		public async Task<IViewComponentResult> InvokeAsync(AddOrUpProOptionVM product)
-		{
-			var proColor = await repository
-				.GetAllMst<MstProductColor>()
-				.Where(x => x.DeletedDate == null)
-				.OrderByDescending(s => s.CreatedDate)
-				.ToListAsync();
-			var listColor = new SelectList(proColor, "Id", "ColorName", -1);
-			if (product != null)
-			{
-				listColor = new SelectList(proColor, "Id", "ColorName", product.ColorId);
-			};
-			ViewBag.ProductColor = listColor;
-			return View(product);
-		}
-	}
+    public class SelectProductColorViewComponent : ViewComponent
+    {
+        readonly GenericRepository repository;
+        public SelectProductColorViewComponent(GenericRepository _db)
+        {
+            repository = _db;
+        }
+        public async Task<IViewComponentResult> InvokeAsync(AddOrUpProOptionVM product)
+        {
+            var proColor = await repository
+                .GetAllMst<MstProductColor>()
+                .Where(x => x.DeletedDate == null)
+                .OrderByDescending(s => s.CreatedDate)
+                .ToListAsync();
+            var listColor = new SelectList(proColor, "Id", "ColorName", -1);
+            if (product != null)
+            {
+                listColor = new SelectList(proColor, "Id", "ColorName", product.ColorId);
+            }
+            ViewBag.ProductColor = listColor;
+            return View(product);
+
+
+        }
+    }
 }

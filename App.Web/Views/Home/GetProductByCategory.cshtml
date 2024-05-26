@@ -50,14 +50,17 @@
                                 <div class=product-selectors>
                                     <div class=product-sorting>
                                         <span>Sắp xếp theo</span>
-                                        <select name="orderby">
-                                            <option selected value=20>Th&#x1EE9; t&#x1EF1; hi&#x1EC3;n th&#x1ECB;</option>
-                                            <option value="11">Gi&#xE1; cao &#x111;&#x1EBF;n th&#x1EA5;p</option>
-                                            <option value="15">M&#x1EDB;i nh&#x1EA5;t</option>
-                                            <option value="5">T&#xEA;n: A &#x111;&#x1EBF;n Z</option>
-                                            <option value="6">T&#xEA;n: Z &#x111;&#x1EBF;n A</option>
-                                            <option value="10">Gi&#xE1; th&#x1EA5;p &#x111;&#x1EBF;n cao</option>
-                                        </select>
+                                        <form asp-action="GetProductByCategory" asp-route-id="@ViewBag.cateId_by" method="get">
+                                            <select name="orderby" onchange="this.form.submit()">
+                                                <option selected value="20">Thứ tự hiển thị</option>
+                                                <option value="11">Giá cao đến thấp</option>
+                                                <option value="15">Mới nhất</option>
+                                                <option value="5">Tên: A đến Z</option>
+                                                <option value="6">Tên: Z đến A</option>
+                                                <option value="10">Giá thấp đến cao</option>
+                                            </select>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -90,11 +93,11 @@
                                                                 </h2>
                                                                 <div class="add-info">
                                                                     <div class="prices">
-                                                                        <div class="price-ratio-container">
+@*                                                                         <div class="price-ratio-container">
                                                                             <span class="price price-ratio">-25%</span>
-                                                                        </div>
-                                                                        <span class="price old-price">@item.Price</span>
-                                                                        <span class="price actual-price">@item.DiscountPrice</span>
+                                                                        </div> *@
+                                                                        <span class="price old-price">@item.Price.ToString("#,##0")</span>
+                                                                        <span class="price actual-price">@item.DiscountPrice?.ToString("#,##0")</span>
                                                                     </div>
                                                                 </div>
                                                             </div>

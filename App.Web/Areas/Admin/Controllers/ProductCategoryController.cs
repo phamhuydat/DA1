@@ -41,6 +41,7 @@ namespace App.Web.Areas.Admin.Controllers
                 SetErrorMesg("Danh mục này đã tồn tại!");
                 return View(productCate);
             }
+
             try
             {
                 var cate = _mapper.Map<AppProductCategory>(productCate);
@@ -55,13 +56,13 @@ namespace App.Web.Areas.Admin.Controllers
                     cate.ParentCateId = null;
                     cate.HasChild = false;
                     cate.CateLevel = 1;
-                    //cate.Slug = productCate.Name.Slugify();
+                    cate.Slug = productCate.Name.Slugify();
                 }
                 else
                 {
                     var parent = await _repo.FindAsync<AppProductCategory>((int)productCate.ParentCateId);
                     cate.CateLevel = parent.CateLevel + 1;
-                    //cate.Slug = $"{parent.Name} {cate.Name}".Slugify();
+                    cate.Slug = $"{parent.Name} {cate.Name}".Slugify();
                     parent.HasChild = true;
                     await _repo.UpdateAsync(parent);
                 }

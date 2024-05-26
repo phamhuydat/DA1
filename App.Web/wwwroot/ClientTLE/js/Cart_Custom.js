@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
                 var pay = Number(text) - Number(res.price);
                 var pricevoucher = res.price.toLocaleString("de-DE")
                 $(".price-voucher").text(pricevoucher + " " + "đ")
-                $(".value-summary.new").text(pay.toLocaleString("de-DE") + " " + "đ")
+                $(".value-summary.new").text(pay.toLocaleString("de-DE"))
             }
             allprice();
             //new AWN().success('Thêm mã giảm giá thành công', { durations: { success: 0 }, labels: { success: " thành công" } })

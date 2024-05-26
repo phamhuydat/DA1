@@ -104,7 +104,7 @@
                                     @if(Model.DiscountPrice == null)
                                     {
                                         <div class="product-price">
-                                            <span id="new-price-discount" class="new-price">@Model.Price.ToString("#,0")₫</span>
+                                            <span id="new-price-discount" class="new-price">@Model.Price.ToString("#.0")₫</span>
                                         </div>
                                     }
                                     else
@@ -284,7 +284,8 @@
         var selectedRam = @Html.Raw(Json.Serialize(Model.AppProductDetails.First().Ram));
         var productName = "@Model.ProductName";
         var dataColorId = $('#test').val();
-        $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+        if (selectedRam == null) $(".main-name").html(productName + " | " + selectedRom);
+        else (".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
 
 
         $(".change-price").click(ev => {
@@ -304,15 +305,16 @@
             }
             else{
                 if (item[2] == null) {
-                    $("#new-price-discount").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[1].toLocaleString("en-US") + "₫");
                 }
                 else {
-                    $("#new-price-discount").html(item[2] + "₫");
-                    $("#old-price-val").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[2].toLocaleString("en-US") + "₫");
+                    $("#old-price-val").html(item[1].toLocaleString("en-US") + "₫");
                 }
             }
 
-            $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+            if (selectedRam == null) $(".main-name").html(productName + " | " + selectedRom);
+            else (".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
             $('.option-list.rom .checked-attr').removeClass('checked-attr');
 
             // Thêm lớp checked-attr vào nhãn của tùy chọn được chọn
@@ -333,14 +335,15 @@
             }
             else {
                 if (item[2] == null) {
-                    $("#new-price-discount").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[1].toLocaleString("en-US") + "₫");
                 }
                 else {
-                    $("#new-price-discount").html(item[2] + "₫");
-                    $("#old-price-val").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[2].toLocaleString("en-US") + "₫");
+                    $("#old-price-val").html(item[1].toLocaleString("en-US") + "₫");
                 }
             }
-            $(".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
+            if (selectedRam == null) $(".main-name").html(productName + " | " + selectedRom);
+            else (".main-name").html(productName + " | " + selectedRam + " | " + selectedRom);
             $('.option-list.ram .checked-attr').removeClass('checked-attr');
 
             // Thêm lớp checked-attr vào nhãn của tùy chọn được chọn
@@ -365,11 +368,11 @@
             }
             else {
                 if (item[2] == null) {
-                    $("#new-price-discount").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[1].toLocaleString("en-US") + "₫");
                 }
                 else {
-                    $("#new-price-discount").html(item[2] + "₫");
-                    $("#old-price-val").html(item[1] + "₫");
+                    $("#new-price-discount").html(item[2].toLocaleString("en-US") + "₫");
+                    $("#old-price-val").html(item[1].toLocaleString("en-US") + "₫");
                 }
             }
 

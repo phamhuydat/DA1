@@ -67,7 +67,7 @@ namespace App.Web.Areas.Admin.Controllers
         public IActionResult Create() => View();
         [AppAuthorize(AuthConst.AppNews.CREATE)]
         [HttpPost]
-        public async Task<IActionResult> Create([FromServices] AddOrUpdateNewsVM model)
+        public async Task<IActionResult> Create(AddOrUpdateNewsVM model)
         {
             if (!ModelState.IsValid)
             {

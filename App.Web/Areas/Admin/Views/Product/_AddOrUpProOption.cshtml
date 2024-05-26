@@ -4,26 +4,12 @@
 	<input type="hidden" name="beforeUrl" value="@ViewBag.BeforeUrl" />
 	<div class="col-md-2">
 		<div class="form-group">
-			<label asp-for="ProductId" class="control-label">Mã sản phẩm</label>
-			<input asp-for="ProductId" placeholder="Mã sản phẩm..." class="form-control" readonly/>
-			<span asp-validation-for="ProductId" class="text-danger"></span>
+			<label asp-for="ProductIdCode" class="control-label">Mã sản phẩm</label>
+			<input type="hidden" asp-for="ProductId"/>
+			<input asp-for="ProductIdCode" placeholder="Mã sản phẩm..." class="form-control" readonly/>
 		</div>
 	</div>
 
-	<div class="col-md-2">
-		<div class="form-group">
-			<label asp-for="ProductCode" class="control-label">Mã tùy chọn sản phẩm</label>
-			@if (ViewBag.CheckProductCode == true)
-			{
-				<input asp-for="ProductCode" placeholder="Mã tùy chọn sản phẩm..." class="form-control" />
-			}
-			else
-			{
-				<input asp-for="ProductCode" readonly placeholder="Mã tùy chọn sản phẩm..." class="form-control" />
-            }
-            <span asp-validation-for="ProductCode" class="text-danger"></span>
-        </div>
-    </div>
 
     <div class="col-md-4">
         <div class="form-group">
@@ -114,66 +100,3 @@
 	
 
 </div>
-
-<div class="form-group">
-	<label asp-for="Description" class="control-label">Mô tả sản phẩm</label>
-	<textarea asp-for="Description" class="form-control"> </textarea>
-	<span asp-validation-for="Description" class="text-danger"></span>
-</div>
-
-@*
-<div class="form-group">
-	<section class="content">
-		<div class="card">
-			<div class="card-header">
-				<h3 class="card-title">SEO</h3>
-				<div class="card-tools">
-					<button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-						<i class="fas fa-minus"></i>
-					</button>
-				</div>
-			</div>
-			<div class="card-body">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="control-label">Title</label>
-							<input asp-for="SEOTitle" placeholder="Title..." class="form-control" />
-							<span asp-validation-for="SEOTitle" class="text-danger"></span>
-						</div>
-						<div class="form-group">
-							<label class="control-label">Description</label>
-							<textarea asp-for="SEODescription" placeholder="Description..." class="form-control"></textarea>
-							<span asp-validation-for="SEODescription" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="control-label">Keyword</label>
-							<input asp-for="SEOKeyword" placeholder="Keyword..." class="form-control" />
-							<span asp-validation-for="SEOKeyword" class="text-danger"></span>
-						</div>
-						<div class="form-group">
-							<label asp-for="SEOImagePath" class="control-label">Image</label>
-							<div class="btn-group w-100" role="group">
-								<input asp-for="SEOImagePath" placeholder="Image...."
-									   readonly class="form-control" />
-								<input type="button" class="btn btn-secondary btn-elfinder"
-									   data-imgthumbnailpath=""
-									   data-imgpath="#SEOImagePath"
-									   value="Chọn ảnh" />
-							</div>
-							<span asp-validation-for="SEOImagePath" class="text-danger"></span>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<button type="button" class="btn btn-info btn-getSEO"
-								title="Lấy thông tin sản phẩm cho mục đích SEO">
-							Lấy thông tin SEO
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div> *@

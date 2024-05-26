@@ -1,5 +1,7 @@
-﻿using App.Share.Consts;
+﻿using App.Data.Entities.Base;
+using App.Share.Consts;
 using App.Shared.Attributes;
+using App.Web.ViewModels;
 
 namespace App.Web.Areas.Admin.ViewModels.News
 {

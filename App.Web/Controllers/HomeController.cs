@@ -15,6 +15,8 @@ using Microsoft.EntityFrameworkCore;
 using App.Data.Entities;
 using App.Share.Extensions;
 using AutoMapper.QueryableExtensions;
+using App.Web.ViewModels.News;
+using Microsoft.Identity.Client;
 
 namespace App.Web.Controllers
 {
@@ -29,33 +31,73 @@ namespace App.Web.Controllers
             _notyf = notyf;
         }
 
-        public async Task<IActionResult> Index()
+
+        public IActionResult Index()
         {
-            ViewBag.iphone = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                    .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.IPHONE).Take(4);
+            var products = _repository.GetAll<AppProduct>();
 
-            ViewBag.ipad = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                    .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.IPAD).Take(4);
+            if (products == null)
+            {
+                throw new Exception("Failed to retrieve products.");
+            }
 
-            ViewBag.mac = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                    .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.MAC
-                      ).Take(4);
+            if (AutoMapperProfile.ProductClientConf == null)
+            {
+                throw new Exception("AutoMapper profile configuration is null.");
+            }
+            var item = GetChildCategoryIds(DB.AppProductCategory.IPHONE);
 
-            ViewBag.watch = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                    .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.WATCH
-                        ).Take(4);
 
-            ViewBag.accessory = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                    .Where(x => x.IsActive == true
-                        && x.CategoryId == DB.AppProductCategory.ACCESSORY
-                       ).Take(8);
+            var iphone = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPHONE).Contains((int)x.CategoryId))
+                        .Take(4).ToList();
+
+            var ipad = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPAD).Contains((int)x.CategoryId))
+                        .Take(4);
+
+            var mac = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.MAC).Contains((int)x.CategoryId))
+                        .Take(4);
+
+            var watch = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.WATCH).Contains((int)x.CategoryId))
+                        .Take(4);
+
+            var accessory = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.ACCESSORY).Contains((int)x.CategoryId))
+                        .Take(8);
+
+            var news = _repository.GetAll<AppNews>()
+                            .Where(s => s.Published == true)
+                            .ProjectTo<ListNewsVM>(AutoMapperProfile.NewsConf)
+                            .Take(3);
+
+            ViewBag.news = news;
+            ViewBag.iphone = iphone;
+            ViewBag.ipad = ipad;
+            ViewBag.mac = mac;
+            ViewBag.watch = watch;
+            ViewBag.accessory = accessory;
+            ViewBag.iphoneCount = iphone.Count();
+            ViewBag.ipadCount = ipad.Count();
+            ViewBag.macCount = mac.Count();
+            ViewBag.watchCount = watch.Count();
+            ViewBag.accessoryCount = accessory.Count();
+            ViewBag.newsCount = news.Count();
+
+
             return View();
         }
-
+        public List<int> GetChildCategoryIds(int parentCategoryId)
+        {
+            List<int> list = _repository.GetAll<AppProductCategory>()
+                .Where(c => c.ParentCateId == parentCategoryId)
+                .Select(c => c.Id)
+                .ToList();
+            list.Add(parentCategoryId);
+            return list;
+        }
         public async Task<IActionResult> SearchProducts(string search = "", int orderby = 0, int page = 1, int size = DEFAULT_PAGE_SIZE)
         {
             if (search is null)

@@ -9,7 +9,7 @@ namespace App.Data.Entities.Products
 {
     public class AppProductImage : AppEntityBase
     {
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
         public int? ProductId { get; set; }
         public bool? IsMobile { get; set; }
 

@@ -14,5 +14,6 @@ namespace App.Web.Areas.Admin.ViewModels.ProductCategory
         public string? CoverImgPath { get; set; }
         public string? StampPath { get; set; }
         public int? ParentCateId { get; set; }
+
     }
 }

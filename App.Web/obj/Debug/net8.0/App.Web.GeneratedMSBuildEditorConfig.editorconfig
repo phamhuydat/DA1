@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RQcm9kdWN0Q2F0ZWdvcnlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DA1/App.Web/Areas/Admin/Components/SelectProductColor2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RQcm9kdWN0Q29sb3IyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DA1/App.Web/Areas/Admin/Components/SelectProductColor/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQ29tcG9uZW50c1xTZWxlY3RQcm9kdWN0Q29sb3JcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

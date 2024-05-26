@@ -142,7 +142,7 @@
 							}
 							if (User.IsInPermission(AuthConst.AppProduct.VIEW_DETAIL))
 							{
-								<a title="Tùy chọn sản phẩm" asp-action="ListOption" asp-route-id="@item.Id"
+								<a title="Tùy chọn sản phẩm" asp-action="ListOption" asp-route-id="@item.Id" asp-route-slug="@item.ProductCode"
 								   class="btn btn-outline-info btn-sm"><i class="fas fa-eye"></i></a>
 							}
 							if (User.IsInPermission(AuthConst.AppProduct.UPDATE))

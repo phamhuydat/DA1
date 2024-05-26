@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<App.Web.Areas.Admin.ViewModels.Product.ListOptionVM>
+@using App.Share.Extensions
 @{
 	ViewData["Title"] = $"Danh sách tùy chọn sản phẩm {ViewBag.TitleProdcut}";
 	var row = 0;
@@ -8,7 +9,7 @@
 	@if (User.IsInPermission(AuthConst.AppProduct.CREATE))
 	{
 		<div class="my-2 mr-2">
-			<a asp-action="CreateOption" asp-route-id="@ViewBag.IdPro" class="btn btn-primary">
+			<a asp-action="CreateOption" asp-route-id="@ViewBag.IdPro" asp-route-slug="@ViewBag.slugPro" class="btn btn-primary">
 				<i class="fas fa-book-medical"></i> &nbsp; Thêm tùy chọn
 			</a>
 		</div>
@@ -49,9 +50,13 @@
 					<label for="chkAll" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
 				</th>
 				<th class="fit">#</th>
-				<th>Mã</th>
-				<th class="text-center">Ảnh bìa</th>
-				<th>Tên sản phẩm</th>
+				<th class="text-center">Tên sản phẩm</th>
+				<th>Gía</th>
+				<th>Khuyến Mãi</th>
+				<th>Ram</th>
+				<th>Rom</th>
+				<th>CPU</th>
+				<th>Inch</th>
 				<th>Màu sắc</th>
 				<th>Số lượng</th>
 				<th>Đã bán</th>
@@ -68,63 +73,16 @@
 						<label for="chk@(item.Id)" class="position-absolute w-100 h-100 top-left hover:pointer"></label>
 					</td>
 					<td class="fit">@row</td>
-					<td>@item.ProductCode</td>
+					<td>@item.ProductName</td>
 					<td class="text-center">
-						@{
-							if (item.ImagePath != null)
-							{
-								<img src="@item.ImagePath" class="item-news-image" />
-							}
-							else
-							{
-								<img src="~/files/logo.png" style=" width: 50px;height: 50px;object-fit: cover;" />
-							}
-						}
+						@item.Price.ToString("#,0 đ")
 					</td>
-					<td>
-						<div>
-							@if (item.IsActive)
-							{
-								<i class="fas fa-globe text-secondary"></i>
-							}
-							else
-							{
-								<i class="fas fa-lock text-secondary"></i>
-							}
-							@if (item.IsDiscountProduct)
-							{
-								<div class="badge badge-danger">
-									<i class="fas fa-tags"></i> Sale
-								</div>
-							}
-							@if (item.CategoryName.IsNullOrEmpty())
-							{
-								<div class="badge badge-secondary">Không có danh mục</div>
-							}
-							else
-							{
-								<div class="badge badge-primary">@item.CategoryName</div>
-							}
-							@if (item.ColorName != null)
-							{
-								<div class="badge badge-danger">@item.ColorName</div>
-							}
-							@if (item.BrandName != null)
-							{
-								<div class="badge badge-success">@item.BrandName</div>
+					<td>@item.DiscountPrice?.ToString("#,0 đ")</td>
+					<td>@item.Ram</td>
+					<td>@item.Rom</td>
+					<td>@item.CPU</td>
+					<td>@item.Inch</td>
 
-							}
-							<span class="ml-1 text-secondary small"><i class="fa fa-eye"></i> @item.View</span>
-							@if (item.DisplayOrder != null)
-							{
-								<span title="Đã ghim" class="ml-1 text-secondary small">
-									<i class="fas fa-thumbtack"></i>
-								</span>
-							}
-						</div>
-						@item.ProductName
-						<a class="text-secondary ml-1" target="_blank" asp-area="" asp-controller="Product" asp-action="ProductDetail"  asp-route-id="@item.Id"><i class="fas fa-external-link-alt text-secondary"></i></a>
-					</td>
 					<td>
 						<div class="d-flex">
 							<div style="padding: 11px; background-color: @item.ColorCss"></div>
@@ -148,46 +106,19 @@
 
 					<td class="fit">
 						@{
-							if (item.IsActive)
-							{
-								if (User.IsInPermission(AuthConst.AppProduct.UNPUBLIC))
-								{
-									<a asp-action="UnPublicProduct" asp-route-id="@item.Id"
-									   class="btn btn-outline-secondary btn-sm js-delete-confirm"
-									   data-msg="Xác nhận ẩn sản phẩm [@item.ProductName] khỏi hệ thống?">
-										<i class="fas fa-lock"></i>
-									</a>
-								}
-							}
-							else
-							{
-								if (User.IsInPermission(AuthConst.AppProduct.PUBLIC))
-								{
-									<a asp-action="PublicProduct" asp-route-id="@item.Id"
-									   class="btn btn-outline-secondary btn-sm js-delete-confirm"
-									   data-msg="Xác nhận công khai sản phẩm [@item.ProductName]?">
-										<i class="fas fa-globe"></i>
-									</a>
-								}
-							}
-							if (User.IsInPermission(AuthConst.AppProduct.VIEW_DETAIL))
-							{
-								<a title="Tùy chọn sản phẩm" asp-action="ProductDetail" asp-route-id="@item.Id"
-								   class="btn btn-outline-info btn-sm"><i class="fas fa-eye"></i></a>
-							}
 							if (User.IsInPermission(AuthConst.AppProduct.UPDATE))
 							{
-								if (item.DisplayOrder == null)
-								{
-									<a title="Ghim sản phẩm" asp-action="ProductGhim" asp-route-id="@item.Id"
-									   class="btn btn-outline-secondary btn-sm"><i class="fas fa-plus"></i></a>
-								}
-								else
-								{
-									<a title="Bỏ ghim sản phẩm" asp-action="ProductUnGhim" asp-route-id="@item.Id"
-									   class="btn btn-outline-secondary btn-sm"><i class="fas fa-minus"></i></a>
-								}
-								<a asp-action="Update" asp-route-id="@item.Id"
+								// if (item.DisplayOrder == null)
+								// {
+								// 	<a title="Ghim sản phẩm" asp-action="ProductGhim" asp-route-id="@item.Id"
+								// 	   class="btn btn-outline-secondary btn-sm"><i class="fas fa-plus"></i></a>
+								// }
+								// else
+								// {
+								// 	<a title="Bỏ ghim sản phẩm" asp-action="ProductUnGhim" asp-route-id="@item.Id"
+								// 	   class="btn btn-outline-secondary btn-sm"><i class="fas fa-minus"></i></a>
+								// }
+								<a asp-action="UpdateOption" asp-route-id="@item.Id"
 								   class="btn btn-outline-secondary btn-sm"><i class="fas fa-pen"></i></a>
 							}
 							if (User.IsInPermission(AuthConst.AppProduct.DELETE))

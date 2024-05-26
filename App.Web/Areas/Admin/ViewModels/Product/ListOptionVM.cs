@@ -1,10 +1,10 @@
 ﻿using App.Web.Common;
+using System.Runtime.CompilerServices;
 
 namespace App.Web.Areas.Admin.ViewModels.Product
 {
 	public class ListOptionVM : ListItemBaseVM
 	{
-		public string ProductCode { get; set; }
 		public string ProductName { get; set; }
 		public string Description { get; set; }
 		public decimal Price { get; set; }
@@ -12,18 +12,16 @@ namespace App.Web.Areas.Admin.ViewModels.Product
 		public DateTime? DiscountFrom { get; set; }
 		public DateTime? DiscountTo { get; set; }
 		public int InStock { get; set; }
-		public int InStockMin { get; set; }
-		public int View { get; set; }
 		public int Sold { get; set; }
 		public bool IsActive { get; set; }
-		public int? CategoryId { get; set; }
-		public string CategoryName { get; set; }
-		public string BrandName { get; set; }
 		public string ColorName { get; set; }
 		public string ColorCss { get; set; }
 		public string ImagePath { get; set; }
 		public int? DisplayOrder { get; set; }
-		public int? ProductId { get; set; }
+		public string? Ram { get; set; }
+		public string? Rom { get; set; }
+		public string? Inch { get; set; }
+		public string? CPU { get; set; }
 		public bool IsDiscountProduct
 		{
 			get

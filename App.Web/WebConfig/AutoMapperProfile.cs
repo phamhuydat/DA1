@@ -60,13 +60,31 @@ namespace App.Web.WebConfig
             CreateMap<AppNews, AddOrUpdateNewsVM>().ReverseMap();
             CreateMap<AppProductCategory, AddOrUpdateProductCategoryVM>().ReverseMap();
             CreateMap<AppProduct, AddOrUpdateProductVM>().ReverseMap();
-            CreateMap<AppProductDetail, AddOrUpProOptionVM>().ReverseMap();
 
+            CreateMap<AppProductDetail, AddOrUpProOptionVM>().ReverseMap();
 
             CreateMap<AppPolicy, PolicyDetailVM>().ReverseMap();
             CreateMap<AppProduct, CartItemVM>().ReverseMap();
             CreateMap<OrderDataVM, AppOrder>().ReverseMap();
         }
+        public static MapperConfiguration UpdateProductConf = new(mapper =>
+        {
+            mapper.CreateMap<AppProduct, AddOrUpdateProductVM>()
+                .ForMember(uItem => uItem.ColorId, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().ColorId))
+                .ForMember(uItem => uItem.Ram, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().Ram))
+                .ForMember(uItem => uItem.Rom, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().Rom))
+                .ForMember(uItem => uItem.Inch, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().Inch))
+                .ForMember(uItem => uItem.InStock, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().InStock))
+                .ForMember(uItem => uItem.Price, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().Price))
+                .ForMember(uItem => uItem.DiscountPrice, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountPrice))
+                .ForMember(uItem => uItem.DiscountFrom, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountFrom))
+                .ForMember(uItem => uItem.DiscountTo, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountTo))
+                .ForMember(uItem => uItem.CPU, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().CPU))
+                .ForMember(uItem => uItem.GPU, opts => opts.MapFrom(uEntity => uEntity.AppProductDetails.First().GPU))
+                .ReverseMap()
+                ;
+
+        });
 
         public static MapperConfiguration RoleIndexConf = new(mapper =>
         {
@@ -214,10 +232,6 @@ namespace App.Web.WebConfig
             mapper.CreateMap<AppProductDetail, ListOptionVM>()
                 .ForMember(x => x.ImagePath, opts => opts.MapFrom(uEntity => uEntity.AppProduct.AppProductImages.FirstOrDefault() == null ? "" : uEntity.AppProduct.AppProductImages.First().ImagePath))
                 .ForMember(x => x.ProductName, opts => opts.MapFrom(x => x.AppProduct.ProductName + "( " + x.Ram + "/" + x.Rom + ")"))
-                .ForMember(x => x.CategoryName,
-                    opt => opt.MapFrom(e => e.AppProduct.AppProdcutCategory == null ? ""
-                        : (e.AppProduct.AppProdcutCategory.ParentCategory == null ? e.AppProduct.AppProdcutCategory.Name
-                        : $"[{e.AppProduct.AppProdcutCategory.ParentCategory.Name}] > [{e.AppProduct.AppProdcutCategory.Name}]")))
                 .ForMember(uItem => uItem.ColorCss, opts =>
                     opts.MapFrom(uEntity => uEntity.MstProductColor.CssColor))
                 .ForMember(uItem => uItem.ColorName, opts =>
@@ -306,11 +320,10 @@ namespace App.Web.WebConfig
                 opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountTo))
             .ForMember(uItem => uItem.DiscountPrice,
                 opt => opt.MapFrom(uEntity => uEntity.AppProductDetails.First().DiscountPrice))
-            .ForMember(uItem => uItem.CategoryId, opt =>
-                opt.MapFrom(uEntity => uEntity.AppProdcutCategory.CateLevel == 1 ?
-                            uEntity.AppProdcutCategory.Id : uEntity.AppProdcutCategory.ParentCateId))
+            //.ForMember(uItem => uItem.CategoryId, opt =>
+            //	opt.MapFrom(uEntity => uEntity.AppProdcutCategory.CateLevel == 1 ?
+            //				uEntity.AppProdcutCategory.Id : uEntity.AppProdcutCategory.ParentCateId))
             .ReverseMap();
-
         });
 
         public static MapperConfiguration OrderClientConf = new(mapper =>
