@@ -37,11 +37,11 @@
 					<td class="text-center fit">
 						@if (item.ImagePath != null)
 						{
-							<img width="50" height="50" src="@item.ImagePath" />
+							<img width="150" height="50" src="@item.ImagePath" style="object-fit: cover;" />
 						}
 						else
 						{
-							<img width="50" height="50" src="~/Images/logo.png" />
+							<img width="150" height="50" src="~/Images/logo.png" style="object-fit: cover;" />
 						}
 					</td>
 					<td>@item.CategoryName</td>

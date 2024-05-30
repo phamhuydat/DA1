@@ -20,10 +20,10 @@ namespace App.Web.Areas.Admin.Components.ListProductCategory
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var data = await _repository
-                .GetAll<AppProductCategory>(x => /*x.CateLevel.Equals(1) &&*/ x.DeletedDate == null)
+                .GetAll<AppProductCategory>(x => x.CateLevel.Equals(1) && x.DeletedDate == null)
                 .Include(x => x.AppProducts)
-                //.Include(x => x.ChildCategories)
-                //.ThenInclude(x => x.ChildCategories)
+                .Include(x => x.ChildCategories)
+                .ThenInclude(x => x.ChildCategories)
                 //.ThenInclude(x => x.a)
                 .ProjectTo<ListItemProductCategoryVM>(AutoMapperProfile.ProductCategoryConf)
                 .OrderBy(x => x.DisplayOrder)

@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Danh sách tài khoản";
+	var row = 0;
 }
 
 @if (User.IsInPermission(AuthConst.AppUser.CREATE))
@@ -31,8 +32,9 @@
 		<tbody>
 			@foreach (var item in Model)
 			{
+				row++;
 				<tr>
-					<td class="fit">@item.RowIndex</td>
+					<td class="fit">@row</td>
 					<td>
 						@item.Username
 						@if (item.IsBlock)
@@ -41,7 +43,7 @@
 						}
 					</td>
 					<td>@item.FullName</td>
-					<td>@item.PhoneNumber1</td>
+					<td>@item.PhoneNumber</td>
 					<td>@item.Email</td>
 					<td>@item.RoleName</td>
 					<td>@item.CreatedDate.ToDMY()</td>

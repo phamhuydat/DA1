@@ -1,4 +1,5 @@
-﻿function setCookie(cname, cvalue, exdays) {
+﻿
+function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
@@ -31,7 +32,7 @@ window.addEventListener("load", () => {
                 $(".dis-voucher").addClass("d-none");
                 $(".text-error-voucher").text("(*) Không tìm thấy Voucher.");
                 var totalprice = $(".value-summary.total-price").text();
-                $(".value-summary.new").text(totalprice.toLocaleString("de-DE") + "đ");
+                $(".value-summary.new").text(totalprice.toLocaleString("en-US"));
                 allprice();
                 return;
             }
@@ -42,19 +43,19 @@ window.addEventListener("load", () => {
             if (res.percent !== null) {
                 var totalprice = $(".value-summary.total-price").text();
                 var text = splittotal(totalprice);
-                var pay = Number(text) - ((Number(text) * res.percent) / 100);
+                var pay = parseFloat(text.replace(/,/g, '')) - ((parseFloat(text.replace(/,/g, '')) * res.percent) / 100);
                 var pricevoucher = res.percent + "%";
                 $(".price-voucher").text(pricevoucher)
-                $(".value-summary.new").text(pay.toLocaleString("de-DE") + " " + "đ")
-
+                $(".value-summary.new").text(pay.toLocaleString("en-US"));
             }
             else if (res.price != null) {
                 var totalprice = $(".value-summary.total-price").text();
                 var text = splittotal(totalprice);
-                var pay = Number(text) - Number(res.price);
-                var pricevoucher = res.price.toLocaleString("de-DE")
+                var pay = parseFloat(text.replace(/,/g, '')) - Number(res.price);
+                var pricevoucher = res.price.toLocaleString("en-US")
                 $(".price-voucher").text(pricevoucher + " " + "đ")
-                $(".value-summary.new").text(pay.toLocaleString("de-DE"))
+                $(".value-summary.new").text(pay.toLocaleString("en-US"))
+                console.log(pay);
             }
             allprice();
             //new AWN().success('Thêm mã giảm giá thành công', { durations: { success: 0 }, labels: { success: " thành công" } })

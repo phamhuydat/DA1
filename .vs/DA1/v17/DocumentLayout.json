@@ -3,52 +3,32 @@
   "WorkspaceRootPath": "D:\\DA1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\wwwroot\\clienttle\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\wwwroot\\clienttle\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\components\\listrole\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\components\\listrole\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\components\\listrole\\listroleviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\components\\listrole\\listroleviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\views\\user\\_addoredit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\views\\user\\_addoredit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\wwwroot\\clienttle\\js\\cart_custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\wwwroot\\clienttle\\js\\cart_custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\viewmodels\\user\\userlistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\viewmodels\\user\\userlistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\areas\\admin\\viewmodels\\user\\useraddoreditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\areas\\admin\\viewmodels\\user\\useraddoreditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\account\\updateprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\account\\updateprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\viewmodels\\account\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\viewmodels\\account\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\viewmodels\\account\\changepwdvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\viewmodels\\account\\changepwdvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\account\\updateaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\account\\updateaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\account\\_side-2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\account\\_side-2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|d:\\da1\\app.web\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85EF48D9-AA6E-43AA-A02F-E2344183FC90}|App.Web\\App.Web.csproj|solutionrelative:app.web\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,168 +37,100 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 319,
+          "DockedWidth": 434,
           "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_header.cshtml",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Shared\\_header.cshtml",
-              "RelativeDocumentMoniker": "App.Web\\Views\\Shared\\_header.cshtml",
-              "ToolTip": "D:\\DA1\\App.Web\\Views\\Shared\\_header.cshtml",
-              "RelativeToolTip": "App.Web\\Views\\Shared\\_header.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T07:46:31.055Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\css\\style.css",
-              "RelativeDocumentMoniker": "App.Web\\wwwroot\\ClientTLE\\css\\style.css",
-              "ToolTip": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\css\\style.css",
-              "RelativeToolTip": "App.Web\\wwwroot\\ClientTLE\\css\\style.css",
-              "ViewState": "AQIAANoAAAAAAAAAAAAAAOcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-30T08:55:41.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "App.Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DA1\\App.Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "App.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAA2wBEAAACCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T08:53:56.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cart_Custom.js",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Cart_Custom.js",
-              "RelativeDocumentMoniker": "App.Web\\wwwroot\\ClientTLE\\js\\Cart_Custom.js",
-              "ToolTip": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\js\\Cart_Custom.js",
-              "RelativeToolTip": "App.Web\\wwwroot\\ClientTLE\\js\\Cart_Custom.js",
-              "ViewState": "AQIAACoBAAAAAAAAAAAowFQBAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-30T08:52:58.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "App.Web\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "App.Web\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAswBoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:49:36.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "App.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "App.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:49:33.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpdateProfileVM.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\ViewModels\\Account\\UpdateProfileVM.cs",
-              "RelativeDocumentMoniker": "App.Web\\ViewModels\\Account\\UpdateProfileVM.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\ViewModels\\Account\\UpdateProfileVM.cs",
-              "RelativeToolTip": "App.Web\\ViewModels\\Account\\UpdateProfileVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:47:08.248Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_side-2.cshtml",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Account\\_side-2.cshtml",
-              "RelativeDocumentMoniker": "App.Web\\Views\\Account\\_side-2.cshtml",
-              "ToolTip": "D:\\DA1\\App.Web\\Views\\Account\\_side-2.cshtml",
-              "RelativeToolTip": "App.Web\\Views\\Account\\_side-2.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAGAAAA",
+              "DocumentIndex": 0,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\Components\\ListRole\\Default.cshtml",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\Components\\ListRole\\Default.cshtml",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\Components\\ListRole\\Default.cshtml",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\Components\\ListRole\\Default.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T08:41:44.17Z",
+              "WhenOpened": "2024-05-29T16:06:52.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChangePwdVM.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\ViewModels\\Account\\ChangePwdVM.cs",
-              "RelativeDocumentMoniker": "App.Web\\ViewModels\\Account\\ChangePwdVM.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\ViewModels\\Account\\ChangePwdVM.cs",
-              "RelativeToolTip": "App.Web\\ViewModels\\Account\\ChangePwdVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
+              "DocumentIndex": 1,
+              "Title": "ListRoleViewComponent.cs",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\Components\\ListRole\\ListRoleViewComponent.cs",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\Components\\ListRole\\ListRoleViewComponent.cs",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\Components\\ListRole\\ListRoleViewComponent.cs",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\Components\\ListRole\\ListRoleViewComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:17:28.418Z",
+              "WhenOpened": "2024-05-29T16:05:07.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_AddOrEdit.cshtml",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\Views\\User\\_AddOrEdit.cshtml",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\Views\\User\\_AddOrEdit.cshtml",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\Views\\User\\_AddOrEdit.cshtml",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\Views\\User\\_AddOrEdit.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T16:04:45.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserListItemVM.cs",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\ViewModels\\User\\UserListItemVM.cs",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\ViewModels\\User\\UserListItemVM.cs",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\ViewModels\\User\\UserListItemVM.cs",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\ViewModels\\User\\UserListItemVM.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA0wBUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:08:07.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "App.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\DA1\\App.Web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "App.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAIBAwK4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:47:39.478Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T15:06:11.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdateAddress.cshtml",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Account\\UpdateAddress.cshtml",
-              "RelativeDocumentMoniker": "App.Web\\Views\\Account\\UpdateAddress.cshtml",
-              "ToolTip": "D:\\DA1\\App.Web\\Views\\Account\\UpdateAddress.cshtml",
-              "RelativeToolTip": "App.Web\\Views\\Account\\UpdateAddress.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T07:33:25.417Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "UserAddOrEditVM.cs",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Areas\\Admin\\ViewModels\\User\\UserAddOrEditVM.cs",
+              "RelativeDocumentMoniker": "App.Web\\Areas\\Admin\\ViewModels\\User\\UserAddOrEditVM.cs",
+              "ToolTip": "D:\\DA1\\App.Web\\Areas\\Admin\\ViewModels\\User\\UserAddOrEditVM.cs",
+              "RelativeToolTip": "App.Web\\Areas\\Admin\\ViewModels\\User\\UserAddOrEditVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T14:59:48.471Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UpdateProfile.cshtml",
-              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Account\\UpdateProfile.cshtml",
-              "RelativeDocumentMoniker": "App.Web\\Views\\Account\\UpdateProfile.cshtml",
-              "ToolTip": "D:\\DA1\\App.Web\\Views\\Account\\UpdateProfile.cshtml",
-              "RelativeToolTip": "App.Web\\Views\\Account\\UpdateProfile.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAA4wCoAAABRAAAA",
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "D:\\DA1\\App.Web\\Views\\Product\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "App.Web\\Views\\Product\\ProductDetail.cshtml",
+              "ToolTip": "D:\\DA1\\App.Web\\Views\\Product\\ProductDetail.cshtml",
+              "RelativeToolTip": "App.Web\\Views\\Product\\ProductDetail.cshtml",
+              "ViewState": "AQIAAG0BAAAAAAAAAAAAAHcBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T14:24:51.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T13:36:08.547Z"
             }
           ]
         },

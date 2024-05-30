@@ -23,8 +23,9 @@
 				<th>#</th>
 				<th>Mã khuyến mãi</th>
 				<th>Giá giảm</th>
-				<th>Tổng đơn tối thiểu</th>
-				<th>Điều kiện</th>
+				<th>Giảm theo phần trăm</th>
+				<th>Ngày bắt đầu</th>
+				<th>Ngày kết thúc</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -37,9 +38,12 @@
 					<td>
 						@item.Code
 					</td>
-					<td>@item.DiscountPrice?.ToString("##,#")</td>
-					<td>@item.MinDiscountPrice?.ToString("##,#")</td>
-					<td>
+					<td>@item.Price?.ToString("##,#")</td>
+					<td>@item.Percent?.ToString("##,#")</td>
+					<td>@item.StartDate</td>
+					<td>@item.EndDate</td>
+
+					@* <td>
 						<p>Mã giảm @item.DiscountPrice?.ToString("##,#") cho đơn tối thiểu @item.MinDiscountPrice?.ToString("##,#")</p>
 						@if (item.UnApplyCategoryId != null)
 						{
@@ -49,7 +53,7 @@
 						{
 							<p>Mã khuyến mãi áp dụng cho tất cả sản phẩm</p>
 						}
-					</td>
+					</td> *@
 					<td class="fit">
 						@if (User.IsInPermission(AuthConst.AppDiscountCode.UPDATE))
 						{
