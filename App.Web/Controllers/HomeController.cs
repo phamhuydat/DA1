@@ -138,57 +138,58 @@ namespace App.Web.Controllers
             }
             ViewBag.cateId_by = listCateId.Last();
 
-            if (orderby == 15)
+            if (orderby == 101)
             {
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
                             (AutoMapperProfile.ProductClientConf)
                             .Where(x => x.CategoryId == id)
                             .Where(x => x.DeletedDate == null)
-                            .OrderBy(x => x.id)
-                            .ToPagedListAsync(page, size);
-                return View(data);
-            }
-            if (orderby == 5)
-            {
-                var data = await _repository.GetAll<AppProduct, ProductListVM>
-                        (AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.CategoryId == id)
-                        .Where(x => x.DeletedDate == null)
-                        .OrderBy(x => x.ProductName).ToPagedListAsync(page, size);
-
-                return View(data);
-            }
-            if (orderby == 6)
-            {
-                var data = await _repository.GetAll<AppProduct, ProductListVM>
-                        (AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.CategoryId == id)
-
-                        .Where(x => x.DeletedDate == null)
-                        .OrderByDescending(x => x.ProductName).ToPagedListAsync(page, size);
-                return View(data);
-            }
-
-            if (orderby == 4)
-            {
-                var data = await _repository.GetAll<AppProduct, ProductListVM>
-                            (AutoMapperProfile.ProductClientConf)
                             .OrderBy(x => x.DiscountPrice)
-                            .Where(x => x.CategoryId == id)
                             .OrderBy(x => x.Price)
-                            .Where(x => x.DeletedDate == null)
                             .ToPagedListAsync(page, size);
                 return View(data);
             }
-            if (orderby == 10)
+            if (orderby == 102)
             {
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
                         (AutoMapperProfile.ProductClientConf)
+                        .Where(x => x.CategoryId == id)
+                        .Where(x => x.DeletedDate == null)
                         .OrderByDescending(x => x.DiscountPrice)
                         .OrderByDescending(x => x.Price)
+                        .ToPagedListAsync(page, size);
+
+                return View(data);
+            }
+            if (orderby == 103)
+            {
+                var data = await _repository.GetAll<AppProduct, ProductListVM>
+                        (AutoMapperProfile.ProductClientConf)
                         .Where(x => x.CategoryId == id)
                         .Where(x => x.DeletedDate == null)
+                        .OrderBy(x => x.id)
                         .ToPagedListAsync(page, size);
+                return View(data);
+            }
+
+            if (orderby == 104)
+            {
+                var data = await _repository.GetAll<AppProduct, ProductListVM>
+                            (AutoMapperProfile.ProductClientConf)
+                            .Where(x => x.CategoryId == id)
+                            .Where(x => x.DeletedDate == null)
+                            .OrderBy(x => x.ProductName)
+                            .ToPagedListAsync(page, size);
+                return View(data);
+            }
+            if (orderby == 105)
+            {
+                var data = await _repository.GetAll<AppProduct, ProductListVM>
+                       (AutoMapperProfile.ProductClientConf)
+                       .Where(x => x.CategoryId == id)
+                       .Where(x => x.DeletedDate == null)
+                       .OrderByDescending(x => x.ProductName)
+                       .ToPagedListAsync(page, size);
                 return View(data);
             }
             else
