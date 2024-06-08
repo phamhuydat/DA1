@@ -10,5 +10,7 @@ namespace App.Web.Services.AppUser
     {
         Task<UpdateUserViewModel> GetUserById(int? id);
         Task UpdateUser(AcceptUpdateViewModel data);
+
+
     }
 }

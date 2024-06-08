@@ -49,10 +49,6 @@
                                     đã hủy
                                 </span>
                         </ul>
-@*                         <div class=order-detail-print>
-                            <a href=/orderdetails/pdf/30047
-                               class="button-2 pdf-invoice-button">Xuất PDF</a>
-                        </div> *@
                     </div>
                     <div class=order-details-area>
                         <div class=billing-info-wrap>
@@ -97,7 +93,7 @@
                                     <div class=item_order_product>
                                         <div class=it_order_products>
                                             <a asp-action="" asp-controller="" >
-                                                @item.ProductName - @item.Price&#x20AB;
+                                                @item.ProductName - @item.Price.ToString("#,0")
                                             </a>
                                             <div class=attributes>
                                                 <p>Màu sắc: Space Gray
@@ -114,13 +110,21 @@
                                     <table class=cart-total>
                                         <tbody>
                                             <tr>
+                                                <td class="cart-total-left">
+                                                    <label>Voucher</label>
+                                                </td>
+                                                <td class=cart-total-right>
+                                                    <span style="color: red; font-weight: 400">@ViewBag.Info.Voucher</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class=cart-total-left>
                                                     <label>
                                                         Tổng số tiền đã đặt
                                                         hàng:
                                                     </label>
                                                 <td class=cart-total-right>
-                                                    <span><strong>@ViewBag.Info.Total&#x20AB;</strong></span>
+                                                    <span><strong>@ViewBag.Info.Total.ToString("#,0")</strong></span>
                                                 </td>
                                             </tr>
                                         </tbody>

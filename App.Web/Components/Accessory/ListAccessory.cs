@@ -15,6 +15,7 @@ namespace App.Web.Components.Accessory
         {
             _repo = repo;
         }
+
         public async Task<IViewComponentResult> InvokeAsync(int cate, int pro)
         {
             var data = await _repo.GetAll<AppProduct, ProductListVM>
@@ -25,5 +26,6 @@ namespace App.Web.Components.Accessory
                 .ToListAsync();
             return View(data);
         }
+
     }
 }

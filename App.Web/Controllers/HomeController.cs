@@ -49,29 +49,35 @@ namespace App.Web.Controllers
 
 
             var iphone = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPHONE).Contains((int)x.CategoryId))
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPHONE).Contains((int)x.CategoryId) && x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
                         .Take(4).ToList();
 
             var ipad = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPAD).Contains((int)x.CategoryId))
-                        .Take(4);
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.IPAD).Contains((int)x.CategoryId) && x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
+                        .Take(4).ToList();
 
             var mac = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.MAC).Contains((int)x.CategoryId))
-                        .Take(4);
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.MAC).Contains((int)x.CategoryId) && x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
+                        .Take(4).ToList();
 
             var watch = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.WATCH).Contains((int)x.CategoryId))
-                        .Take(4);
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.WATCH).Contains((int)x.CategoryId) && x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
+                        .Take(4).ToList();
 
             var accessory = _repository.GetAll<AppProduct, ProductListVM>(AutoMapperProfile.ProductClientConf)
-                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.ACCESSORY).Contains((int)x.CategoryId))
-                        .Take(8);
+                        .Where(x => x.IsActive && x.CategoryId.HasValue && GetChildCategoryIds(DB.AppProductCategory.ACCESSORY).Contains((int)x.CategoryId) && x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
+                        .Take(8).ToList();
 
             var news = _repository.GetAll<AppNews>()
-                            .Where(s => s.Published == true)
+                            .Where(s => s.Published == true && s.DeletedDate == null)
+                            .OrderBy(x => x.DisplayOrder)
                             .ProjectTo<ListNewsVM>(AutoMapperProfile.NewsConf)
-                            .Take(3);
+                            .Take(3).ToList();
 
             ViewBag.news = news;
             ViewBag.iphone = iphone;
@@ -197,6 +203,8 @@ namespace App.Web.Controllers
                 var data = await _repository.GetAll<AppProduct, ProductListVM>
                         (AutoMapperProfile.ProductClientConf, false,
                         s => s.IsActive == true && (s.CategoryId != null && listCateId.Contains(s.CategoryId.Value)))
+                        .Where(x => x.DeletedDate == null)
+                        .OrderBy(x => x.DisplayOrder)
                         .ToPagedListAsync(page, size);
 
                 ViewBag.TitleName = cate.Name;
