@@ -345,6 +345,10 @@
       "PackagePath": "staticwebassets\\Images\\Avatar\\379668059_839156241201402_7409234859527942427_n638519657777982659.jpg"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\anh-che-mat-tham-hai-huoc_082056445638535199299795790.jpg",
+      "PackagePath": "staticwebassets\\Images\\Avatar\\anh-che-mat-tham-hai-huoc_082056445638535199299795790.jpg"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",
       "PackagePath": "staticwebassets\\Images\\Avatar\\default.png"
     },
@@ -2043,6 +2047,10 @@
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\admin\\thumbs\\0024920_pink_550.jpeg",
       "PackagePath": "staticwebassets\\files\\admin\\thumbs\\0024920_pink_550.jpeg"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\files\\user\\user.txt",
+      "PackagePath": "staticwebassets\\files\\user\\user.txt"
     },
     {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\js\\Admin\\branch\\branch.js",

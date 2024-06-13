@@ -14,101 +14,8 @@
                 <div class=page-body>
                     @await Component.InvokeAsync("Slider")
                     <div class="content_home-page">
-                        <div class=topic-block>
-                            <div class=topic-block-body>
-                                <div class="Topic_Block_content splide">
-                                    <div id=splide-track class=splide__track>
-                                        <div class=splide__list>
-                                            <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/B Trần.png"
-                                                     alt="" height=166>
-                                            </a>
-                                            <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Bình An _ Phương Nga.png"
-                                                     alt="" height=166>
-                                            </a>
-                                            <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Duydam.png"
-                                                     alt="" height=166>
-                                            </a>
-                                            <a class="item_ss_top splide__slide"
-                                               target=_blank
-                                               rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/HUyền Lizze _ Quỳnh Koool.png"
-                                                     alt="" height=166>
-                                            </a>
-                                            <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Huỳnh Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Hà Việt Dũng.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    target=_blank
-                                                    rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Hồng Diễm.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Lâm Đức Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Lê Bống.png"
-                                                     alt="" height=166>
-                                            </a><a class="item_ss_top splide__slide"
-                                                   target=_blank
-                                                   rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Mạnh Trường.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Quang Thắng.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Thu Mít.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide"
-                                                    target=_blank
-                                                    rel=noopener>
-                                                <img class=Topic_Block_item
-                                                     style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Trung Anh.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Trung Ruồi.png"
-                                                     alt="" height=166>
-                                            </a> <a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/VIệt Anh.png"
-                                                     alt="" height=166>
-                                            </a><a class="item_ss_top splide__slide">
-                                                <img class=Topic_Block_item style=object-fit:cover;width:100%
-                                                     src="~/ClientTLE/images/uploaded/banner/bonus banner/xx1/Đình Tú.png"
-                                                     alt="" height=166>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="home-page-category-list">
                             <div class="item-list">
-
                                 @if (ViewBag.iphoneCount > 0 && ViewBag.iphone != null)
                                                     {
                                     <div class="item-box-list">
@@ -461,11 +368,9 @@
                         </div>
                     </div>
 
-
                     <!--News -->
                     @if (ViewBag.newsCount > 0)
                     {
-
                         <div class=news-list-homepage>
                             <h2 class=title><strong>Tin Tức</strong></h2>
                             <div class=news-items>
@@ -473,12 +378,12 @@
                                 {
                                     <div class=news-item>
                                         <div class=picture>
-                                            <a asp-action="">
+                                            <a asp-action="NewsDetails" asp-controller="News" asp-route-id="@item.Id" asp-route-slug="@item.Slug">
                                                 <img src="@item.CoverImgPath">
                                             </a>
                                         </div>
                                         <h3 class="news-head" style=margin:0>
-                                            <a class="news-title">
+                                            <a class="news-title" asp-controller="News" asp-action="NewsDetails" asp-route-id="@item.Id" asp-route-slug="@item.Slug">
                                                 @item.Title
                                             </a>
                                         </h3>

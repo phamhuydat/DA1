@@ -42,18 +42,6 @@
 					<td>@item.Percent?.ToString("##,#")</td>
 					<td>@item.StartDate</td>
 					<td>@item.EndDate</td>
-
-					@* <td>
-						<p>Mã giảm @item.DiscountPrice?.ToString("##,#") cho đơn tối thiểu @item.MinDiscountPrice?.ToString("##,#")</p>
-						@if (item.UnApplyCategoryId != null)
-						{
-							<p>Mã khuyến mãi không áp dụng đối với các sản phẩm [@item.GroupNameCategory]</p>
-						}
-						else
-						{
-							<p>Mã khuyến mãi áp dụng cho tất cả sản phẩm</p>
-						}
-					</td> *@
 					<td class="fit">
 						@if (User.IsInPermission(AuthConst.AppDiscountCode.UPDATE))
 						{

@@ -54,7 +54,6 @@ namespace App.Web.Controllers
             newsData.NewsCategory = await _repository.FindAsync<AppNewsCategory>(newsData.CategoryId ?? -1);
             ViewBag.CategoryNewsTitle = newsData.CategoryId;
             return View(newsData);
-            return View();
         }
     }
 }

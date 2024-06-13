@@ -74,7 +74,7 @@ namespace App.Web.Controllers
                         .Take(8).ToList();
 
             var news = _repository.GetAll<AppNews>()
-                            .Where(s => s.Published == true && s.DeletedDate == null)
+                            .Where(s => s.DeletedDate == null)
                             .OrderBy(x => x.DisplayOrder)
                             .ProjectTo<ListNewsVM>(AutoMapperProfile.NewsConf)
                             .Take(3).ToList();

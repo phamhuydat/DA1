@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oXy//RMBx51eQPE9Yvs4iAuQf5OKbzQRjlOPhCg3vrY=",
+  "Hash": "PxKH3fKhkW+3tm+Lm7CphfhZ3kktMXS/caMSwuOfUVg=",
   "Source": "App.Web",
   "BasePath": "_content/App.Web",
   "Mode": "Default",
@@ -9586,6 +9586,25 @@
       "OriginalItemSpec": "wwwroot\\files\\Product\\vi-vn-iphone-11-pro-max-256gb-tongquan.jpg"
     },
     {
+      "Identity": "D:\\DA1\\App.Web\\wwwroot\\files\\user\\user.txt",
+      "SourceId": "App.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DA1\\App.Web\\wwwroot\\",
+      "BasePath": "_content/App.Web",
+      "RelativePath": "files/user/user.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\user\\user.txt"
+    },
+    {
       "Identity": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\1143a19f2d25ae36b1a44dfcd7f549fe638514061000414614.jpg",
       "SourceId": "App.Web",
       "SourceType": "Discovered",
@@ -9774,6 +9793,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Avatar\\379668059_839156241201402_7409234859527942427_n638519657777982659.jpg"
+    },
+    {
+      "Identity": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\anh-che-mat-tham-hai-huoc_082056445638535199299795790.jpg",
+      "SourceId": "App.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DA1\\App.Web\\wwwroot\\",
+      "BasePath": "_content/App.Web",
+      "RelativePath": "Images/Avatar/anh-che-mat-tham-hai-huoc_082056445638535199299795790.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Avatar\\anh-che-mat-tham-hai-huoc_082056445638535199299795790.jpg"
     },
     {
       "Identity": "D:\\DA1\\App.Web\\wwwroot\\Images\\Avatar\\default.png",

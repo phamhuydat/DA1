@@ -34,13 +34,13 @@
                         {
                             <div class=news-item>
                                 <div class=picture>
-                                    <a asp-action="NewsDetail" asp-route-id="" asp-route-sulg="">
+                                    <a asp-action="NewsDetails" asp-route-id="@item.Id" asp-route-slug="@item.Slug">
                                         <img src="@item.CoverImgPath">
                                     </a>
                                 </div>
                                 <div class=news-head>
                                     <h3 class=news-title>
-                                        <a asp-action ="NewsDetail" asp-route-sulg="@item.Slug">
+                                        <a asp-action="NewsDetails" asp-route-id="@item.Id" asp-route-slug="@item.Slug">
                                             @item.Title
                                         </a>
                                     </h3>
