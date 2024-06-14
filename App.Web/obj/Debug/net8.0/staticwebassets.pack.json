@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\ClientTLE\\css\\style.css"
     },
     {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\Face.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\Face.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\Youtube.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\Youtube.png"
+    },
+    {
+      "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\Zalo.png",
+      "PackagePath": "staticwebassets\\ClientTLE\\images\\Zalo.png"
+    },
+    {
       "Id": "D:\\DA1\\App.Web\\wwwroot\\ClientTLE\\images\\flags\\us.png",
       "PackagePath": "staticwebassets\\ClientTLE\\images\\flags\\us.png"
     },
